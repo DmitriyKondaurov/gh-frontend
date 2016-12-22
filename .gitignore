@@ -1,0 +1,6 @@
+.idea/
+git_ignore/
+node_modules/
+.sass-cache/
+.gulp-scss-cache/
+bower_components/
