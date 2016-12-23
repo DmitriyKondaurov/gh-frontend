@@ -3,14 +3,15 @@ section.welcome {
   overflow: hidden;
   .container {
     display: flex;
-    height: 50vh;
     align-items: center;
+    justify-content: center;
+    padding: 100px 5px;
     .item {
-      height: 50%;
       h2 {
-        font: 400 26px/28px "Open Sans";
+        font: 400 24px/28px "Open Sans";
         color: white;
         text-align: center;
+        text-transform: uppercase;
       }
     }
   }
@@ -24,8 +25,11 @@ section.welcome {
       display: flex;
       align-items: center;
       .item {
-        height: 50%;
-        font: 700 28px/34px "Open Sans";
+        width: 80%;
+        padding: 10px 5px;
+        h2 {
+          font: 400 26px/34px "Open Sans";
+        }
       }
     }
   }
@@ -39,24 +43,29 @@ section.welcome {
       display: flex;
       align-items: center;
       .item {
-        height: 50%;
-        font: 700 30px/40px "Open Sans";
+        width: 70%;
+        padding: 100px 5px;
+        h2 {
+          font: 700 30px/40px "Open Sans";
+        }
       }
     }
   }
 }
 
-
 @media screen and ($large) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
-    overflow: hidden;
     .container {
+      max-width: 1170px;
       display: flex;
       align-items: center;
       .item {
-        height: 50%;
-        font: 700 33px/45px "Open Sans";
+        width: 50%;
+        padding: 100px 5px;
+        h2 {
+          font: 700 33px/45px "Open Sans";
+        }
       }
     }
   }

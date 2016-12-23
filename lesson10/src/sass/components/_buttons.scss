@@ -1,27 +1,44 @@
 .button {
-  width: 180px;
+  width: 140px;
   display: block;
   margin: 25px auto 0;
-  padding: 8px 0;
+  padding: 5px 0;
   border: 2px solid $main-color;
   border-radius: 3px;
   background: $main-color;
   color: #fff;
   text-align: center;
-  font: 700 20px/20px "Open Sans";
+  font: 400 14px/14px "Open Sans";
   text-transform: uppercase;
   &:hover {
-    background: white;
+    border-color: #000;
     text-decoration: none;
     color: #000;
   }
 }
 
+@media screen and ($small) {
+  .button {
+    width: 160px;
+    margin: 25px auto 0;
+    padding: 8px 0;
+    font: 400 16px/16px "Open Sans";
+  }
+}
 @media screen and ($medium) {
   .button {
     width: 180px;
     margin: 25px auto 0;
-    padding: 8px 0;
+    padding: 10px 0;
+    font: 700 18px/18px "Open Sans";
+  }
+}
+
+@media screen and ($large) {
+  .button {
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 15px 0;
     font: 700 20px/20px "Open Sans";
   }
 }

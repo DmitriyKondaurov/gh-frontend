@@ -6215,7 +6215,10 @@ body {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #576671; }
+  color: #576671;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
 
 a {
   text-decoration: none; }
@@ -6257,7 +6260,7 @@ ul.topnav {
   list-style-type: none;
   float: right;
   margin: 0;
-  padding: 0;
+  padding: 30px 0 0 0;
   overflow: hidden;
   background-color: transparent; }
   ul.topnav li {
@@ -6269,23 +6272,68 @@ ul.topnav {
       padding: 5% 16px;
       text-decoration: none;
       transition: 0.3s;
-      font-size: 17px; }
+      font-size: 15px;
+      font-weight: 700; }
       ul.topnav li a:hover {
         background-color: #39c9da; }
     ul.topnav li.icon {
       display: none; }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width: 568px) {
+  ul.topnav li:not(:first-child) {
+    display: none; }
+
+  ul.topnav {
+    margin: 5% 10% 0 0;
+    padding: 0; }
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+      width: 30%; }
+      ul.topnav li.icon:hover {
+        background-color: transparent; }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {
+    position: relative; }
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent; }
+    ul.topnav.responsive li.icon:hover {
+      background-color: transparent;
+      color: #39c9da; }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #39c9da; }
+    ul.topnav.responsive li a:hover {
+      background-color: #39c9da;
+      color: white; } }
 @media screen and (max-width: 768px) {
   ul.topnav li:not(:first-child) {
-    display: none;
-    width: 30%; }
+    display: none; }
 
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block; } }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width: 768px) {
+  ul.topnav {
+    margin: 5% 15% 0 0;
+    padding: 0; }
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+      width: 30%; }
+      ul.topnav li.icon:hover {
+        background-color: transparent; }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
   ul.topnav.responsive {
     position: relative; }
 
@@ -6317,7 +6365,9 @@ header {
   right: 0;
   display: flex;
   padding: 1% 0;
-  transition: all 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   text-shadow: 0px 0px 3px #000; }
   header nav {
     width: 60%;
@@ -6325,10 +6375,9 @@ header {
   header h1.logo {
     margin: 0 auto;
     width: 40%;
-    padding: 1% 10%;
-    vertical-align: top;
+    padding: 20px 10% 0 10%;
     color: #39c9da;
-    font: 700 24px/30px "Open Sans"; }
+    font: 400 20px/20px "Open Sans"; }
     header h1.logo span {
       color: white;
       text-shadow: 0px 0px 3px #fff; }
@@ -6342,8 +6391,8 @@ header {
     header h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 5% 10%;
-      font: 700 26px/30px "Open Sans"; } }
+      padding: 20px 10% 0 10%;
+      font: 400 24px/28px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   header {
     padding: 1% 0; }
@@ -6351,61 +6400,74 @@ header {
       width: 60%;
       padding-right: 1%; }
     header h1.logo {
-      margin: 0 auto;
+      margin: 2% auto 0 auto;
       width: 40%;
-      padding: 5% 10%;
-      font: 700 28px/30px "Open Sans"; } }
+      padding: 20px 10% 0 10%;
+      font: 700 26px/30px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   header {
-    padding: 1% 0; }
+    padding: 0;
+    max-width: 1170px; }
     header nav {
       width: 60%;
-      padding-right: 1%; }
+      padding-right: 20px; }
     header h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 5% 10%;
+      padding: 30px 10% 0 10%;
       font: 700 30px/30px "Open Sans"; } }
 @media screen and (min-width: 567px) {
   footer ul li {
     display: inline-block;
     padding: 0 10%; } }
 .button {
-  width: 180px;
+  width: 140px;
   display: block;
   margin: 25px auto 0;
-  padding: 8px 0;
+  padding: 5px 0;
   border: 2px solid #39c9da;
   border-radius: 3px;
   background: #39c9da;
   color: #fff;
   text-align: center;
-  font: 700 20px/20px "Open Sans";
+  font: 400 14px/14px "Open Sans";
   text-transform: uppercase; }
   .button:hover {
-    background: white;
+    border-color: #000;
     text-decoration: none;
     color: #000; }
 
+@media screen and (min-width: 567px) {
+  .button {
+    width: 160px;
+    margin: 25px auto 0;
+    padding: 8px 0;
+    font: 400 16px/16px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   .button {
     width: 180px;
     margin: 25px auto 0;
-    padding: 8px 0;
+    padding: 10px 0;
+    font: 700 18px/18px "Open Sans"; } }
+@media screen and (min-width: 1023px) {
+  .button {
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 20px 40px;
     font: 700 20px/20px "Open Sans"; } }
 section.welcome {
   background: url(../img/bg_wellcome.png) top no-repeat;
   overflow: hidden; }
   section.welcome .container {
     display: flex;
-    height: 50vh;
-    align-items: center; }
-    section.welcome .container .item {
-      height: 50%; }
-      section.welcome .container .item h2 {
-        font: 400 26px/28px "Open Sans";
-        color: white;
-        text-align: center; }
+    align-items: center;
+    justify-content: center;
+    padding: 100px 5px; }
+    section.welcome .container .item h2 {
+      font: 400 24px/28px "Open Sans";
+      color: white;
+      text-align: center;
+      text-transform: uppercase; }
 
 @media screen and (min-width: 567px) {
   section.welcome {
@@ -6415,8 +6477,10 @@ section.welcome {
       display: flex;
       align-items: center; }
       section.welcome .container .item {
-        height: 50%;
-        font: 700 28px/34px "Open Sans"; } }
+        width: 80%;
+        padding: 10px 5px; }
+        section.welcome .container .item h2 {
+          font: 400 26px/34px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
@@ -6425,18 +6489,22 @@ section.welcome {
       display: flex;
       align-items: center; }
       section.welcome .container .item {
-        height: 50%;
-        font: 700 30px/40px "Open Sans"; } }
+        width: 70%;
+        padding: 100px 5px; }
+        section.welcome .container .item h2 {
+          font: 700 30px/40px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   section.welcome {
-    background: url(../img/bg_wellcome.png) top no-repeat;
-    overflow: hidden; }
+    background: url(../img/bg_wellcome.png) top no-repeat; }
     section.welcome .container {
+      max-width: 1170px;
       display: flex;
       align-items: center; }
       section.welcome .container .item {
-        height: 50%;
-        font: 700 33px/45px "Open Sans"; } }
+        width: 55%;
+        padding: 100px 5px; }
+        section.welcome .container .item h2 {
+          font: 700 33px/45px "Open Sans"; } }
 section.feedback {
   background: url(../img/testimonials.jpg) 100%/200% no-repeat;
   padding: 60px 0 0;
@@ -6603,35 +6671,37 @@ section.feedback {
     text-align: center;
     color: white; }
 
-.about-us ul {
-  text-align: center; }
-.about-us i {
-  width: 100px;
-  height: 100px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: #edeff1;
-  text-align: center;
-  font-size: 60px;
-  line-height: 100px;
-  color: #87949e; }
-.about-us h3 {
-  margin: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  font: 24px/30px "Raleway";
-  color: #000; }
-.about-us p {
-  margin: 0;
-  padding: 0 0 20px 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  font-size: 16px; }
+.about {
+  display: flex; }
+  .about ul {
+    text-align: center; }
+  .about i {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #edeff1;
+    text-align: center;
+    font-size: 60px;
+    line-height: 100px;
+    color: #87949e; }
+  .about h3 {
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font: 24px/30px "Raleway";
+    color: #000; }
+  .about p {
+    margin: 0;
+    padding: 0 0 20px 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 16px; }
 
 .experience {
   margin-top: 5%;

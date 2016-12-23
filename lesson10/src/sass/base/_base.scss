@@ -4,6 +4,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   color: #576671;
+  @include transition(0.4s);
 }
 
 a {
