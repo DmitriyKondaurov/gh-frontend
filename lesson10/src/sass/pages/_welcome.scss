@@ -1,0 +1,73 @@
+section.welcome {
+  background: url(../img/banner.jpg) 100%/200% no-repeat;
+  overflow: hidden;
+
+  .item {
+    height: 320px;
+    img {
+      visibility: hidden;
+    }
+  }
+  .carousel-caption {
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    h2 {
+      font: 100 16px/18px 'Raleway';
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      font: 300 12px/16px 'Proxima Nova';
+      margin-bottom: 0px;
+    }
+  }
+}
+.carousel-indicators {
+  bottom: 0;
+}
+
+@media screen and (min-width: 567px) {
+  section.welcome {
+    background: url(../img/banner.jpg) 100%/150% no-repeat;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    top: 25%;
+    left: 15%;
+    right: 15%;
+    h2 {
+      font: 100 20px/24px 'Raleway';
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      font: 300 18px/20px 'Proxima Nova';
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  section.welcome {
+    background: url(../img/banner.jpg) 100%/100% no-repeat;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    top: 40%;
+    left: 15%;
+    right: 15%;
+    h2 {
+      font: 100 60px/60px 'Raleway';
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      font: 300 24px/60px 'Proxima Nova';
+    }
+  }
+}

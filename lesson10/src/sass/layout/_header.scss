@@ -1,0 +1,168 @@
+//header
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 0;
+  width: 100%;
+  z-index: 111;
+  transition: all 0.4s;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.logo {
+  width: 90%;
+  float: left;
+  padding-top: 5px;
+
+  h1 {
+    margin: 0;
+    a {
+      display: block;
+      color: white;
+      font: 500 16px/20px "Proxima Nova";
+      &:hover {
+        color: #2dddac;
+        transition: all 0.5s;
+      }
+    }
+    span {
+      color: #2dddac;
+      text-shadow: 0px 0px 3px #2dddac;
+    }
+  }
+}
+.search {
+  display: none;
+}
+.dropdown-menu {
+  background-color: transparent;
+  min-width: 180px;
+  left: 20%;
+  top: 0;
+  & > li > a {
+    float: left;
+    width: 180px;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #00b3ee;
+    background-color: rgba(0, 0, 0, 0.7);
+    &:hover, &:focus {
+      color: #00b3ee;
+      background-color: rgba(0, 0, 0, 0.9);
+      border: 1px solid white;
+    }
+  }
+  & > .active > a, & >.active > a:hover, & >.active > a:focus {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #00b3ee;
+    border: 1px solid #fff;
+  }
+
+}
+.dropdown i.fa {
+  color: #fff;
+  &:hover {
+    color: #2dddac;
+  }
+}
+@media screen and (min-width: 567px) {
+  .dropdown-menu {
+    background-color: transparent;
+    min-width: 180px;
+    right: 10%;
+    left: auto;
+  }
+}
+@media screen and (min-width: 767px) {
+
+  nav.dropdown {
+    width: 65%;
+    float: left;
+    text-align: right;
+    margin-right: 30px;
+
+    ul li {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 25px;
+
+      a {
+        font-size: 14px;
+        line-height: 24px;
+        color: #00b3ee;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+
+        &:hover {
+          color: #2dddac;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .search {
+    display: block;
+    width: 5%;
+    float: right;
+    position: absolute;
+    overflow: hidden;
+    right: 10px;
+    top: 15px;
+    transition: all 0.5s;
+    &:hover {
+      width: 35%;
+      float: right;
+      position: absolute;
+      overflow: hidden;
+      box-shadow: 0px 0px 8px 5px #2dddac;
+
+      right: 0;
+      top: 10px;
+      background-color: #fff;
+      color: black;
+      input {
+        position: relative;
+        width: 90%;
+        overflow: visible;
+        float: left;
+        color: #000;
+      }
+      a {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        color: #000;
+        vertical-align: sub;
+        .fa {
+          color: #000;
+        }
+      }
+    }
+
+    .fa {
+      color: #fff;
+      position: relative;
+      left: 5px;
+      bottom: 5px;
+      &:hover {
+        color: #2dddac;
+      }
+    }
+    input.search-text {
+      width: auto;
+      background-color: transparent;
+      transition: all 0.5s;
+      border: none;
+      &:focus {
+        width: 85%;
+        .search & {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

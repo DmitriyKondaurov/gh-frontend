@@ -1,0 +1,65 @@
+.services {
+  ul {
+    text-align: center;
+    .icon {
+      float: left;
+      width: 20%;
+      i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding-top: 10px;
+        border-radius: 50%;
+        background: #fff;
+        color: #17daa3;
+        text-align: center;
+      }
+    }
+    .service-data {
+      overflow: hidden;
+      text-align: left;
+      h2 {
+        margin-top: 0;
+        font: 200 28px/36px "Raleway", sans-serif;
+      }
+    }
+    p {
+      padding-bottom: 25px;
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (min-width: 567px) {
+  .services {
+    .icon i {
+      width: 83px;
+      height: 83px;
+      font-size: 40px;
+      padding-top: 25px;
+    }
+    .service-data {
+      overflow: hidden;
+      text-align: left;
+      h2 {
+        margin-top: 0;
+        font: 200 40px/58px "Raleway", sans-serif;
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .services {
+    .service-data {
+      overflow: hidden;
+      text-align: left;
+      h2 {
+        margin-top: 0;
+        font: 200 60px/93px "Raleway", sans-serif;
+      }
+    }
+    p {
+      padding-bottom: 60px;
+      font-size: 26px;
+    }
+  }
+}
