@@ -6,31 +6,36 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: transparent;
+  // Float the list items side by side
+  li {
+    float: left;
+    // Style the links inside the list items
+    a {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      padding: 5% 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+      // Change background color of links on hover
+      &:hover {
+        background-color: #39c9da;
+      }
+    }
+    // Hide the list item that contains the link that should open and close the topnav on small screens
+    &.icon {
+      display: none;
+    }
+  }
 }
-
-// Float the list items side by side
-ul.topnav li {float: left;}
-
-// Style the links inside the list items
-ul.topnav li a {
-  display: inline-block;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-// Change background color of links on hover
-ul.topnav li a:hover {background-color: #555;}
-
-// Hide the list item that contains the link that should open and close the topnav on small screens
-ul.topnav li.icon {display: none;}
-
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
+@media screen and (max-width:768px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+    width: 30%;
+
+  }
   ul.topnav li.icon {
     float: right;
     display: inline-block;
@@ -38,12 +43,17 @@ ul.topnav li.icon {display: none;}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
+@media screen and (max-width:768px) {
   ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+      color: $main-color;
+    }
   }
   ul.topnav.responsive li {
     float: none;
@@ -52,5 +62,11 @@ ul.topnav li.icon {display: none;}
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
+    background-color: rgba(0,0,0,0.5);
+    color: $main-color;
+    &:hover {
+      background-color: #39c9da;
+      color: white;
+    }
   }
 }

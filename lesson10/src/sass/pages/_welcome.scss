@@ -1,73 +1,63 @@
 section.welcome {
-  background: url(../img/bg_wellcome.png) 100%/200% no-repeat;
+  background: url(../img/bg_wellcome.png) top no-repeat;
   overflow: hidden;
-
-  .item {
-    height: 320px;
-    img {
-      visibility: hidden;
-    }
-  }
-  .carousel-caption {
-    top: 30%;
-    left: 10%;
-    right: 10%;
-    h2 {
-      font: 100 16px/18px 'Raleway';
-      span {
-        font-weight: 700;
+  .container {
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    .item {
+      height: 50%;
+      h2 {
+        font: 400 26px/28px "Open Sans";
+        color: white;
+        text-align: center;
       }
     }
-    p {
-      font: 300 12px/16px 'Proxima Nova';
-      margin-bottom: 0px;
-    }
   }
 }
-.carousel-indicators {
-  bottom: 0;
-}
 
-@media screen and (min-width: 567px) {
+@media screen and ($small) {
   section.welcome {
-    background: url(../img/banner.jpg) 100%/150% no-repeat;
+    background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden;
-  }
-  .carousel-caption {
-    top: 25%;
-    left: 15%;
-    right: 15%;
-    h2 {
-      font: 100 20px/24px 'Raleway';
-      span {
-        font-weight: 700;
+    .container {
+      display: flex;
+      align-items: center;
+      .item {
+        height: 50%;
+        font: 700 28px/34px "Open Sans";
       }
     }
-    p {
-      font: 300 18px/20px 'Proxima Nova';
-      margin-bottom: 20px;
+  }
+}
+
+@media screen and ($medium) {
+  section.welcome {
+    background: url(../img/bg_wellcome.png) top no-repeat;
+    overflow: hidden;
+    .container {
+      display: flex;
+      align-items: center;
+      .item {
+        height: 50%;
+        font: 700 30px/40px "Open Sans";
+      }
     }
   }
 }
 
 
-@media screen and (min-width: 767px) {
+@media screen and ($large) {
   section.welcome {
-    background: url(../img/banner.jpg) 100%/100% no-repeat;
+    background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden;
-  }
-  .carousel-caption {
-    top: 40%;
-    left: 15%;
-    right: 15%;
-    h2 {
-      font: 100 60px/60px 'Raleway';
-      span {
-        font-weight: 700;
+    .container {
+      display: flex;
+      align-items: center;
+      .item {
+        height: 50%;
+        font: 700 33px/45px "Open Sans";
       }
-    }
-    p {
-      font: 300 24px/60px 'Proxima Nova';
     }
   }
 }
