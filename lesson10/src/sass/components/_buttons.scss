@@ -15,31 +15,6 @@
   }
 }
 
-.button-case {
-  background-color: #2dddac;
-  color: white;
-  padding: 10px;
-  .fa {
-    padding-left: 10%;
-  }
-}
-
-.carousel-caption a {
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 1% 2%;
-  margin-bottom: 100px;
-  color: white;
-  font-size: 12px;
-  &:hover {
-    border-color: #2dddac;
-    -webkit-box-shadow: 0px 0px 4px #2dddac;
-    -moz-box-shadow: 0px 0px 4px #2dddac;
-    box-shadow: 0px 0px 4px #2dddac;
-    text-decoration: none;
-  }
-}
-
 @media screen and (min-width: 767px) {
   .carousel-caption a {
     border: 2px solid white;
