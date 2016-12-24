@@ -17,10 +17,11 @@ img {
 }
 
 div.section-caption {
+  flex-basis: 90%;
   text-align: center;
   h2 {
     margin: auto;
-    padding: 10px 0 0 0;
+    padding: 0;
     border: 0;
     text-transform: uppercase;
     color: $dark-text;
@@ -38,12 +39,12 @@ div.section-caption {
     font: 400 16px/22px "Open Sans";
   }
   div.section-caption {
+    flex-basis: 85%;
     h2 {
-      padding: 20px 0 0 0;
+      padding: 0;
       font: 700 20px/32px "Open Sans";
     }
     p {
-      width: 85%;
       padding: 10px 0 20px 0;
       font: 400 16px/20px "Open Sans";
     }
@@ -54,12 +55,12 @@ div.section-caption {
     font: 400 15px/21px "Open Sans";
   }
   div.section-caption {
+    flex-basis: 75%;
     h2 {
-      padding: 30px 0 0 0;
+      padding: 0;
       font: 700 22px/38px "Open Sans";
     }
     p {
-      width: 75%;
       padding: 10px 0 20px 0;
       font: 400 15px/20px "Open Sans";
     }
@@ -70,12 +71,12 @@ div.section-caption {
     font: 400 14px/20px "Open Sans";
   }
   div.section-caption {
+    flex-basis: 485px;
     h2 {
-      padding: 35px 0 0 0;
+      padding: 0;
       font: 700 20px/45px "Open Sans";
     }
     p {
-      width: 485px;
       padding: 10px 0 20px 0;
       font: 400 14px/20px "Open Sans";
     }

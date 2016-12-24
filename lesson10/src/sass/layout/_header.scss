@@ -3,17 +3,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  display: flex;
+  width: 100%;
   padding: 1% 0;
   @include transition(0.4s);
   text-shadow: 0px 0px 3px #000;
   nav {
-    width: 60%;
     padding-right: 1%;
   }
   h1.logo {
     margin: 0 auto;
+    float: left;
     width: 40%;
     padding: 20px 0 0 10%;
     color: $main-color;
@@ -30,7 +29,6 @@ header {
   header {
     padding: 1% 0;
     nav {
-      width: 60%;
       padding-right: 1%;
     }
     h1.logo {
@@ -46,7 +44,6 @@ header {
   header {
     padding: 1% 0;
     nav {
-      width: 70%;
       padding-right: 1%;
     }
     h1.logo {
@@ -64,7 +61,6 @@ header {
     max-width: 1170px;
     margin: auto;
     nav {
-      width: 70%;
       padding-right: 20px;
     }
     h1.logo {
