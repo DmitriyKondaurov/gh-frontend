@@ -6273,6 +6273,7 @@ div.section-caption {
       padding: 0;
       font: 700 20px/45px "Open Sans"; }
     div.section-caption p {
+      max-width: 450px;
       padding: 10px 0 20px 0;
       font: 400 14px/20px "Open Sans"; } }
 @font-face {
@@ -6393,6 +6394,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 1% 0;
   -webkit-transition: 0.4s;
@@ -6405,7 +6407,7 @@ header {
     margin: 0 auto;
     float: left;
     width: 40%;
-    padding: 20px 0 0 10%;
+    padding: 10px 0 0 10%;
     color: #39c9da;
     font: 400 20px/20px "Open Sans"; }
     header h1.logo span {
@@ -6420,7 +6422,7 @@ header {
     header h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 20px 0 0 10%;
+      padding: 10px 0 0 10%;
       font: 400 24px/28px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   header {
@@ -6430,7 +6432,7 @@ header {
     header h1.logo {
       margin: 2% auto 0 auto;
       width: 30%;
-      padding: 20px 0 0 10%;
+      padding: 15px 0 0 10%;
       font: 700 26px/30px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   header {
@@ -6440,9 +6442,9 @@ header {
     header nav {
       padding-right: 20px; }
     header h1.logo {
-      margin: 0 auto;
-      width: 30%;
-      padding: 30px 0 0 10%;
+      margin: 0 auto 0 0;
+      width: 25%;
+      padding: 20px 0 0 10%;
       font: 700 30px/30px "Open Sans"; } }
 @media screen and (min-width: 567px) {
   footer ul li {
@@ -6538,31 +6540,43 @@ section.welcome {
   padding: 50px 0;
   background-color: #f4f4f4; }
   .portfolio ul {
-    padding: .5vw;
-    font-size: 0;
+    padding: 5px;
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     display: -webkit-box;
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .portfolio ul li {
       -webkit-box-flex: auto;
       -ms-flex: auto;
       flex: auto;
       width: 200px;
-      margin: .5vw; }
+      max-width: 370px;
+      margin: 4px; }
       .portfolio ul li .project-image {
-        width: 100%;
-        height: auto; }
+        max-width: 370px;
+        height: auto;
+        text-align: center; }
+      .portfolio ul li .portfolio-projects-footer {
+        background-color: white;
+        font: 700 14px/60px "Open Sans";
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .portfolio ul li .portfolio-projects-footer span {
+          display: block;
+          padding: 10px; }
 
-@media screen and (max-width: 400px) {
-  ul li {
-    margin: 0; }
-
-  li {
-    padding: 0; } }
+@media screen and (min-width: 767px) {
+  .portfolio ul li {
+    width: 370px; } }
+@media screen and (min-width: 1023px) {
+  .portfolio ul {
+    max-width: 1170px; } }
 .services ul {
   text-align: center; }
   .services ul .icon {

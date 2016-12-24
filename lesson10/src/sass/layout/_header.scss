@@ -3,6 +3,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 1% 0;
   @include transition(0.4s);
@@ -14,7 +15,7 @@ header {
     margin: 0 auto;
     float: left;
     width: 40%;
-    padding: 20px 0 0 10%;
+    padding: 10px 0 0 10%;
     color: $main-color;
     font: 400 20px/20px "Open Sans";
     span {
@@ -34,7 +35,7 @@ header {
     h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 20px 0 0 10%;
+      padding: 10px 0 0 10%;
       font: 400 24px/28px "Open Sans";
     }
   }
@@ -49,7 +50,7 @@ header {
     h1.logo {
       margin: 2% auto 0 auto;
       width: 30%;
-      padding: 20px 0 0 10%;
+      padding: 15px 0 0 10%;
       font: 700 26px/30px "Open Sans";
     }
   }
@@ -64,9 +65,9 @@ header {
       padding-right: 20px;
     }
     h1.logo {
-      margin: 0 auto;
-      width: 30%;
-      padding: 30px 0 0 10%;
+      margin: 0 auto 0 0;
+      width: 25%;
+      padding: 20px 0 0 10%;
       font: 700 30px/30px "Open Sans";
     }
   }
