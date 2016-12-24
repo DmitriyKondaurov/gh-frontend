@@ -1,7 +1,30 @@
+footer {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color;
+  color: white;
+  div {
+    max-width: 1170px;
+    font: 400 14px/14px "Open Sans";
+  }
+}
 
-@media screen and (min-width: 567px) {
-  footer ul li {
-    display: inline-block;
-    padding: 0 10%;
+
+@media screen and ($small) {
+  footer {
+    height: 35px;
+  }
+}
+@media screen and ($medium) {
+  footer {
+    height: 40px;
+  }
+}
+
+@media screen and ($large) {
+  footer {
+    height: 50px;
   }
 }

@@ -1,12 +1,14 @@
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1170px;
-  justify-content: center;
-  padding: 45px 0 50px 0;
   background-color: #f4f4f4;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px 0 50px 0;
+  }
 
   .contact-info {
+    max-width: 1170px;
     h3 {
       margin-top: 0;
       padding: 20px 30px;
@@ -33,23 +35,21 @@
   }
   .contact-form {
     flex-basis: 90%;
+    max-width: 1170px;
     ul {
       width: 100%;
       display: flex;
       padding: 0;
       flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: flex-start;
       li {
         padding: 5px;
         flex-basis: 100%;
 
-        textarea {
+        textarea, input {
           resize: none;
           width: 100%;
-        }
-        input {
-          width: 100%;
+          border: none;
         }
       }
     }
@@ -61,6 +61,7 @@
       margin-right: 15px;
       border: 2px solid $main-color;
       border-radius: 3px;
+      outline: none;
       background: $main-color;
       color: #fff;
       text-align: center;
@@ -83,29 +84,44 @@
   }
 }
 @media screen and ($medium) {
-  .submit {
-    width: 180px;
-    padding: 10px 0;
-    font: 700 18px/18px "Open Sans";
-  }
-  .contact-form li {
-    padding: 15px;
-    &:nth-child(1), &:nth-child(2) {
-      flex-basis: 50%;
+  .contact {
+    .submit {
+      width: 180px;
+      padding: 10px 0;
+      font: 700 18px/18px "Open Sans";
+    }
+    .contact-form li {
+      padding: 15px;
+      &:nth-child(1), &:nth-child(2) {
+        flex-basis: 50%;
+      }
     }
   }
 }
 @media screen and ($large) {
-  .submit  {
-    width: 200px;
-    padding: 15px 0;
-    font: 700 20px/20px "Open Sans";
-  }
-  .contact-info {
+  .contact {
+    form.contact-form {
+      flex-basis: 50%;
+      padding: 10px;
+      li {
+        padding: 20px 15px;
+        textarea, input {
+          padding: 15px;
+        }
+      }
+      .submit  {
+        width: 200px;
+        padding: 15px 0;
+        font: 700 20px/20px "Open Sans";
+      }
+    }
+    .contact-info {
       flex-basis: 50%;
     }
-  .contact-form {
-    flex-basis: 50%;
+    .wrapper {
+      max-width: 1170px;
+      margin: auto;
+    }
   }
 }
 

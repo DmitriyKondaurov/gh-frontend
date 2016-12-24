@@ -6434,10 +6434,26 @@ header {
       width: 25%;
       padding: 30px 0 0 5%;
       font: 700 30px/30px "Open Sans"; } }
+footer {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39c9da;
+  color: white; }
+  footer div {
+    max-width: 1170px;
+    font: 400 14px/14px "Open Sans"; }
+
 @media screen and (min-width: 567px) {
-  footer ul li {
-    display: inline-block;
-    padding: 0 10%; } }
+  footer {
+    height: 35px; } }
+@media screen and (min-width: 767px) {
+  footer {
+    height: 40px; } }
+@media screen and (min-width: 1023px) {
+  footer {
+    height: 50px; } }
 a.button {
   width: 140px;
   display: block;
@@ -6479,17 +6495,17 @@ a.button-services-list {
     text-decoration: none; }
 
 @media screen and (min-width: 567px) {
-  .button {
+  a.button {
     width: 160px;
     padding: 8px 0;
     font: 400 16px/16px "Open Sans"; } }
 @media screen and (min-width: 767px) {
-  .button {
+  a.button {
     width: 180px;
     padding: 10px 0;
     font: 700 18px/18px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
-  .button {
+  a.button {
     width: 200px;
     padding: 15px 0;
     font: 700 20px/20px "Open Sans"; }
@@ -6547,13 +6563,15 @@ section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat; }
     section.welcome .container-welcome {
       max-width: 1170px;
+      margin: auto;
       display: flex;
       align-items: center; }
       section.welcome .container-welcome .item-welcome {
         width: 50%;
         padding: 100px 5px; }
         section.welcome .container-welcome .item-welcome h2 {
-          font: 700 33px/45px "Open Sans"; } }
+          font: 700 33px/45px "Open Sans";
+          padding-bottom: 20px; } }
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -6698,48 +6716,49 @@ section.welcome {
     .services li h3 {
       font: 700 20px/45px "Open Sans"; } }
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1170px;
-  justify-content: center;
-  padding: 45px 0 50px 0;
   background-color: #f4f4f4; }
-  .contact .contact-info h3 {
-    margin-top: 0;
-    padding: 20px 30px;
-    color: #504f50;
-    font: 700 17px/20px "Open Sans";
-    text-transform: uppercase; }
-    .contact .contact-info h3::after {
-      content: " ";
-      display: block;
-      width: 100px;
-      margin-top: 10px;
-      height: 2px;
-      background-color: #39c9da; }
-  .contact .contact-info h4 {
-    padding: 20px 30px;
-    font-weight: 700;
-    color: #504f50; }
-  .contact .contact-info p {
-    padding: 0 30px; }
+  .contact .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px 0 50px 0; }
+  .contact .contact-info {
+    max-width: 1170px; }
+    .contact .contact-info h3 {
+      margin-top: 0;
+      padding: 20px 30px;
+      color: #504f50;
+      font: 700 17px/20px "Open Sans";
+      text-transform: uppercase; }
+      .contact .contact-info h3::after {
+        content: " ";
+        display: block;
+        width: 100px;
+        margin-top: 10px;
+        height: 2px;
+        background-color: #39c9da; }
+    .contact .contact-info h4 {
+      padding: 20px 30px;
+      font-weight: 700;
+      color: #504f50; }
+    .contact .contact-info p {
+      padding: 0 30px; }
   .contact .contact-form {
-    flex-basis: 90%; }
+    flex-basis: 90%;
+    max-width: 1170px; }
     .contact .contact-form ul {
       width: 100%;
       display: flex;
       padding: 0;
       flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center; }
+      justify-content: flex-start; }
       .contact .contact-form ul li {
         padding: 5px;
         flex-basis: 100%; }
-        .contact .contact-form ul li textarea {
+        .contact .contact-form ul li textarea, .contact .contact-form ul li input {
           resize: none;
-          width: 100%; }
-        .contact .contact-form ul li input {
-          width: 100%; }
+          width: 100%;
+          border: none; }
     .contact .contact-form .submit {
       width: 140px;
       float: right;
@@ -6748,6 +6767,7 @@ section.welcome {
       margin-right: 15px;
       border: 2px solid #39c9da;
       border-radius: 3px;
+      outline: none;
       background: #39c9da;
       color: #fff;
       text-align: center;
@@ -6764,40 +6784,59 @@ section.welcome {
     padding: 8px 0;
     font: 400 16px/16px "Open Sans"; } }
 @media screen and (min-width: 767px) {
-  .submit {
+  .contact .submit {
     width: 180px;
     padding: 10px 0;
     font: 700 18px/18px "Open Sans"; }
-
-  .contact-form li {
+  .contact .contact-form li {
     padding: 15px; }
-    .contact-form li:nth-child(1), .contact-form li:nth-child(2) {
+    .contact .contact-form li:nth-child(1), .contact .contact-form li:nth-child(2) {
       flex-basis: 50%; } }
 @media screen and (min-width: 1023px) {
-  .submit {
-    width: 200px;
-    padding: 15px 0;
-    font: 700 20px/20px "Open Sans"; }
-
-  .contact-info {
+  .contact form.contact-form {
+    flex-basis: 50%;
+    padding: 10px; }
+    .contact form.contact-form li {
+      padding: 20px 15px; }
+      .contact form.contact-form li textarea, .contact form.contact-form li input {
+        padding: 15px; }
+    .contact form.contact-form .submit {
+      width: 200px;
+      padding: 15px 0;
+      font: 700 20px/20px "Open Sans"; }
+  .contact .contact-info {
     flex-basis: 50%; }
-
-  .contact-form {
-    flex-basis: 50%; } }
+  .contact .wrapper {
+    max-width: 1170px;
+    margin: auto; } }
 .about {
   padding: 20px 0 50px 0; }
   .about .container-about {
+    max-width: 1170px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     .about .container-about .item-about {
       flex-basis: 90%; }
+    .about .container-about h3 {
+      margin-top: 0;
+      padding: 20px 0;
+      color: #504f50;
+      font: 700 17px/20px "Open Sans";
+      text-transform: uppercase; }
+      .about .container-about h3::after {
+        content: " ";
+        display: block;
+        width: 100px;
+        margin-top: 10px;
+        height: 2px;
+        background-color: #39c9da; }
     .about .container-about p {
       padding: 10px 0; }
 
 @media screen and (min-width: 1023px) {
   .about .container-about {
-    max-width: 1170px;
     align-items: flex-end; }
     .about .container-about .item-about {
       flex-basis: 47%;

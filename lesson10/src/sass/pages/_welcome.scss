@@ -61,6 +61,7 @@ section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
     .container-welcome {
       max-width: 1170px;
+      margin: auto;
       display: flex;
       align-items: center;
       .item-welcome {
@@ -68,6 +69,7 @@ section.welcome {
         padding: 100px 5px;
         h2 {
           font: 700 33px/45px "Open Sans";
+          padding-bottom: 20px;
         }
       }
     }
