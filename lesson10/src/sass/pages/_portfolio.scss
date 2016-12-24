@@ -26,13 +26,16 @@
 
       .project-image {
         max-width: 370px;
-        height: auto;
+        height: 221px;
         text-align: center;
       }
+      &:hover .hover-container {
+        display: block;
+      }
+
       .portfolio-projects-footer {
         background-color: white;
-        font: 700 14px/60px "Open Sans";
-        //vertical-align: middle;
+        font: 700 14px/30px "Open Sans";
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,11 +46,41 @@
       }
     }
   }
+  .hover-container {
+    display: none;
+    position: relative;
+    top: -222px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 222px;
+    background-color: rgba(0, 0, 0, 0.7);
+    .container-button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
+
 @media screen and ($medium) {
   .portfolio {
     ul li {
       width: 370px;
+    }
+    .portfolio-projects-footer {
+      font: 700 14px/45px "Open Sans";
+    }
+    .project-image {
+      height: 392px;
+    }
+    .hover-container {
+      position: relative;
+      top: -392px;
+      height: 392px;
     }
   }
 }
@@ -57,5 +90,9 @@
     ul {
       max-width: 1170px;
     }
+    .portfolio-projects-footer {
+      font: 700 14px/60px "Open Sans";
+    }
   }
 }
+

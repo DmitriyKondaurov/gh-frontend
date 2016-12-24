@@ -6466,6 +6466,13 @@ header {
     text-decoration: none;
     color: #000; }
 
+.hover-button {
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 10px 15px;
+  color: #fff;
+  font: 400 16px/50px "Open Sans"; }
+
 @media screen and (min-width: 567px) {
   .button {
     width: 160px;
@@ -6480,7 +6487,11 @@ header {
   .button {
     width: 200px;
     padding: 15px 0;
-    font: 700 20px/20px "Open Sans"; } }
+    font: 700 20px/20px "Open Sans"; }
+
+  .hover-button {
+    padding: 15px 30px;
+    font: 700 20px/50px "Open Sans"; } }
 section.welcome {
   background: url(../img/bg_wellcome.png) top no-repeat;
   overflow: hidden; }
@@ -6559,24 +6570,52 @@ section.welcome {
       margin: 4px; }
       .portfolio ul li .project-image {
         max-width: 370px;
-        height: auto;
+        height: 221px;
         text-align: center; }
+      .portfolio ul li:hover .hover-container {
+        display: block; }
       .portfolio ul li .portfolio-projects-footer {
         background-color: white;
-        font: 700 14px/60px "Open Sans";
+        font: 700 14px/30px "Open Sans";
         display: flex;
         justify-content: space-between;
         align-items: center; }
         .portfolio ul li .portfolio-projects-footer span {
           display: block;
           padding: 10px; }
+  .portfolio .hover-container {
+    display: none;
+    position: relative;
+    top: -222px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 222px;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .portfolio .hover-container .container-button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 @media screen and (min-width: 767px) {
   .portfolio ul li {
-    width: 370px; } }
+    width: 370px; }
+  .portfolio .portfolio-projects-footer {
+    font: 700 14px/45px "Open Sans"; }
+  .portfolio .project-image {
+    height: 392px; }
+  .portfolio .hover-container {
+    position: relative;
+    top: -392px;
+    height: 392px; } }
 @media screen and (min-width: 1023px) {
   .portfolio ul {
-    max-width: 1170px; } }
+    max-width: 1170px; }
+  .portfolio .portfolio-projects-footer {
+    font: 700 14px/60px "Open Sans"; } }
 .services ul {
   text-align: center; }
   .services ul .icon {
