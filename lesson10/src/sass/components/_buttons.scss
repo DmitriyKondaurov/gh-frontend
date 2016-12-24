@@ -1,7 +1,6 @@
 .button {
   width: 140px;
   display: block;
-  margin: 25px auto 0;
   padding: 5px 0;
   border: 2px solid $main-color;
   border-radius: 3px;
@@ -20,7 +19,6 @@
 @media screen and ($small) {
   .button {
     width: 160px;
-    margin: 25px auto 0;
     padding: 8px 0;
     font: 400 16px/16px "Open Sans";
   }
@@ -28,7 +26,6 @@
 @media screen and ($medium) {
   .button {
     width: 180px;
-    margin: 25px auto 0;
     padding: 10px 0;
     font: 700 18px/18px "Open Sans";
   }
@@ -37,7 +34,6 @@
 @media screen and ($large) {
   .button {
     width: 200px;
-    margin: 25px auto 0;
     padding: 15px 0;
     font: 700 20px/20px "Open Sans";
   }

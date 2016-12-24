@@ -15,7 +15,7 @@ header {
   h1.logo {
     margin: 0 auto;
     width: 40%;
-    padding: 20px 10% 0 10%;
+    padding: 20px 0 0 10%;
     color: $main-color;
     font: 400 20px/20px "Open Sans";
     span {
@@ -36,7 +36,7 @@ header {
     h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 20px 10% 0 10%;
+      padding: 20px 0 0 10%;
       font: 400 24px/28px "Open Sans";
     }
   }
@@ -46,31 +46,31 @@ header {
   header {
     padding: 1% 0;
     nav {
-      width: 60%;
+      width: 70%;
       padding-right: 1%;
     }
     h1.logo {
       margin: 2% auto 0 auto;
-      width: 40%;
-      padding: 20px 10% 0 10%;
+      width: 30%;
+      padding: 20px 0 0 10%;
       font: 700 26px/30px "Open Sans";
     }
   }
 }
 
 @media screen and ($large) {
-
   header {
     padding: 0;
     max-width: 1170px;
+    margin: auto;
     nav {
-      width: 60%;
+      width: 70%;
       padding-right: 20px;
     }
     h1.logo {
       margin: 0 auto;
-      width: 40%;
-      padding: 30px 10% 0 10%;
+      width: 30%;
+      padding: 30px 0 0 10%;
       font: 700 30px/30px "Open Sans";
     }
   }

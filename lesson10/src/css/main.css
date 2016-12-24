@@ -6211,14 +6211,8 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #576671;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s; }
+  color: #bebebe;
+  font: 400 17px/24px "Open Sans"; }
 
 a {
   text-decoration: none; }
@@ -6230,20 +6224,53 @@ ul, ol {
 img {
   max-width: 100%; }
 
-.section-caption {
+div.section-caption {
   text-align: center; }
-  .section-caption h2 {
-    margin: 20px 0 0 0;
-    padding: 0;
+  div.section-caption h2 {
+    margin: auto;
+    padding: 10px 0 0 0;
     border: 0;
-    vertical-align: baseline;
-    font: 200 40px/58px "Raleway", sans-serif; }
-  .section-caption .line {
-    height: 1px;
-    width: 30px;
-    margin: 0 auto;
-    background: #17daa3; }
+    text-transform: uppercase;
+    color: #504f50;
+    font: 700 20px/28px "Open Sans"; }
+  div.section-caption p {
+    margin: auto;
+    padding: 10px 0 20px 0;
+    font: 400 17px/20px "Open Sans"; }
 
+@media screen and (min-width: 567px) {
+  body {
+    font: 400 16px/22px "Open Sans"; }
+
+  div.section-caption h2 {
+    padding: 20px 0 0 0;
+    font: 700 20px/32px "Open Sans"; }
+  div.section-caption p {
+    width: 85%;
+    padding: 10px 0 20px 0;
+    font: 400 16px/20px "Open Sans"; } }
+@media screen and (min-width: 767px) {
+  body {
+    font: 400 15px/21px "Open Sans"; }
+
+  div.section-caption h2 {
+    padding: 30px 0 0 0;
+    font: 700 22px/38px "Open Sans"; }
+  div.section-caption p {
+    width: 75%;
+    padding: 10px 0 20px 0;
+    font: 400 15px/20px "Open Sans"; } }
+@media screen and (min-width: 1023px) {
+  body {
+    font: 400 14px/20px "Open Sans"; }
+
+  div.section-caption h2 {
+    padding: 35px 0 0 0;
+    font: 700 20px/45px "Open Sans"; }
+  div.section-caption p {
+    width: 485px;
+    padding: 10px 0 20px 0;
+    font: 400 14px/20px "Open Sans"; } }
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../fonts/Proxima Nova Regular.eot");
@@ -6375,7 +6402,7 @@ header {
   header h1.logo {
     margin: 0 auto;
     width: 40%;
-    padding: 20px 10% 0 10%;
+    padding: 20px 0 0 10%;
     color: #39c9da;
     font: 400 20px/20px "Open Sans"; }
     header h1.logo span {
@@ -6391,30 +6418,31 @@ header {
     header h1.logo {
       margin: 0 auto;
       width: 40%;
-      padding: 20px 10% 0 10%;
+      padding: 20px 0 0 10%;
       font: 400 24px/28px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   header {
     padding: 1% 0; }
     header nav {
-      width: 60%;
+      width: 70%;
       padding-right: 1%; }
     header h1.logo {
       margin: 2% auto 0 auto;
-      width: 40%;
-      padding: 20px 10% 0 10%;
+      width: 30%;
+      padding: 20px 0 0 10%;
       font: 700 26px/30px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   header {
     padding: 0;
-    max-width: 1170px; }
+    max-width: 1170px;
+    margin: auto; }
     header nav {
-      width: 60%;
+      width: 70%;
       padding-right: 20px; }
     header h1.logo {
       margin: 0 auto;
-      width: 40%;
-      padding: 30px 10% 0 10%;
+      width: 30%;
+      padding: 30px 0 0 10%;
       font: 700 30px/30px "Open Sans"; } }
 @media screen and (min-width: 567px) {
   footer ul li {
@@ -6423,7 +6451,6 @@ header {
 .button {
   width: 140px;
   display: block;
-  margin: 25px auto 0;
   padding: 5px 0;
   border: 2px solid #39c9da;
   border-radius: 3px;
@@ -6440,20 +6467,17 @@ header {
 @media screen and (min-width: 567px) {
   .button {
     width: 160px;
-    margin: 25px auto 0;
     padding: 8px 0;
     font: 400 16px/16px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   .button {
     width: 180px;
-    margin: 25px auto 0;
     padding: 10px 0;
     font: 700 18px/18px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   .button {
     width: 200px;
-    margin: 25px auto 0;
-    padding: 20px 40px;
+    padding: 15px 0;
     font: 700 20px/20px "Open Sans"; } }
 section.welcome {
   background: url(../img/bg_wellcome.png) top no-repeat;
@@ -6468,6 +6492,8 @@ section.welcome {
       color: white;
       text-align: center;
       text-transform: uppercase; }
+    section.welcome .container .item .button {
+      margin: auto; }
 
 @media screen and (min-width: 567px) {
   section.welcome {
@@ -6501,7 +6527,7 @@ section.welcome {
       display: flex;
       align-items: center; }
       section.welcome .container .item {
-        width: 55%;
+        width: 50%;
         padding: 100px 5px; }
         section.welcome .container .item h2 {
           font: 700 33px/45px "Open Sans"; } }
@@ -6671,78 +6697,32 @@ section.feedback {
     text-align: center;
     color: white; }
 
-.about {
-  display: flex; }
-  .about ul {
-    text-align: center; }
-  .about i {
-    width: 100px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: middle;
-    border-radius: 50%;
-    background: #edeff1;
-    text-align: center;
-    font-size: 60px;
-    line-height: 100px;
-    color: #87949e; }
-  .about h3 {
-    margin: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    font: 24px/30px "Raleway";
-    color: #000; }
-  .about p {
-    margin: 0;
-    padding: 0 0 20px 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    font-size: 16px; }
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .about .container .section-caption {
+    flex-basis: 90%; }
+  .about .container .item {
+    flex-basis: 90%; }
+  .about .container h3 {
+    color: #504f50;
+    font: 700 17px/20px "Open Sans";
+    text-transform: uppercase; }
+    .about .container h3::after {
+      content: " ";
+      display: block;
+      width: 20%;
+      padding: 10px;
+      border-bottom: 2px solid #39c9da; }
+  .about .container p {
+    padding: 10px 0; }
 
-.experience {
-  margin-top: 5%;
-  padding: 10% 0; }
-  .experience:nth-child(even) {
-    background: #f9f9fa; }
-  .experience:nth-child(odd) {
-    background: #fff; }
-  .experience h2 {
-    font: 200 28px/36px "Raleway";
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline; }
-  .experience p {
-    padding: 10px 0;
-    margin: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline; }
-
-@media screen and (min-width: 567px) {
-  .about-us h3 {
-    padding: 10px 0 10px; }
-  .about-us p {
-    padding-bottom: 10px; }
-
-  .experience h2 {
-    font: 200 40px/58px "Raleway"; } }
-@media screen and (min-width: 767px) {
-  .about-us h3 {
-    padding: 20px 0 20px; }
-  .about-us p {
-    padding-bottom: 0; }
-  .about-us a {
-    margin: 100px auto 0; }
-
-  .experience {
-    padding: 75px 0 40px; }
-    .experience h2 {
-      font: 200 60px/96px "Raleway"; }
-    .experience p {
-      padding: 50px 0; } }
+@media screen and (min-width: 1023px) {
+  .about .container {
+    max-width: 1170px;
+    align-items: flex-end; }
+    .about .container h3 {
+      font: 700 14px/20px "Open Sans"; }
+    .about .container .item {
+      flex-basis: 47%; } }
