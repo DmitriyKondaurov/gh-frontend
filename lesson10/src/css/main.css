@@ -6697,84 +6697,93 @@ section.welcome {
     width: 23%; }
     .services li h3 {
       font: 700 20px/45px "Open Sans"; } }
-.team .team-members {
-  text-align: center; }
-.team .team-member {
-  display: inline-block;
-  height: 320px;
-  overflow: hidden; }
-  .team .team-member:hover .img-description {
-    visibility: visible;
-    opacity: 0.8; }
-.team .img-description {
-  position: relative;
-  top: -318px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(45, 221, 172, 0.5);
-  color: #fff;
-  width: 100%;
-  height: 320px;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  padding-top: 50%;
-  transition: all 0.5s;
-  cursor: pointer; }
-.team img {
-  width: 100%;
-  display: block;
-  position: inherit; }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  justify-content: center;
+  padding: 45px 0 50px 0;
+  background-color: #f4f4f4; }
+  .contact .contact-info h3 {
+    margin-top: 0;
+    padding: 20px 30px;
+    color: #504f50;
+    font: 700 17px/20px "Open Sans";
+    text-transform: uppercase; }
+    .contact .contact-info h3::after {
+      content: " ";
+      display: block;
+      width: 100px;
+      margin-top: 10px;
+      height: 2px;
+      background-color: #39c9da; }
+  .contact .contact-info h4 {
+    padding: 20px 30px;
+    font-weight: 700;
+    color: #504f50; }
+  .contact .contact-info p {
+    padding: 0 30px; }
+  .contact .contact-form {
+    flex-basis: 90%; }
+    .contact .contact-form ul {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+      .contact .contact-form ul li {
+        padding: 5px;
+        flex-basis: 100%; }
+        .contact .contact-form ul li textarea {
+          resize: none;
+          width: 100%; }
+        .contact .contact-form ul li input {
+          width: 100%; }
+    .contact .contact-form .submit {
+      width: 140px;
+      float: right;
+      display: block;
+      padding: 5px 0;
+      margin-right: 15px;
+      border: 2px solid #39c9da;
+      border-radius: 3px;
+      background: #39c9da;
+      color: #fff;
+      text-align: center;
+      font: 400 15px/14px "Open Sans";
+      text-transform: uppercase; }
+      .contact .contact-form .submit:hover {
+        border-color: #000;
+        text-decoration: none;
+        color: #000; }
 
-.price .section-caption {
-  background-color: whitesmoke; }
-.price ul {
-  text-align: center;
-  background-color: whitesmoke; }
-  .price ul li {
-    background-color: white;
-    margin: 2%; }
-  .price ul h3 {
-    font-size: 40px;
-    line-height: 70px;
-    color: #17daa3;
-    font-weight: 200; }
-    .price ul h3 + div {
-      border-bottom: 1px solid #87949e; }
-
-.mapsec {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  line-height: 1.1;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 200; }
-  .mapsec p {
-    padding: 10px; }
-
-.last {
-  background: url(../img/last.jpg) no-repeat center center; }
-  .last a {
-    display: block;
-    width: 180px;
-    margin: 10% auto 10% auto;
+@media screen and (min-width: 567px) {
+  .submit {
+    width: 160px;
     padding: 8px 0;
-    background: #17daa3;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff; }
-  .last h2 {
-    font-size: 30px;
-    margin: 20% 0 20% 0;
-    padding: 20% 0 20% 0;
-    font-weight: 500;
-    line-height: 1.1;
-    text-align: center;
-    color: white; }
+    font: 400 16px/16px "Open Sans"; } }
+@media screen and (min-width: 767px) {
+  .submit {
+    width: 180px;
+    padding: 10px 0;
+    font: 700 18px/18px "Open Sans"; }
 
+  .contact-form li {
+    padding: 15px; }
+    .contact-form li:nth-child(1), .contact-form li:nth-child(2) {
+      flex-basis: 50%; } }
+@media screen and (min-width: 1023px) {
+  .submit {
+    width: 200px;
+    padding: 15px 0;
+    font: 700 20px/20px "Open Sans"; }
+
+  .contact-info {
+    flex-basis: 50%; }
+
+  .contact-form {
+    flex-basis: 50%; } }
 .about {
   padding: 20px 0 50px 0; }
   .about .container-about {

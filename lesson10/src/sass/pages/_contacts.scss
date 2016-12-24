@@ -1,23 +1,111 @@
-.last {
-  background: url(../img/last.jpg) no-repeat center center;
-  a {
-    display: block;
-    width: 180px;
-    margin: 10% auto 10% auto;
-    padding: 8px 0;
-    background: #17daa3;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  justify-content: center;
+  padding: 45px 0 50px 0;
+  background-color: #f4f4f4;
+
+  .contact-info {
+    h3 {
+      margin-top: 0;
+      padding: 20px 30px;
+      color: $dark-text;
+      font: 700 17px/20px "Open Sans";
+      text-transform: uppercase;
+      &::after {
+        content: " ";
+        display: block;
+        width: 100px;
+        margin-top: 10px;
+        height: 2px;
+        background-color: $main-color;
+      }
+    }
+    h4 {
+      padding: 20px 30px;
+      font-weight: 700;
+      color: $dark-text;
+    }
+    p {
+      padding: 0 30px;
+    }
   }
-  h2 {
-    font-size: 30px;
-    margin: 20% 0 20% 0;
-    padding: 20% 0 20% 0;
-    font-weight: 500;
-    line-height: 1.1;
-    text-align: center;
-    color: white;
+  .contact-form {
+    flex-basis: 90%;
+    ul {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        padding: 5px;
+        flex-basis: 100%;
+
+        textarea {
+          resize: none;
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+    }
+    .submit {
+      width: 140px;
+      float: right;
+      display: block;
+      padding: 5px 0;
+      margin-right: 15px;
+      border: 2px solid $main-color;
+      border-radius: 3px;
+      background: $main-color;
+      color: #fff;
+      text-align: center;
+      font: 400 15px/14px "Open Sans";
+      text-transform: uppercase;
+      &:hover {
+        border-color: #000;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and ($small) {
+  .submit  {
+    width: 160px;
+    padding: 8px 0;
+    font: 400 16px/16px "Open Sans";
+  }
+}
+@media screen and ($medium) {
+  .submit {
+    width: 180px;
+    padding: 10px 0;
+    font: 700 18px/18px "Open Sans";
+  }
+  .contact-form li {
+    padding: 15px;
+    &:nth-child(1), &:nth-child(2) {
+      flex-basis: 50%;
+    }
+  }
+}
+@media screen and ($large) {
+  .submit  {
+    width: 200px;
+    padding: 15px 0;
+    font: 700 20px/20px "Open Sans";
+  }
+  .contact-info {
+      flex-basis: 50%;
+    }
+  .contact-form {
+    flex-basis: 50%;
   }
 }
 
