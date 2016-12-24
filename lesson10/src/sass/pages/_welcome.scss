@@ -1,12 +1,12 @@
 section.welcome {
   background: url(../img/bg_wellcome.png) top no-repeat;
   overflow: hidden;
-  .container {
+  .container-welcome {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 5px;
-    .item {
+    .item-welcome {
       h2 {
         font: 400 24px/28px "Open Sans";
         color: white;
@@ -24,10 +24,10 @@ section.welcome {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden;
-    .container {
+    .container-welcome {
       display: flex;
       align-items: center;
-      .item {
+      .item-welcome {
         width: 80%;
         padding: 10px 5px;
         h2 {
@@ -42,10 +42,10 @@ section.welcome {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden;
-    .container {
+    .container-welcome {
       display: flex;
       align-items: center;
-      .item {
+      .item-welcome {
         width: 70%;
         padding: 100px 5px;
         h2 {
@@ -59,11 +59,11 @@ section.welcome {
 @media screen and ($large) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
-    .container {
+    .container-welcome {
       max-width: 1170px;
       display: flex;
       align-items: center;
-      .item {
+      .item-welcome {
         width: 50%;
         padding: 100px 5px;
         h2 {

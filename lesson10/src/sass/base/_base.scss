@@ -2,18 +2,6 @@ body {
   color: $light-text;
   font: 400 17px/24px "Open Sans";
 }
-h3 {
-  color: $dark-text;
-  font: 700 17px/20px "Open Sans";
-  text-transform: uppercase;
-  &::after {
-    content: " ";
-    display: block;
-    width: 20%;
-    padding: 10px;
-    border-bottom: 2px solid $main-color;
-  }
-}
 a {
   text-decoration: none;
 }
@@ -95,7 +83,5 @@ div.section-caption {
     }
 
   }
-  h3 {
-    font: 700 14px/20px "Open Sans";
-  }
+
 }

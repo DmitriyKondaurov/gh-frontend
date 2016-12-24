@@ -6214,17 +6214,6 @@ body {
   color: #bebebe;
   font: 400 17px/24px "Open Sans"; }
 
-h3 {
-  color: #504f50;
-  font: 700 17px/20px "Open Sans";
-  text-transform: uppercase; }
-  h3::after {
-    content: " ";
-    display: block;
-    width: 20%;
-    padding: 10px;
-    border-bottom: 2px solid #39c9da; }
-
 a {
   text-decoration: none; }
 
@@ -6286,10 +6275,7 @@ div.section-caption {
     div.section-caption p {
       max-width: 450px;
       padding: 10px 0 20px 0;
-      font: 400 14px/20px "Open Sans"; }
-
-  h3 {
-    font: 700 14px/20px "Open Sans"; } }
+      font: 400 14px/20px "Open Sans"; } }
 ul.topnav {
   list-style-type: none;
   float: right;
@@ -6452,7 +6438,7 @@ header {
   footer ul li {
     display: inline-block;
     padding: 0 10%; } }
-.button {
+a.button {
   width: 140px;
   display: block;
   padding: 5px 0;
@@ -6461,12 +6447,26 @@ header {
   background: #39c9da;
   color: #fff;
   text-align: center;
-  font: 400 14px/14px "Open Sans";
+  font: 400 15px/14px "Open Sans";
   text-transform: uppercase; }
-  .button:hover {
+  a.button:hover {
     border-color: #000;
     text-decoration: none;
     color: #000; }
+
+a.button-services-list {
+  width: 130px;
+  display: block;
+  padding: 10px 25px;
+  border-radius: 1px;
+  background: #504f50;
+  color: #fff;
+  text-align: center;
+  font: 400 14px/14px "Open Sans"; }
+  a.button-services-list:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #504f50; }
 
 .hover-button {
   border: 1px solid white;
@@ -6496,58 +6496,63 @@ header {
 
   .hover-button {
     padding: 15px 30px;
-    font: 700 20px/50px "Open Sans"; } }
+    font: 700 20px/50px "Open Sans"; }
+
+  a.button-services-list {
+    width: 140px;
+    padding: 10px 30px;
+    font: 400 14px/20px "Open Sans"; } }
 section.welcome {
   background: url(../img/bg_wellcome.png) top no-repeat;
   overflow: hidden; }
-  section.welcome .container {
+  section.welcome .container-welcome {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 5px; }
-    section.welcome .container .item h2 {
+    section.welcome .container-welcome .item-welcome h2 {
       font: 400 24px/28px "Open Sans";
       color: white;
       text-align: center;
       text-transform: uppercase; }
-    section.welcome .container .item .button {
+    section.welcome .container-welcome .item-welcome .button {
       margin: auto; }
 
 @media screen and (min-width: 567px) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden; }
-    section.welcome .container {
+    section.welcome .container-welcome {
       display: flex;
       align-items: center; }
-      section.welcome .container .item {
+      section.welcome .container-welcome .item-welcome {
         width: 80%;
         padding: 10px 5px; }
-        section.welcome .container .item h2 {
+        section.welcome .container-welcome .item-welcome h2 {
           font: 400 26px/34px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat;
     overflow: hidden; }
-    section.welcome .container {
+    section.welcome .container-welcome {
       display: flex;
       align-items: center; }
-      section.welcome .container .item {
+      section.welcome .container-welcome .item-welcome {
         width: 70%;
         padding: 100px 5px; }
-        section.welcome .container .item h2 {
+        section.welcome .container-welcome .item-welcome h2 {
           font: 700 30px/40px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   section.welcome {
     background: url(../img/bg_wellcome.png) top no-repeat; }
-    section.welcome .container {
+    section.welcome .container-welcome {
       max-width: 1170px;
       display: flex;
       align-items: center; }
-      section.welcome .container .item {
+      section.welcome .container-welcome .item-welcome {
         width: 50%;
         padding: 100px 5px; }
-        section.welcome .container .item h2 {
+        section.welcome .container-welcome .item-welcome h2 {
           font: 700 33px/45px "Open Sans"; } }
 .portfolio {
   display: flex;
@@ -6636,12 +6641,62 @@ section.welcome {
     height: 300px;
     box-sizing: border-box;
     display: flex;
+    padding: 20px 0;
+    margin: 10px;
     border: 1px solid #e2e2e2;
     background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
+    .services li i {
+      display: block;
+      color: #39c9da;
+      font-size: 33px;
+      line-height: 45px; }
+    .services li h3 {
+      margin-top: 0;
+      color: #504f50;
+      font: 700 17px/20px "Open Sans";
+      text-transform: uppercase; }
+      .services li h3::after {
+        content: " ";
+        display: block;
+        width: 74px;
+        height: 2px;
+        margin: auto;
+        background-color: #bebebe; }
+    .services li p {
+      padding: 0 20px;
+      text-align: center; }
+    .services li:hover {
+      color: white;
+      background-color: #39c9da; }
+      .services li:hover a.button-services-list {
+        background-color: #fff;
+        text-decoration: none;
+        color: #504f50; }
+      .services li:hover i {
+        color: white; }
+      .services li:hover h3 {
+        color: white; }
+        .services li:hover h3::after {
+          background-color: #504f50; }
 
+@media screen and (min-width: 567px) {
+  .services li {
+    width: 45%; }
+    .services li h3 {
+      font: 700 20px/45px "Open Sans"; } }
+@media screen and (min-width: 767px) {
+  .services li {
+    width: 45%; }
+    .services li h3 {
+      font: 700 20px/45px "Open Sans"; } }
+@media screen and (min-width: 1023px) {
+  .services li {
+    width: 23%; }
+    .services li h3 {
+      font: 700 20px/45px "Open Sans"; } }
 .team .team-members {
   text-align: center; }
 .team .team-member {
@@ -6722,19 +6777,19 @@ section.welcome {
 
 .about {
   padding: 20px 0 50px 0; }
-  .about .container {
+  .about .container-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .about .container .item {
+    .about .container-about .item-about {
       flex-basis: 90%; }
-    .about .container p {
+    .about .container-about p {
       padding: 10px 0; }
 
 @media screen and (min-width: 1023px) {
-  .about .container {
+  .about .container-about {
     max-width: 1170px;
     align-items: flex-end; }
-    .about .container .item {
+    .about .container-about .item-about {
       flex-basis: 47%;
       padding: 0 15px; } }

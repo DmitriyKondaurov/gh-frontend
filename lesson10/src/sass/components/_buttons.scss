@@ -1,4 +1,4 @@
-.button {
+a.button {
   width: 140px;
   display: block;
   padding: 5px 0;
@@ -7,12 +7,27 @@
   background: $main-color;
   color: #fff;
   text-align: center;
-  font: 400 14px/14px "Open Sans";
+  font: 400 15px/14px "Open Sans";
   text-transform: uppercase;
   &:hover {
     border-color: #000;
     text-decoration: none;
     color: #000;
+  }
+}
+a.button-services-list {
+  width: 130px;
+  display: block;
+  padding: 10px 25px;
+  border-radius: 1px;
+  background: $dark-text;
+  color: #fff;
+  text-align: center;
+  font: 400 14px/14px "Open Sans";
+  &:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: $dark-text;
   }
 }
 
@@ -52,5 +67,10 @@
   .hover-button {
     padding: 15px 30px;
     font: 700 20px/50px "Open Sans";
+  }
+  a.button-services-list {
+    width: 140px;
+    padding: 10px 30px;
+    font: 400 14px/20px "Open Sans";
   }
 }

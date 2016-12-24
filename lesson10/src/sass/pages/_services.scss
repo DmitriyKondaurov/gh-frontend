@@ -16,10 +16,89 @@
     height: 300px;
     box-sizing: border-box;
     display: flex;
+    padding: 20px 0;
+    margin: 10px;
     border: 1px solid #e2e2e2;
     background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    i {
+      display: block;
+      color: $main-color;
+      font-size: 33px;
+      line-height: 45px;
+    }
+    h3 {
+      margin-top: 0;
+      color: $dark-text;
+      font: 700 17px/20px "Open Sans";
+      text-transform: uppercase;
+      &::after {
+        content: " ";
+        display: block;
+        width: 74px;
+        height: 2px;
+        margin: auto;
+        background-color: $light-text;
+      }
+    }
+    p {
+      padding: 0 20px;
+      text-align: center;
+    }
+    &:hover {
+      color: white;
+      background-color: $main-color;
+      a.button-services-list {
+        background-color: #fff;
+        text-decoration: none;
+        color: $dark-text;
+      }
+      i {
+        color: white;
+      }
+      h3 {
+        color: white;
+        &::after {
+          background-color: $dark-text;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($small) {
+  .services {
+
+    li {
+      width: 45%;
+      h3 {
+        font: 700 20px/45px "Open Sans";
+      }
+    }
+  }
+}
+@media screen and ($medium) {
+  .services {
+
+    li {
+      width: 45%;
+      h3 {
+        font: 700 20px/45px "Open Sans";
+      }
+    }
+  }
+}
+
+@media screen and ($large) {
+  .services {
+
+    li {
+      width: 23%;
+      h3 {
+        font: 700 20px/45px "Open Sans";
+      }
+    }
   }
 }

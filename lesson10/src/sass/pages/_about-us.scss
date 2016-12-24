@@ -1,10 +1,10 @@
 .about {
   padding: 20px 0 50px 0;
-  .container {
+  .container-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .item {
+    .item-about {
       flex-basis: 90%;
     }
 
@@ -15,11 +15,11 @@
 }
 
 @media screen and ($large) {
-  .about .container {
+  .about .container-about {
     max-width: 1170px;
     align-items: flex-end;
 
-    .item {
+    .item-about {
       flex-basis: 47%;
       padding: 0 15px;
     }
