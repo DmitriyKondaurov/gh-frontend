@@ -21,7 +21,11 @@
   border-radius: 1px;
   padding: 10px 15px;
   color: #fff;
-  font: 400 16px/50px "Open Sans";
+  font: 400 16px/0 "Open Sans";
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media screen and ($small) {

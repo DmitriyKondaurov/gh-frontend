@@ -6214,6 +6214,17 @@ body {
   color: #bebebe;
   font: 400 17px/24px "Open Sans"; }
 
+h3 {
+  color: #504f50;
+  font: 700 17px/20px "Open Sans";
+  text-transform: uppercase; }
+  h3::after {
+    content: " ";
+    display: block;
+    width: 20%;
+    padding: 10px;
+    border-bottom: 2px solid #39c9da; }
+
 a {
   text-decoration: none; }
 
@@ -6275,7 +6286,10 @@ div.section-caption {
     div.section-caption p {
       max-width: 450px;
       padding: 10px 0 20px 0;
-      font: 400 14px/20px "Open Sans"; } }
+      font: 400 14px/20px "Open Sans"; }
+
+  h3 {
+    font: 700 14px/20px "Open Sans"; } }
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../fonts/Proxima Nova Regular.eot");
@@ -6407,7 +6421,7 @@ header {
     margin: 0 auto;
     float: left;
     width: 40%;
-    padding: 10px 0 0 10%;
+    padding: 20px 0 0 10%;
     color: #39c9da;
     font: 400 20px/20px "Open Sans"; }
     header h1.logo span {
@@ -6421,8 +6435,8 @@ header {
       padding-right: 1%; }
     header h1.logo {
       margin: 0 auto;
-      width: 40%;
-      padding: 10px 0 0 10%;
+      width: 25%;
+      padding: 20px 0 0 10%;
       font: 400 24px/28px "Open Sans"; } }
 @media screen and (min-width: 767px) {
   header {
@@ -6431,8 +6445,8 @@ header {
       padding-right: 1%; }
     header h1.logo {
       margin: 2% auto 0 auto;
-      width: 30%;
-      padding: 15px 0 0 10%;
+      width: 25%;
+      padding: 20px 0 0 5%;
       font: 700 26px/30px "Open Sans"; } }
 @media screen and (min-width: 1023px) {
   header {
@@ -6444,7 +6458,7 @@ header {
     header h1.logo {
       margin: 0 auto 0 0;
       width: 25%;
-      padding: 20px 0 0 10%;
+      padding: 30px 0 0 5%;
       font: 700 30px/30px "Open Sans"; } }
 @media screen and (min-width: 567px) {
   footer ul li {
@@ -6471,7 +6485,10 @@ header {
   border-radius: 1px;
   padding: 10px 15px;
   color: #fff;
-  font: 400 16px/50px "Open Sans"; }
+  font: 400 16px/0 "Open Sans"; }
+  .hover-button:hover {
+    color: white;
+    text-decoration: none; }
 
 @media screen and (min-width: 567px) {
   .button {
@@ -6566,14 +6583,16 @@ section.welcome {
       -ms-flex: auto;
       flex: auto;
       width: 200px;
-      max-width: 370px;
+      max-width: 355px;
       margin: 4px; }
       .portfolio ul li .project-image {
-        max-width: 370px;
-        height: 221px;
+        max-width: 355px;
         text-align: center; }
       .portfolio ul li:hover .hover-container {
         display: block; }
+      .portfolio ul li:hover img {
+        display: block;
+        opacity: 0.5; }
       .portfolio ul li .portfolio-projects-footer {
         background-color: white;
         font: 700 14px/30px "Open Sans";
@@ -6582,35 +6601,30 @@ section.welcome {
         align-items: center; }
         .portfolio ul li .portfolio-projects-footer span {
           display: block;
-          padding: 10px; }
+          padding: 5px; }
   .portfolio .hover-container {
     display: none;
     position: relative;
-    top: -222px;
+    top: -110px;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 222px;
-    background-color: rgba(0, 0, 0, 0.7); }
+    width: 100%; }
     .portfolio .hover-container .container-button {
       width: 100%;
-      height: 100%;
+      height: 0;
       display: flex;
       justify-content: center;
       align-items: center; }
 
 @media screen and (min-width: 767px) {
   .portfolio ul li {
-    width: 370px; }
+    width: 355px; }
   .portfolio .portfolio-projects-footer {
     font: 700 14px/45px "Open Sans"; }
-  .portfolio .project-image {
-    height: 392px; }
   .portfolio .hover-container {
     position: relative;
-    top: -392px;
-    height: 392px; } }
+    top: -150px; } }
 @media screen and (min-width: 1023px) {
   .portfolio ul {
     max-width: 1170px; }
@@ -6748,16 +6762,6 @@ section.welcome {
     justify-content: center; }
     .about .container .item {
       flex-basis: 90%; }
-    .about .container h3 {
-      color: #504f50;
-      font: 700 17px/20px "Open Sans";
-      text-transform: uppercase; }
-      .about .container h3::after {
-        content: " ";
-        display: block;
-        width: 20%;
-        padding: 10px;
-        border-bottom: 2px solid #39c9da; }
     .about .container p {
       padding: 10px 0; }
 
@@ -6765,8 +6769,6 @@ section.welcome {
   .about .container {
     max-width: 1170px;
     align-items: flex-end; }
-    .about .container h3 {
-      font: 700 14px/20px "Open Sans"; }
     .about .container .item {
       flex-basis: 47%;
       padding: 0 15px; } }

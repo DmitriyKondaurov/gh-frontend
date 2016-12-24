@@ -7,18 +7,7 @@
     .item {
       flex-basis: 90%;
     }
-    h3 {
-      color: $dark-text;
-      font: 700 17px/20px "Open Sans";
-      text-transform: uppercase;
-      &::after {
-        content: " ";
-        display: block;
-        width: 20%;
-        padding: 10px;
-        border-bottom: 2px solid $main-color;
-      }
-    }
+
     p {
       padding: 10px 0;
     }
@@ -29,9 +18,7 @@
   .about .container {
     max-width: 1170px;
     align-items: flex-end;
-    h3 {
-      font: 700 14px/20px "Open Sans";
-    }
+
     .item {
       flex-basis: 47%;
       padding: 0 15px;

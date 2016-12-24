@@ -21,16 +21,19 @@
       -ms-flex: auto;
       flex: auto;
       width: 200px;
-      max-width: 370px;
+      max-width: 355px;
       margin: 4px;
 
       .project-image {
-        max-width: 370px;
-        height: 221px;
+        max-width: 355px;
         text-align: center;
       }
       &:hover .hover-container {
         display: block;
+      }
+      &:hover img {
+        display: block;
+        opacity:0.5;
       }
 
       .portfolio-projects-footer {
@@ -41,7 +44,7 @@
         align-items: center;
         span {
           display: block;
-          padding: 10px;
+          padding: 5px;
         }
       }
     }
@@ -49,16 +52,14 @@
   .hover-container {
     display: none;
     position: relative;
-    top: -222px;
+    top: -110px;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 222px;
-    background-color: rgba(0, 0, 0, 0.7);
     .container-button {
       width: 100%;
-      height: 100%;
+      height: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -69,18 +70,14 @@
 @media screen and ($medium) {
   .portfolio {
     ul li {
-      width: 370px;
+      width: 355px;
     }
     .portfolio-projects-footer {
       font: 700 14px/45px "Open Sans";
     }
-    .project-image {
-      height: 392px;
-    }
     .hover-container {
       position: relative;
-      top: -392px;
-      height: 392px;
+      top: -150px;
     }
   }
 }
