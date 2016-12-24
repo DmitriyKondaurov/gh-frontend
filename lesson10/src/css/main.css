@@ -6290,18 +6290,6 @@ div.section-caption {
 
   h3 {
     font: 700 14px/20px "Open Sans"; } }
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/Proxima Nova Regular.eot");
-  src: local("Proxima Nova"), url("../fonts/Proxima Nova Regular.woff") format("woff"), url("../fonts/Proxima Nova Regular.ttf") format("truetype"), url("../fonts/Proxima Nova Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/Proxima Nova Bold.eot");
-  src: local("Proxima Nova"), url("../fonts/Proxima Nova Bold.woff") format("woff"), url("../fonts/Proxima Nova Bold.ttf") format("truetype"), url("../fonts/Proxima Nova Bold.svg") format("svg");
-  font-weight: bold;
-  font-style: normal; }
 ul.topnav {
   list-style-type: none;
   float: right;
@@ -6576,6 +6564,7 @@ section.welcome {
     flex-flow: row wrap;
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
     .portfolio ul li {
@@ -6630,52 +6619,29 @@ section.welcome {
     max-width: 1170px; }
   .portfolio .portfolio-projects-footer {
     font: 700 14px/60px "Open Sans"; } }
-.services ul {
-  text-align: center; }
-  .services ul .icon {
-    float: left;
-    width: 20%; }
-    .services ul .icon i {
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      padding-top: 10px;
-      border-radius: 50%;
-      background: #fff;
-      color: #17daa3;
-      text-align: center; }
-  .services ul .service-data {
-    overflow: hidden;
-    text-align: left; }
-    .services ul .service-data h2 {
-      margin-top: 0;
-      font: 200 28px/36px "Raleway", sans-serif; }
-  .services ul p {
-    padding-bottom: 25px;
-    font-size: 16px; }
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 45px 0 50px 0;
+  background-color: #fafafa; }
+  .services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px; }
+  .services li {
+    width: 275px;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
 
-@media screen and (min-width: 567px) {
-  .services .icon i {
-    width: 83px;
-    height: 83px;
-    font-size: 40px;
-    padding-top: 25px; }
-  .services .service-data {
-    overflow: hidden;
-    text-align: left; }
-    .services .service-data h2 {
-      margin-top: 0;
-      font: 200 40px/58px "Raleway", sans-serif; } }
-@media screen and (min-width: 767px) {
-  .services .service-data {
-    overflow: hidden;
-    text-align: left; }
-    .services .service-data h2 {
-      margin-top: 0;
-      font: 200 60px/93px "Raleway", sans-serif; }
-  .services p {
-    padding-bottom: 60px;
-    font-size: 26px; } }
 .team .team-members {
   text-align: center; }
 .team .team-member {
