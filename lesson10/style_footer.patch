@@ -1,0 +1,568 @@
+Index: lesson10/src/sass/pages/_welcome.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/sass/pages/_welcome.scss	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/sass/pages/_welcome.scss	(revision )
+@@ -61,6 +61,7 @@
+     background: url(../img/bg_wellcome.png) top no-repeat;
+     .container-welcome {
+       max-width: 1170px;
++      margin: auto;
+       display: flex;
+       align-items: center;
+       .item-welcome {
+@@ -68,6 +69,7 @@
+         padding: 100px 5px;
+         h2 {
+           font: 700 33px/45px "Open Sans";
++          padding-bottom: 20px;
+         }
+       }
+     }
+Index: lesson10/src/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/index.html	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/index.html	(revision )
+@@ -192,27 +192,29 @@
+             </ul>
+         </section>
+         <section class="contact" id="contact">
+-            <div class="section-caption">
+-                <h2>CONTACT US</h2>
+-                <p>
+-                    Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+-                </p>
+-            </div>
+-            <div class="contact-info">
+-                <h3>CONTACT INFO</h3>
+-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+-                <h4>Address</h4>
+-                <p>1931 Dawson Drive,<br>15th Avenue,<br>Little Rock,<br>AR 72211</p>
+-            </div>
+-            <form class="contact-form" action="#">
+-                <ul>
+-                    <li><input type="text" name="name" placeholder="Name..."></li>
+-                    <li><input type="email" name="email" placeholder="E-Mail..."></li>
+-                    <li><input type="text" name="subject" placeholder="Subject..."></li>
+-                    <li><textarea name="message" placeholder="Message..." rows="5"></textarea></li>
+-                </ul>
+-                <input class="submit" type="submit" value="SUBMIT">
+-            </form>
++            <div class="wrapper">
++                <div class="section-caption">
++                    <h2>CONTACT US</h2>
++                    <p>
++                        Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
++                    </p>
++                </div>
++                <div class="contact-info">
++                    <h3>CONTACT INFO</h3>
++                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero accumsan et.Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
++                    <h4>Address</h4>
++                    <p>1931 Dawson Drive,<br>15th Avenue,<br>Little Rock,<br>AR 72211</p>
++                </div>
++                <form class="contact-form" action="#">
++                    <ul>
++                        <li><input type="text" name="name" placeholder="Name..."></li>
++                        <li><input type="email" name="email" placeholder="E-Mail..."></li>
++                        <li><input type="text" name="subject" placeholder="Subject..."></li>
++                        <li><textarea name="message" placeholder="Message..." rows="5"></textarea></li>
++                    </ul>
++                    <input class="submit" type="submit" value="SUBMIT">
++                </form>
++            </div>
+         </section>
+         <footer>
+             <div>
+Index: lesson10/src/sass/pages/_about-us.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/sass/pages/_about-us.scss	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/sass/pages/_about-us.scss	(revision )
+@@ -1,13 +1,29 @@
+ .about {
+   padding: 20px 0 50px 0;
+   .container-about {
++    max-width: 1170px;
++    margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     .item-about {
+       flex-basis: 90%;
+     }
+-
++    h3 {
++      margin-top: 0;
++      padding: 20px 0;
++      color: $dark-text;
++      font: 700 17px/20px "Open Sans";
++      text-transform: uppercase;
++      &::after {
++        content: " ";
++        display: block;
++        width: 100px;
++        margin-top: 10px;
++        height: 2px;
++        background-color: $main-color;
++      }
++    }
+     p {
+       padding: 10px 0;
+     }
+@@ -16,7 +32,6 @@
+ 
+ @media screen and ($large) {
+   .about .container-about {
+-    max-width: 1170px;
+     align-items: flex-end;
+ 
+     .item-about {
+Index: lesson10/src/css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/css/main.css	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/css/main.css	(revision )
+@@ -6434,10 +6434,26 @@
+       width: 25%;
+       padding: 30px 0 0 5%;
+       font: 700 30px/30px "Open Sans"; } }
++footer {
++  height: 30px;
++  display: flex;
++  justify-content: center;
++  align-items: center;
++  background-color: #39c9da;
++  color: white; }
++  footer div {
++    max-width: 1170px;
++    font: 400 14px/14px "Open Sans"; }
++
+ @media screen and (min-width: 567px) {
+-  footer ul li {
+-    display: inline-block;
+-    padding: 0 10%; } }
++  footer {
++    height: 35px; } }
++@media screen and (min-width: 767px) {
++  footer {
++    height: 40px; } }
++@media screen and (min-width: 1023px) {
++  footer {
++    height: 50px; } }
+ a.button {
+   width: 140px;
+   display: block;
+@@ -6479,17 +6495,17 @@
+     text-decoration: none; }
+ 
+ @media screen and (min-width: 567px) {
+-  .button {
++  a.button {
+     width: 160px;
+     padding: 8px 0;
+     font: 400 16px/16px "Open Sans"; } }
+ @media screen and (min-width: 767px) {
+-  .button {
++  a.button {
+     width: 180px;
+     padding: 10px 0;
+     font: 700 18px/18px "Open Sans"; } }
+ @media screen and (min-width: 1023px) {
+-  .button {
++  a.button {
+     width: 200px;
+     padding: 15px 0;
+     font: 700 20px/20px "Open Sans"; }
+@@ -6547,13 +6563,15 @@
+     background: url(../img/bg_wellcome.png) top no-repeat; }
+     section.welcome .container-welcome {
+       max-width: 1170px;
++      margin: auto;
+       display: flex;
+       align-items: center; }
+       section.welcome .container-welcome .item-welcome {
+         width: 50%;
+         padding: 100px 5px; }
+         section.welcome .container-welcome .item-welcome h2 {
+-          font: 700 33px/45px "Open Sans"; } }
++          font: 700 33px/45px "Open Sans";
++          padding-bottom: 20px; } }
+ .portfolio {
+   display: flex;
+   flex-wrap: wrap;
+@@ -6698,48 +6716,49 @@
+     .services li h3 {
+       font: 700 20px/45px "Open Sans"; } }
+ .contact {
+-  display: flex;
+-  flex-wrap: wrap;
+-  max-width: 1170px;
+-  justify-content: center;
+-  padding: 45px 0 50px 0;
+-  background-color: #f4f4f4; }
+-  .contact .contact-info h3 {
+-    margin-top: 0;
+-    padding: 20px 30px;
+-    color: #504f50;
+-    font: 700 17px/20px "Open Sans";
+-    text-transform: uppercase; }
+-    .contact .contact-info h3::after {
+-      content: " ";
+-      display: block;
+-      width: 100px;
+-      margin-top: 10px;
+-      height: 2px;
+-      background-color: #39c9da; }
+-  .contact .contact-info h4 {
+-    padding: 20px 30px;
+-    font-weight: 700;
+-    color: #504f50; }
+-  .contact .contact-info p {
+-    padding: 0 30px; }
++  background-color: #f4f4f4; }
++  .contact .wrapper {
++    display: flex;
++    flex-wrap: wrap;
++    justify-content: center;
++    padding: 45px 0 50px 0; }
++  .contact .contact-info {
++    max-width: 1170px; }
++    .contact .contact-info h3 {
++      margin-top: 0;
++      padding: 20px 30px;
++      color: #504f50;
++      font: 700 17px/20px "Open Sans";
++      text-transform: uppercase; }
++      .contact .contact-info h3::after {
++        content: " ";
++        display: block;
++        width: 100px;
++        margin-top: 10px;
++        height: 2px;
++        background-color: #39c9da; }
++    .contact .contact-info h4 {
++      padding: 20px 30px;
++      font-weight: 700;
++      color: #504f50; }
++    .contact .contact-info p {
++      padding: 0 30px; }
+   .contact .contact-form {
+-    flex-basis: 90%; }
++    flex-basis: 90%;
++    max-width: 1170px; }
+     .contact .contact-form ul {
+       width: 100%;
+       display: flex;
+       padding: 0;
+       flex-wrap: wrap;
+-      justify-content: space-around;
+-      align-items: center; }
++      justify-content: flex-start; }
+       .contact .contact-form ul li {
+         padding: 5px;
+         flex-basis: 100%; }
+-        .contact .contact-form ul li textarea {
++        .contact .contact-form ul li textarea, .contact .contact-form ul li input {
+           resize: none;
+-          width: 100%; }
+-        .contact .contact-form ul li input {
+-          width: 100%; }
++          width: 100%;
++          border: none; }
+     .contact .contact-form .submit {
+       width: 140px;
+       float: right;
+@@ -6748,6 +6767,7 @@
+       margin-right: 15px;
+       border: 2px solid #39c9da;
+       border-radius: 3px;
++      outline: none;
+       background: #39c9da;
+       color: #fff;
+       text-align: center;
+@@ -6764,40 +6784,59 @@
+     padding: 8px 0;
+     font: 400 16px/16px "Open Sans"; } }
+ @media screen and (min-width: 767px) {
+-  .submit {
++  .contact .submit {
+     width: 180px;
+     padding: 10px 0;
+     font: 700 18px/18px "Open Sans"; }
+-
+-  .contact-form li {
++  .contact .contact-form li {
+     padding: 15px; }
+-    .contact-form li:nth-child(1), .contact-form li:nth-child(2) {
++    .contact .contact-form li:nth-child(1), .contact .contact-form li:nth-child(2) {
+       flex-basis: 50%; } }
+ @media screen and (min-width: 1023px) {
+-  .submit {
+-    width: 200px;
+-    padding: 15px 0;
+-    font: 700 20px/20px "Open Sans"; }
+-
+-  .contact-info {
++  .contact form.contact-form {
++    flex-basis: 50%;
++    padding: 10px; }
++    .contact form.contact-form li {
++      padding: 20px 15px; }
++      .contact form.contact-form li textarea, .contact form.contact-form li input {
++        padding: 15px; }
++    .contact form.contact-form .submit {
++      width: 200px;
++      padding: 15px 0;
++      font: 700 20px/20px "Open Sans"; }
++  .contact .contact-info {
+     flex-basis: 50%; }
+-
+-  .contact-form {
+-    flex-basis: 50%; } }
++  .contact .wrapper {
++    max-width: 1170px;
++    margin: auto; } }
+ .about {
+   padding: 20px 0 50px 0; }
+   .about .container-about {
++    max-width: 1170px;
++    margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center; }
+     .about .container-about .item-about {
+       flex-basis: 90%; }
++    .about .container-about h3 {
++      margin-top: 0;
++      padding: 20px 0;
++      color: #504f50;
++      font: 700 17px/20px "Open Sans";
++      text-transform: uppercase; }
++      .about .container-about h3::after {
++        content: " ";
++        display: block;
++        width: 100px;
++        margin-top: 10px;
++        height: 2px;
++        background-color: #39c9da; }
+     .about .container-about p {
+       padding: 10px 0; }
+ 
+ @media screen and (min-width: 1023px) {
+   .about .container-about {
+-    max-width: 1170px;
+     align-items: flex-end; }
+     .about .container-about .item-about {
+       flex-basis: 47%;
+Index: lesson10/src/sass/components/_buttons.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/sass/components/_buttons.scss	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/sass/components/_buttons.scss	(revision )
+@@ -44,14 +44,14 @@
+ }
+ 
+ @media screen and ($small) {
+-  .button {
++  a.button {
+     width: 160px;
+     padding: 8px 0;
+     font: 400 16px/16px "Open Sans";
+   }
+ }
+ @media screen and ($medium) {
+-  .button {
++  a.button {
+     width: 180px;
+     padding: 10px 0;
+     font: 700 18px/18px "Open Sans";
+@@ -59,7 +59,7 @@
+ }
+ 
+ @media screen and ($large) {
+-  .button {
++  a.button {
+     width: 200px;
+     padding: 15px 0;
+     font: 700 20px/20px "Open Sans";
+Index: lesson10/src/sass/layout/_footer.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/sass/layout/_footer.scss	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/sass/layout/_footer.scss	(revision )
+@@ -1,7 +1,30 @@
++footer {
++  height: 30px;
++  display: flex;
++  justify-content: center;
++  align-items: center;
++  background-color: $main-color;
++  color: white;
++  div {
++    max-width: 1170px;
++    font: 400 14px/14px "Open Sans";
++  }
++}
+ 
+-@media screen and (min-width: 567px) {
+-  footer ul li {
+-    display: inline-block;
+-    padding: 0 10%;
++
++@media screen and ($small) {
++  footer {
++    height: 35px;
++  }
++}
++@media screen and ($medium) {
++  footer {
++    height: 40px;
++  }
++}
++
++@media screen and ($large) {
++  footer {
++    height: 50px;
+   }
+ }
+\ No newline at end of file
+Index: lesson10/src/sass/pages/_contacts.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lesson10/src/sass/pages/_contacts.scss	(revision 6ca4d6f4dceec2cc1df3e5f1ac076c0508525c04)
++++ lesson10/src/sass/pages/_contacts.scss	(revision )
+@@ -1,12 +1,14 @@
+ .contact {
+-  display: flex;
+-  flex-wrap: wrap;
+-  max-width: 1170px;
+-  justify-content: center;
+-  padding: 45px 0 50px 0;
+-  background-color: #f4f4f4;
++  background-color: #f4f4f4;
++  .wrapper {
++    display: flex;
++    flex-wrap: wrap;
++    justify-content: center;
++    padding: 45px 0 50px 0;
++  }
+ 
+   .contact-info {
++    max-width: 1170px;
+     h3 {
+       margin-top: 0;
+       padding: 20px 30px;
+@@ -33,23 +35,21 @@
+   }
+   .contact-form {
+     flex-basis: 90%;
++    max-width: 1170px;
+     ul {
+       width: 100%;
+       display: flex;
+       padding: 0;
+       flex-wrap: wrap;
+-      justify-content: space-around;
+-      align-items: center;
++      justify-content: flex-start;
+       li {
+         padding: 5px;
+         flex-basis: 100%;
+ 
+-        textarea {
++        textarea, input {
+           resize: none;
+           width: 100%;
+-        }
+-        input {
+-          width: 100%;
++          border: none;
+         }
+       }
+     }
+@@ -61,6 +61,7 @@
+       margin-right: 15px;
+       border: 2px solid $main-color;
+       border-radius: 3px;
++      outline: none;
+       background: $main-color;
+       color: #fff;
+       text-align: center;
+@@ -83,29 +84,44 @@
+   }
+ }
+ @media screen and ($medium) {
+-  .submit {
+-    width: 180px;
+-    padding: 10px 0;
+-    font: 700 18px/18px "Open Sans";
+-  }
+-  .contact-form li {
+-    padding: 15px;
+-    &:nth-child(1), &:nth-child(2) {
+-      flex-basis: 50%;
++  .contact {
++    .submit {
++      width: 180px;
++      padding: 10px 0;
++      font: 700 18px/18px "Open Sans";
++    }
++    .contact-form li {
++      padding: 15px;
++      &:nth-child(1), &:nth-child(2) {
++        flex-basis: 50%;
++      }
+     }
+   }
+ }
+ @media screen and ($large) {
+-  .submit  {
+-    width: 200px;
+-    padding: 15px 0;
+-    font: 700 20px/20px "Open Sans";
+-  }
+-  .contact-info {
++  .contact {
++    form.contact-form {
++      flex-basis: 50%;
++      padding: 10px;
++      li {
++        padding: 20px 15px;
++        textarea, input {
++          padding: 15px;
++        }
++      }
++      .submit  {
++        width: 200px;
++        padding: 15px 0;
++        font: 700 20px/20px "Open Sans";
++      }
++    }
++    .contact-info {
+       flex-basis: 50%;
+     }
+-  .contact-form {
+-    flex-basis: 50%;
++    .wrapper {
++      max-width: 1170px;
++      margin: auto;
++    }
+   }
+ }
+ 
