@@ -1,14 +1,14 @@
 var gulp        = require('gulp'),
-    scss        = require('gulp-scss'),
+    sass        = require('gulp-sass'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     cssnano     = require('gulp-cssnano'),
     rename      = require('gulp-rename');
 del         = require('del');
 
-gulp.task('scss', function() {
-    return gulp.src('src/sass/*.scss')
-        .pipe(scss())
+gulp.task('sass', function() {
+    return gulp.src('src/sass/*.+(scss|sass)')
+        .pipe(sass())
         .pipe(gulp.dest('src/css'))
 });
 
@@ -30,7 +30,7 @@ gulp.task('css-libs', function() {
         .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('build', ['clean', 'scss', 'scripts'], function () {
+gulp.task('build', ['clean', 'sass', 'scripts'], function () {
 
     var buildCss = gulp.src([
         'src/css/main.css',
@@ -43,6 +43,9 @@ gulp.task('build', ['clean', 'scss', 'scripts'], function () {
 
     var buildJs = gulp.src('src/js/**/*.js')
         .pipe(gulp.dest('dist/js'));
+
+    var buildImg = gulp.src('src/img/**/*')
+        .pipe(gulp.dest('dist/img'));
 
     var buildHtml = gulp.src('src/*.html')
         .pipe(gulp.dest('dist'));
