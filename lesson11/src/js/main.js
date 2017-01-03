@@ -15,7 +15,7 @@ $(window).on("scroll", function() {
     }
 });
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('#carousel-1').owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -29,6 +29,26 @@ $(document).ready(function(){
             },
             1000:{
                 items:1
+            }
+        }
+    })
+});
+
+$(document).ready(function(){
+    $('#carousel-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        items:1,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
             }
         }
     })
