@@ -1,29 +1,46 @@
 //header
-header {
+.header {
+  &.active {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: 1% 0;
-  @include transition(0.4s);
+  @include transition(0.5s);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-shadow: 0px 0px 3px #000;
   nav {
-    padding-right: 1%;
+    padding: 5% 1%;
+    overflow: auto;
   }
+
   h1.logo {
     margin: 0 auto;
     float: left;
-    width: 40%;
-    padding: 20px 0 0 10%;
-    color: $main-color;
-    font: 400 20px/20px "Open Sans";
+    padding: 1% 0 0 5%;
+    color: #fff;
+    font: 700 20px/20px "Raleway";
     span {
-      color: white;
-      text-shadow: 0px 0px 3px #fff;
+      font-weight: 400;
+    }
+    &:before {
+      content: url(../img/logo.png);
+      display: block;
     }
   }
+  .phone {
+    clear: left;
+    padding: 0 5%;
+    float: left;
+    color: #fff;
+  }
 }
+
+
 
 @media screen and ($small) {
 
@@ -57,7 +74,7 @@ header {
 }
 
 @media screen and ($large) {
-  header {
+  header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto;

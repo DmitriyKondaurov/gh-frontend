@@ -6487,14 +6487,16 @@ div.section-caption {
       font: 400 14px/20px "Open Sans"; } }
 
 ul.topnav {
+  z-index: 2;
   list-style-type: none;
   float: right;
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 0;
   overflow: hidden;
   background-color: transparent; }
   ul.topnav li {
-    float: left; }
+    float: left;
+    z-index: 3; }
     ul.topnav li a {
       display: inline-block;
       color: #fff;
@@ -6505,7 +6507,7 @@ ul.topnav {
       font-size: 15px;
       font-weight: 700; }
       ul.topnav li a:hover {
-        background-color: #39c9da; }
+        color: #ffaf36; }
     ul.topnav li.icon {
       display: none; }
 
@@ -6514,7 +6516,7 @@ ul.topnav {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 5% 10% 0 0;
+    margin: 0;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6532,7 +6534,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #39c9da; }
+      color: #ffaf36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6540,16 +6542,16 @@ ul.topnav {
     display: block;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #39c9da; }
+    color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #39c9da;
-      color: white; } }
+      background-color: #ffaf36;
+      color: black; } }
 
 @media screen and (max-width: 768px) {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 5% 15% 0 0;
+    margin: 0;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6567,7 +6569,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #39c9da; }
+      color: #ffaf36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6575,34 +6577,46 @@ ul.topnav {
     display: block;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #39c9da; }
+    color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #39c9da;
-      color: white; } }
+      background-color: #ffaf36;
+      color: black;
+      text-shadow: none; } }
 
-header {
+.header {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: 1% 0;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-shadow: 0px 0px 3px #000; }
-  header nav {
-    padding-right: 1%; }
-  header h1.logo {
+  .header.active {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .header nav {
+    padding: 5% 1%;
+    overflow: auto; }
+  .header h1.logo {
     margin: 0 auto;
     float: left;
-    width: 40%;
-    padding: 20px 0 0 10%;
-    color: #39c9da;
-    font: 400 20px/20px "Open Sans"; }
-    header h1.logo span {
-      color: white;
-      text-shadow: 0px 0px 3px #fff; }
+    padding: 1% 0 0 5%;
+    color: #fff;
+    font: 700 20px/20px "Raleway"; }
+    .header h1.logo span {
+      font-weight: 400; }
+    .header h1.logo:before {
+      content: url(../img/logo.png);
+      display: block; }
+  .header .phone {
+    clear: left;
+    padding: 0 5%;
+    float: left;
+    color: #fff; }
 
 @media screen and (min-width: 567px) {
   header {
@@ -6627,13 +6641,13 @@ header {
       font: 700 26px/30px "Open Sans"; } }
 
 @media screen and (min-width: 1023px) {
-  header {
+  header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto; }
-    header nav {
+    header .wrapper nav {
       padding-right: 20px; }
-    header h1.logo {
+    header .wrapper h1.logo {
       margin: 0 auto 0 0;
       width: 25%;
       padding: 30px 0 0 5%;
@@ -6644,7 +6658,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #39c9da;
+  background-color: #ffaf36;
   color: white; }
   footer div {
     max-width: 1170px;
@@ -6666,9 +6680,9 @@ a.button {
   width: 140px;
   display: block;
   padding: 5px 0;
-  border: 2px solid #39c9da;
+  border: 2px solid #ffaf36;
   border-radius: 3px;
-  background: #39c9da;
+  background: #ffaf36;
   color: #fff;
   text-align: center;
   font: 400 15px/14px "Open Sans";
@@ -6728,23 +6742,30 @@ a.button-services-list {
     font: 400 14px/20px "Open Sans"; } }
 
 section.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/300% no-repeat; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/250% no-repeat; }
   section.welcome .welcome-carousel {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: flex-start;
-    padding: 100px 5px; }
+    padding: 60px 5%;
+    color: #fff; }
     section.welcome .welcome-carousel ul h2 {
-      font: 400 24px/28px "Open Sans";
+      font: 700 28px/28px "Raleway";
       color: white;
       text-align: left;
       text-transform: uppercase; }
+      section.welcome .welcome-carousel ul h2 span {
+        font: 600 16px/28px "Raleway"; }
+    section.welcome .welcome-carousel ul li p {
+      font: italic 400 15px/20px "Lora"; }
     section.welcome .welcome-carousel ul .button {
-      margin: auto; }
+      background-color: #ffaf36;
+      color: #000; }
 
 .owl-carousel {
-  position: static; }
+  position: static;
+  z-index: 0; }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
   position: absolute;

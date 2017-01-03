@@ -1,26 +1,36 @@
 section.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/300% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/250% no-repeat;
   .welcome-carousel {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: flex-start;
-    padding: 100px 5px;
+    padding: 60px 5%;
+    color: #fff;
     ul {
       h2 {
-        font: 400 24px/28px "Open Sans";
+        font: 700 28px/28px "Raleway";
         color: white;
         text-align: left;
         text-transform: uppercase;
+        span {
+          font: 600 16px/28px "Raleway";
+        }
       }
+      li p {
+        font: italic 400 15px/20px "Lora";
+      }
+
       .button {
         background-color: $main-color;
+        color: #000;
       }
     }
   }
 }
 .owl-carousel {
   position: static;
+  z-index: 0;
 }
 .owl-theme {
   .owl-nav.disabled + .owl-dots {
@@ -36,7 +46,7 @@ section.welcome {
       background-color: #8f8f8f;
     }
     &:active span, &:hover span {
-      background-color: #ffaf36;
+      background-color: $main-color;
     }
   }
 }
