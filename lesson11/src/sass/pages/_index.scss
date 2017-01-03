@@ -1,5 +1,5 @@
-section.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/250% no-repeat;
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/250% no-repeat;
   .welcome-carousel {
     display: flex;
     position: relative;
@@ -21,11 +21,12 @@ section.welcome {
         font: italic 400 15px/20px "Lora";
       }
 
-      .button {
-        background-color: $main-color;
-        color: #000;
-      }
+
     }
+  }
+  .button {
+    background-color: $main-color;
+    color: #000;
   }
 }
 .owl-carousel {
@@ -53,8 +54,8 @@ section.welcome {
 
 
 @media screen and ($small) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/180% no-repeat;
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden;
     .welcome-carousel {
       display: flex;
@@ -63,7 +64,7 @@ section.welcome {
         width: 80%;
         padding: 10px 5px;
         h2 {
-          font: 400 26px/34px "Open Sans";
+          font: 400 34px/34px "Raleway";
         }
       }
     }
@@ -71,17 +72,17 @@ section.welcome {
 }
 
 @media screen and ($medium) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/180% no-repeat;
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden;
     .welcome-carousel {
       display: flex;
       align-items: center;
       ul {
         width: 70%;
-        padding: 100px 5px;
+        padding: 30px 5px;
         h2 {
-          font: 700 30px/40px "Open Sans";
+          font: 700 40px/40px "Raleway";
         }
       }
     }
@@ -89,8 +90,8 @@ section.welcome {
 }
 
 @media screen and ($large) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat;
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat;
     .welcome-carousel {
       max-width: 1170px;
       margin: auto;
@@ -98,9 +99,9 @@ section.welcome {
       align-items: center;
       ul {
         width: 50%;
-        padding: 100px 5px;
+        padding: 0px 5px;
         h2 {
-          font: 700 33px/45px "Open Sans";
+          font: 700 57px/60px "Raleway";
           padding-bottom: 20px;
         }
       }

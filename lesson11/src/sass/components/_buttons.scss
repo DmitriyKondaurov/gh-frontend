@@ -1,5 +1,5 @@
 a.button {
-  width: 140px;
+  width: 120px;
   display: block;
   padding: 5px 0;
   border: 2px solid $main-color;
@@ -7,70 +7,36 @@ a.button {
   background: $main-color;
   color: #fff;
   text-align: center;
-  font: 400 15px/14px "Open Sans";
+  font: 400 13px/13px "Raleway";
   text-transform: uppercase;
   &:hover {
-    border-color: #000;
+    border-color: white;
     text-decoration: none;
-    color: #000;
-  }
-}
-a.button-services-list {
-  width: 130px;
-  display: block;
-  padding: 10px 25px;
-  border-radius: 1px;
-  background: $dark-text;
-  color: #fff;
-  text-align: center;
-  font: 400 14px/14px "Open Sans";
-  &:hover {
-    background-color: #fff;
-    text-decoration: none;
-    color: $dark-text;
+    color: white;
   }
 }
 
-.hover-button {
-  border: 1px solid white;
-  border-radius: 1px;
-  padding: 10px 15px;
-  color: #fff;
-  font: 400 16px/0 "Open Sans";
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
-}
 
 @media screen and ($small) {
   a.button {
-    width: 160px;
+    width: 130px;
     padding: 8px 0;
-    font: 400 16px/16px "Open Sans";
+    font: 400 13px/13px "Raleway";
   }
 }
 @media screen and ($medium) {
   a.button {
-    width: 180px;
+    width: 140px;
     padding: 10px 0;
-    font: 700 18px/18px "Open Sans";
+    font: 700 13px/13px "Raleway";
   }
 }
 
 @media screen and ($large) {
   a.button {
-    width: 200px;
+    width: 150px;
     padding: 15px 0;
-    font: 700 20px/20px "Open Sans";
+    font: 700 13px/13px "Raleway";
   }
-  .hover-button {
-    padding: 15px 30px;
-    font: 700 20px/50px "Open Sans";
-  }
-  a.button-services-list {
-    width: 140px;
-    padding: 10px 30px;
-    font: 400 14px/20px "Open Sans";
-  }
+
 }
