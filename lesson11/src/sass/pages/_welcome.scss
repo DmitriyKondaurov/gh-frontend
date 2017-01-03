@@ -1,33 +1,55 @@
 section.welcome {
-  background: url(../img/bg_wellcome.png) top no-repeat;
-  overflow: hidden;
-  .container-welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/300% no-repeat;
+  .welcome-carousel {
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 100px 5px;
-    .item-welcome {
+    ul {
       h2 {
         font: 400 24px/28px "Open Sans";
         color: white;
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
       }
       .button {
-        margin: auto;
+        background-color: $main-color;
       }
     }
   }
 }
+.owl-carousel {
+  position: static;
+}
+.owl-theme {
+  .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .owl-dots .owl-dot {
+    span {
+      width: 25px;
+      height: 4px;
+      background-color: #8f8f8f;
+    }
+    &:active span, &:hover span {
+      background-color: #ffaf36;
+    }
+  }
+}
+
 
 @media screen and ($small) {
   section.welcome {
-    background: url(../img/bg_wellcome.png) top no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden;
-    .container-welcome {
+    .welcome-carousel {
       display: flex;
       align-items: center;
-      .item-welcome {
+      ul {
         width: 80%;
         padding: 10px 5px;
         h2 {
@@ -40,12 +62,12 @@ section.welcome {
 
 @media screen and ($medium) {
   section.welcome {
-    background: url(../img/bg_wellcome.png) top no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden;
-    .container-welcome {
+    .welcome-carousel {
       display: flex;
       align-items: center;
-      .item-welcome {
+      ul {
         width: 70%;
         padding: 100px 5px;
         h2 {
@@ -58,13 +80,13 @@ section.welcome {
 
 @media screen and ($large) {
   section.welcome {
-    background: url(../img/bg_wellcome.png) top no-repeat;
-    .container-welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat;
+    .welcome-carousel {
       max-width: 1170px;
       margin: auto;
       display: flex;
       align-items: center;
-      .item-welcome {
+      ul {
         width: 50%;
         padding: 100px 5px;
         h2 {
@@ -75,3 +97,4 @@ section.welcome {
     }
   }
 }
+
