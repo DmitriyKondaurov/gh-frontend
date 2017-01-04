@@ -58,7 +58,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:false,
-        items:1,
+        items:2,
         responsive:{
             0:{
                 items:2

@@ -6661,29 +6661,6 @@ ul.topnav {
       padding: 0 0 0 5%;
       font: 700 20px/20px "Open Sans"; } }
 
-footer {
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffaf36;
-  color: white; }
-  footer div {
-    max-width: 1170px;
-    font: 400 14px/14px "Open Sans"; }
-
-@media screen and (min-width: 567px) {
-  footer {
-    height: 35px; } }
-
-@media screen and (min-width: 767px) {
-  footer {
-    height: 40px; } }
-
-@media screen and (min-width: 1023px) {
-  footer {
-    height: 50px; } }
-
 a.button {
   width: 120px;
   display: block;
@@ -6736,27 +6713,24 @@ a.button {
         font: 600 16px/28px "Raleway"; }
     .welcome .welcome-carousel ul li p {
       font: italic 400 15px/20px "Lora"; }
+    .welcome .welcome-carousel .owl-carousel {
+      position: static;
+      z-index: 0; }
+    .welcome .welcome-carousel .owl-theme .owl-nav.disabled + .owl-dots {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    .welcome .welcome-carousel .owl-theme .owl-dots .active span {
+      background-color: #ffaf36; }
+    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:active span, .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:hover span {
+      background-color: #ffaf36; }
+    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot span {
+      width: 25px;
+      height: 4px; }
   .welcome .button {
     background-color: #ffaf36;
     color: #000; }
-
-.owl-carousel {
-  position: static;
-  z-index: 0; }
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0; }
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 25px;
-  height: 4px;
-  background-color: #8f8f8f; }
-
-.owl-theme .owl-dots .owl-dot:active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #ffaf36; }
 
 @media screen and (min-width: 567px) {
   .welcome {

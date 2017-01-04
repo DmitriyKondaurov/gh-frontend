@@ -6487,14 +6487,16 @@ div.section-caption {
       font: 400 14px/20px "Open Sans"; } }
 
 ul.topnav {
+  z-index: 2;
   list-style-type: none;
   float: right;
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 0;
   overflow: hidden;
   background-color: transparent; }
   ul.topnav li {
-    float: left; }
+    float: left;
+    z-index: 3; }
     ul.topnav li a {
       display: inline-block;
       color: #fff;
@@ -6502,10 +6504,10 @@ ul.topnav {
       padding: 5% 16px;
       text-decoration: none;
       transition: 0.3s;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700; }
       ul.topnav li a:hover {
-        background-color: #39c9da; }
+        color: #ffaf36; }
     ul.topnav li.icon {
       display: none; }
 
@@ -6514,7 +6516,7 @@ ul.topnav {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 5% 10% 0 0;
+    margin: 0;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6532,7 +6534,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #39c9da; }
+      color: #ffaf36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6540,16 +6542,16 @@ ul.topnav {
     display: block;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #39c9da; }
+    color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #39c9da;
-      color: white; } }
+      background-color: #ffaf36;
+      color: black; } }
 
 @media screen and (max-width: 768px) {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 5% 15% 0 0;
+    margin: 0;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6567,7 +6569,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #39c9da; }
+      color: #ffaf36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6575,34 +6577,46 @@ ul.topnav {
     display: block;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #39c9da; }
+    color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #39c9da;
-      color: white; } }
+      background-color: #ffaf36;
+      color: black;
+      text-shadow: none; } }
 
-header {
+.header {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: 1% 0;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-shadow: 0px 0px 3px #000; }
-  header nav {
-    padding-right: 1%; }
-  header h1.logo {
+  .header.active {
+    background-color: rgba(0, 0, 0, 0.6); }
+  .header nav {
+    padding: 1%;
+    overflow: auto; }
+  .header h1.logo {
     margin: 0 auto;
     float: left;
-    width: 40%;
-    padding: 20px 0 0 10%;
-    color: #39c9da;
-    font: 400 20px/20px "Open Sans"; }
-    header h1.logo span {
-      color: white;
-      text-shadow: 0px 0px 3px #fff; }
+    padding: 1% 0 0 5%;
+    color: #fff;
+    font: 700 20px/20px "Raleway"; }
+    .header h1.logo span {
+      font-weight: 400; }
+    .header h1.logo:before {
+      content: url(../img/logo.png);
+      display: block; }
+  .header .phone {
+    clear: left;
+    padding: 0 5%;
+    float: left;
+    color: #fff; }
 
 @media screen and (min-width: 567px) {
   header {
@@ -6611,40 +6625,48 @@ header {
       padding-right: 1%; }
     header h1.logo {
       margin: 0 auto;
-      width: 25%;
       padding: 20px 0 0 10%;
       font: 400 24px/28px "Open Sans"; } }
 
 @media screen and (min-width: 767px) {
-  header {
+  .header {
     padding: 1% 0; }
-    header nav {
-      padding-right: 1%; }
-    header h1.logo {
-      margin: 2% auto 0 auto;
-      width: 25%;
-      padding: 20px 0 0 5%;
-      font: 700 26px/30px "Open Sans"; } }
+    .header nav {
+      padding: 20px 1% 0 0; }
+    .header h1.logo {
+      margin: 2% auto 0 auto; }
+    .header .phone {
+      clear: none;
+      padding: 20px 0 0 1%;
+      font-size: 16px; }
+      .header .phone:before {
+        font-family: FontAwesome;
+        font-size: 22px;
+        content: "\f095";
+        display: inline-block;
+        padding: 1%;
+        padding-right: 5px;
+        vertical-align: middle;
+        color: #ffaf36; } }
 
 @media screen and (min-width: 1023px) {
-  header {
+  .header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto; }
-    header nav {
+    .header .wrapper nav {
       padding-right: 20px; }
-    header h1.logo {
+    .header .wrapper h1.logo {
       margin: 0 auto 0 0;
-      width: 25%;
-      padding: 30px 0 0 5%;
-      font: 700 30px/30px "Open Sans"; } }
+      padding: 0 0 0 5%;
+      font: 700 20px/20px "Open Sans"; } }
 
 footer {
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #39c9da;
+  background-color: #ffaf36;
   color: white; }
   footer div {
     max-width: 1170px;
@@ -6663,122 +6685,116 @@ footer {
     height: 50px; } }
 
 a.button {
-  width: 140px;
+  width: 120px;
   display: block;
   padding: 5px 0;
-  border: 2px solid #39c9da;
+  border: 2px solid #ffaf36;
   border-radius: 3px;
-  background: #39c9da;
+  background: #ffaf36;
   color: #fff;
   text-align: center;
-  font: 400 15px/14px "Open Sans";
+  font: 400 13px/13px "Raleway";
   text-transform: uppercase; }
   a.button:hover {
-    border-color: #000;
+    border-color: white;
     text-decoration: none;
+    color: white; }
+
+@media screen and (min-width: 567px) {
+  a.button {
+    width: 130px;
+    padding: 8px 0;
+    font: 400 13px/13px "Raleway"; } }
+
+@media screen and (min-width: 767px) {
+  a.button {
+    width: 140px;
+    padding: 10px 0;
+    font: 700 13px/13px "Raleway"; } }
+
+@media screen and (min-width: 1023px) {
+  a.button {
+    width: 150px;
+    padding: 15px 0;
+    font: 700 13px/13px "Raleway"; } }
+
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/250% no-repeat; }
+  .welcome .welcome-carousel {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 5%;
+    color: #fff; }
+    .welcome .welcome-carousel ul h2 {
+      font: 700 28px/28px "Raleway";
+      color: white;
+      text-align: left;
+      text-transform: uppercase; }
+      .welcome .welcome-carousel ul h2 span {
+        font: 600 16px/28px "Raleway"; }
+    .welcome .welcome-carousel ul li p {
+      font: italic 400 15px/20px "Lora"; }
+  .welcome .button {
+    background-color: #ffaf36;
     color: #000; }
 
-a.button-services-list {
-  width: 130px;
-  display: block;
-  padding: 10px 25px;
-  border-radius: 1px;
-  background: #504f50;
-  color: #fff;
-  text-align: center;
-  font: 400 14px/14px "Open Sans"; }
-  a.button-services-list:hover {
-    background-color: #fff;
-    text-decoration: none;
-    color: #504f50; }
+.owl-carousel {
+  position: static;
+  z-index: 0; }
 
-.hover-button {
-  border: 1px solid white;
-  border-radius: 1px;
-  padding: 10px 15px;
-  color: #fff;
-  font: 400 16px/0 "Open Sans"; }
-  .hover-button:hover {
-    color: white;
-    text-decoration: none; }
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 25px;
+  height: 4px;
+  background-color: #8f8f8f; }
+
+.owl-theme .owl-dots .owl-dot:active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #ffaf36; }
 
 @media screen and (min-width: 567px) {
-  a.button {
-    width: 160px;
-    padding: 8px 0;
-    font: 400 16px/16px "Open Sans"; } }
-
-@media screen and (min-width: 767px) {
-  a.button {
-    width: 180px;
-    padding: 10px 0;
-    font: 700 18px/18px "Open Sans"; } }
-
-@media screen and (min-width: 1023px) {
-  a.button {
-    width: 200px;
-    padding: 15px 0;
-    font: 700 20px/20px "Open Sans"; }
-  .hover-button {
-    padding: 15px 30px;
-    font: 700 20px/50px "Open Sans"; }
-  a.button-services-list {
-    width: 140px;
-    padding: 10px 30px;
-    font: 400 14px/20px "Open Sans"; } }
-
-section.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
-  section.welcome .welcome-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 5px; }
-    section.welcome .welcome-carousel ul h2 {
-      font: 400 24px/28px "Open Sans";
-      color: white;
-      text-align: center;
-      text-transform: uppercase; }
-    section.welcome .welcome-carousel ul .button {
-      margin: auto; }
-
-@media screen and (min-width: 567px) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat;
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden; }
-    section.welcome .welcome-carousel {
+    .welcome .welcome-carousel {
       display: flex;
       align-items: center; }
-      section.welcome .welcome-carousel ul {
+      .welcome .welcome-carousel ul {
         width: 80%;
         padding: 10px 5px; }
-        section.welcome .welcome-carousel ul h2 {
-          font: 400 26px/34px "Open Sans"; } }
+        .welcome .welcome-carousel ul h2 {
+          font: 400 34px/34px "Raleway"; } }
 
 @media screen and (min-width: 767px) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat;
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
     overflow: hidden; }
-    section.welcome .welcome-carousel {
+    .welcome .welcome-carousel {
       display: flex;
       align-items: center; }
-      section.welcome .welcome-carousel ul {
+      .welcome .welcome-carousel ul {
         width: 70%;
-        padding: 100px 5px; }
-        section.welcome .welcome-carousel ul h2 {
-          font: 700 30px/40px "Open Sans"; } }
+        padding: 30px 5px; }
+        .welcome .welcome-carousel ul h2 {
+          font: 700 40px/40px "Raleway"; } }
 
 @media screen and (min-width: 1023px) {
-  section.welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
-    section.welcome .welcome-carousel {
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
+    .welcome .welcome-carousel {
       max-width: 1170px;
       margin: auto;
       display: flex;
       align-items: center; }
-      section.welcome .welcome-carousel ul {
+      .welcome .welcome-carousel ul {
         width: 50%;
-        padding: 100px 5px; }
-        section.welcome .welcome-carousel ul h2 {
-          font: 700 33px/45px "Open Sans";
+        padding: 0px 5px; }
+        .welcome .welcome-carousel ul h2 {
+          font: 700 57px/60px "Raleway";
           padding-bottom: 20px; } }

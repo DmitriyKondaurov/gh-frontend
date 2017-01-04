@@ -23,34 +23,39 @@
 
 
     }
+    .owl-carousel {
+      position: static;
+      z-index: 0;
+    }
+    .owl-theme {
+      .owl-nav.disabled + .owl-dots {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      .owl-dots {
+        .active span {
+          background-color: $main-color;
+        }
+        .owl-dot {
+          &:active span, &:hover span {
+            background-color: $main-color;
+          }
+          span {
+            width: 25px;
+            height: 4px;
+          }
+        }
+      }
+    }
   }
   .button {
     background-color: $main-color;
     color: #000;
   }
 }
-.owl-carousel {
-  position: static;
-  z-index: 0;
-}
-.owl-theme {
-  .owl-nav.disabled + .owl-dots {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-  .owl-dots .owl-dot {
-    span {
-      width: 25px;
-      height: 4px;
-      background-color: #8f8f8f;
-    }
-    &:active span, &:hover span {
-      background-color: $main-color;
-    }
-  }
-}
+
 
 
 @media screen and ($small) {
