@@ -57,7 +57,38 @@
 }
 
 
-
+//ABOUT US____________________________________________________________________________
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 2%;
+  max-width: 1170px;
+  margin: auto;
+  > * {
+    flex-basis: 90%;
+    padding: 30px 0;
+  }
+  p {
+    margin: 0;
+  }
+  a.button {
+    margin-top: 30px;
+    background-color: transparent;
+    color: $main-color;
+  }
+}
+//____________________________________________________________________________
+//SERVICES
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2%;
+  max-width: 1170px;
+  margin: auto;
+}
+//________________________________________________________________________________
 @media screen and ($small) {
   .welcome {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
@@ -90,6 +121,16 @@
           font: 700 40px/40px "Raleway";
         }
       }
+    }
+  }
+  .about {
+    padding: 30px 0;
+    > * {
+      flex-basis: 45%;
+      padding: 30px 0;
+    }
+    .section-caption {
+      flex-basis: 45%;
     }
   }
 }

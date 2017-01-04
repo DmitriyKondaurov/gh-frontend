@@ -77,7 +77,7 @@ ul.topnav {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
   ul.topnav li:not(:first-child) {
     display: none;
   }

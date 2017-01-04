@@ -6547,7 +6547,7 @@ ul.topnav {
       background-color: #ffaf36;
       color: black; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
@@ -6634,7 +6634,8 @@ ul.topnav {
     .header nav {
       padding: 20px 1% 0 0; }
     .header h1.logo {
-      margin: 2% auto 0 auto; }
+      margin: 0 auto 0 0;
+      padding: 0 0 0 5%; }
     .header .phone {
       clear: none;
       padding: 20px 0 0 1%;
@@ -6732,6 +6733,31 @@ a.button {
     background-color: #ffaf36;
     color: #000; }
 
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 2%;
+  max-width: 1170px;
+  margin: auto; }
+  .about > * {
+    flex-basis: 90%;
+    padding: 30px 0; }
+  .about p {
+    margin: 0; }
+  .about a.button {
+    margin-top: 30px;
+    background-color: transparent;
+    color: #ffaf36; }
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2%;
+  max-width: 1170px;
+  margin: auto; }
+
 @media screen and (min-width: 567px) {
   .welcome {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
@@ -6756,7 +6782,14 @@ a.button {
         width: 70%;
         padding: 30px 5px; }
         .welcome .welcome-carousel ul h2 {
-          font: 700 40px/40px "Raleway"; } }
+          font: 700 40px/40px "Raleway"; }
+  .about {
+    padding: 30px 0; }
+    .about > * {
+      flex-basis: 45%;
+      padding: 30px 0; }
+    .about .section-caption {
+      flex-basis: 45%; } }
 
 @media screen and (min-width: 1023px) {
   .welcome {
