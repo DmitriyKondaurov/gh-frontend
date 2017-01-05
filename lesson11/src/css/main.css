@@ -6668,13 +6668,13 @@ a.button {
   padding: 5px 0;
   border: 2px solid #ffaf36;
   border-radius: 3px;
-  background: #ffaf36;
-  color: #fff;
+  background: transparent;
+  color: #ffaf36;
   text-align: center;
   font: 400 13px/13px "Raleway";
   text-transform: uppercase; }
   a.button:hover {
-    border-color: white;
+    background-color: #ffaf36;
     text-decoration: none;
     color: white; }
 
@@ -6732,6 +6732,8 @@ a.button {
   .welcome .button {
     background-color: #ffaf36;
     color: #000; }
+    .welcome .button:hover {
+      border-color: white; }
 
 .about {
   display: flex;
@@ -6742,21 +6744,33 @@ a.button {
   margin: auto; }
   .about > * {
     flex-basis: 90%;
-    padding: 30px 0; }
+    padding: 30px 0 0 0; }
   .about p {
     margin: 0; }
-  .about a.button {
-    margin-top: 30px;
-    background-color: transparent;
-    color: #ffaf36; }
+  .about .button {
+    margin-top: 30px; }
 
 .services {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 2%;
-  max-width: 1170px;
-  margin: auto; }
+  padding: 30px 2%;
+  margin: auto;
+  background-color: #eaeff3; }
+  .services .wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    margin: auto; }
+  .services .service-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .services .service-list .service-list-item {
+      flex-basis: 90%; }
+      .services .service-list .service-list-item img {
+        filter: grayscale(100%); }
+      .services .service-list .service-list-item:hover img {
+        filter: none; }
 
 @media screen and (min-width: 567px) {
   .welcome {
@@ -6787,9 +6801,29 @@ a.button {
     padding: 30px 0; }
     .about > * {
       flex-basis: 45%;
-      padding: 30px 0; }
+      padding: 30px 0 0 0; }
     .about .section-caption {
-      flex-basis: 45%; } }
+      flex-basis: 45%;
+      text-align: left; }
+  .services {
+    padding: 30px 2%;
+    margin: auto; }
+    .services .section-caption {
+      align-self: flex-start;
+      margin-left: 50px; }
+    .services .service-list {
+      max-width: 1170px; }
+      .services .service-list .service-list-item {
+        display: flex;
+        flex-basis: 45%;
+        align-items: flex-start; }
+        .services .service-list .service-list-item img {
+          padding-top: 30px; }
+        .services .service-list .service-list-item div {
+          padding: 0 30px 30px 30px; }
+    .services .button {
+      align-self: flex-start;
+      margin-left: 50px; } }
 
 @media screen and (min-width: 1023px) {
   .welcome {
