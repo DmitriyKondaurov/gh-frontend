@@ -6422,7 +6422,7 @@ button.close {
 
 body {
   color: #bebebe;
-  font: 400 17px/24px "Open Sans"; }
+  font: 400 14px/24px "Open Sans"; }
 
 a {
   text-decoration: none; }
@@ -6436,42 +6436,42 @@ img {
 
 div.section-caption {
   flex-basis: 90%;
-  text-align: center; }
+  text-align: center;
+  color: black; }
   div.section-caption h2 {
     margin: auto;
     padding: 0;
     border: 0;
     text-transform: uppercase;
-    color: #504f50;
-    font: 700 20px/28px "Open Sans"; }
-  div.section-caption p {
+    font: 800 20px/28px "Raleway"; }
+  div.section-caption div {
     margin: auto;
-    padding: 10px 0 20px 0;
-    font: 400 17px/20px "Open Sans"; }
+    padding: 0 0 20px 0;
+    font: italic 400 14px/20px "Lora"; }
 
 @media screen and (min-width: 567px) {
   body {
-    font: 400 16px/22px "Open Sans"; }
+    font: 400 14px/22px "Open Sans"; }
   div.section-caption {
     flex-basis: 85%; }
     div.section-caption h2 {
       padding: 0;
-      font: 700 20px/32px "Open Sans"; }
-    div.section-caption p {
+      font: 800 20px/32px "Raleway"; }
+    div.section-caption div {
       padding: 10px 0 20px 0;
-      font: 400 16px/20px "Open Sans"; } }
+      font: 400 15px/20px "Lora"; } }
 
 @media screen and (min-width: 767px) {
   body {
-    font: 400 15px/21px "Open Sans"; }
+    font: 400 14px/21px "Open Sans"; }
   div.section-caption {
     flex-basis: 75%; }
     div.section-caption h2 {
       padding: 0;
-      font: 700 22px/38px "Open Sans"; }
-    div.section-caption p {
+      font: 800 25px/38px "Raleway"; }
+    div.section-caption div {
       padding: 10px 0 20px 0;
-      font: 400 15px/20px "Open Sans"; } }
+      font: 400 15px/20px "Lora"; } }
 
 @media screen and (min-width: 1023px) {
   body {
@@ -6480,11 +6480,11 @@ div.section-caption {
     flex-basis: 55%; }
     div.section-caption h2 {
       padding: 0;
-      font: 700 20px/45px "Open Sans"; }
-    div.section-caption p {
+      font: 800 30px/45px "Raleway"; }
+    div.section-caption div {
       max-width: 450px;
       padding: 10px 0 20px 0;
-      font: 400 14px/20px "Open Sans"; } }
+      font: 400 16px/20px "Lora"; } }
 
 ul.topnav {
   z-index: 2;
@@ -6697,7 +6697,8 @@ a.button {
     font: 700 13px/13px "Raleway"; } }
 
 .welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/250% no-repeat; }
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/265% no-repeat;
+  padding-bottom: 20px; }
   .welcome .welcome-carousel {
     display: flex;
     position: relative;
@@ -6735,43 +6736,6 @@ a.button {
     .welcome .button:hover {
       border-color: white; }
 
-.about {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 30px 2%;
-  max-width: 1170px;
-  margin: auto; }
-  .about > * {
-    flex-basis: 90%;
-    padding: 30px 0 0 0; }
-  .about p {
-    margin: 0; }
-  .about .button {
-    margin-top: 30px; }
-
-.services {
-  padding: 30px 2%;
-  margin: auto;
-  background-color: #eaeff3; }
-  .services .wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1170px;
-    margin: auto; }
-  .services .service-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
-    .services .service-list .service-list-item {
-      flex-basis: 90%; }
-      .services .service-list .service-list-item img {
-        filter: grayscale(100%); }
-      .services .service-list .service-list-item:hover img {
-        filter: none; }
-
 @media screen and (min-width: 567px) {
   .welcome {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
@@ -6796,7 +6760,39 @@ a.button {
         width: 70%;
         padding: 30px 5px; }
         .welcome .welcome-carousel ul h2 {
-          font: 700 40px/40px "Raleway"; }
+          font: 700 40px/40px "Raleway"; } }
+
+@media screen and (min-width: 1023px) {
+  .welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
+    .welcome .welcome-carousel {
+      max-width: 1170px;
+      margin: auto;
+      display: flex;
+      align-items: center; }
+      .welcome .welcome-carousel ul {
+        width: 50%;
+        padding: 0px 5px; }
+        .welcome .welcome-carousel ul h2 {
+          font: 700 57px/60px "Raleway";
+          padding-bottom: 20px; } }
+
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2%;
+  max-width: 1170px;
+  margin: auto; }
+  .about > * {
+    flex-basis: 90%;
+    padding: 30px 0 0 0; }
+  .about p {
+    margin: 0; }
+  .about .button {
+    margin-top: 30px; }
+
+@media screen and (min-width: 767px) {
   .about {
     padding: 30px 0; }
     .about > * {
@@ -6804,7 +6800,36 @@ a.button {
       padding: 30px 0 0 0; }
     .about .section-caption {
       flex-basis: 45%;
-      text-align: left; }
+      text-align: left; } }
+
+.services {
+  padding: 30px 2%;
+  margin: auto;
+  background-color: #eaeff3; }
+  .services .wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    margin: auto; }
+  .services .service-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .services .service-list .service-list-item {
+      flex-basis: 90%; }
+      .services .service-list .service-list-item img {
+        filter: grayscale(100%); }
+      .services .service-list .service-list-item:hover img {
+        filter: none; }
+      .services .service-list .service-list-item h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px; }
+
+@media screen and (min-width: 767px) {
   .services {
     padding: 30px 2%;
     margin: auto; }
@@ -6825,17 +6850,87 @@ a.button {
       align-self: flex-start;
       margin-left: 50px; } }
 
-@media screen and (min-width: 1023px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
-    .welcome .welcome-carousel {
-      max-width: 1170px;
-      margin: auto;
+.testimonials {
+  padding: 30px 2%;
+  margin: auto;
+  max-width: 1170px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  padding: 60px 50px; }
+  .testimonials .owl-carousel {
+    position: static;
+    z-index: 0;
+    margin-top: 10px; }
+  .testimonials .owl-theme .owl-dots span {
+    background-color: #36a8ff; }
+  .testimonials .owl-theme .owl-dots .active span {
+    background-color: #ffaf36; }
+  .testimonials .owl-theme .owl-dots .owl-dot:active span, .testimonials .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ffaf36; }
+  .testimonials .item {
+    padding: 30px 30px 10px 0;
+    position: relative; }
+    .testimonials .item > div {
       display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 50%;
-        padding: 0px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 700 57px/60px "Raleway";
-          padding-bottom: 20px; } }
+      align-items: center;
+      justify-content: flex-start; }
+      .testimonials .item > div img {
+        width: auto; }
+      .testimonials .item > div div {
+        padding-left: 40px; }
+        .testimonials .item > div div span {
+          text-transform: uppercase;
+          color: #000;
+          font-weight: 700; }
+    .testimonials .item p:before {
+      content: url("../img/quote-icon.png");
+      position: absolute;
+      left: 0;
+      top: 0; }
+
+@media screen and (min-width: 767px) {
+  .section-caption {
+    align-self: flex-start; }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50px; } }
+
+.news {
+  background-color: #eaeff3;
+  padding: 30px 0; }
+  .news .wrapper {
+    max-width: 1170px;
+    display: flex; }
+    .news .wrapper .wrapper-content {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: center; }
+
+.statistic {
+  display: flex;
+  flex-flow: row wrap; }
+  .statistic img {
+    width: 27px;
+    padding: 0 5px 0 10px; }
+
+.wrapper-content div {
+  padding-right: 10px; }
+  .wrapper-content div > div {
+    text-transform: uppercase;
+    color: #ffaf36;
+    margin-bottom: 20px; }
+  .wrapper-content div .blog-caption {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #000;
+    font: 700 16px/24px "Raleway"; }
+
+@media screen and (min-width: 1023px) {
+  .wrapper-content > div {
+    flex-basis: 45%; } }

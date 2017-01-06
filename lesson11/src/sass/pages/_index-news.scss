@@ -1,7 +1,45 @@
 //________________________________________________________________________________
 .news {
-background-color: #eaeff3;
+  background-color: #eaeff3;
+  padding: 30px 0;
+  .wrapper {
+    max-width: 1170px;
+    display: flex;
+
+    .wrapper-content {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
 }
+
+.statistic {
+  display: flex;
+  flex-flow: row wrap;
+  img {
+    width: 27px;
+    padding: 0 5px 0 10px;
+  }
+}
+.wrapper-content {
+  div {
+    padding-right: 10px;
+    &>div {
+      text-transform: uppercase;
+      color: $main-color;
+      margin-bottom: 20px;
+    }
+    .blog-caption {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: #000;
+      font: 700 16px/24px "Raleway";
+    }
+  }
+}
+
 @media screen and ($small) {
 
 }
@@ -11,6 +49,8 @@ background-color: #eaeff3;
 }
 
 @media screen and ($large) {
-
+  .wrapper-content > div {
+    flex-basis: 45%;
+  }
 }
 
