@@ -1,4 +1,5 @@
 .services {
+  position: relative;
   padding: 30px 2%;
   margin: auto;
   background-color: #eaeff3;
@@ -30,7 +31,21 @@
       }
     }
   }
+  figure {
+    display: none;
+    img:first-child {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+    }
+    img:last-child {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
+
 //________________________________________________________________________________
 @media screen and ($small) {
 
@@ -66,6 +81,13 @@
 }
 
 @media screen and ($large) {
-
+  .services {
+    .wrapper {
+      padding: 70px 2%;
+      figure {
+        display: block;
+      }
+    }
+  }
 }
 

@@ -17,7 +17,8 @@ img {
 
 div.section-caption {
   flex-basis: 90%;
-  text-align: center;
+  text-align: left;
+  align-self: flex-start;
   color: black;
   h2 {
     margin: auto;

@@ -1,11 +1,58 @@
+.partners {
+  position: relative;
+  .owl-carousel {
+    z-index: 0;
+    .item {
+      img {
+        width: auto;
+      }
+    }
+    .owl-dots {
+      span {
+        background-color: #36a8ff;
+      }
+      .active span {
+        background-color: $main-color;
+      }
+      .owl-dot {
+        &:active span, &:hover span {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+  figure {
+    display: none;
+    img:first-child {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+    }
+    img:last-child {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+
 @media screen and ($small) {
 
 }
 
 @media screen and ($medium) {
-
+  .partners  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    text-align: left;
+  }
 }
 
 @media screen and ($large) {
-
+  .partners {
+    padding: 70px 2% 100px 2%;
+    figure {
+      display: block;
+    }
+  }
 }

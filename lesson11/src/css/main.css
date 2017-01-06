@@ -6436,7 +6436,8 @@ img {
 
 div.section-caption {
   flex-basis: 90%;
-  text-align: center;
+  text-align: left;
+  align-self: flex-start;
   color: black; }
   div.section-caption h2 {
     margin: auto;
@@ -6662,6 +6663,9 @@ ul.topnav {
       padding: 0 0 0 5%;
       font: 700 20px/20px "Open Sans"; } }
 
+footer {
+  background-color: #2a2b2c; }
+
 a.button {
   width: 120px;
   display: block;
@@ -6803,6 +6807,7 @@ a.button {
       text-align: left; } }
 
 .services {
+  position: relative;
   padding: 30px 2%;
   margin: auto;
   background-color: #eaeff3; }
@@ -6828,6 +6833,16 @@ a.button {
         color: #000;
         font-weight: 700;
         font-size: 16px; }
+  .services figure {
+    display: none; }
+    .services figure img:first-child {
+      position: absolute;
+      bottom: 0;
+      right: 50px; }
+    .services figure img:last-child {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 @media screen and (min-width: 767px) {
   .services {
@@ -6850,6 +6865,12 @@ a.button {
       align-self: flex-start;
       margin-left: 50px; } }
 
+@media screen and (min-width: 1023px) {
+  .services .wrapper {
+    padding: 70px 2%; }
+    .services .wrapper figure {
+      display: block; } }
+
 .testimonials {
   padding: 30px 2%;
   margin: auto;
@@ -6858,12 +6879,13 @@ a.button {
   position: relative;
   align-items: center;
   justify-content: flex-start;
-  flex-flow: column wrap;
-  padding: 60px 50px; }
+  flex-flow: column wrap; }
   .testimonials .owl-carousel {
     position: static;
     z-index: 0;
     margin-top: 10px; }
+    .testimonials .owl-carousel owl-item {
+      width: 310px; }
   .testimonials .owl-theme .owl-dots span {
     background-color: #36a8ff; }
   .testimonials .owl-theme .owl-dots .active span {
@@ -6892,9 +6914,9 @@ a.button {
       top: 0; }
 
 @media screen and (min-width: 767px) {
-  .section-caption {
+  .testimonials .section-caption {
     align-self: flex-start; }
-  .owl-theme .owl-nav.disabled + .owl-dots {
+  .testimonials .owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -6934,3 +6956,37 @@ a.button {
 @media screen and (min-width: 1023px) {
   .wrapper-content > div {
     flex-basis: 45%; } }
+
+.partners {
+  position: relative; }
+  .partners .owl-carousel {
+    z-index: 0; }
+    .partners .owl-carousel .item img {
+      width: auto; }
+    .partners .owl-carousel .owl-dots span {
+      background-color: #36a8ff; }
+    .partners .owl-carousel .owl-dots .active span {
+      background-color: #ffaf36; }
+    .partners .owl-carousel .owl-dots .owl-dot:active span, .partners .owl-carousel .owl-dots .owl-dot:hover span {
+      background-color: #ffaf36; }
+  .partners figure {
+    display: none; }
+    .partners figure img:first-child {
+      position: absolute;
+      bottom: 0;
+      right: 50px; }
+    .partners figure img:last-child {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+
+@media screen and (min-width: 767px) {
+  .partners .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    text-align: left; } }
+
+@media screen and (min-width: 1023px) {
+  .partners {
+    padding: 70px 2% 100px 2%; }
+    .partners figure {
+      display: block; } }

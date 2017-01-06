@@ -7,11 +7,13 @@
   align-items: center;
   justify-content: flex-start;
   flex-flow: column wrap;
-  padding: 60px 50px;
   .owl-carousel {
     position: static;
     z-index: 0;
     margin-top: 10px;
+    owl-item {
+      width: 310px;
+    }
   }
   .owl-theme {
     .owl-dots {
@@ -62,15 +64,17 @@
 }
 
 @media screen and ($medium) {
-  .section-caption {
-    align-self: flex-start;
-  }
-  .owl-theme {
-    .owl-nav.disabled + .owl-dots {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin-left: 50px;
+  .testimonials {
+    .section-caption {
+      align-self: flex-start;
+    }
+    .owl-theme {
+      .owl-nav.disabled + .owl-dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 50px;
+      }
     }
   }
 }
