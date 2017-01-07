@@ -115,7 +115,7 @@
         </figure>
     </div>
 </section>
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
     <div class="section-caption">
         <h2>CLIENTS</h2>
         <div>Whats our client says</div>
@@ -280,50 +280,57 @@
     </figure>
 </section>
 <footer>
-    <h1 class="logo">BUSINESS<span>PLUS</span></h1>
-    <div>2015 :&copy; LAWYER.</div>
-    <ul>
-        <li>
-            <a class="facebook-icon" href="https://www.facebook.com/" target="_blank">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
-        </li>
-        <li>
-            <a class="facebook-icon" href="https://twitter.com/" target="_blank">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a>
-        </li>
-        <li>
-            <a class="facebook-icon" href="https://plus.google.com" target="_blank">
-                <i class="fa fa-google-plus-square" aria-hidden="true"></i>Google+</a>
-        </li>
-        <li>
-            <a class="facebook-icon" href="https://www.linkedin.com/" target="_blank">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
-        </li>
-    </ul>
-    <h3>NAVIGATION</h3>
-    <ul>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>SERVICE</li>
-        <li>TESTIMONIAL</li>
-        <li>BLOG</li>
-        <li>CONTACT US</li>
-    </ul>
-    <h3>QUICK CONTACT US</h3>
-    <form action="#">
-        <ul>
+    <div class="flex-unit">
+        <h1 class="logo">BUSINESS<span>PLUS</span></h1>
+        <div>2015 :&copy; LAWYER.</div>
+        <ul class="social-nets">
             <li>
-                <label for="name">Name<span>*</span></label><input type="text" id="name" name="name">
+                <a class="facebook-icon" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
             </li>
             <li>
-                <label for="email">Email<span>*</span></label><input type="email" id="email" name="email">
+                <a class="facebook-icon" href="https://plus.google.com" target="_blank">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i></i>Google+</a>
             </li>
             <li>
-                <label for="comment">Comment<span>*</span></label><textarea id="comment" name="comment"></textarea>
+                <a class="facebook-icon" href="https://twitter.com/" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+            </li>
+            <li>
+                <a class="facebook-icon" href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
             </li>
         </ul>
-        <input type="submit" value="SUBMIT NOW">
-    </form>
+    </div>
+    <div class="flex-unit">
+        <h3>NAVIGATION</h3>
+        <ul class="footer-nav" id="footer-nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#testimonials">TESTIMONIAL</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="flex-unit">
+        <h3>QUICK CONTACT US</h3>
+        <form action="#" id="footer-form">
+            <ul>
+                <li>
+                    <label for="name">Name<span>*</span> </label> <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="email">Email<span>*</span> </label> <input type="email" id="email" name="email">
+                </li>
+                <li>
+                    <label for="comment">Comment<span>*</span> </label> <textarea id="comment"
+                                                                                  name="comment"></textarea>
+                </li>
+            </ul>
+        </form>
+        <input class="submit" type="submit" value="SUBMIT NOW" form="footer-form">
+    </div>
 </footer>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
