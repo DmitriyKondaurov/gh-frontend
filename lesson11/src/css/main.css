@@ -6421,7 +6421,7 @@ button.close {
       background: #869791; }
 
 body {
-  color: #bebebe;
+  color: #504f50;
   font: 400 14px/24px "Open Sans"; }
 
 a {
@@ -6458,7 +6458,7 @@ div.section-caption {
       padding: 0;
       font: 800 20px/32px "Raleway"; }
     div.section-caption div {
-      padding: 10px 0 20px 0;
+      padding: 0 0 20px 0;
       font: 400 15px/20px "Lora"; } }
 
 @media screen and (min-width: 767px) {
@@ -6470,7 +6470,6 @@ div.section-caption {
       padding: 0;
       font: 800 25px/38px "Raleway"; }
     div.section-caption div {
-      padding: 10px 0 20px 0;
       font: 400 15px/20px "Lora"; } }
 
 @media screen and (min-width: 1023px) {
@@ -6483,7 +6482,6 @@ div.section-caption {
       font: 800 30px/45px "Raleway"; }
     div.section-caption div {
       max-width: 450px;
-      padding: 10px 0 20px 0;
       font: 400 16px/20px "Lora"; } }
 
 ul.topnav {
@@ -6606,7 +6604,8 @@ ul.topnav {
     float: left;
     padding: 1% 0 0 5%;
     color: #fff;
-    font: 700 20px/20px "Raleway"; }
+    font: 700 20px/20px "Raleway";
+    border-right: 1px solid #bebebe; }
     .header h1.logo span {
       font-weight: 400; }
     .header h1.logo:before {
@@ -6925,7 +6924,8 @@ a.button {
     padding: 30px 2%;
     margin: auto; }
     .services .section-caption {
-      align-self: flex-start; }
+      align-self: flex-start;
+      margin-left: 15px; }
     .services .service-list {
       max-width: 1170px; }
       .services .service-list .service-list-item {
@@ -7017,6 +7017,9 @@ a.button {
   .statistic img {
     width: 27px;
     padding: 0 5px 0 10px; }
+  .statistic li span {
+    color: #000;
+    font: 700 30px/30px "Open Sans"; }
 
 .wrapper-content div {
   padding-right: 10px; }
@@ -7025,7 +7028,7 @@ a.button {
     color: #ffaf36;
     margin-bottom: 20px; }
   .wrapper-content div .blog-caption {
-    margin-bottom: 0;
+    margin: 0;
     text-transform: uppercase;
     color: #000;
     font: 700 16px/24px "Raleway"; }
@@ -7034,7 +7037,7 @@ a.button {
   .news .wrapper .statistic {
     flex-basis: 20%;
     align-self: stretch;
-    flex-flow: column wrap; }
+    font-size: 20px; }
   .news .wrapper .wrapper-content {
     justify-content: flex-start; } }
 
@@ -7045,12 +7048,58 @@ a.button {
       flex-basis: 100%;
       padding-left: 30px; }
     .news .wrapper .statistic {
-      flex-basis: 10%; }
+      flex-flow: column wrap;
+      flex-basis: 11%;
+      padding-right: 20px; }
+      .news .wrapper .statistic li {
+        font: 400 14px/18px "Open Sans";
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        position: relative; }
+        .news .wrapper .statistic li span {
+          display: block;
+          float: right;
+          clear: left;
+          font: 700 30px/30px "Open Sans"; }
+          .news .wrapper .statistic li span:nth-child(2) {
+            font: 400 14px/18px "Open Sans";
+            clear: both; }
+        .news .wrapper .statistic li img {
+          display: block;
+          float: right;
+          clear: left;
+          width: 40px; }
+        .news .wrapper .statistic li:nth-child(1) {
+          border-bottom: 1px solid #ffaf36; }
+          .news .wrapper .statistic li:nth-child(1):after {
+            content: " ";
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            height: 1px;
+            width: 20px;
+            background-color: #00b3ee;
+            z-index: 1; }
+        .news .wrapper .statistic li:nth-child(2) {
+          border-bottom: 1px solid #ffaf36; }
+          .news .wrapper .statistic li:nth-child(2):after {
+            content: " ";
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            height: 1px;
+            width: 20px;
+            background-color: #00b3ee;
+            z-index: 1; }
     .news .wrapper .wrapper-content {
       flex-grow: 1;
-      flex-basis: 90%; }
+      flex-basis: 89%; }
       .news .wrapper .wrapper-content > div {
-        flex-basis: 40%; } }
+        flex-basis: 50%; }
+        .news .wrapper .wrapper-content > div:first-child {
+          padding-bottom: 20px; } }
 
 .partners {
   position: relative;
@@ -7058,7 +7107,8 @@ a.button {
   .partners .owl-carousel {
     z-index: 1; }
     .partners .owl-carousel .item img {
-      width: auto; }
+      width: auto;
+      border: 1px solid rgba(0, 0, 0, 0.1); }
     .partners .owl-carousel .owl-dots span {
       background-color: #36a8ff; }
     .partners .owl-carousel .owl-dots .active span {
