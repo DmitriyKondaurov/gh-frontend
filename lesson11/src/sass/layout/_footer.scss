@@ -47,7 +47,11 @@ footer {
       }
       &:nth-child(3) {
         display: flex;
+        border-top: none;
         align-items: flex-start;
+      }
+      &:nth-child(2) {
+        border-top: none;
       }
     }
   }
