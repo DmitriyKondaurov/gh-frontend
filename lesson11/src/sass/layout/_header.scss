@@ -26,6 +26,7 @@
     font: 700 20px/20px "Raleway";
     span {
       font-weight: 400;
+      color: $light-text;
     }
     &:before {
       content: url(../img/logo.png);

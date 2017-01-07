@@ -1,7 +1,8 @@
 .partners {
   position: relative;
   padding: 30px 2%;
-
+  margin: auto;
+  max-width: 1170px;
   .owl-carousel {
     z-index: 1;
     .item {
