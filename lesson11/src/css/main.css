@@ -6585,7 +6585,7 @@ ul.topnav {
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -6797,7 +6797,7 @@ a.button {
       font: italic 400 15px/20px "Lora"; }
     .welcome .welcome-carousel .owl-carousel {
       position: static;
-      z-index: 0; }
+      z-index: 1; }
     .welcome .welcome-carousel .owl-theme .owl-nav.disabled + .owl-dots {
       position: absolute;
       bottom: 0;
@@ -6865,7 +6865,7 @@ a.button {
   max-width: 1170px;
   margin: auto; }
   .about > * {
-    flex-basis: 90%;
+    flex-basis: 100%;
     padding: 30px 0 0 0; }
   .about p {
     margin: 0; }
@@ -6925,8 +6925,7 @@ a.button {
     padding: 30px 2%;
     margin: auto; }
     .services .section-caption {
-      align-self: flex-start;
-      margin-left: 50px; }
+      align-self: flex-start; }
     .services .service-list {
       max-width: 1170px; }
       .services .service-list .service-list-item {
@@ -6958,7 +6957,7 @@ a.button {
   flex-flow: column wrap; }
   .testimonials .owl-carousel {
     position: static;
-    z-index: 0;
+    z-index: 1;
     margin-top: 10px; }
     .testimonials .owl-carousel owl-item {
       width: 310px; }
@@ -6991,7 +6990,8 @@ a.button {
 
 @media screen and (min-width: 767px) {
   .testimonials .section-caption {
-    align-self: flex-start; }
+    align-self: flex-start;
+    margin-left: 30px; }
   .testimonials .owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     bottom: 0;
@@ -7000,17 +7000,16 @@ a.button {
 
 .news {
   background-color: #eaeff3;
-  padding: 30px 0; }
-
-.wrapper {
-  max-width: 1170px;
-  display: flex;
-  flex-flow: column wrap; }
-  .wrapper .wrapper-content {
+  padding: 30px 2%; }
+  .news .wrapper {
+    max-width: 1170px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center; }
+    flex-flow: column wrap; }
+    .news .wrapper .wrapper-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center; }
 
 .statistic {
   display: flex;
@@ -7032,30 +7031,32 @@ a.button {
     font: 700 16px/24px "Raleway"; }
 
 @media screen and (min-width: 567px) {
-  .wrapper .statistic {
+  .news .wrapper .statistic {
     flex-basis: 20%;
     align-self: stretch;
     flex-flow: column wrap; }
-  .wrapper .wrapper-content {
+  .news .wrapper .wrapper-content {
     justify-content: flex-start; } }
 
 @media screen and (min-width: 767px) {
-  .wrapper {
+  .news .wrapper {
     flex-flow: row wrap; }
-    .wrapper .section-caption {
-      flex-basis: 100%; }
-    .wrapper .statistic {
+    .news .wrapper .section-caption {
+      flex-basis: 100%;
+      padding-left: 30px; }
+    .news .wrapper .statistic {
       flex-basis: 10%; }
-    .wrapper .wrapper-content {
+    .news .wrapper .wrapper-content {
       flex-grow: 1;
       flex-basis: 90%; }
-      .wrapper .wrapper-content > div {
+      .news .wrapper .wrapper-content > div {
         flex-basis: 40%; } }
 
 .partners {
-  position: relative; }
+  position: relative;
+  padding: 30px 2%; }
   .partners .owl-carousel {
-    z-index: 0; }
+    z-index: 1; }
     .partners .owl-carousel .item img {
       width: auto; }
     .partners .owl-carousel .owl-dots span {
@@ -7076,6 +7077,8 @@ a.button {
       bottom: 0; }
 
 @media screen and (min-width: 767px) {
+  .partners .section-caption {
+    padding-left: 30px; }
   .partners .owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     text-align: left; } }

@@ -1,7 +1,9 @@
 .partners {
   position: relative;
+  padding: 30px 2%;
+
   .owl-carousel {
-    z-index: 0;
+    z-index: 1;
     .item {
       img {
         width: auto;
@@ -42,9 +44,14 @@
 }
 
 @media screen and ($medium) {
-  .partners  .owl-theme .owl-nav.disabled + .owl-dots {
-    position: absolute;
-    text-align: left;
+  .partners  {
+    .section-caption {
+      padding-left: 30px;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      position: absolute;
+      text-align: left;
+    }
   }
 }
 

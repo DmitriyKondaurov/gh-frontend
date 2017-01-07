@@ -9,7 +9,7 @@
   flex-flow: column wrap;
   .owl-carousel {
     position: static;
-    z-index: 0;
+    z-index: 1;
     margin-top: 10px;
     owl-item {
       width: 310px;
@@ -67,6 +67,8 @@
   .testimonials {
     .section-caption {
       align-self: flex-start;
+      margin-left: 30px;
+
     }
     .owl-theme {
       .owl-nav.disabled + .owl-dots {
