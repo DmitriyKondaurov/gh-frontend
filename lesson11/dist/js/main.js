@@ -58,7 +58,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:false,
-        items:2,
+        items:1,
         responsive:{
             0:{
                 items:2
@@ -72,3 +72,12 @@ $(document).ready(function(){
         }
     })
 });
+var options = {
+    valueNames: [ 'name', 'category' ],
+    page: 3,
+    plugins: [
+        ListPagination({})
+    ]
+};
+
+var listObj = new List('listId', options);
