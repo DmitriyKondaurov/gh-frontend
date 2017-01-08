@@ -1,9 +1,9 @@
-.blog-content {
-  .wrapper {
-    max-width: 1170px;
-    position: relative;
-    margin: auto;
-    padding: 30px 0;
+.wrapper {
+  max-width: 1170px;
+  position: relative;
+  margin: auto;
+  padding: 30px 0;
+  .blog-content {
     .item {
       display: flex;
       flex-flow: column wrap;
@@ -76,81 +76,44 @@
     }
   }
 }
-.container {
-  text-align: center;
-  .pagination {
-    li {
-      display: inline-block;
-      padding: 5px;
-      &> a {
-        border: 2px solid #2a2b2c;
-        color: #2a2b2c;
-        background: none;
-        &:hover {
-          border-color: $main-color;
-          background-color: white;
-          color: $main-color;
-        }
-      }
-    }
-    & > li.active > a {
-    border: 2px solid $main-color;
-    color: $main-color;
-    background: none;
-      &:hover {
-        background-color: white;
-        border-color: $main-color;
-        color: $main-color;
-      }
-    }
-  }
-}
-
-
-
 
 @media screen and ($small) {
   .blog-content {
-    .wrapper {
-      .item {
-        .blog-caption {
-          font: 700 17px/24px "Raleway";
-          &+div {
-            //margin-bottom: 20px;
-            font: 600 13px/24px "Proxima Nova";
-          }
+    .item {
+      .blog-caption {
+        font: 700 17px/24px "Raleway";
+        &+div {
+          //margin-bottom: 20px;
+          font: 600 13px/24px "Proxima Nova";
         }
       }
     }
   }
 }
+
 
 @media screen and ($medium) {
   .blog-content {
-    .wrapper {
-      figure {
-        display: block;
-      }
-      .item {
-        flex-flow: row wrap;
-      }
+    figure {
+      display: block;
+    }
+    .item {
+      flex-flow: row wrap;
     }
   }
 }
 
+
 @media screen and ($large) {
   .blog-content {
-    .wrapper {
-      .item {
-        .blog-caption {
-          font: 900 18px/24px "Raleway";
-          &+div {
-            //margin-bottom: 20px;
-            font: 600 13px/24px "Proxima Nova";
-          }
+    .item {
+      .blog-caption {
+        font: 900 18px/24px "Raleway";
+        &+div {
+          font: 600 13px/24px "Proxima Nova";
         }
       }
     }
   }
-
 }
+
