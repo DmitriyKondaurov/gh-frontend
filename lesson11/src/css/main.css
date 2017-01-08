@@ -6484,6 +6484,13 @@ div.section-caption {
       max-width: 450px;
       font: 400 16px/20px "Lora"; } }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Proxima Nova Semibold.eot");
+  src: local("Proxima Nova"), url("../fonts/Proxima Nova Semibold.woff") format("woff"), url("../fonts/Proxima Nova Semibold.ttf") format("truetype"), url("../fonts/Proxima Nova Semibold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
 ul.topnav {
   z-index: 2;
   list-style-type: none;
@@ -7196,7 +7203,7 @@ a.button {
   padding: 30px 0; }
   .blog-content .wrapper .item {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 50px 0;
     border-bottom: 1px solid #bebebe; }
     .blog-content .wrapper .item:first-child {
@@ -7207,6 +7214,15 @@ a.button {
       flex-basis: 90%; }
       .blog-content .wrapper .item div:nth-child(2) img {
         padding: 30px 0; }
+    .blog-content .wrapper .item .blog-caption {
+      margin: 0;
+      text-transform: uppercase;
+      color: #000;
+      font: 700 16px/24px "Raleway"; }
+      .blog-content .wrapper .item .blog-caption + div {
+        text-transform: uppercase;
+        color: #757575;
+        font: 600 13px/24px "Proxima Nova"; }
   .blog-content .wrapper .social-service-list li {
     display: inline-block; }
     .blog-content .wrapper .social-service-list li:nth-last-child(1) a {
@@ -7259,9 +7275,126 @@ a.button {
       border-color: #ffaf36;
       color: #ffaf36; }
 
+@media screen and (min-width: 567px) {
+  .blog-content .wrapper .item .blog-caption {
+    font: 700 17px/24px "Raleway"; }
+    .blog-content .wrapper .item .blog-caption + div {
+      font: 600 13px/24px "Proxima Nova"; } }
+
 @media screen and (min-width: 767px) {
   .blog-content .wrapper figure {
-    display: block; } }
+    display: block; }
+  .blog-content .wrapper .item {
+    flex-flow: row wrap; } }
+
+@media screen and (min-width: 1023px) {
+  .blog-content .wrapper .item .blog-caption {
+    font: 900 18px/24px "Raleway"; }
+    .blog-content .wrapper .item .blog-caption + div {
+      font: 600 13px/24px "Proxima Nova"; } }
+
+.blog-post {
+  background-color: #000; }
+  .blog-post img {
+    width: 100%;
+    opacity: 0.5; }
+
+.blog-content .wrapper {
+  max-width: 1170px;
+  position: relative;
+  margin: auto;
+  padding: 30px 0; }
+  .blog-content .wrapper .item {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px 0;
+    border-bottom: 1px solid #bebebe; }
+    .blog-content .wrapper .item:first-child {
+      padding-top: 20px; }
+    .blog-content .wrapper .item div:first-child {
+      flex-basis: 10%; }
+    .blog-content .wrapper .item div:nth-child(2) {
+      flex-basis: 90%; }
+      .blog-content .wrapper .item div:nth-child(2) img {
+        padding: 30px 0; }
+    .blog-content .wrapper .item .blog-caption {
+      margin: 0;
+      text-transform: uppercase;
+      color: #000;
+      font: 700 16px/24px "Raleway"; }
+      .blog-content .wrapper .item .blog-caption + div {
+        text-transform: uppercase;
+        color: #757575;
+        font: 600 13px/24px "Proxima Nova"; }
+  .blog-content .wrapper .social-service-list li {
+    display: inline-block; }
+    .blog-content .wrapper .social-service-list li:nth-last-child(1) a {
+      color: #205b9f; }
+    .blog-content .wrapper .social-service-list li:nth-last-child(2) a {
+      color: #00ace3; }
+    .blog-content .wrapper .social-service-list li:nth-last-child(3) a {
+      color: #ff3921; }
+  .blog-content .wrapper .article-footer {
+    position: relative; }
+    .blog-content .wrapper .article-footer > span {
+      display: block;
+      float: left;
+      padding-top: 10px; }
+  .blog-content .wrapper .button {
+    position: absolute;
+    bottom: 0;
+    right: 20px; }
+
+.blog-content figure {
+  display: none; }
+  .blog-content figure img:first-child {
+    position: absolute;
+    bottom: 0;
+    right: 50px; }
+  .blog-content figure img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+.container {
+  text-align: center; }
+  .container .pagination li {
+    display: inline-block;
+    padding: 5px; }
+    .container .pagination li > a {
+      border: 2px solid #2a2b2c;
+      color: #2a2b2c;
+      background: none; }
+      .container .pagination li > a:hover {
+        border-color: #ffaf36;
+        background-color: white;
+        color: #ffaf36; }
+  .container .pagination > li.active > a {
+    border: 2px solid #ffaf36;
+    color: #ffaf36;
+    background: none; }
+    .container .pagination > li.active > a:hover {
+      background-color: white;
+      border-color: #ffaf36;
+      color: #ffaf36; }
+
+@media screen and (min-width: 567px) {
+  .blog-content .wrapper .item .blog-caption {
+    font: 700 17px/24px "Raleway"; }
+    .blog-content .wrapper .item .blog-caption + div {
+      font: 600 13px/24px "Proxima Nova"; } }
+
+@media screen and (min-width: 767px) {
+  .blog-content .wrapper figure {
+    display: block; }
+  .blog-content .wrapper .item {
+    flex-flow: row wrap; } }
+
+@media screen and (min-width: 1023px) {
+  .blog-content .wrapper .item .blog-caption {
+    font: 900 18px/24px "Raleway"; }
+    .blog-content .wrapper .item .blog-caption + div {
+      font: 600 13px/24px "Proxima Nova"; } }
 
 .partners {
   position: relative;
