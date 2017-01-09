@@ -5,7 +5,7 @@
     opacity: 0.5;
   }
 }
-.blog-content {
+.blog {
   .wrapper {
     max-width: 1170px;
     position: relative;
@@ -117,7 +117,7 @@
 
 
 @media screen and ($small) {
-  .blog-content {
+  .blog {
     .wrapper {
       .item {
         .blog-caption {
@@ -133,7 +133,7 @@
 }
 
 @media screen and ($medium) {
-  .blog-content {
+  .blog {
     .wrapper {
       figure {
         display: block;
@@ -146,7 +146,7 @@
 }
 
 @media screen and ($large) {
-  .blog-content {
+  .blog {
     .wrapper {
       .item {
         .blog-caption {
