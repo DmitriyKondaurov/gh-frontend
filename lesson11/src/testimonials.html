@@ -118,29 +118,33 @@
 <section class="testimonials-comment-form">
     <div class="wrapper">
         <div class="section-caption">
-            <h2>Leave your comment</h2>
-            <div>Submit your comments now</div>
+            <h2>Post Comments</h2>
+            <div>Post Your testimonial now</div>
         </div>
         <form action="#">
             <ul>
-                <li>
-                    <label for="main-form-name">Name<span>*</span> </label>
-                    <input type="text" id="main-form-name" name="main-form-name">
-                </li>
-                <li>
-                    <label for="main-form-email">Email address<span>*</span> </label>
-                    <input type="email" id="main-form-email" name="main-form-email">
-                </li>
-                <li>
-                    <label for="main-form-phone">phone number<span>*</span> </label>
-                    <input type="text" id="main-form-phone" name="main-form-phone" pattern="[+0-9]{13}">
-                </li>
-                <li>
-                    <label for="main-form-comment">Comment<span>*</span> </label>
-                    <textarea id="main-form-comment" name="main-form-comment" rows="5"></textarea>
-                </li>
+                <div class="flex-unit">
+                    <li>
+                        <label for="main-form-name">Name<span>*</span> </label>
+                        <input type="text" id="main-form-name" name="main-form-name">
+                    </li>
+                    <li>
+                        <label for="main-form-email">Email address<span>*</span> </label>
+                        <input type="email" id="main-form-email" name="main-form-email">
+                    </li>
+                    <li>
+                        <label for="main-form-phone">phone number<span>*</span> </label>
+                        <input type="text" id="main-form-phone" name="main-form-phone" pattern="[+0-9]{13}">
+                    </li>
+                </div>
+                <div class="flex-unit">
+                    <li class="comment-massage">
+                        <label for="main-form-comment">Comment<span>*</span> </label>
+                        <textarea id="main-form-comment" name="main-form-comment" rows="3"></textarea>
+                    </li>
+                    <input class="submit" type="submit" value="SUBMIT NOW">
+                </div>
             </ul>
-            <input class="submit" type="submit" value="SUBMIT NOW">
         </form>
         <figure>
             <img src="img/blue-pyramid-shape.png" alt="#">
