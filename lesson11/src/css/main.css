@@ -7442,18 +7442,20 @@ a.button {
       .comment-form form li label span {
         color: #ffaf36; }
     .comment-form form li input {
-      color: #504f50;
+      width: 80%;
       border: none;
       background-color: #eaeff3;
-      font: 700 14px/50px "Open Sans";
-      text-transform: uppercase; }
+      color: black;
+      font: 700 14px/50px "Open Sans"; }
       .comment-form form li input:focus {
         outline: none; }
     .comment-form form li textarea {
-      color: #504f50;
+      width: 80%;
+      color: black;
       border: none;
       resize: none;
-      background-color: #eaeff3; }
+      background-color: #eaeff3;
+      font: 700 14px/50px "Open Sans"; }
       .comment-form form li textarea:focus {
         outline: none; }
     .comment-form form li:nth-child(3) {

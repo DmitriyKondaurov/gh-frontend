@@ -188,20 +188,22 @@
         }
       }
       input {
-        color: $dark-text;
+        width: 80%;
         border: none;
         background-color: #eaeff3;
+        color: black;
         font: 700 14px/50px "Open Sans";
-        text-transform: uppercase;
         &:focus {
           outline: none;
         }
       }
       textarea {
-        color: $dark-text;
+        width: 80%;
+        color: black;
         border: none;
         resize: none;
         background-color: #eaeff3;
+        font: 700 14px/50px "Open Sans";
         &:focus {
           outline: none;
         }
