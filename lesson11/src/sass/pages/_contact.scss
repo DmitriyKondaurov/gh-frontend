@@ -1,0 +1,78 @@
+.contact-banner {
+  background-color: #000;
+  img {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+.main {
+  .wrapper {
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px 2% 0 2%;
+    .phone-email {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 30px 0;
+      .phone {
+        clear: none;
+        padding: 20px 0 0 1%;
+        font-size: 16px;
+        &:before {
+          font-family: FontAwesome;
+          font-size: 22px;
+          content: "\f095";
+          display: inline-block;
+          padding: 1%;
+          padding-right: 5px;
+          vertical-align: middle;
+          color: $main-color;
+        }
+      }
+      a {
+        padding: 10px 15px;
+        background: none;
+        color: black;
+        border: 2px solid $main-color;
+        font: 700 16px/24px "Raleway";
+        text-transform: uppercase;
+        &:hover {
+          background-color: $main-color;
+          color: #000;
+        }
+      }
+    }
+    .location {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 125px 0 125px 10%;
+      margin-bottom: 50px;
+      background: linear-gradient(150deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/layer-190.png) center no-repeat;
+      h3 {
+        font: 800 30px/30px "Raleway";
+        color: $main-color;
+        text-transform: uppercase;
+      }
+      p {
+        font: 700 16px/24px "Raleway";
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+@media screen and ($small) {
+
+}
+
+@media screen and ($medium) {
+
+}
+
+@media screen and ($large) {
+
+}
