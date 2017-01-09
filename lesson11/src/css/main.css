@@ -7044,7 +7044,7 @@ a.button {
     padding: 0 5px 0 10px; }
   .statistic li span {
     color: #000;
-    font: 700 30px/30px "Open Sans"; }
+    font: 700 12px/30px "Open Sans"; }
 
 .wrapper-content div {
   padding-right: 10px; }
@@ -7061,8 +7061,7 @@ a.button {
 @media screen and (min-width: 567px) {
   .news .wrapper .statistic {
     flex-basis: 20%;
-    align-self: stretch;
-    font-size: 20px; }
+    align-self: stretch; }
   .news .wrapper .wrapper-content {
     justify-content: flex-start; } }
 
@@ -7372,7 +7371,8 @@ a.button {
   margin: auto;
   padding: 50px 2% 0 2%; }
   .comment-else .wrapper blockquote {
-    border: none; }
+    border: none;
+    font: 400 14px/22px "Open Sans"; }
 
 .comment-block-item {
   display: flex;
@@ -7488,6 +7488,12 @@ a.button {
     font: 900 18px/24px "Raleway"; }
     .blog-content .wrapper .item .blog-caption + div {
       font: 600 13px/24px "Proxima Nova"; } }
+
+.testimonials-banner {
+  background-color: #000; }
+  .testimonials-banner img {
+    width: 100%;
+    opacity: 0.5; }
 
 .blog-content .wrapper {
   max-width: 1170px;

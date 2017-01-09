@@ -32,17 +32,17 @@
         </nav>
     </div>
 </header>
-<section class="blog-banner" id="blog">
-    <img src="img/layer-19.png">
+<section class="testimonials-banner">
+    <img src="img/layer-27.png">
 </section>
-<section class="blog">
-    <div class="wrapper" id="listId">
+<section class="testimonials-comments">
+    <div class="wrapper">
         <div class="section-caption">
-            <h2>Blog Page</h2>
-            <div>Our featured Post</div>
+            <h2>Testimonials</h2>
+            <div>Our Happy Clients</div>
         </div>
-        <ul class="list">
-            <li class="item">
+        <ul class="testimonials-comments-list">
+            <li class="testimonials-comment">
                 <div><img src="img/layer-16.png" alt="photo"></div>
                 <div>
                     <h3 class="blog-caption">Blog Heading Here</h3>
@@ -78,90 +78,41 @@
                         <a class="button" href="blog_post.html">READ MORE</a>
                     </div>
                 </div>
+                <figure>
+                    <img src="img/blue-pyramid-shape.png" alt="#">
+                    <img src="img/yellow-pyramid-shape.png" alt="#">
+                </figure>
             </li>
-            <li class="item">
-                <div><img src="img/layer-16.png" alt="photo"></div>
-                <div>
-                    <h3 class="blog-caption">Blog Heading Here</h3>
-                    <div>Posted by: admin,  October- 12- 2015</div>
-                    <img src="img/layer-14.png" alt="plant">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised..</p>
-                    <div class="article-footer">
-                        <span>SHARE:</span>
-                        <ul class="social-service-list">
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-facebook fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-twitter fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-google-plus fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                        <a class="button" href="error404.html">READ MORE</a>
-                    </div>
-                </div>
-            </li>
-            <li class="item">
-                <div><img src="img/layer-16.png" alt="photo"></div>
-                <div>
-                    <h3 class="blog-caption">Blog Heading Here</h3>
-                    <div>Posted by: admin,  October- 13- 2015</div>
-                    <img src="img/layer-15.png" alt="plant">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised..</p>
-                    <div class="article-footer">
-                        <span>SHARE:</span>
-                        <ul class="social-service-list">
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-facebook fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-twitter fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-google-plus fa-stack-1x fa-inverse"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                        <a class="button" href="error404.html">READ MORE</a>
-                    </div>
-                </div>
-            </li>
-
         </ul>
-        <div class="container">
-            <ul class="pagination">
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="error404.html">2</a></li>
-                <li><a href="error404.html">3</a></li>
-            </ul>
+    </div>
+</section>
+<section class="comment-form">
+    <div class="wrapper">
+        <div class="section-caption">
+            <h2>Leave your comment</h2>
+            <div>Submit your comments now</div>
         </div>
+        <form action="#">
+            <ul>
+                <li>
+                    <label for="main-form-name">Name<span>*</span> </label>
+                    <input type="text" id="main-form-name" name="main-form-name">
+                </li>
+                <li>
+                    <label for="main-form-email">Email address<span>*</span> </label>
+                    <input type="email" id="main-form-email" name="main-form-email">
+                </li>
+                <li>
+                    <label for="main-form-phone">phone number<span>*</span> </label>
+                    <input type="text" id="main-form-phone" name="main-form-phone" pattern="[+0-9]{13}">
+                </li>
+                <li>
+                    <label for="main-form-comment">Comment<span>*</span> </label>
+                    <textarea id="main-form-comment" name="main-form-comment" rows="5"></textarea>
+                </li>
+            </ul>
+            <input class="submit" type="submit" value="SUBMIT NOW">
+        </form>
         <figure>
             <img src="img/blue-pyramid-shape.png" alt="#">
             <img src="img/yellow-pyramid-shape.png" alt="#">
@@ -198,7 +149,7 @@
                 <li><a href="index.html#home">HOME</a></li>
                 <li><a href="index.html#about">ABOUT US</a></li>
                 <li><a href="index.html#services">SERVICES</a></li>
-                <li><a href="#" class="active">TESTIMONIAL</a></li>
+                <li class="active"><a href="#">TESTIMONIAL</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
