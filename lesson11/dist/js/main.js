@@ -72,12 +72,3 @@ $(document).ready(function(){
         }
     })
 });
-var options = {
-    valueNames: [ 'name', 'category' ],
-    page: 3,
-    plugins: [
-        ListPagination({})
-    ]
-};
-
-var listObj = new List('listId', options);

@@ -41,12 +41,10 @@
  +.idea
  +bower_components/
  +node_modules/
-
-
-
 .idea/
 node_modules/
 .sass-cache/
 .gulp-scss-cache/
 .gulp-sass-cache/
 bower_components/
+dist/

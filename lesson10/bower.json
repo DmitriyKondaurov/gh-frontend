@@ -1,6 +1,6 @@
 {
   "name": "lesson10",
-  "description": "UIBrush",
+  "description": "BusinessPlus",
   "main": "",
   "authors": [
     "Invisible <invisibl@ukr.net>"
@@ -22,6 +22,7 @@
     "jquery": "^3.1.1",
     "magnific-popup": "^1.1.0",
     "bootstrap-sass": "^3.3.7",
-    "flexbox": "*"
+    "flexbox": "*",
+    "owl.carousel": "^2.2.0"
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Error404</title>
+    <title>Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
@@ -24,7 +24,7 @@
                 <li><a href="index.html#news">NEWS</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="error404.html">PAGES</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
+                <li class="active"><a href="#">CONTACT US</a></li>
                 <li class="icon">
                     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
                 </li>
@@ -32,18 +32,55 @@
         </nav>
     </div>
 </header>
-<section class="error-banner" id="error-404">
-    <img src="img/layer-2.png">
+<section class="contact-banner">
+    <img src="img/layer-200.png">
 </section>
-<section class="error-massage">
+<section class="main">
     <div class="wrapper">
-        <div class="massage">
-            <p>error<span>404</span><br>not found</p>
-            <p>You may have mis-typed the URL Or the page has been removed</p>
+        <div class="section-caption">
+            <h2>Get in touch</h2>
+            <div>Feel free to contact us</div>
         </div>
+        <div class="phone-email">
+            <div class="phone">+9978 8856 999</div>
+            <a href="#">info@businessplus.com</a>
+        </div>
+        <div class="location">
+            <h3>CANADA</h3>
+            <p>100 Mission St, Canada street, Second flor 8878</p>
+        </div>
+    </div>
+</section>
+<section class="comment-form">
+    <div class="wrapper">
+        <div class="section-caption">
+            <h2>Leave your comment</h2>
+            <div>Submit your comments now</div>
+        </div>
+        <form action="#">
+            <ul>
+                <li>
+                    <label for="main-form-name">Name<span>*</span> </label>
+                    <input type="text" id="main-form-name" name="main-form-name">
+                </li>
+                <li>
+                    <label for="main-form-email">Email address<span>*</span> </label>
+                    <input type="email" id="main-form-email" name="main-form-email">
+                </li>
+                <li>
+                    <label for="main-form-phone">phone number<span>*</span> </label>
+                    <input type="text" id="main-form-phone" name="main-form-phone" pattern="[+0-9]{13}">
+                </li>
+                <li>
+                    <label for="main-form-comment">Comment<span>*</span> </label>
+                    <textarea id="main-form-comment" name="main-form-comment" rows="5"></textarea>
+                </li>
+            </ul>
+            <input class="submit" type="submit" value="SUBMIT NOW">
+        </form>
         <figure>
-            <img src="img/blue-pyramid-shape.png" alt="">
-            <img src="img/yellow-pyramid-shape.png" alt="">
+            <img src="img/blue-pyramid-shape.png" alt="#">
+            <img src="img/yellow-pyramid-shape.png" alt="#">
         </figure>
     </div>
 </section>
@@ -79,7 +116,7 @@
                 <li><a href="index.html#services">SERVICES</a></li>
                 <li><a href="testimonials.html">TESTIMONIAL</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
+                <li class="active"><a href="#">CONTACT US</a></li>
             </ul>
         </div>
         <div class="flex-unit">
