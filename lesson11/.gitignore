@@ -47,4 +47,4 @@ node_modules/
 .gulp-scss-cache/
 .gulp-sass-cache/
 bower_components/
-dist/
+
