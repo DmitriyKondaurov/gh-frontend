@@ -3,13 +3,25 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     cssnano     = require('gulp-cssnano'),
-    rename      = require('gulp-rename');
+    rename      = require('gulp-rename'),
+    browserSync = require('browser-sync').create(),
     del         = require('del');
 
 gulp.task('sass', function() {
-    return gulp.src('src/sass/*.+(scss|sass)')
+    return gulp.src('src/sass/**/*.+(scss|sass)')
         .pipe(sass())
         .pipe(gulp.dest('src/css'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: 'src'
+        },
+        notify: false
+    });
+    browserSync.watch('src/**/*.*').on('change', browserSync.reload);
 });
 
 gulp.task('scripts', function() {
@@ -54,5 +66,11 @@ gulp.task('build', ['clean', 'sass', 'scripts'], function () {
 //перед watch clean
 gulp.task('clean', function () {
     return del.sync('dist');
+});
+
+gulp.task('watch', ['browser-sync', 'sass'], function() {
+    gulp.watch('src/sass/**/*.+(scss|sass)', ['sass']);
+    gulp.watch('src/*.html', browserSync.reload);
+    gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
