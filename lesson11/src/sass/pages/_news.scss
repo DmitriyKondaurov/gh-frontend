@@ -13,9 +13,10 @@
 }
 .news-articles-list {
   padding: 0;
-
+  margin: 0;
   .article {
-    padding: 100px 1%;
+    text-align: left;
+    padding: 30px 1%;
     h3 {
       margin-top: 0;
       color: #1c1c1c;
@@ -46,12 +47,12 @@
       margin: auto;
       position: relative;
     }
-    .news-article-text {
+    .container {
       text-align: left;
     }
     .news-content-list {
       color: #1c1c1c;
-      font: 700 12px/30px 'Open Sans';
+      font: 700 10px/30px 'Open Sans';
       text-transform: uppercase;
       li::before {
         content: "\f00c";
@@ -66,6 +67,7 @@
       color: #1c1c1c;
       font: 700 13px/40px"Open Sans";
       text-transform: uppercase;
+      text-align: center;
       &::before {
         content: "\f0da";
         display: block;
@@ -95,20 +97,47 @@
       font: italic 400 14px/28px "Open Sans";
       color: #1c1c1c;
     }
+    .article-gallery {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 100%;
+        padding-bottom: 15px;
+      }
+    }
   }
 }
 
 @media screen and ($small) {
-
+  .news-articles-list {
+    .article {
+      .article-gallery {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and ($medium) {
-
+  .news-articles-list {
+    .article {
+      .article-gallery {
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
 }
 
 @media screen and ($large) {
   .news-articles-list {
     .article {
+      padding: 100px 1%;
       figure {
         display: block;
         img:first-child {
@@ -132,6 +161,9 @@
         img:last-child {
           bottom: -180px;
         }
+      }
+      .news-content-list {
+        font-size: 12px;
       }
     }
   }
