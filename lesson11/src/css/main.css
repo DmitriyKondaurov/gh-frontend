@@ -6663,10 +6663,10 @@ ul.topnav {
     max-width: 1170px;
     margin: auto; }
     .header .wrapper nav {
-      padding-right: 20px; }
+      padding-right: 5px; }
     .header .wrapper h1.logo {
       margin: 0 auto 0 0;
-      padding: 0 0 0 5%;
+      padding: 0 0 0 5px;
       font: 700 20px/20px "Open Sans"; } }
 
 footer {
@@ -7704,6 +7704,11 @@ f.news {
   padding: 0; }
   .news-articles-list .article {
     padding: 100px 1%; }
+    .news-articles-list .article h3 {
+      margin-top: 0;
+      color: #1c1c1c;
+      font: 700 16px/24px Raleway;
+      text-transform: uppercase; }
     .news-articles-list .article:first-child {
       padding-top: 0; }
     .news-articles-list .article:nth-child(ogg) {
@@ -7713,9 +7718,21 @@ f.news {
     .news-articles-list .article .wrapper {
       max-width: 1170px;
       margin: auto;
-      position: relative;
-      display: flex;
-      flex-flow: row wrap; }
+      position: relative; }
+    .news-articles-list .article .news-article-text {
+      text-align: left; }
+    .news-articles-list .article .news-content-list {
+      color: #1c1c1c;
+      font: 700 12px/30px 'Open Sans';
+      text-transform: uppercase; }
+      .news-articles-list .article .news-content-list li::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        padding-right: 15px; }
+      .news-articles-list .article .news-content-list .news-date {
+        background-color: #ffaf36; }
+        .news-articles-list .article .news-content-list .news-date ::before {
+          content: "\f0da"; }
     .news-articles-list .article figure {
       display: none; }
       .news-articles-list .article figure img:first-child {
@@ -7736,9 +7753,7 @@ f.news {
 
 @media screen and (min-width: 767px) {
   .news-articles-list .article figure {
-    display: block; }
-  .news-articles-list .article .wrapper div {
-    flex-basis: 30%; } }
+    display: block; } }
 
 .partners {
   position: relative;

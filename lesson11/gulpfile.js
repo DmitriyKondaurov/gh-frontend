@@ -19,9 +19,8 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: 'src'
         },
-        notify: false
+        // notify: false
     });
-    browserSync.watch('src/**/*.*').on('change', browserSync.reload);
 });
 
 gulp.task('scripts', function() {

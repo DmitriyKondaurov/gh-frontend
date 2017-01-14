@@ -16,6 +16,12 @@
 
   .article {
     padding: 100px 1%;
+    h3 {
+      margin-top: 0;
+      color: #1c1c1c;
+      font: 700 16px/24px Raleway;
+      text-transform: uppercase;
+    }
     &:first-child {
       padding-top: 0;
     }
@@ -29,11 +35,27 @@
       max-width: 1170px;
       margin: auto;
       position: relative;
-      display: flex;
-      flex-flow: row wrap;
     }
-    .news-articles-text {
+    .news-article-text {
+      text-align: left;
+    }
+    .news-content-list {
+      color: #1c1c1c;
+      font: 700 12px/30px 'Open Sans';
+      text-transform: uppercase;
+      li::before {
+      content: "\f00c";
+      font-family: FontAwesome;
+      padding-right: 15px;
+      }
+      .news-date {
+        background-color: #ffaf36;
+        ::before {
+          content: "\f0da";
 
+
+        }
+      }
     }
     figure {
       display: none;
@@ -70,13 +92,9 @@
         display: block;
       }
     }
-    .article {
-      .wrapper div {
-        flex-basis: 30%;
-      }
-    }
   }
 }
 
 @media screen and ($large) {
+
 }
