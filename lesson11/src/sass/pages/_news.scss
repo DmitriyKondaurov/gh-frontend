@@ -5,23 +5,19 @@
     opacity: 0.5;
   }
 }
-.testimonials-comments {
+.news-articles {
   .section-caption {
     margin: auto;
     padding: 100px 0 30px 0;
   }
 }
-.testimonials-comments-list {
+.news-articles-list {
   padding: 0;
 
-  .testimonials-comment {
+  .article {
     padding: 100px 1%;
     &:first-child {
-      position: relative;
       padding-top: 0;
-      .wrapper {
-        position: relative;
-      }
     }
     &:nth-child(ogg) {
       background-color: white;
@@ -47,114 +43,39 @@
         bottom: -100px;
       }
     }
-    .blockquote {
-      background-color: white;
-      border: 1px solid #eaeff3;
+    .news-content-blockquote {
+      background-color: #d1ebff;
+      border: none;
+      border-left: 4px solid #36a8ff;
       padding: 35px 30px 35px 25px;
-      blockquote {
-        padding: 0;
-        border: none;
-      }
-      p {
-        color: #585858;
-        font: 400 14px/28px "Open Sans";
-        &::before {
-          content: open-quote;
-          font-size: 60px;
-        }
-        &::after {
-          content: close-quote;
-          display: block;
-          float: right;
-          font-size: 60px;
-          padding-top: 20px;
-        }
-      }
-    }
-    .blockquote-author {
-      h5 {
-        margin-bottom: 0;
-        color: #1c1c1c;
-        font: 700 13px/24px "Raleway";
-        text-transform: uppercase;
-      }
-      div {
-        color: $main-color;
-      }
+      font: italic 400 14px/28px "Open Sans";
+      color: #1c1c1c;
     }
   }
 }
 .testimonials-comment-form {
-  .wrapper {
-    position: relative;
-    max-width: 1170px;
-    margin: auto;
-    padding: 50px 2% 100px 2%;
-    figure {
-      display: none;
-      img:first-child {
-        position: absolute;
-        bottom: 0;
-        right: 50px;
-      }
-      img:last-child {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
-    }
-  }
   ul {
-    display: flex;
-    flex-flow: row wrap;
-    .flex-unit {
-      flex-basis: 100%;
-      li {
-        margin: 10px 15px;
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        color: $dark-text;
-        label {
-          font: 700 14px/50px "Open Sans";
-          text-transform: uppercase;
-          span {
-            color: $main-color;
-          }
-        }
-        input {
-          width: 75%;
-          border: none;
-          color: black;
-          font: 700 14px/50px "Open Sans";
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-      .submit {
-        margin: 10px 15px;
-        padding: 10px 15px;
-        background: none;
-        color: $main-color;
-        border: 2px solid $main-color;
-        &:hover {
-          background-color: $main-color;
-          color: #000;
-        }
-      }
-      .comment-massage {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        textarea {
-          width: 80%;
-          color: black;
-          border: none;
-          resize: none;
-          font: 700 14px/50px "Open Sans";
-          &:focus {
-            outline: none;
-          }
-        }
+    li {
+      margin: 10px 15px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      color: #1c1c1c;
+      text-transform: uppercase;
+      font: 700 12px/30px "Open Sans";
+    }
+    &:before {
+      content: '&#10004;';
+      padding-right: 8px;
+    }
+
+    .submit {
+      margin: 10px 15px;
+      padding: 10px 15px;
+      background: none;
+      color: $main-color;
+      border: 2px solid $main-color;
+      &:hover {
+        background-color: $main-color;
+        color: #000;
       }
     }
   }

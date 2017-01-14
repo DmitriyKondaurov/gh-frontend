@@ -7696,122 +7696,62 @@ f.news {
     width: 100%;
     opacity: 0.5; }
 
-.testimonials-comments .section-caption {
+.news-articles .section-caption {
   margin: auto;
   padding: 100px 0 30px 0; }
 
-.testimonials-comments-list {
+.news-articles-list {
   padding: 0; }
-  .testimonials-comments-list .testimonials-comment {
+  .news-articles-list .article {
     padding: 100px 1%; }
-    .testimonials-comments-list .testimonials-comment:first-child {
-      position: relative;
+    .news-articles-list .article:first-child {
       padding-top: 0; }
-      .testimonials-comments-list .testimonials-comment:first-child .wrapper {
-        position: relative; }
-    .testimonials-comments-list .testimonials-comment:nth-child(ogg) {
+    .news-articles-list .article:nth-child(ogg) {
       background-color: white; }
-    .testimonials-comments-list .testimonials-comment:nth-child(even) {
+    .news-articles-list .article:nth-child(even) {
       background-color: #eaeff3; }
-    .testimonials-comments-list .testimonials-comment .wrapper {
+    .news-articles-list .article .wrapper {
       max-width: 1170px;
       margin: auto;
       position: relative; }
-    .testimonials-comments-list .testimonials-comment figure {
+    .news-articles-list .article figure {
       display: none; }
-      .testimonials-comments-list .testimonials-comment figure img:first-child {
+      .news-articles-list .article figure img:first-child {
         position: absolute;
         bottom: -100px;
         right: 50px; }
-      .testimonials-comments-list .testimonials-comment figure img:last-child {
+      .news-articles-list .article figure img:last-child {
         position: absolute;
         right: 0;
         bottom: -100px; }
-    .testimonials-comments-list .testimonials-comment .blockquote {
-      background-color: white;
-      border: 1px solid #eaeff3;
-      padding: 35px 30px 35px 25px; }
-      .testimonials-comments-list .testimonials-comment .blockquote blockquote {
-        padding: 0;
-        border: none; }
-      .testimonials-comments-list .testimonials-comment .blockquote p {
-        color: #585858;
-        font: 400 14px/28px "Open Sans"; }
-        .testimonials-comments-list .testimonials-comment .blockquote p::before {
-          content: open-quote;
-          font-size: 60px; }
-        .testimonials-comments-list .testimonials-comment .blockquote p::after {
-          content: close-quote;
-          display: block;
-          float: right;
-          font-size: 60px;
-          padding-top: 20px; }
-    .testimonials-comments-list .testimonials-comment .blockquote-author h5 {
-      margin-bottom: 0;
-      color: #1c1c1c;
-      font: 700 13px/24px "Raleway";
-      text-transform: uppercase; }
-    .testimonials-comments-list .testimonials-comment .blockquote-author div {
-      color: #ffaf36; }
+    .news-articles-list .article .news-content-blockquote {
+      background-color: #d1ebff;
+      border: none;
+      border-left: 4px solid #36a8ff;
+      padding: 35px 30px 35px 25px;
+      font: italic 400 14px/28px "Open Sans";
+      color: #1c1c1c; }
 
-.testimonials-comment-form .wrapper {
-  position: relative;
-  max-width: 1170px;
-  margin: auto;
-  padding: 50px 2% 100px 2%; }
-  .testimonials-comment-form .wrapper figure {
-    display: none; }
-    .testimonials-comment-form .wrapper figure img:first-child {
-      position: absolute;
-      bottom: 0;
-      right: 50px; }
-    .testimonials-comment-form .wrapper figure img:last-child {
-      position: absolute;
-      right: 0;
-      bottom: 0; }
+.testimonials-comment-form ul li {
+  margin: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #1c1c1c;
+  text-transform: uppercase;
+  font: 700 12px/30px "Open Sans"; }
 
-.testimonials-comment-form ul {
-  display: flex;
-  flex-flow: row wrap; }
-  .testimonials-comment-form ul .flex-unit {
-    flex-basis: 100%; }
-    .testimonials-comment-form ul .flex-unit li {
-      margin: 10px 15px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      color: #504f50; }
-      .testimonials-comment-form ul .flex-unit li label {
-        font: 700 14px/50px "Open Sans";
-        text-transform: uppercase; }
-        .testimonials-comment-form ul .flex-unit li label span {
-          color: #ffaf36; }
-      .testimonials-comment-form ul .flex-unit li input {
-        width: 75%;
-        border: none;
-        color: black;
-        font: 700 14px/50px "Open Sans"; }
-        .testimonials-comment-form ul .flex-unit li input:focus {
-          outline: none; }
-    .testimonials-comment-form ul .flex-unit .submit {
-      margin: 10px 15px;
-      padding: 10px 15px;
-      background: none;
-      color: #ffaf36;
-      border: 2px solid #ffaf36; }
-      .testimonials-comment-form ul .flex-unit .submit:hover {
-        background-color: #ffaf36;
-        color: #000; }
-    .testimonials-comment-form ul .flex-unit .comment-massage {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: flex-start; }
-      .testimonials-comment-form ul .flex-unit .comment-massage textarea {
-        width: 80%;
-        color: black;
-        border: none;
-        resize: none;
-        font: 700 14px/50px "Open Sans"; }
-        .testimonials-comment-form ul .flex-unit .comment-massage textarea:focus {
-          outline: none; }
+.testimonials-comment-form ul:before {
+  content: '&#10004;';
+  padding-right: 8px; }
+
+.testimonials-comment-form ul .submit {
+  margin: 10px 15px;
+  padding: 10px 15px;
+  background: none;
+  color: #ffaf36;
+  border: 2px solid #ffaf36; }
+  .testimonials-comment-form ul .submit:hover {
+    background-color: #ffaf36;
+    color: #000; }
 
 @media screen and (min-width: 767px) {
   .testimonials-comments-list .testimonials-comment figure {
