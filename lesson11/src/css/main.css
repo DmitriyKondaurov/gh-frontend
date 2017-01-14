@@ -7509,7 +7509,7 @@ f.news {
       padding-top: 0; }
       .testimonials-comments-list .testimonials-comment:first-child .wrapper {
         position: relative; }
-    .testimonials-comments-list .testimonials-comment:nth-child(ogg) {
+    .testimonials-comments-list .testimonials-comment:nth-child(odd) {
       background-color: white; }
     .testimonials-comments-list .testimonials-comment:nth-child(even) {
       background-color: #eaeff3; }
@@ -7711,10 +7711,14 @@ f.news {
       text-transform: uppercase; }
     .news-articles-list .article:first-child {
       padding-top: 0; }
-    .news-articles-list .article:nth-child(ogg) {
+    .news-articles-list .article:nth-child(odd) {
       background-color: white; }
+      .news-articles-list .article:nth-child(odd) .news-date::before {
+        color: #fff; }
     .news-articles-list .article:nth-child(even) {
       background-color: #eaeff3; }
+      .news-articles-list .article:nth-child(even) .news-date::before {
+        color: #eaeff3; }
     .news-articles-list .article .wrapper {
       max-width: 1170px;
       margin: auto;
@@ -7729,10 +7733,19 @@ f.news {
         content: "\f00c";
         font-family: FontAwesome;
         padding-right: 15px; }
-      .news-articles-list .article .news-content-list .news-date {
-        background-color: #ffaf36; }
-        .news-articles-list .article .news-content-list .news-date ::before {
-          content: "\f0da"; }
+    .news-articles-list .article .news-date {
+      background-color: #ffaf36;
+      height: 40px;
+      padding: 0;
+      color: #1c1c1c;
+      font: 700 13px/40px "Open Sans";
+      text-transform: uppercase; }
+      .news-articles-list .article .news-date::before {
+        content: "\f0da";
+        display: block;
+        float: left;
+        margin-left: -2px;
+        font: 74px/40px FontAwesome; }
     .news-articles-list .article figure {
       display: none; }
       .news-articles-list .article figure img:first-child {
@@ -7751,9 +7764,21 @@ f.news {
       font: italic 400 14px/28px "Open Sans";
       color: #1c1c1c; }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1023px) {
   .news-articles-list .article figure {
-    display: block; } }
+    display: block; }
+    .news-articles-list .article figure img:first-child {
+      bottom: -115px; }
+    .news-articles-list .article figure img:last-child {
+      bottom: -115px; } }
+
+@media screen and (min-width: 1200px) {
+  .news-articles-list .article figure {
+    display: block; }
+    .news-articles-list .article figure img:first-child {
+      bottom: -180px; }
+    .news-articles-list .article figure img:last-child {
+      bottom: -180px; } }
 
 .partners {
   position: relative;
