@@ -7817,31 +7817,23 @@ a.button {
   margin: auto; }
 
 .main-service-list li {
-  position: relative;
   margin: auto; }
+  .main-service-list li:nth-child(odd) .container {
+    text-align: left; }
   .main-service-list li:nth-child(even) {
     background-color: #eaeff3; }
-  .main-service-list li figure {
-    display: none; }
-    .main-service-list li figure img:first-child {
-      position: absolute;
-      bottom: 0;
-      right: 50px; }
-    .main-service-list li figure img:last-child {
-      position: absolute;
-      right: 0;
-      bottom: 0; }
+    .main-service-list li:nth-child(even) .container {
+      text-align: right; }
 
 .service-list-item {
-  padding: 10px 1%;
-  text-align: left; }
-  .service-list-item img {
+  padding: 10px 1%; }
+  .service-list-item .service-icon {
     filter: grayscale(100%);
     padding-bottom: 20px; }
   .service-list-item:hover img {
     filter: none; }
   .service-list-item .button {
-    margin-top: 40px; }
+    margin: 40px 0; }
   .service-list-item h3 {
     text-transform: uppercase;
     color: #000;
@@ -7850,18 +7842,36 @@ a.button {
     margin-top: 0; }
   .service-list-item p {
     text-align: justify; }
+  .service-list-item .container {
+    position: relative; }
+  .service-list-item figure {
+    display: none; }
+    .service-list-item figure img:first-child {
+      padding: 0;
+      position: absolute;
+      bottom: 0;
+      right: 65px; }
+    .service-list-item figure img:last-child {
+      position: absolute;
+      padding: 0;
+      right: 15px;
+      bottom: 0; }
 
 @media screen and (min-width: 567px) {
   .services-article-list .main-service-list .service-list-item {
-    padding: 50px 1%; } }
+    padding: 0; }
+    .services-article-list .main-service-list .service-list-item:not(:first-child) {
+      padding: 50px 0; } }
 
 @media screen and (min-width: 1023px) {
   .services-article-list .main-service-list li figure {
     display: block; } }
 
 @media screen and (min-width: 1200px) {
-  .services-article-list .main-service-list .service-list-item img {
-    padding-right: 70px; } }
+  .services-article-list .main-service-list .service-list-item .service-icon:nth-child(odd) {
+    padding-right: 70px; }
+  .services-article-list .main-service-list .service-list-item .service-icon:nth-child(even) {
+    padding-left: 70px; } }
 
 .partners {
   position: relative;
