@@ -6436,6 +6436,7 @@ img {
 
 div.section-caption {
   flex-basis: 90%;
+  padding: 1%;
   text-align: left;
   align-self: flex-start;
   color: black; }
@@ -7014,24 +7015,26 @@ a.button {
       top: 0; }
 
 @media screen and (min-width: 767px) {
-  .testimonials .section-caption {
-    align-self: flex-start;
-    margin-left: 30px; }
-  .testimonials .owl-theme .owl-nav.disabled + .owl-dots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 50px; } }
+  .testimonials {
+    padding: 30px 2% 100px 2%; }
+    .testimonials .section-caption {
+      align-self: flex-start;
+      margin-left: 30px; }
+    .testimonials .owl-theme .owl-nav.disabled + .owl-dots {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 30px; } }
 
-f.news {
+.news {
   background-color: #eaeff3;
   padding: 30px 2%; }
-  f.news .wrapper {
+  .news .wrapper {
     max-width: 1170px;
     margin: auto;
     display: flex;
     flex-flow: column wrap; }
-    f.news .wrapper .wrapper-content {
+    .news .wrapper .wrapper-content {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -7802,6 +7805,63 @@ f.news {
       bottom: -180px; }
   .news-articles-list .article .news-content-list {
     font-size: 12px; } }
+
+.service-banner {
+  background-color: #000; }
+  .service-banner img {
+    width: 100%;
+    opacity: 0.5; }
+
+.services-article-list .section-caption {
+  max-width: 1170px;
+  margin: auto; }
+
+.main-service-list li {
+  position: relative;
+  margin: auto; }
+  .main-service-list li:nth-child(even) {
+    background-color: #eaeff3; }
+  .main-service-list li figure {
+    display: none; }
+    .main-service-list li figure img:first-child {
+      position: absolute;
+      bottom: 0;
+      right: 50px; }
+    .main-service-list li figure img:last-child {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+
+.service-list-item {
+  padding: 10px 1%;
+  text-align: left; }
+  .service-list-item img {
+    filter: grayscale(100%);
+    padding-bottom: 20px; }
+  .service-list-item:hover img {
+    filter: none; }
+  .service-list-item .button {
+    margin-top: 40px; }
+  .service-list-item h3 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0; }
+  .service-list-item p {
+    text-align: justify; }
+
+@media screen and (min-width: 567px) {
+  .services-article-list .main-service-list .service-list-item {
+    padding: 50px 1%; } }
+
+@media screen and (min-width: 1023px) {
+  .services-article-list .main-service-list li figure {
+    display: block; } }
+
+@media screen and (min-width: 1200px) {
+  .services-article-list .main-service-list .service-list-item img {
+    padding-right: 70px; } }
 
 .partners {
   position: relative;

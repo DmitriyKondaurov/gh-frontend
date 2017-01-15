@@ -17,6 +17,7 @@
   }
   .owl-theme {
     .owl-dots {
+
       span {
        background-color: #36a8ff;
       }
@@ -65,6 +66,7 @@
 
 @media screen and ($medium) {
   .testimonials {
+      padding: 30px 2% 100px 2%;
     .section-caption {
       align-self: flex-start;
       margin-left: 30px;
@@ -75,7 +77,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        margin-left: 50px;
+        margin: 30px;
       }
     }
   }
