@@ -45,7 +45,61 @@
     }
   }
 }
+.search {
+  background-color: #eaeff3;
+  padding-top: 30px;
+  .section-caption {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    div {
+      margin: auto;
+      text-align: center;
+    }
+    form {
+      input:first-child {
+        width: 200px;
+        height: 45px;
+        margin: -5px ;
+        border: 1px solid #e0e7ec;
 
+      }
+      input:last-child {
+        width: 45px;
+        height: 45px;
+        background-color: #ffaf36;
+        border: none;
+
+      }
+      &::after {
+        content: "\f002";
+        font: 16px/16px 'FontAwesome';
+        position: relative;
+        right: 32px;
+        cursor: pointer;
+      }
+    }
+    .button {
+      margin: 50px auto;
+    }
+    figure {
+      display: none;
+      img:first-child {
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        right: 65px;
+      }
+      img:last-child {
+        position: absolute;
+        padding: 0;
+        right: 15px;
+        bottom: 0;
+      }
+    }
+  }
+}
 @media screen and ($small) {
   .faq-articles {
     .faq-articles-list {
@@ -56,10 +110,27 @@
       }
     }
   }
+  .search {
+    .section-caption {
+      form {
+        input:first-child {
+          width: 350px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and ($medium) {
-
+  .search {
+    .section-caption {
+      form {
+        input:first-child {
+          width: 500px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and ($large) {
@@ -72,7 +143,28 @@
       }
     }
   }
+  .search {
+    padding-top: 70px;
+    .section-caption {
+      figure {
+        display: block;
+      }
+      form {
+        input:first-child {
+          width: 600px;
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
-
+  .search {
+    .section-caption {
+      form {
+        input:first-child {
+          width: 700px;
+        }
+      }
+    }
+  }
 }

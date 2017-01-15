@@ -7909,13 +7909,71 @@ a.button {
           padding-right: 20px;
           margin-left: -33px; }
 
+.search {
+  background-color: #eaeff3;
+  padding-top: 30px; }
+  .search .section-caption {
+    max-width: 1170px;
+    margin: auto;
+    position: relative;
+    text-align: center; }
+    .search .section-caption div {
+      margin: auto;
+      text-align: center; }
+    .search .section-caption form input:first-child {
+      width: 200px;
+      height: 45px;
+      margin: -5px;
+      border: 1px solid #e0e7ec; }
+    .search .section-caption form input:last-child {
+      width: 45px;
+      height: 45px;
+      background-color: #ffaf36;
+      border: none; }
+    .search .section-caption form::after {
+      content: "\f002";
+      font: 16px/16px 'FontAwesome';
+      position: relative;
+      right: 32px;
+      cursor: pointer; }
+    .search .section-caption .button {
+      margin: 50px auto; }
+    .search .section-caption figure {
+      display: none; }
+      .search .section-caption figure img:first-child {
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        right: 65px; }
+      .search .section-caption figure img:last-child {
+        position: absolute;
+        padding: 0;
+        right: 15px;
+        bottom: 0; }
+
 @media screen and (min-width: 567px) {
   .faq-articles .faq-articles-list .faq-articles-column {
-    flex-basis: 45%; } }
+    flex-basis: 45%; }
+  .search .section-caption form input:first-child {
+    width: 350px; } }
+
+@media screen and (min-width: 767px) {
+  .search .section-caption form input:first-child {
+    width: 500px; } }
 
 @media screen and (min-width: 1023px) {
   .faq-articles .faq-articles-list div h3 {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .search {
+    padding-top: 70px; }
+    .search .section-caption figure {
+      display: block; }
+    .search .section-caption form input:first-child {
+      width: 600px; } }
+
+@media screen and (min-width: 1200px) {
+  .search .section-caption form input:first-child {
+    width: 700px; } }
 
 .partners {
   position: relative;
