@@ -7,19 +7,39 @@
 }
 .faq-articles {
   padding: 2%;
+  .section-caption {
+    max-width: 1170px;
+    margin: auto;
+  }
   .faq-articles-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
+    max-width: 1170px;
+    margin: auto;
+    list-style-type: none;
+    counter-reset: li;
     .faq-articles-column {
       display: flex;
       flex-flow: column wrap;
       .item {
+        div:before {
+          content: url("../img/yellow-shape.png");
+          margin-left: -45px;
+          position: absolute;
+          z-index: -1;
+        }
         h3 {
           text-transform: uppercase;
           color: #1c1c1c;
           font: 700 14px/24px 'Raleway';
+          counter-increment: li;
+          &:before {
+            content: counter(li) "  ";
+            padding-right: 20px;
+            margin-left: -33px;
+          }
         }
       }
     }
