@@ -6427,7 +6427,7 @@ body {
 a {
   text-decoration: none; }
 
-ul, ol {
+ul {
   list-style: none;
   padding: 0; }
 
@@ -7870,6 +7870,35 @@ a.button {
     padding-right: 70px; }
   .services-article-list .main-service-list .service-list-item .service-icon:nth-child(even) {
     padding-left: 70px; } }
+
+.faq-banner {
+  background-color: #000; }
+  .faq-banner img {
+    width: 100%;
+    opacity: 0.5; }
+
+.faq-articles {
+  padding: 2%; }
+  .faq-articles .faq-articles-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch; }
+    .faq-articles .faq-articles-list .faq-articles-column {
+      display: flex;
+      flex-flow: column wrap; }
+      .faq-articles .faq-articles-list .faq-articles-column .item h3 {
+        text-transform: uppercase;
+        color: #1c1c1c;
+        font: 700 14px/24px 'Raleway'; }
+
+@media screen and (min-width: 567px) {
+  .faq-articles .faq-articles-list .faq-articles-column {
+    flex-basis: 45%; } }
+
+@media screen and (min-width: 1023px) {
+  .faq-articles .faq-articles-list div h3 {
+    font-size: 16px; } }
 
 .partners {
   position: relative;

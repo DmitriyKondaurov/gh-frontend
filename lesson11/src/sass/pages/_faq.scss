@@ -1,0 +1,58 @@
+.faq-banner {
+  background-color: #000;
+  img {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+.faq-articles {
+  padding: 2%;
+  .faq-articles-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    .faq-articles-column {
+      display: flex;
+      flex-flow: column wrap;
+      .item {
+        h3 {
+          text-transform: uppercase;
+          color: #1c1c1c;
+          font: 700 14px/24px 'Raleway';
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($small) {
+  .faq-articles {
+    .faq-articles-list {
+      .faq-articles-column {
+        flex-basis: 45%;
+        .item {
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($medium) {
+
+}
+
+@media screen and ($large) {
+  .faq-articles {
+    .faq-articles-list {
+      div {
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+
+}
