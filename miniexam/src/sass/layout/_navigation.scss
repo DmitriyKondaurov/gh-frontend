@@ -3,8 +3,8 @@ ul.topnav {
   z-index: 2;
   list-style-type: none;
   float: right;
-  margin: 0;
-  padding: 0;
+  margin-top: 25px;
+  padding: 1%;
   overflow: hidden;
   background-color: transparent;
   // Float the list items side by side
@@ -14,16 +14,15 @@ ul.topnav {
     // Style the links inside the list items
     a {
       display: inline-block;
-      color: #fff;
       text-align: center;
       padding: 5% 16px;
       text-decoration: none;
       transition: 0.3s;
-      font-size: 14px;
-      font-weight: 700;
+      color: #e8e8e8;
+      font: 700 14px/28px 'Quicksand';
       // Change background color of links on hover
       &:hover {
-        color: $main-color;
+        color: $hover-color;
       }
     }
     // Hide the list item that contains the link that should open and close the topnav on small screens
@@ -38,7 +37,7 @@ ul.topnav {
     display: none;
   }
   ul.topnav {
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
     li.icon {
       float: right;
@@ -58,7 +57,7 @@ ul.topnav {
     background-color: transparent;
     &:hover {
       background-color: transparent;
-      color: $main-color;
+      color: $hover-color;
     }
   }
   ul.topnav.responsive li {
@@ -71,7 +70,7 @@ ul.topnav {
     background-color: rgba(0,0,0,0.5);
     color: white;
     &:hover {
-      background-color: $main-color;
+      background-color: $hover-color;
       color: black;
     }
   }
@@ -82,7 +81,7 @@ ul.topnav {
     display: none;
   }
   ul.topnav {
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
     li.icon {
       float: right;
@@ -102,7 +101,7 @@ ul.topnav {
     background-color: transparent;
     &:hover {
       background-color: transparent;
-      color: $main-color;
+      color: $hover-color;
     }
   }
   ul.topnav.responsive li {
@@ -115,7 +114,7 @@ ul.topnav {
     background-color: rgba(0,0,0,0.5);
     color: white;
     &:hover {
-      background-color: $main-color;
+      background-color: $hover-color;
       color: black;
       text-shadow: none;
     }

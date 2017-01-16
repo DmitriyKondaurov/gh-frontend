@@ -1,7 +1,8 @@
 //header
-header {
+.header {
+  background-color: #ff5959;
   &.active {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 89, 89, 0.9);
   }
   position: fixed;
   z-index: 2;
@@ -12,22 +13,33 @@ header {
   padding: 1% 0;
   @include transition(0.5s);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  text-shadow: 0px 0px 3px #000;
 }
-
+.logo {
+  float: left;
+  color: #e8e8e8;
+  font: 300 34px/34px 'Quicksand';
+  span {
+    font-weight: 400;
+  }
+}
+.slogan {
+  clear: left;
+  color: #e8e8e8;
+  font: 700 14px/24px 'Quicksand';
+}
 @media screen and ($small) {
-  header {
+  .header {
     padding: 1% 0;
   }
 }
 @media screen and ($medium) {
-  header {
+  .header {
     padding: 1% 0;
   }
 }
 
 @media screen and ($large) {
-  header .wrapper {
+  .header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto;

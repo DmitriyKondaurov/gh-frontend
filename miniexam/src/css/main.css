@@ -6421,8 +6421,8 @@ button.close {
       background: #869791; }
 
 body {
-  color: #504f50;
-  font: 400 14px/24px "Open Sans"; }
+  color: #000;
+  font: 300 13px/24px 'Quicksand'; }
 
 a {
   text-decoration: none; }
@@ -6436,15 +6436,15 @@ img {
 
 @media screen and (min-width: 567px) {
   body {
-    font: 400 14px/22px "Open Sans"; } }
+    line-height: 22px; } }
 
 @media screen and (min-width: 767px) {
   body {
-    font: 400 14px/21px "Open Sans"; } }
+    line-height: 21px; } }
 
 @media screen and (min-width: 1023px) {
   body {
-    font: 400 14px/20px "Open Sans"; } }
+    line-height: 20px; } }
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -6457,8 +6457,8 @@ ul.topnav {
   z-index: 2;
   list-style-type: none;
   float: right;
-  margin: 0;
-  padding: 0;
+  margin-top: 25px;
+  padding: 1%;
   overflow: hidden;
   background-color: transparent; }
   ul.topnav li {
@@ -6466,15 +6466,14 @@ ul.topnav {
     z-index: 3; }
     ul.topnav li a {
       display: inline-block;
-      color: #fff;
       text-align: center;
       padding: 5% 16px;
       text-decoration: none;
       transition: 0.3s;
-      font-size: 14px;
-      font-weight: 700; }
+      color: #e8e8e8;
+      font: 700 14px/28px 'Quicksand'; }
       ul.topnav li a:hover {
-        color: #ffaf36; }
+        color: #ffae36; }
     ul.topnav li.icon {
       display: none; }
 
@@ -6483,7 +6482,7 @@ ul.topnav {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 0;
+    margin-top: 25px;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6501,7 +6500,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #ffaf36; }
+      color: #ffae36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6511,14 +6510,14 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #ffaf36;
+      background-color: #ffae36;
       color: black; } }
 
 @media screen and (max-width: 1024px) {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
-    margin: 0;
+    margin-top: 25px;
     padding: 0; }
     ul.topnav li.icon {
       float: right;
@@ -6536,7 +6535,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #ffaf36; }
+      color: #ffae36; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6546,11 +6545,12 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #ffaf36;
+      background-color: #ffae36;
       color: black;
       text-shadow: none; } }
 
-header {
+.header {
+  background-color: #ff5959;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -6561,21 +6561,32 @@ header {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  text-shadow: 0px 0px 3px #000; }
-  header.active {
-    background-color: rgba(0, 0, 0, 0.6); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .header.active {
+    background-color: rgba(255, 89, 89, 0.9); }
+
+.logo {
+  float: left;
+  color: #e8e8e8;
+  font: 300 34px/34px 'Quicksand'; }
+  .logo span {
+    font-weight: 400; }
+
+.slogan {
+  clear: left;
+  color: #e8e8e8;
+  font: 700 14px/24px 'Quicksand'; }
 
 @media screen and (min-width: 567px) {
-  header {
+  .header {
     padding: 1% 0; } }
 
 @media screen and (min-width: 767px) {
-  header {
+  .header {
     padding: 1% 0; } }
 
 @media screen and (min-width: 1023px) {
-  header .wrapper {
+  .header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto; } }
@@ -6584,15 +6595,15 @@ a.button {
   width: 120px;
   display: block;
   padding: 5px 0;
-  border: 2px solid #ffaf36;
+  border: 2px solid #ff5959;
   border-radius: 3px;
   background: transparent;
-  color: #ffaf36;
+  color: #ff5959;
   text-align: center;
   font: 400 13px/13px "Raleway";
   text-transform: uppercase; }
   a.button:hover {
-    background-color: #ffaf36;
+    background-color: #ff5959;
     text-decoration: none;
     color: white; }
 
@@ -6642,14 +6653,14 @@ a.button {
       right: 0;
       left: 0; }
     .welcome .welcome-carousel .owl-theme .owl-dots .active span {
-      background-color: #ffaf36; }
+      background-color: #ff5959; }
     .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:active span, .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:hover span {
-      background-color: #ffaf36; }
+      background-color: #ff5959; }
     .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot span {
       width: 25px;
       height: 4px; }
   .welcome .button {
-    background-color: #ffaf36;
+    background-color: #ff5959;
     color: #000; }
     .welcome .button:hover {
       border-color: white; }
