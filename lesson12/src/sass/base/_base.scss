@@ -1,0 +1,33 @@
+body {
+  color: $dark-text;
+  font: 400 14px/24px "Open Sans";
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@media screen and ($small) {
+  body {
+    font: 400 14px/22px "Open Sans";
+  }
+}
+@media screen and ($medium) {
+  body {
+    font: 400 14px/21px "Open Sans";
+  }
+}
+@media screen and ($large) {
+  body {
+    font: 400 14px/20px "Open Sans";
+  }
+}
