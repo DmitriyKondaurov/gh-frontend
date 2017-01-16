@@ -6630,3 +6630,9 @@ a.button {
   margin: auto;
   padding: 100px 1%;
   flex-flow: row wrap; }
+  .hero a {
+    background-color: #ff5959;
+    padding: 10px 30px;
+    border-radius: 9px;
+    border: 3px solid #ff5959;
+    color: #fff; }
