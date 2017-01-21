@@ -142,5 +142,4 @@ jspm_packages
 dist/
 build/
 
-
 # End of https://www.gitignore.io/api/bower,windows,macos,phpstorm,node
