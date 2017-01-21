@@ -1,0 +1,86 @@
+body {
+  color: $dark-text;
+  font: 400 14px/24px "Open Sans";
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+div.section-caption {
+  flex-basis: 90%;
+  padding: 1%;
+  text-align: left;
+  align-self: flex-start;
+  color: black;
+  h2 {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    text-transform: uppercase;
+    font: 800 20px/28px "Raleway";
+  }
+  div {
+    padding: 0 0 20px 0;
+    font: italic 400 14px/20px "Lora";
+  }
+}
+
+@media screen and ($small) {
+  body {
+    font: 400 14px/22px "Open Sans";
+  }
+  div.section-caption {
+    flex-basis: 85%;
+    h2 {
+      padding: 0;
+      font: 800 20px/32px "Raleway";
+    }
+    div {
+      padding: 0 0 20px 0;
+      font: italic 400 15px/20px "Lora";
+    }
+  }
+}
+@media screen and ($medium) {
+  body {
+    font: 400 14px/21px "Open Sans";
+  }
+  div.section-caption {
+    flex-basis: 75%;
+    h2 {
+      padding: 0;
+      font: 800 25px/38px "Raleway";
+    }
+    div {
+      font: italic 400 15px/20px "Lora";
+    }
+  }
+}
+@media screen and ($large) {
+  body {
+    font: 400 14px/20px "Open Sans";
+  }
+  div.section-caption {
+    flex-basis: 55%;
+    max-width: 1170px;
+    h2 {
+      padding: 0;
+      font: 900 30px/45px "Raleway";
+    }
+    div {
+      max-width: 450px;
+      font: italic 400 16px/20px "Lora";
+    }
+
+  }
+
+}
