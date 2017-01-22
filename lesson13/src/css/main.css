@@ -6776,6 +6776,14 @@ ul.topnav {
       padding: 0 0 0 5px;
       font: 700 20px/20px "Open Sans"; } }
 
+footer {
+  background-color: #ff5959; }
+  footer div {
+    padding: 50px 5px;
+    color: #e8e8e8;
+    text-align: center;
+    font: 400 13px/18px 'Quicksand'; }
+
 a.button {
   width: 120px;
   display: block;

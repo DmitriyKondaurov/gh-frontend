@@ -1,5 +1,11 @@
 footer {
-
+  background-color: $main-color;
+  div {
+    padding: 50px 5px;
+    color: #e8e8e8;
+    text-align: center;
+    font: 400 13px/18px 'Quicksand';
+  }
 }
 
 @media screen and ($xs) {
