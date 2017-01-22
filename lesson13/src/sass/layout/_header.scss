@@ -1,7 +1,8 @@
-//header
 .header {
+  background-color: $main-color;
+  max-height: 110px;
   &.active {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 89, 89, 0.9);
   }
   position: fixed;
   z-index: 2;
@@ -10,27 +11,27 @@
   right: 0;
   width: 100%;
   padding: 1% 0;
-  @include transition(0.5s);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  text-shadow: 0px 0px 3px #000;
-  nav {
-    padding: 1%;
-    overflow: auto;
-  }
-
-  h1.logo {
+  transition: 0.5s;
+  .logo {
     margin: 0 auto;
     float: left;
+    overflow: hidden;
     padding: 1% 0 0 5%;
-    color: #fff;
-    font: 700 20px/20px "Raleway";
-    span {
-      font-weight: 400;
-      color: $sec-text-color;
+    color: #e8e8e8;
+    h1 {
+      margin: 0 auto;
+      display: inline-block;
+      font: 300 34px/34px "Quicksand";
+      span {
+        font: 400 34px/34px "Quicksand";
+      }
+    }
+    .slogan {
+      font: 700 14px/24px "Quicksand";
     }
     &:before {
-      content: url(../img/logo.png);
-      display: block;
+      content: url(../img/logo-icon.png);
+      display: inline-block;
     }
   }
   .phone {

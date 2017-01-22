@@ -1,4 +1,8 @@
-// Remove margins and padding from the list, and add a black background color
+nav {
+  padding: 1%;
+  float: right;
+  overflow: hidden;
+}
 ul.topnav {
   z-index: 2;
   list-style-type: none;
@@ -23,7 +27,7 @@ ul.topnav {
       font-weight: 700;
       // Change background color of links on hover
       &:hover {
-        color: $main-color;
+        color: $main-text-color;
       }
     }
     // Hide the list item that contains the link that should open and close the topnav on small screens
@@ -58,7 +62,7 @@ ul.topnav {
     background-color: transparent;
     &:hover {
       background-color: transparent;
-      color: $main-color;
+      color: $main-text-color;
     }
   }
   ul.topnav.responsive li {
@@ -87,9 +91,9 @@ ul.topnav {
     li.icon {
       float: right;
       display: inline-block;
-      width: 30%;
       &:hover {
         background-color: transparent;
+        color: $sec-text-color;
       }
     }
   }
@@ -99,10 +103,9 @@ ul.topnav {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: transparent;
-    &:hover {
+    a:hover {
       background-color: transparent;
-      color: $main-color;
+      color: $sec-text-color;
     }
   }
   ul.topnav.responsive li {

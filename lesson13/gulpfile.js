@@ -4,7 +4,7 @@ var gulp            = require('gulp'),
     uglify          = require('gulp-uglify'),
     cssnano         = require('gulp-cssnano'),
     rename          = require('gulp-rename'),
-    browserSync     = require('browser-sync').create(),
+    browserSync     = require('browser-sync'),
     del             = require('del'),
     postcss         = require('gulp-postcss'),
     sourcemaps      = require('gulp-sourcemaps'),
@@ -22,11 +22,12 @@ gulp.task('sass',  function() {
 });
 
 gulp.task('browser-sync', function() {
-    browserSync.init({
+    browserSync({
         server: {
             baseDir: 'src'
         },
-        notify: false
+        notify: false,
+        browser: ["chrome"]
     });
 });
 
