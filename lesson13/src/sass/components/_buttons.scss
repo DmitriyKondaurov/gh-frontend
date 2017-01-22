@@ -16,14 +16,14 @@ a.button {
   }
 }
 
-@media screen and ($small) {
+@media screen and ($xs) {
   a.button {
     width: 130px;
     padding: 8px 0;
     font: 400 13px/13px "Raleway";
   }
 }
-@media screen and ($medium) {
+@media screen and ($sm) {
   a.button {
     width: 140px;
     padding: 10px 0;
@@ -31,11 +31,18 @@ a.button {
   }
 }
 
-@media screen and ($large) {
+@media screen and ($md) {
   a.button {
     width: 150px;
     padding: 15px 0;
     font: 700 13px/13px "Raleway";
   }
+}
 
+@media screen and ($lg) {
+  a.button {
+    width: 150px;
+    padding: 15px 0;
+    font: 700 13px/13px "Raleway";
+  }
 }

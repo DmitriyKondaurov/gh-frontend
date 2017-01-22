@@ -6421,8 +6421,8 @@ button.close {
       background: #869791; }
 
 body {
-  color: #504f50;
-  font: 300 13px/24px 'Quicksand'; }
+  color: #000;
+  font: 300 13px/24px "Raleway"; }
 
 a {
   text-decoration: none; }
@@ -6434,15 +6434,19 @@ ul {
 img {
   max-width: 100%; }
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 568px) {
   body {
     line-height: 22px; } }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   body {
     line-height: 21px; } }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 992px) {
+  body {
+    line-height: 20px; } }
+
+@media screen and (min-width: 1200px) {
   body {
     line-height: 20px; } }
 
@@ -6467,7 +6471,7 @@ ul.topnav {
       font-size: 14px;
       font-weight: 700; }
       ul.topnav li a:hover {
-        color: #ffaf36; }
+        color: #ff5959; }
     ul.topnav li.icon {
       display: none; }
 
@@ -6494,7 +6498,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #ffaf36; }
+      color: #ff5959; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6504,7 +6508,7 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #ffaf36;
+      background-color: #ff5959;
       color: black; } }
 
 @media screen and (max-width: 1024px) {
@@ -6529,7 +6533,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #ffaf36; }
+      color: #ff5959; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6539,7 +6543,7 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #ffaf36;
+      background-color: #ff5959;
       color: black;
       text-shadow: none; } }
 
@@ -6569,7 +6573,7 @@ ul.topnav {
     font: 700 20px/20px "Raleway"; }
     .header h1.logo span {
       font-weight: 400;
-      color: #bebebe; }
+      color: #fff; }
     .header h1.logo:before {
       content: url(../img/logo.png);
       display: block; }
@@ -6579,7 +6583,7 @@ ul.topnav {
     float: left;
     color: #fff; }
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 568px) {
   header {
     padding: 1% 0; }
     header nav {
@@ -6589,7 +6593,7 @@ ul.topnav {
       padding: 20px 0 0 10%;
       font: 400 24px/28px "Open Sans"; } }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header {
     padding: 1% 0; }
     .header nav {
@@ -6609,9 +6613,9 @@ ul.topnav {
         padding: 1%;
         padding-right: 5px;
         vertical-align: middle;
-        color: #ffaf36; } }
+        color: #ff5959; } }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 992px) {
   .header .wrapper {
     padding: 0;
     max-width: 1170px;
@@ -6627,194 +6631,38 @@ a.button {
   width: 120px;
   display: block;
   padding: 5px 0;
-  border: 2px solid #ffaf36;
+  border: 2px solid #ff5959;
   border-radius: 3px;
   background: transparent;
-  color: #ffaf36;
+  color: #ff5959;
   text-align: center;
   font: 400 13px/13px "Raleway";
   text-transform: uppercase; }
   a.button:hover {
-    background-color: #ffaf36;
+    background-color: #ff5959;
     text-decoration: none;
     color: white; }
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 568px) {
   a.button {
     width: 130px;
     padding: 8px 0;
     font: 400 13px/13px "Raleway"; } }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   a.button {
     width: 140px;
     padding: 10px 0;
     font: 700 13px/13px "Raleway"; } }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 992px) {
   a.button {
     width: 150px;
     padding: 15px 0;
     font: 700 13px/13px "Raleway"; } }
 
-.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/265% no-repeat;
-  padding-bottom: 20px; }
-  .welcome .welcome-carousel {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 60px 5%;
-    color: #fff; }
-    .welcome .welcome-carousel ul h2 {
-      font: 700 28px/28px "Raleway";
-      color: white;
-      text-align: left;
-      text-transform: uppercase; }
-      .welcome .welcome-carousel ul h2 span {
-        font: 600 16px/28px "Raleway"; }
-    .welcome .welcome-carousel ul li p {
-      font: italic 400 15px/20px "Lora"; }
-    .welcome .welcome-carousel .owl-carousel {
-      position: static;
-      z-index: 1; }
-    .welcome .welcome-carousel .owl-theme .owl-nav.disabled + .owl-dots {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .active span {
-      background-color: #ffaf36; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:active span, .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:hover span {
-      background-color: #ffaf36; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot span {
-      width: 25px;
-      height: 4px; }
-  .welcome .button {
-    background-color: #ffaf36;
-    color: #000; }
-    .welcome .button:hover {
-      border-color: white; }
-
-@media screen and (min-width: 567px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
-    overflow: hidden; }
-    .welcome .welcome-carousel {
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 80%;
-        padding: 10px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 400 34px/34px "Raleway"; } }
-
-@media screen and (min-width: 767px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
-    overflow: hidden; }
-    .welcome .welcome-carousel {
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 70%;
-        padding: 30px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 700 40px/40px "Raleway"; } }
-
-@media screen and (min-width: 1023px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
-    .welcome .welcome-carousel {
-      max-width: 1170px;
-      margin: auto;
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 50%;
-        padding: 0px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 700 57px/60px "Raleway";
-          padding-bottom: 20px; } }
-
-.welcome {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/265% no-repeat;
-  padding-bottom: 20px; }
-  .welcome .welcome-carousel {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 60px 5%;
-    color: #fff; }
-    .welcome .welcome-carousel ul h2 {
-      font: 700 28px/28px "Raleway";
-      color: white;
-      text-align: left;
-      text-transform: uppercase; }
-      .welcome .welcome-carousel ul h2 span {
-        font: 600 16px/28px "Raleway"; }
-    .welcome .welcome-carousel ul li p {
-      font: italic 400 15px/20px "Lora"; }
-    .welcome .welcome-carousel .owl-carousel {
-      position: static;
-      z-index: 1; }
-    .welcome .welcome-carousel .owl-theme .owl-nav.disabled + .owl-dots {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .active span {
-      background-color: #ffaf36; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:active span, .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot:hover span {
-      background-color: #ffaf36; }
-    .welcome .welcome-carousel .owl-theme .owl-dots .owl-dot span {
-      width: 25px;
-      height: 4px; }
-  .welcome .button {
-    background-color: #ffaf36;
-    color: #000; }
-    .welcome .button:hover {
-      border-color: white; }
-
-@media screen and (min-width: 567px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
-    overflow: hidden; }
-    .welcome .welcome-carousel {
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 80%;
-        padding: 10px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 400 34px/34px "Raleway"; } }
-
-@media screen and (min-width: 767px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 70%/180% no-repeat;
-    overflow: hidden; }
-    .welcome .welcome-carousel {
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 70%;
-        padding: 30px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 700 40px/40px "Raleway"; } }
-
-@media screen and (min-width: 1023px) {
-  .welcome {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_welcome.png) 100%/100% no-repeat; }
-    .welcome .welcome-carousel {
-      max-width: 1170px;
-      margin: auto;
-      display: flex;
-      align-items: center; }
-      .welcome .welcome-carousel ul {
-        width: 50%;
-        padding: 0px 5px; }
-        .welcome .welcome-carousel ul h2 {
-          font: 700 57px/60px "Raleway";
-          padding-bottom: 20px; } }
+@media screen and (min-width: 1200px) {
+  a.button {
+    width: 150px;
+    padding: 15px 0;
+    font: 700 13px/13px "Raleway"; } }

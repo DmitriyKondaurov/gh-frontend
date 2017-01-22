@@ -26,7 +26,7 @@
     font: 700 20px/20px "Raleway";
     span {
       font-weight: 400;
-      color: $sec-text;
+      color: $sec-text-color;
     }
     &:before {
       content: url(../img/logo.png);
@@ -43,7 +43,7 @@
 
 
 
-@media screen and ($small) {
+@media screen and ($xs) {
 
   header {
     padding: 1% 0;
@@ -57,7 +57,7 @@
     }
   }
 }
-@media screen and ($medium) {
+@media screen and ($sm) {
 
   .header {
     padding: 1% 0;
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and ($large) {
+@media screen and ($md) {
   .header .wrapper {
     padding: 0;
     max-width: 1170px;
@@ -100,4 +100,9 @@
       font: 700 20px/20px "Open Sans";
     }
   }
+}
+
+
+@media screen and ($lg) {
+
 }

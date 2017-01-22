@@ -2,18 +2,25 @@ footer {
 
 }
 
-@media screen and ($small) {
+@media screen and ($xs) {
   footer {
 
   }
 }
-@media screen and ($medium) {
+@media screen and ($sm) {
   footer {
 
   }
 }
 
-@media screen and ($large) {
+@media screen and ($md) {
+  footer {
+
+  }
+}
+
+
+@media screen and ($lg) {
   footer {
 
   }

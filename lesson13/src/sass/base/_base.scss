@@ -1,6 +1,6 @@
 body {
-  color: $main-text;
-  font: 300 13px/24px 'Quicksand';
+  color: $main-text-color;
+  font: 300 13px/24px $main-font;
 }
 a {
   text-decoration: none;
@@ -16,17 +16,23 @@ img {
 }
 
 
-@media screen and ($small) {
+@media screen and ($xs) {
   body {
     line-height: 22px;
   }
 }
-@media screen and ($medium) {
+@media screen and ($sm) {
   body {
     line-height: 21px;
   }
 }
-@media screen and ($large) {
+@media screen and ($md) {
+  body {
+    line-height: 20px;
+  }
+}
+
+@media screen and ($lg) {
   body {
     line-height: 20px;
   }

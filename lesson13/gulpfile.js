@@ -19,7 +19,7 @@ gulp.task('browser-sync', function() {
         server: {
             baseDir: 'src'
         },
-        // notify: false
+        notify: false
     });
 });
 
