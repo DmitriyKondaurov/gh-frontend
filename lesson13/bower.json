@@ -1,6 +1,6 @@
 {
-  "name": "lesson10",
-  "description": "BusinessPlus",
+  "name": "lesson13",
+  "description": "miniexam",
   "main": "",
   "authors": [
     "Invisible <invisibl@ukr.net>"
@@ -10,7 +10,6 @@
     "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
   },
   "homepage": "https://github.com/DmitriyKondaurov/gh-frontend",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
