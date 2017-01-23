@@ -1,13 +1,15 @@
-.services {
+.blog-news {
   padding: 50px 1% 150px 1%;
-  background-color: $sec-color;
+  background-color: $main-color;
 
   .section-caption {
     h2 {
-      background-color: $sec-color;
-
+      background-color: $main-color;
+      color: $sec-text-color;
+      border-bottom: 1px solid white;
       &::after {
-        background-color: $sec-color;
+        content: url("../img/dot-white.png");
+        background-color: $main-color;
       }
     }
   }
@@ -16,6 +18,7 @@
     li {
       padding: 15px;
       text-align: center;
+      color: $sec-text-color;
       h3 {
         font: 400 24px/32px 'Quicksand';
       }
