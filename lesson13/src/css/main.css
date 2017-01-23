@@ -6867,22 +6867,35 @@ a.button {
       .portfolio .container li p {
         font: 400 13px/18px 'Quicksand'; }
 
-.services {
+.team {
   padding: 50px 1% 150px 1%;
   background-color: #e8e8e8; }
-  .services .section-caption h2 {
+  .team .section-caption h2 {
     background-color: #e8e8e8; }
-    .services .section-caption h2::after {
+    .team .section-caption h2::after {
       background-color: #e8e8e8; }
-  .services .container {
+  .team .container {
     margin-top: 40px; }
-    .services .container li {
+    .team .container li {
       padding: 15px;
       text-align: center; }
-      .services .container li h3 {
+      .team .container li h3 {
         font: 400 24px/32px 'Quicksand'; }
-      .services .container li p {
+      .team .container li p {
         font: 400 13px/18px 'Quicksand'; }
+    .team .container .social-icons li {
+      display: inline-block;
+      padding: 0; }
+      .team .container .social-icons li:nth-child(1) a {
+        color: #7acdf1; }
+      .team .container .social-icons li:nth-child(2) a {
+        color: #eb5756; }
+      .team .container .social-icons li:nth-child(3) a {
+        color: #547bbd; }
+      .team .container .social-icons li:nth-child(4) a {
+        color: #4b4b4b; }
+      .team .container .social-icons li:nth-child(5) a {
+        color: #1385c7; }
 
 .hero {
   padding: 110px 1% 50px 1%; }
