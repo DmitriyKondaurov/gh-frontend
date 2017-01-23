@@ -6577,6 +6577,24 @@ ul {
 img {
   max-width: 100%; }
 
+.section-caption {
+  text-align: center; }
+  .section-caption h2 {
+    margin: auto;
+    position: relative;
+    width: 370px;
+    max-width: 100%;
+    padding: 0 90px 25px 90px;
+    font: 400 30px/49px 'Quicksand';
+    border-bottom: 1px solid black; }
+    .section-caption h2::after {
+      content: url("../img/dot.png");
+      position: absolute;
+      bottom: -18px;
+      left: 170px;
+      right: 0;
+      width: 30px; }
+
 @media screen and (min-width: 568px) {
   body {
     line-height: 22px; } }
@@ -6660,7 +6678,7 @@ ul.topnav {
       background-color: #ff5959;
       color: black; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   ul.topnav li:not(:first-child) {
     display: none; }
   ul.topnav {
@@ -6713,7 +6731,7 @@ ul.topnav {
     margin: 0 auto;
     float: left;
     overflow: hidden;
-    padding: 1% 0 0 5%;
+    padding: 1% 0 0 1%;
     color: #e8e8e8; }
     .header .logo h1 {
       margin: 0 auto;
@@ -6726,43 +6744,18 @@ ul.topnav {
     .header .logo:before {
       content: url(../img/logo-icon.png);
       display: inline-block; }
-  .header .phone {
-    clear: left;
-    padding: 0 5%;
-    float: left;
-    color: #fff; }
 
 @media screen and (min-width: 568px) {
-  header {
+  .header {
     padding: 1% 0; }
-    header nav {
-      padding-right: 1%; }
-    header h1.logo {
-      margin: 0 auto;
-      padding: 20px 0 0 10%;
-      font: 400 24px/28px "Open Sans"; } }
+    .header nav {
+      padding-right: 1%; } }
 
 @media screen and (min-width: 768px) {
   .header {
     padding: 1% 0; }
     .header nav {
-      padding: 20px 1% 0 0; }
-    .header h1.logo {
-      margin: 0 auto 0 0;
-      padding: 0 0 0 5%; }
-    .header .phone {
-      clear: none;
-      padding: 20px 0 0 1%;
-      font-size: 16px; }
-      .header .phone:before {
-        font-family: FontAwesome;
-        font-size: 22px;
-        content: "\f095";
-        display: inline-block;
-        padding: 1%;
-        padding-right: 5px;
-        vertical-align: middle;
-        color: #ff5959; } }
+      padding: 20px 1% 0 0; } }
 
 @media screen and (min-width: 992px) {
   .header .wrapper {
@@ -6770,19 +6763,31 @@ ul.topnav {
     max-width: 1170px;
     margin: auto; }
     .header .wrapper nav {
-      padding-right: 5px; }
-    .header .wrapper h1.logo {
-      margin: 0 auto 0 0;
-      padding: 0 0 0 5px;
-      font: 700 20px/20px "Open Sans"; } }
+      padding-right: 5px; } }
 
 footer {
   background-color: #ff5959; }
   footer div {
-    padding: 50px 5px;
+    padding: 10px 5px;
     color: #e8e8e8;
     text-align: center;
     font: 400 13px/18px 'Quicksand'; }
+
+@media screen and (min-width: 568px) {
+  footer div {
+    padding: 20px 5px; } }
+
+@media screen and (min-width: 768px) {
+  footer div {
+    padding: 30px 5px; } }
+
+@media screen and (min-width: 992px) {
+  footer div {
+    padding: 40px 5px; } }
+
+@media screen and (min-width: 1200px) {
+  footer div {
+    padding: 50px 5px; } }
 
 a.button {
   width: 120px;
@@ -6824,3 +6829,63 @@ a.button {
     width: 150px;
     padding: 15px 0;
     font: 700 13px/13px "Raleway"; } }
+
+.services {
+  padding: 50px 1% 150px 1%;
+  background-color: #e8e8e8; }
+  .services .section-caption h2 {
+    background-color: #e8e8e8; }
+    .services .section-caption h2::after {
+      background-color: #e8e8e8; }
+  .services .container {
+    margin-top: 40px; }
+    .services .container li {
+      padding: 15px;
+      text-align: center; }
+
+@media screen and (min-width: 568px) {
+  .hero {
+    padding: 150px 1% 750px 1%; } }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 250px 1% 150px 1%; } }
+
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 350px 1% 250px 1%; } }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 350px 1% 250px 1%; } }
+
+.hero {
+  padding: 110px 1% 50px 1%; }
+  .hero .row div {
+    margin: auto;
+    padding: 15px; }
+    .hero .row div h3 {
+      font: 400 24px/32px 'Quicksand'; }
+    .hero .row div div {
+      font: 400 13px/18px 'Quicksand'; }
+    .hero .row div a {
+      display: inline-block; }
+      .hero .row div a:hover {
+        color: #fff;
+        background-color: #ff5959; }
+
+@media screen and (min-width: 568px) {
+  .hero {
+    padding: 150px 1% 750px 1%; } }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 250px 1% 150px 1%; } }
+
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 350px 1% 250px 1%; } }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 350px 1% 250px 1%; } }

@@ -5,16 +5,33 @@ body {
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   padding: 0;
 }
-
 img {
   max-width: 100%;
 }
-
+.section-caption {
+  text-align: center;
+  h2 {
+    margin: auto;
+    position: relative;
+    width: 370px;
+    max-width: 100%;
+    padding: 0 90px 25px 90px;
+    font: 400 30px/49px 'Quicksand';
+    border-bottom: 1px solid black;
+    &::after {
+      content: url("../img/dot.png");
+      position: absolute;
+      bottom: -18px;
+      left: 170px;
+      right: 0;
+      width: 30px;
+    }
+  }
+}
 
 @media screen and ($xs) {
   body {

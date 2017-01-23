@@ -1,0 +1,47 @@
+.services {
+  padding: 50px 1% 150px 1%;
+  background-color: $sec-color;
+
+  .section-caption {
+    h2 {
+      background-color: $sec-color;
+
+      &::after {
+        background-color: $sec-color;
+      }
+    }
+  }
+  .container {
+    margin-top: 40px;
+  li {
+    padding: 15px;
+    text-align: center;
+  }
+  }
+}
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+  .hero {
+    padding: 150px 1% 750px 1%;
+  }
+}
+
+@media screen and ($sm) {
+  .hero {
+    padding: 250px 1% 150px 1%;
+  }
+}
+
+@media screen and ($md) {
+  .hero {
+    padding: 350px 1% 250px 1%;
+  }
+}
+
+@media screen and ($lg) {
+  .hero {
+    padding: 350px 1% 250px 1%;
+  }
+}
+
