@@ -6879,10 +6879,12 @@ a.button {
     .team .container li {
       padding: 15px;
       text-align: center; }
-      .team .container li h3 {
-        font: 400 24px/32px 'Quicksand'; }
+      .team .container li h4 {
+        font: 700 24px/32px 'Quicksand'; }
+      .team .container li div {
+        font: 300 16px/24px 'Quicksand'; }
       .team .container li p {
-        font: 400 13px/18px 'Quicksand'; }
+        font: 300 13px/18px 'Quicksand'; }
     .team .container .social-icons li {
       display: inline-block;
       padding: 0; }
