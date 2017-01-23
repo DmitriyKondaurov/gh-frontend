@@ -1,13 +1,14 @@
-.services {
+.portfolio {
   padding: 50px 1% 150px 1%;
-  background-color: $sec-color;
-
+  background-color: $main-color;
   .section-caption {
     h2 {
-      background-color: $sec-color;
-
+      background-color: $main-color;
+      color: $sec-text-color;
+      border-bottom: 1px solid white;
       &::after {
-        background-color: $sec-color;
+        content: url("../img/dot-white.png");
+        background-color: $main-color;
       }
     }
   }

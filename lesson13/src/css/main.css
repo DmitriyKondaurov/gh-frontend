@@ -6842,22 +6842,47 @@ a.button {
     .services .container li {
       padding: 15px;
       text-align: center; }
+      .services .container li h3 {
+        font: 400 24px/32px 'Quicksand'; }
+      .services .container li p {
+        font: 400 13px/18px 'Quicksand'; }
 
-@media screen and (min-width: 568px) {
-  .hero {
-    padding: 150px 1% 750px 1%; } }
+.portfolio {
+  padding: 50px 1% 150px 1%;
+  background-color: #ff5959; }
+  .portfolio .section-caption h2 {
+    background-color: #ff5959;
+    color: #fff;
+    border-bottom: 1px solid white; }
+    .portfolio .section-caption h2::after {
+      content: url("../img/dot-white.png");
+      background-color: #ff5959; }
+  .portfolio .container {
+    margin-top: 40px; }
+    .portfolio .container li {
+      padding: 15px;
+      text-align: center; }
+      .portfolio .container li h3 {
+        font: 400 24px/32px 'Quicksand'; }
+      .portfolio .container li p {
+        font: 400 13px/18px 'Quicksand'; }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    padding: 250px 1% 150px 1%; } }
-
-@media screen and (min-width: 992px) {
-  .hero {
-    padding: 350px 1% 250px 1%; } }
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding: 350px 1% 250px 1%; } }
+.services {
+  padding: 50px 1% 150px 1%;
+  background-color: #e8e8e8; }
+  .services .section-caption h2 {
+    background-color: #e8e8e8; }
+    .services .section-caption h2::after {
+      background-color: #e8e8e8; }
+  .services .container {
+    margin-top: 40px; }
+    .services .container li {
+      padding: 15px;
+      text-align: center; }
+      .services .container li h3 {
+        font: 400 24px/32px 'Quicksand'; }
+      .services .container li p {
+        font: 400 13px/18px 'Quicksand'; }
 
 .hero {
   padding: 110px 1% 50px 1%; }
@@ -6876,7 +6901,7 @@ a.button {
 
 @media screen and (min-width: 568px) {
   .hero {
-    padding: 150px 1% 750px 1%; } }
+    padding: 150px 1% 100px 1%; } }
 
 @media screen and (min-width: 768px) {
   .hero {
