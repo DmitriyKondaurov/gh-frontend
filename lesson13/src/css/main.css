@@ -6915,9 +6915,28 @@ a.button {
       padding: 15px;
       text-align: center;
       color: #fff; }
-      .blog-news .container li h3 {
-        font: 400 24px/32px 'Quicksand'; }
+      .blog-news .container li h4 {
+        font: 700 18px/32px 'Quicksand'; }
+      .blog-news .container li div {
+        font: 300 13px/24px 'Quicksand'; }
       .blog-news .container li p {
+        font: 400 13px/16px 'Quicksand'; }
+
+.contacts {
+  padding: 50px 1% 150px 1%;
+  background-color: #e8e8e8; }
+  .contacts .section-caption h2 {
+    background-color: #e8e8e8; }
+    .contacts .section-caption h2::after {
+      background-color: #e8e8e8; }
+  .contacts .container {
+    margin-top: 40px; }
+    .contacts .container li {
+      padding: 15px;
+      text-align: center; }
+      .contacts .container li h3 {
+        font: 400 24px/32px 'Quicksand'; }
+      .contacts .container li p {
         font: 400 13px/18px 'Quicksand'; }
 
 .hero {
