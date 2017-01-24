@@ -197,3 +197,4 @@ build-iPhoneSimulator/
 .gulp-scss-cache/
 .gulp-sass-cache/
 dist/
+.idea/

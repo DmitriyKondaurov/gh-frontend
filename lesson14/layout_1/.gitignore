@@ -196,4 +196,5 @@ build-iPhoneSimulator/
  +#################### CUSTOM #########################
 .gulp-scss-cache/
 .gulp-sass-cache/
+.idea/
 dist/

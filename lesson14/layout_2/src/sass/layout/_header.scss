@@ -1,0 +1,72 @@
+.header {
+  background-color: $main-color;
+  max-height: 110px;
+  &.active {
+    background-color: rgba(255, 89, 89, 0.9);
+  }
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1% 0;
+  transition: 0.5s;
+  .logo {
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+    padding: 1% 0 0 1%;
+    color: #e8e8e8;
+    h1 {
+      margin: 0 auto;
+      display: inline-block;
+      font: 300 34px/34px "Quicksand";
+      span {
+        font: 400 34px/34px "Quicksand";
+      }
+    }
+    .slogan {
+      font: 700 14px/24px "Quicksand";
+    }
+    &:before {
+      content: url(../img/logo-icon.png);
+      display: inline-block;
+    }
+  }
+}
+
+
+
+@media screen and ($xs) {
+  .header {
+    padding: 1% 0;
+    nav {
+      padding-right: 1%;
+    }
+  }
+}
+@media screen and ($sm) {
+  .header {
+    padding: 1% 0;
+    nav {
+      padding: 20px 1% 0 0;
+    }
+  }
+}
+
+@media screen and ($md) {
+  .header .wrapper {
+    padding: 0;
+    max-width: 1170px;
+    margin: auto;
+    nav {
+      padding-right: 5px;
+    }
+  }
+}
+
+
+@media screen and ($lg) {
+
+}

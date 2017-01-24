@@ -1,0 +1,56 @@
+body {
+  color: $main-text-color;
+  font: 300 13px/24px $main-font;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.section-caption {
+  text-align: center;
+  h2 {
+    margin: auto;
+    position: relative;
+    width: 370px;
+    max-width: 100%;
+    padding: 0 30px 25px 30px;
+    font: 400 30px/49px 'Quicksand';
+    border-bottom: 1px solid black;
+    &::after {
+      content: url("../img/dot.png");
+      position: absolute;
+      bottom: -18px;
+      left: 170px;
+      right: 0;
+      width: 30px;
+    }
+  }
+}
+
+@media screen and ($xs) {
+  body {
+    line-height: 22px;
+  }
+}
+@media screen and ($sm) {
+  body {
+    line-height: 21px;
+  }
+}
+@media screen and ($md) {
+  body {
+    line-height: 20px;
+  }
+}
+
+@media screen and ($lg) {
+  body {
+    line-height: 20px;
+  }
+}
