@@ -22,14 +22,7 @@ img {
     padding: 0 30px 25px 30px;
     font: 400 30px/49px 'Quicksand';
     border-bottom: 1px solid black;
-    &::after {
-      content: url("../img/dot.png");
-      position: absolute;
-      bottom: -18px;
-      left: 170px;
-      right: 0;
-      width: 30px;
-    }
+
   }
 }
 
