@@ -26,7 +26,7 @@
         transform: translate(-50%, -50%);
         p {
           color: $sec-text-color;
-          font: 700 24px/26px 'Quicksand';
+          font: 700 16px/20px 'Quicksand';
         }
       }
       &:hover {
@@ -42,7 +42,6 @@
     .hover-button1 {
       width: 30px;
       height: 30px;
-      margin: 10px;
       vertical-align: middle;
       display: inline-block;
       border-radius: 10px;
@@ -54,7 +53,6 @@
     .hover-button2 {
       width: 30px;
       height: 30px;
-      margin: 10px;
       vertical-align: middle;
       display: inline-block;
       border-radius: 10px;
@@ -68,18 +66,46 @@
 
 //________________________________________________________________________________
 @media screen and ($xs) {
-
+  .portfolio .container {
+    .hover-button2, .hover-button2 {
+      margin: 5px;
+    }
+    li div p {
+      font: 700 18px/22px 'Quicksand';
+    }
+  }
 }
 
 @media screen and ($sm) {
-
+  .portfolio .container {
+    .hover-button2, .hover-button2 {
+      margin: 10px;
+    }
+    li div p {
+      font: 700 20px/24px 'Quicksand';
+    }
+  }
 }
 
 @media screen and ($md) {
-
+  .portfolio .container {
+    .hover-button2, .hover-button2 {
+      margin: 10px 15px;
+    }
+    li div p {
+      font: 700 22px/25px 'Quicksand';
+    }
+  }
 }
 
 @media screen and ($lg) {
-
+  .portfolio .container {
+    .hover-button2, .hover-button2 {
+      margin: 15px 20px;
+    }
+    li div p {
+      font: 700 24px/26px 'Quicksand';
+    }
+  }
 }
 

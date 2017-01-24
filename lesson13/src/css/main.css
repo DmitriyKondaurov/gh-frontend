@@ -6870,7 +6870,7 @@ footer {
                 transform: translate(-50%, -50%); }
         .portfolio .container li div p {
           color: #fff;
-          font: 700 24px/26px 'Quicksand'; }
+          font: 700 16px/20px 'Quicksand'; }
       .portfolio .container li:hover img {
         opacity: 0.5; }
       .portfolio .container li:hover div {
@@ -6878,7 +6878,6 @@ footer {
     .portfolio .container .hover-button1 {
       width: 30px;
       height: 30px;
-      margin: 10px;
       vertical-align: middle;
       display: inline-block;
       -webkit-border-radius: 10px;
@@ -6890,7 +6889,6 @@ footer {
     .portfolio .container .hover-button2 {
       width: 30px;
       height: 30px;
-      margin: 10px;
       vertical-align: middle;
       display: inline-block;
       -webkit-border-radius: 10px;
@@ -6899,6 +6897,30 @@ footer {
       color: #fff;
       font-size: 20px;
       line-height: 25px; }
+
+@media screen and (min-width: 568px) {
+  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
+    margin: 5px; }
+  .portfolio .container li div p {
+    font: 700 18px/22px 'Quicksand'; } }
+
+@media screen and (min-width: 768px) {
+  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
+    margin: 10px; }
+  .portfolio .container li div p {
+    font: 700 20px/24px 'Quicksand'; } }
+
+@media screen and (min-width: 992px) {
+  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
+    margin: 10px 15px; }
+  .portfolio .container li div p {
+    font: 700 22px/25px 'Quicksand'; } }
+
+@media screen and (min-width: 1200px) {
+  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
+    margin: 15px 20px; }
+  .portfolio .container li div p {
+    font: 700 24px/26px 'Quicksand'; } }
 
 .team {
   padding: 50px 1% 150px 1%;
