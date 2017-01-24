@@ -15,14 +15,53 @@
   .container {
     margin-top: 40px;
     li {
+      position: relative;
       padding: 15px;
       text-align: center;
-      h3 {
-        font: 400 24px/32px 'Quicksand';
+      div {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+          color: $sec-text-color;
+          font: 700 24px/26px 'Quicksand';
+        }
       }
-      p {
-        font: 400 13px/18px 'Quicksand';
+      &:hover {
+        img {
+          opacity: 0.5;
+        }
+
+        div {
+          display: block;
+        }
       }
+    }
+    .hover-button1 {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      border-radius: 10px;
+      background-color: $main-color;
+      color: $sec-text-color;
+      font-size: 13px;
+      line-height: 30px;
+    }
+    .hover-button2 {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      border-radius: 10px;
+      background-color: $main-color;
+      color: $sec-text-color;
+      font-size: 20px;
+      line-height: 25px;
     }
   }
 }

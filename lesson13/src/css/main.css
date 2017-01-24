@@ -6857,12 +6857,48 @@ footer {
   .portfolio .container {
     margin-top: 40px; }
     .portfolio .container li {
+      position: relative;
       padding: 15px;
       text-align: center; }
-      .portfolio .container li h3 {
-        font: 400 24px/32px 'Quicksand'; }
-      .portfolio .container li p {
-        font: 400 13px/18px 'Quicksand'; }
+      .portfolio .container li div {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+        .portfolio .container li div p {
+          color: #fff;
+          font: 700 24px/26px 'Quicksand'; }
+      .portfolio .container li:hover img {
+        opacity: 0.5; }
+      .portfolio .container li:hover div {
+        display: block; }
+    .portfolio .container .hover-button1 {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background-color: #ff5959;
+      color: #fff;
+      font-size: 13px;
+      line-height: 30px; }
+    .portfolio .container .hover-button2 {
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background-color: #ff5959;
+      color: #fff;
+      font-size: 20px;
+      line-height: 25px; }
 
 .team {
   padding: 50px 1% 150px 1%;
@@ -6915,9 +6951,11 @@ footer {
       .blog-news .container li h4 {
         font: 700 18px/32px 'Quicksand'; }
       .blog-news .container li div {
-        font: 300 13px/24px 'Quicksand'; }
+        font: 300 13px/24px 'Quicksand';
+        text-align: left; }
       .blog-news .container li p {
-        font: 400 13px/16px 'Quicksand'; }
+        font: 400 13px/16px 'Quicksand';
+        text-align: left; }
 
 .contacts {
   padding: 50px 1% 150px 1%;
