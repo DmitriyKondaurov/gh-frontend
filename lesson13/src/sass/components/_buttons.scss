@@ -1,13 +1,14 @@
-a.button {
-  width: 120px;
+.button {
+  width: 170px;
   display: block;
-  padding: 5px 0;
+  padding: 5px;
+  margin: 15px;
   border: 2px solid $main-color;
-  border-radius: 3px;
+  border-radius: 10px;
   background: transparent;
   color: $main-color;
   text-align: center;
-  font: 400 13px/13px "Raleway";
+  font: 700 14px/18px "Droid Sans";
   text-transform: uppercase;
   &:hover {
     background-color: $main-color;
@@ -17,32 +18,28 @@ a.button {
 }
 
 @media screen and ($xs) {
-  a.button {
-    width: 130px;
-    padding: 8px 0;
-    font: 400 13px/13px "Raleway";
+  .button {
+    padding: 8px;
+    font: 700 15px/18px "Droid Sans";
   }
 }
 @media screen and ($sm) {
-  a.button {
-    width: 140px;
-    padding: 10px 0;
-    font: 700 13px/13px "Raleway";
+  .button {
+    padding: 10px;
+    font: 700 16px/18px "Droid Sans";
   }
 }
 
 @media screen and ($md) {
-  a.button {
-    width: 150px;
-    padding: 15px 0;
-    font: 700 13px/13px "Raleway";
+  .button {
+    padding: 15px;
+    font: 700 17px/18px "Droid Sans";
   }
 }
 
 @media screen and ($lg) {
-  a.button {
-    width: 150px;
-    padding: 15px 0;
-    font: 700 13px/13px "Raleway";
+  .button {
+    padding: 15px;
+    font: 700 18px/18px "Droid Sans";
   }
 }
