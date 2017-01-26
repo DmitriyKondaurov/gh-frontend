@@ -1,7 +1,48 @@
-//@font-face {
-//  font-family: 'Proxima Nova';
-//  src: url('../fonts/Proxima Nova Semibold.eot');
-//  src: local('Proxima Nova'), url('../fonts/Proxima Nova Semibold.woff') format('woff'), url('../fonts/Proxima Nova Semibold.ttf') format('truetype'), url('../fonts/Proxima Nova Semibold.svg') format('svg');
-//  font-weight:  600;
-//  font-style: normal;
-//}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot"); /* IE9*/
+  src: local('Helvetica Neue'),
+  url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Helvetica/HelveticaNeue-BoldCond.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/Helvetica/HelveticaNeue-BoldCond.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/Helvetica/HelveticaNeue-BoldCond.svg") format("svg"); /* iOS 4.1- */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/Helvetica/HelveticaNeue-Light.eot"); /* IE9*/
+  src: local('Helvetica Neue'),
+  url("../fonts/Helvetica/HelveticaNeue-Light.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Helvetica/HelveticaNeue-Light.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/Helvetica/HelveticaNeue-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/Helvetica/HelveticaNeue-Light.svg") format("svg"); /* iOS 4.1- */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/Helvetica/HelveticaNeue-MediumCond.eot"); /* IE9*/
+  src: local('Helvetica Neue'),
+  url("../fonts/Helvetica/HelveticaNeue-MediumCond.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Helvetica/HelveticaNeue-MediumCond.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/Helvetica/HelveticaNeue-MediumCond.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/Helvetica/HelveticaNeue-MediumCond.svg") format("svg"); /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("../fonts/Helvetica/Helvetica-Bold.eot"); /* IE9*/
+  src: local('Helvetica Neue'),
+  url("../fonts/Helvetica/Helvetica-Bold.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Helvetica/Helvetica-Bold.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/Helvetica/Helvetica-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/Helvetica/Helvetica-Bold.svg") format("svg"); /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal;
+}
