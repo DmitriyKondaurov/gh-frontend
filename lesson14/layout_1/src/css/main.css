@@ -6587,13 +6587,6 @@ img {
     padding: 0 30px 25px 30px;
     font: 400 30px/49px 'Quicksand';
     border-bottom: 1px solid black; }
-    .section-caption h2::after {
-      content: url("../img/dot.png");
-      position: absolute;
-      bottom: -18px;
-      left: 170px;
-      right: 0;
-      width: 30px; }
 
 @media screen and (min-width: 568px) {
   body {
@@ -6610,6 +6603,15 @@ img {
 @media screen and (min-width: 1200px) {
   body {
     line-height: 20px; } }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/Helvetica_Neue/Helvetica Neue.eot");
+  /* IE9*/
+  src: local("Helvetica Neue"), url("../fonts/Helvetica_Neue/Helvetica Neue.eot") format("embedded-opentype"), url("../fonts/Helvetica_Neue/Helvetica Neue.woff2") format("woff2"), url("../fonts/Helvetica_Neue/Helvetica Neue.woff") format("woff"), url("../fonts/Helvetica_Neue/Helvetica Neue.ttf") format("truetype"), url("../fonts/Helvetica_Neue/Helvetica Neue.svg") format("svg");
+  /* iOS 4.1- */
+  font-weight: 700;
+  font-style: normal; }
 
 nav {
   padding: 1%;
@@ -6742,7 +6744,7 @@ ul.topnav {
     .header .logo .slogan {
       font: 700 14px/24px "Quicksand"; }
     .header .logo:before {
-      content: url(../img/logo-icon.png);
+      content: url(../img/logo.png);
       display: inline-block; }
 
 @media screen and (min-width: 568px) {
@@ -6826,187 +6828,6 @@ footer {
   .button {
     padding: 15px;
     font: 700 18px/18px "Droid Sans"; } }
-
-.services {
-  padding: 50px 1% 150px 1%;
-  background-color: #e8e8e8; }
-  .services .section-caption h2 {
-    background-color: #e8e8e8; }
-    .services .section-caption h2::after {
-      background-color: #e8e8e8; }
-  .services .container {
-    margin-top: 40px; }
-    .services .container li {
-      padding: 15px;
-      text-align: center; }
-      .services .container li h3 {
-        font: 400 24px/32px 'Quicksand'; }
-      .services .container li p {
-        font: 400 13px/18px 'Quicksand'; }
-
-.portfolio {
-  padding: 50px 1% 150px 1%;
-  background-color: #ff5959; }
-  .portfolio .section-caption h2 {
-    background-color: #ff5959;
-    color: #fff;
-    border-bottom: 1px solid white; }
-    .portfolio .section-caption h2::after {
-      content: url("../img/dot-white.png");
-      background-color: #ff5959; }
-  .portfolio .container {
-    margin-top: 40px; }
-    .portfolio .container li {
-      position: relative;
-      padding: 15px;
-      text-align: center; }
-      .portfolio .container li div {
-        position: absolute;
-        display: none;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); }
-        .portfolio .container li div p {
-          color: #fff;
-          font: 700 16px/20px 'Quicksand'; }
-      .portfolio .container li:hover img {
-        opacity: 0.5; }
-      .portfolio .container li:hover div {
-        display: block; }
-    .portfolio .container .hover-button1 {
-      width: 30px;
-      height: 30px;
-      vertical-align: middle;
-      display: inline-block;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-      background-color: #ff5959;
-      color: #fff;
-      font-size: 13px;
-      line-height: 30px; }
-    .portfolio .container .hover-button2 {
-      width: 30px;
-      height: 30px;
-      vertical-align: middle;
-      display: inline-block;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-      background-color: #ff5959;
-      color: #fff;
-      font-size: 20px;
-      line-height: 25px; }
-
-@media screen and (min-width: 568px) {
-  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
-    margin: 5px; }
-  .portfolio .container li div p {
-    font: 700 18px/22px 'Quicksand'; } }
-
-@media screen and (min-width: 768px) {
-  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
-    margin: 10px; }
-  .portfolio .container li div p {
-    font: 700 20px/24px 'Quicksand'; } }
-
-@media screen and (min-width: 992px) {
-  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
-    margin: 10px 15px; }
-  .portfolio .container li div p {
-    font: 700 22px/25px 'Quicksand'; } }
-
-@media screen and (min-width: 1200px) {
-  .portfolio .container .hover-button2, .portfolio .container .hover-button2 {
-    margin: 15px 20px; }
-  .portfolio .container li div p {
-    font: 700 24px/26px 'Quicksand'; } }
-
-.team {
-  padding: 50px 1% 150px 1%;
-  background-color: #e8e8e8; }
-  .team .section-caption h2 {
-    background-color: #e8e8e8; }
-    .team .section-caption h2::after {
-      background-color: #e8e8e8; }
-  .team .container {
-    margin-top: 40px; }
-    .team .container li {
-      padding: 15px;
-      text-align: center; }
-      .team .container li h4 {
-        font: 700 24px/32px 'Quicksand'; }
-      .team .container li div {
-        font: 300 16px/24px 'Quicksand'; }
-      .team .container li p {
-        font: 300 13px/18px 'Quicksand'; }
-    .team .container .social-icons li {
-      display: inline-block;
-      padding: 0; }
-      .team .container .social-icons li:nth-child(1) a {
-        color: #7acdf1; }
-      .team .container .social-icons li:nth-child(2) a {
-        color: #eb5756; }
-      .team .container .social-icons li:nth-child(3) a {
-        color: #547bbd; }
-      .team .container .social-icons li:nth-child(4) a {
-        color: #4b4b4b; }
-      .team .container .social-icons li:nth-child(5) a {
-        color: #1385c7; }
-
-.blog-news {
-  padding: 50px 1% 150px 1%;
-  background-color: #ff5959; }
-  .blog-news .section-caption h2 {
-    background-color: #ff5959;
-    color: #fff;
-    border-bottom: 1px solid white; }
-    .blog-news .section-caption h2::after {
-      content: url("../img/dot-white.png");
-      background-color: #ff5959; }
-  .blog-news .container {
-    margin-top: 40px; }
-    .blog-news .container li {
-      padding: 15px;
-      text-align: center;
-      color: #fff; }
-      .blog-news .container li h4 {
-        font: 700 18px/32px 'Quicksand'; }
-      .blog-news .container li div {
-        font: 300 13px/24px 'Quicksand';
-        text-align: left; }
-      .blog-news .container li p {
-        font: 400 13px/16px 'Quicksand';
-        text-align: left; }
-
-.contacts {
-  padding: 50px 1% 150px 1%;
-  background-color: #e8e8e8; }
-  .contacts .section-caption h2 {
-    background-color: #e8e8e8; }
-    .contacts .section-caption h2::after {
-      background-color: #e8e8e8; }
-  .contacts .container {
-    margin-top: 40px; }
-    .contacts .container form {
-      font: 300 13px/16px 'Quicksand';
-      color: #000; }
-      .contacts .container form * {
-        width: 90%;
-        resize: none;
-        margin: 15px auto;
-        padding: 15px;
-        -webkit-border-radius: 9px;
-                border-radius: 9px;
-        border: none; }
-    .contacts .container div {
-      padding: 15px; }
-      .contacts .container div h4 {
-        font: 400 24px/32px 'Quicksand'; }
-      .contacts .container div p {
-        font: 300 13px/18px 'Quicksand'; }
-      .contacts .container div div {
-        font: 300 14px/18px 'Quicksand'; }
 
 .hero {
   padding: 110px 1% 50px 1%; }
