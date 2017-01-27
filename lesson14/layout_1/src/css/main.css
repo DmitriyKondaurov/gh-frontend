@@ -6564,8 +6564,8 @@ button.close {
       background: #869791; }
 
 body {
-  color: #000;
-  font: 300 13px/24px "Raleway"; }
+  color: #fff;
+  font: 300 13px/24px "Open Sans"; }
 
 a {
   text-decoration: none; }
@@ -6581,28 +6581,9 @@ img {
   text-align: center; }
   .section-caption h2 {
     margin: auto;
-    position: relative;
-    width: 370px;
     max-width: 100%;
     padding: 0 30px 25px 30px;
-    font: 400 30px/49px 'Quicksand';
-    border-bottom: 1px solid black; }
-
-@media screen and (min-width: 568px) {
-  body {
-    line-height: 22px; } }
-
-@media screen and (min-width: 768px) {
-  body {
-    line-height: 21px; } }
-
-@media screen and (min-width: 992px) {
-  body {
-    line-height: 20px; } }
-
-@media screen and (min-width: 1200px) {
-  body {
-    line-height: 20px; } }
+    font: 400 40px/60px 'Open Sans'; }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -6640,13 +6621,13 @@ ul.topnav {
       font-size: 14px;
       font-weight: 700; }
       ul.topnav li a:hover {
-        color: #000; }
+        color: #fff; }
     ul.topnav li.icon {
       display: none; }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width: 568px) {
-  ul.topnav li:not(:first-child) {
+  ul.topnav li {
     display: none; }
   ul.topnav {
     margin: 0;
@@ -6667,40 +6648,6 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #000; }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline; }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
-    ul.topnav.responsive li a:hover {
-      background-color: #ff5959;
-      color: black; } }
-
-@media screen and (max-width: 768px) {
-  ul.topnav li:not(:first-child) {
-    display: none; }
-  ul.topnav {
-    margin: 0;
-    padding: 0; }
-    ul.topnav li.icon {
-      float: right;
-      display: inline-block; }
-      ul.topnav li.icon:hover {
-        background-color: transparent;
-        color: #fff; }
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {
-    position: relative; }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-    ul.topnav.responsive li.icon a:hover {
-      background-color: transparent;
       color: #fff; }
   ul.topnav.responsive li {
     float: none;
@@ -6711,13 +6658,48 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #ff5959;
+      background-color: #d11f2d;
+      color: black; } }
+
+@media screen and (max-width: 1199px) {
+  ul.topnav li {
+    display: none; }
+  ul.topnav {
+    margin: 0;
+    padding: 0; }
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block; }
+      ul.topnav li.icon:hover {
+        background-color: transparent;
+        color: #222222; }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {
+    position: relative; }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    ul.topnav.responsive li.icon a:hover {
+      background-color: transparent;
+      color: #222222; }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; }
+    ul.topnav.responsive li a:hover {
+      background-color: #d11f2d;
       color: black;
       text-shadow: none; } }
 
 .header {
-  background-color: #ff5959;
-  max-height: 110px;
+  background-color: transparent;
+  max-height: 80px;
+  border-top: 10px solid #d11f2d;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -6728,24 +6710,23 @@ ul.topnav {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .header.active {
-    background-color: rgba(255, 89, 89, 0.9); }
+    background-color: rgba(209, 41, 35, 0.6); }
   .header .logo {
     margin: 0 auto;
     float: left;
     overflow: hidden;
     padding: 1% 0 0 1%;
-    color: #e8e8e8; }
+    color: #fff;
+    text-transform: uppercase; }
     .header .logo h1 {
       margin: 0 auto;
       display: inline-block;
-      font: 300 34px/34px "Quicksand"; }
-      .header .logo h1 span {
-        font: 400 34px/34px "Quicksand"; }
-    .header .logo .slogan {
-      font: 700 14px/24px "Quicksand"; }
-    .header .logo:before {
-      content: url(../img/logo.png);
-      display: inline-block; }
+      font: 700 20px/20px "Open Sans"; }
+      .header .logo h1 .slogan {
+        font: 300 12px/17px "Open Sans"; }
+      .header .logo h1:after {
+        content: url(../img/logo.png);
+        display: inline-block; }
 
 @media screen and (min-width: 568px) {
   .header {
@@ -6754,10 +6735,8 @@ ul.topnav {
       padding-right: 1%; } }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 1% 0; }
-    .header nav {
-      padding: 20px 1% 0 0; } }
+  .header nav {
+    padding: 20px 1% 0 0; } }
 
 @media screen and (min-width: 992px) {
   .header .wrapper {
@@ -6768,7 +6747,7 @@ ul.topnav {
       padding-right: 5px; } }
 
 footer {
-  background-color: #ff5959; }
+  background-color: #d11f2d; }
   footer div {
     padding: 10px 5px;
     color: #e8e8e8;
@@ -6796,16 +6775,16 @@ footer {
   display: block;
   padding: 5px;
   margin: 15px;
-  border: 2px solid #ff5959;
+  border: 2px solid #d11f2d;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background: transparent;
-  color: #ff5959;
+  color: #d11f2d;
   text-align: center;
   font: 700 14px/18px "Droid Sans";
   text-transform: uppercase; }
   .button:hover {
-    background-color: #ff5959;
+    background-color: #d11f2d;
     text-decoration: none;
     color: white; }
 
@@ -6830,7 +6809,11 @@ footer {
     font: 700 18px/18px "Droid Sans"; } }
 
 .hero {
-  padding: 110px 1% 50px 1%; }
+  padding: 110px 1% 50px 1%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat; }
   .hero .row div {
     margin: auto;
     padding: 15px; }
@@ -6842,7 +6825,7 @@ footer {
       display: inline-block; }
       .hero .row div a:hover {
         color: #fff;
-        background-color: #ff5959; }
+        background-color: #d11f2d; }
 
 @media screen and (min-width: 568px) {
   .hero {

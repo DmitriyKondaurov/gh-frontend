@@ -16,34 +16,26 @@ img {
   text-align: center;
   h2 {
     margin: auto;
-    position: relative;
-    width: 370px;
     max-width: 100%;
     padding: 0 30px 25px 30px;
-    font: 400 30px/49px 'Quicksand';
-    border-bottom: 1px solid black;
-
+    font: 400 40px/60px 'Open Sans';
   }
 }
 
 @media screen and ($xs) {
   body {
-    line-height: 22px;
   }
 }
 @media screen and ($sm) {
   body {
-    line-height: 21px;
   }
 }
 @media screen and ($md) {
   body {
-    line-height: 20px;
   }
 }
 
 @media screen and ($lg) {
   body {
-    line-height: 20px;
   }
 }

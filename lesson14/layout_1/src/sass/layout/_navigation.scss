@@ -38,7 +38,7 @@ ul.topnav {
 }
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:568px) {
-  ul.topnav li:not(:first-child) {
+  ul.topnav li {
     display: none;
   }
   ul.topnav {
@@ -81,8 +81,8 @@ ul.topnav {
   }
 }
 
-@media screen and (max-width:768px) {
-  ul.topnav li:not(:first-child) {
+@media screen and (max-width:1199px) {
+  ul.topnav li {
     display: none;
   }
   ul.topnav {
