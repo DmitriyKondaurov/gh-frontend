@@ -1,5 +1,5 @@
 .intro {
-  padding: 40px 0 50px 0;
+  padding: 40px 0 0 0;
   color: $sec-text-color;
   article {
     margin: auto;
@@ -8,9 +8,6 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    .section-caption h2 {
-      font: 400 30px/40px 'Open Sans';
-    }
     p {
       font: 300 14px/24px 'Open Sans';
       text-align: justify;
@@ -30,9 +27,6 @@
 @media screen and ($xs) {
   .intro {
     article {
-      .section-caption h2 {
-        font: 400 34px/46px 'Open Sans';
-      }
       p {
         font: 300 16px/28px 'Open Sans';
       }
@@ -46,9 +40,6 @@
 @media screen and ($sm) {
   .intro {
     article {
-      .section-caption h2 {
-        font: 400 36px/50px 'Open Sans';
-      }
       p {
         font: 300 18px/32px 'Open Sans';
       }
@@ -62,9 +53,6 @@
 @media screen and ($md) {
   .intro {
     article {
-      .section-caption h2 {
-        font: 400 38px/55px 'Open Sans';
-      }
       p {
         font: 300 19px/34px 'Open Sans';
       }
@@ -78,9 +66,6 @@
 @media screen and ($lg) {
   .intro {
     article {
-      .section-caption h2 {
-        font: 400 40px/60px 'Open Sans';
-      }
       p {
         font: 300 20px/36px 'Open Sans';
       }

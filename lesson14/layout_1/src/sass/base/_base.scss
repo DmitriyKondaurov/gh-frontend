@@ -18,24 +18,36 @@ img {
     margin: auto;
     max-width: 100%;
     padding: 0 30px 25px 30px;
-    font: 400 40px/60px 'Open Sans';
+    font: 400 30px/40px 'Open Sans';
   }
 }
 
 @media screen and ($xs) {
   body {
+    .section-caption h2 {
+      font: 400 34px/46px 'Open Sans';
+    }
   }
 }
 @media screen and ($sm) {
   body {
+    .section-caption h2 {
+      font: 400 36px/50px 'Open Sans';
+    }
   }
 }
 @media screen and ($md) {
   body {
+    .section-caption h2 {
+      font: 400 38px/55px 'Open Sans';
+    }
   }
 }
 
 @media screen and ($lg) {
   body {
+    .section-caption h2 {
+      font: 400 40px/60px 'Open Sans';
+    }
   }
 }

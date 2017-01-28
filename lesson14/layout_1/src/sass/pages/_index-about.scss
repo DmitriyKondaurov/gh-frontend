@@ -1,0 +1,117 @@
+.about {
+  padding: 50px 0;
+  color: $main-text-color;
+  background: rgba(34, 34, 34, 1) url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat;
+  .wrapper {
+    max-width: $wrapper;
+    padding: 15px;
+    margin: auto;
+    & > p {
+      max-width: 490px;
+      padding: 20px 0;
+      font: 400 14px/26px 'Open Sans';
+    }
+  }
+  .fa-stack {
+    font-size: 40px;
+    i:nth-child(2) {
+      color: $sec-text-color;
+    }
+  }
+
+  .about-list {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .about-list-item {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 0;
+    div {
+      display: inline-block;
+      margin-left: 20px;
+      h4 {
+        margin: 0;
+        font: 700 15px/22px 'Montserrat';
+      }
+      p {
+        font: 400 14px/20px 'Open Sans';
+      }
+    }
+  }
+}
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+  .about {
+    padding: 60px 0;
+    background: rgba(34, 34, 34, 1) url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat;
+    .wrapper > p {
+      font: 400 14px/26px 'Open Sans';
+    }
+    .about-list-item div {
+      h4 {
+        font: 700 16px/22px 'Montserrat';
+      }
+      p {
+        font: 400 14px/20px 'Open Sans';
+      }
+    }
+  }
+}
+
+@media screen and ($sm) {
+  .about {
+    padding: 70px 0;
+    background: rgba(34, 34, 34, 1) url(../../img/isometric-ipad-air.png) right 100%/50% no-repeat;
+    .wrapper > p {
+      font: 400 15px/26px 'Open Sans';
+    }
+    .about-list-item div {
+      h4 {
+        font: 700 17px/22px 'Montserrat';
+      }
+      p {
+        font: 400 15px/20px 'Open Sans';
+      }
+    }
+  }
+}
+
+@media screen and ($md) {
+  .about {
+    padding: 80px 0;
+    background: rgba(34, 34, 34, 1) url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat;
+    .wrapper > p {
+      font: 400 16px/26px 'Open Sans';
+    }
+    .about-list-item div {
+      h4 {
+        font: 700 18px/22px 'Montserrat';
+      }
+      p {
+        font: 400 16px/20px 'Open Sans';
+      }
+    }
+  }
+}
+
+@media screen and ($lg) {
+  .about {
+    padding: 100px 0;
+    background: rgba(34, 34, 34, 1) url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat;
+    .wrapper > p {
+      font: 400 16px/26px 'Open Sans';
+    }
+    .about-list-item div {
+      h4 {
+        font: 700 18px/22px 'Montserrat';
+      }
+      p {
+        font: 400 16px/20px 'Open Sans';
+      }
+    }
+  }
+}
+

@@ -6583,7 +6583,23 @@ img {
     margin: auto;
     max-width: 100%;
     padding: 0 30px 25px 30px;
-    font: 400 40px/60px 'Open Sans'; }
+    font: 400 30px/40px 'Open Sans'; }
+
+@media screen and (min-width: 568px) {
+  body .section-caption h2 {
+    font: 400 34px/46px 'Open Sans'; } }
+
+@media screen and (min-width: 768px) {
+  body .section-caption h2 {
+    font: 400 36px/50px 'Open Sans'; } }
+
+@media screen and (min-width: 992px) {
+  body .section-caption h2 {
+    font: 400 38px/55px 'Open Sans'; } }
+
+@media screen and (min-width: 1200px) {
+  body .section-caption h2 {
+    font: 400 40px/60px 'Open Sans'; } }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -6827,8 +6843,95 @@ footer {
     padding: 30px auto;
     font: 400 30px/60px "Open Sans"; } }
 
+.about {
+  padding: 50px 0;
+  color: #fff;
+  background: #222222 url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
+  .about .wrapper {
+    max-width: 1170px;
+    padding: 15px;
+    margin: auto; }
+    .about .wrapper > p {
+      max-width: 490px;
+      padding: 20px 0;
+      font: 400 14px/26px 'Open Sans'; }
+  .about .fa-stack {
+    font-size: 40px; }
+    .about .fa-stack i:nth-child(2) {
+      color: #222222; }
+  .about .about-list {
+    max-width: 1170px;
+    margin: auto; }
+  .about .about-list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding: 20px 0; }
+    .about .about-list-item div {
+      display: inline-block;
+      margin-left: 20px; }
+      .about .about-list-item div h4 {
+        margin: 0;
+        font: 700 15px/22px 'Montserrat'; }
+      .about .about-list-item div p {
+        font: 400 14px/20px 'Open Sans'; }
+
+@media screen and (min-width: 568px) {
+  .about {
+    padding: 60px 0;
+    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
+    .about .wrapper > p {
+      font: 400 14px/26px 'Open Sans'; }
+    .about .about-list-item div h4 {
+      font: 700 16px/22px 'Montserrat'; }
+    .about .about-list-item div p {
+      font: 400 14px/20px 'Open Sans'; } }
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 70px 0;
+    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/50% no-repeat; }
+    .about .wrapper > p {
+      font: 400 15px/26px 'Open Sans'; }
+    .about .about-list-item div h4 {
+      font: 700 17px/22px 'Montserrat'; }
+    .about .about-list-item div p {
+      font: 400 15px/20px 'Open Sans'; } }
+
+@media screen and (min-width: 992px) {
+  .about {
+    padding: 80px 0;
+    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
+    .about .wrapper > p {
+      font: 400 16px/26px 'Open Sans'; }
+    .about .about-list-item div h4 {
+      font: 700 18px/22px 'Montserrat'; }
+    .about .about-list-item div p {
+      font: 400 16px/20px 'Open Sans'; } }
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 100px 0;
+    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
+    .about .wrapper > p {
+      font: 400 16px/26px 'Open Sans'; }
+    .about .about-list-item div h4 {
+      font: 700 18px/22px 'Montserrat'; }
+    .about .about-list-item div p {
+      font: 400 16px/20px 'Open Sans'; } }
+
 .intro {
-  padding: 40px 0 50px 0;
+  padding: 40px 0 0 0;
   color: #222222; }
   .intro article {
     margin: auto;
@@ -6850,8 +6953,6 @@ footer {
     -webkit-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; }
-    .intro article .section-caption h2 {
-      font: 400 30px/40px 'Open Sans'; }
     .intro article p {
       font: 300 14px/24px 'Open Sans';
       text-align: justify;
@@ -6865,8 +6966,6 @@ footer {
         color: #fff; }
 
 @media screen and (min-width: 568px) {
-  .intro article .section-caption h2 {
-    font: 400 34px/46px 'Open Sans'; }
   .intro article p {
     font: 300 16px/28px 'Open Sans'; }
   .intro article:nth-child(even) {
@@ -6875,8 +6974,6 @@ footer {
     background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat; } }
 
 @media screen and (min-width: 768px) {
-  .intro article .section-caption h2 {
-    font: 400 36px/50px 'Open Sans'; }
   .intro article p {
     font: 300 18px/32px 'Open Sans'; }
   .intro article:nth-child(even) {
@@ -6885,8 +6982,6 @@ footer {
     background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat; } }
 
 @media screen and (min-width: 992px) {
-  .intro article .section-caption h2 {
-    font: 400 38px/55px 'Open Sans'; }
   .intro article p {
     font: 300 19px/34px 'Open Sans'; }
   .intro article:nth-child(even) {
@@ -6895,8 +6990,6 @@ footer {
     background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat; } }
 
 @media screen and (min-width: 1200px) {
-  .intro article .section-caption h2 {
-    font: 400 40px/60px 'Open Sans'; }
   .intro article p {
     font: 300 20px/36px 'Open Sans'; }
   .intro article:nth-child(even) {
