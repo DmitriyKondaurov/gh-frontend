@@ -3,7 +3,7 @@
   max-height: 80px;
   border-top: 10px solid $main-color;
   &.active {
-    background-color: rgba(209, 41, 35, 0.6);
+    background-color: rgba(34, 34, 34, 0.6);
   }
   position: fixed;
   z-index: 2;
@@ -11,13 +11,13 @@
   left: 0;
   right: 0;
   width: 100%;
-  padding: 1% 0;
+  padding: 1%;
   transition: 0.5s;
   .logo {
     margin: 0 auto;
     float: left;
     overflow: hidden;
-    padding: 1% 0 0 1%;
+    padding: 0 0 0 1%;
     color: $main-text-color;
     text-transform: uppercase;
     h1 {

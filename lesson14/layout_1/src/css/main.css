@@ -6706,16 +6706,16 @@ ul.topnav {
   left: 0;
   right: 0;
   width: 100%;
-  padding: 1% 0;
+  padding: 1%;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .header.active {
-    background-color: rgba(209, 41, 35, 0.6); }
+    background-color: rgba(34, 34, 34, 0.6); }
   .header .logo {
     margin: 0 auto;
     float: left;
     overflow: hidden;
-    padding: 1% 0 0 1%;
+    padding: 0 0 0 1%;
     color: #fff;
     text-transform: uppercase; }
     .header .logo h1 {
@@ -6770,75 +6770,201 @@ footer {
   footer div {
     padding: 50px 5px; } }
 
-.button {
-  width: 170px;
-  display: block;
-  padding: 5px;
-  margin: 15px;
-  border: 2px solid #d11f2d;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  background: transparent;
-  color: #d11f2d;
+.hero {
+  position: relative; }
+  .hero .scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font: 300 20px/34px 'Raleway'; }
+    .hero .scroll-down .button {
+      display: block;
+      color: #fff;
+      font: 700 14px/20px 'Raleway'; }
+    .hero .scroll-down:hover {
+      color: #d11f2d; }
+      .hero .scroll-down:hover .button {
+        color: #d11f2d;
+        text-decoration: none; }
+
+.button-intro {
+  width: 190px;
+  margin: 30px 0 30px 0;
+  padding: 15px auto;
+  font: 400 16px/28px "Open Sans";
+  color: #fff;
   text-align: center;
-  font: 700 14px/18px "Droid Sans";
-  text-transform: uppercase; }
-  .button:hover {
-    background-color: #d11f2d;
+  border: 3px solid #fff; }
+  .button-intro:hover {
     text-decoration: none;
-    color: white; }
+    color: #fff;
+    border-color: #d11f2d; }
 
 @media screen and (min-width: 568px) {
-  .button {
-    padding: 8px;
-    font: 700 15px/18px "Droid Sans"; } }
+  .button-intro {
+    width: 230px;
+    padding: 20px auto;
+    font: 400 20px/40px "Open Sans"; } }
 
 @media screen and (min-width: 768px) {
-  .button {
-    padding: 10px;
-    font: 700 16px/18px "Droid Sans"; } }
+  .button-intro {
+    width: 260px;
+    padding: 24px auto;
+    font: 400 24px/48px "Open Sans"; } }
 
 @media screen and (min-width: 992px) {
-  .button {
-    padding: 15px;
-    font: 700 17px/18px "Droid Sans"; } }
+  .button-intro {
+    width: 320px;
+    padding: 26px auto;
+    font: 400 26px/52px "Open Sans"; } }
 
 @media screen and (min-width: 1200px) {
-  .button {
-    padding: 15px;
-    font: 700 18px/18px "Droid Sans"; } }
+  .button-intro {
+    width: 390px;
+    padding: 30px auto;
+    font: 400 30px/60px "Open Sans"; } }
+
+.intro {
+  padding: 40px 0 50px 0;
+  color: #222222; }
+  .intro article {
+    margin: auto;
+    padding: 100px 0 100px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+    .intro article .section-caption h2 {
+      font: 400 30px/40px 'Open Sans'; }
+    .intro article p {
+      font: 300 14px/24px 'Open Sans';
+      text-align: justify;
+      max-width: 768px;
+      padding: 30px 3% 30px 3%; }
+    .intro article:nth-child(even) {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat;
+      background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat;
+      background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat; }
+      .intro article:nth-child(even) p {
+        color: #fff; }
+
+@media screen and (min-width: 568px) {
+  .intro article .section-caption h2 {
+    font: 400 34px/46px 'Open Sans'; }
+  .intro article p {
+    font: 300 16px/28px 'Open Sans'; }
+  .intro article:nth-child(even) {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat; } }
+
+@media screen and (min-width: 768px) {
+  .intro article .section-caption h2 {
+    font: 400 36px/50px 'Open Sans'; }
+  .intro article p {
+    font: 300 18px/32px 'Open Sans'; }
+  .intro article:nth-child(even) {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat; } }
+
+@media screen and (min-width: 992px) {
+  .intro article .section-caption h2 {
+    font: 400 38px/55px 'Open Sans'; }
+  .intro article p {
+    font: 300 19px/34px 'Open Sans'; }
+  .intro article:nth-child(even) {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat; } }
+
+@media screen and (min-width: 1200px) {
+  .intro article .section-caption h2 {
+    font: 400 40px/60px 'Open Sans'; }
+  .intro article p {
+    font: 300 20px/36px 'Open Sans'; }
+  .intro article:nth-child(even) {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat; } }
 
 .hero {
-  padding: 110px 1% 50px 1%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
+  padding: 1%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
   background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
-  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat; }
-  .hero .row div {
-    margin: auto;
+  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  text-align: center; }
+  .hero .hero-item {
+    max-width: 625px;
     padding: 15px; }
-    .hero .row div h3 {
-      font: 400 24px/32px 'Quicksand'; }
-    .hero .row div div {
-      font: 400 13px/18px 'Quicksand'; }
-    .hero .row div a {
-      display: inline-block; }
-      .hero .row div a:hover {
-        color: #fff;
-        background-color: #d11f2d; }
+    .hero .hero-item h3 {
+      font: 700 22px/32px "Open Sans";
+      text-transform: uppercase; }
+    .hero .hero-item p {
+      font: 400 14px/18px "Open Sans"; }
 
 @media screen and (min-width: 568px) {
   .hero {
-    padding: 150px 1% 100px 1%; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat; }
+    .hero .hero-item h3 {
+      font: 700 24px/38px "Open Sans"; }
+    .hero .hero-item p {
+      font: 400 15px/19px "Open Sans"; } }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding: 250px 1% 150px 1%; } }
+  .hero .hero-item h3 {
+    font: 700 34px/40px "Open Sans"; }
+  .hero .hero-item p {
+    font: 400 16px/20px "Open Sans"; } }
 
 @media screen and (min-width: 992px) {
-  .hero {
-    padding: 350px 1% 250px 1%; } }
+  .hero .hero-item h3 {
+    font: 700 36px/44px "Open Sans"; }
+  .hero .hero-item p {
+    font: 400 17px/22px "Open Sans"; } }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 350px 1% 250px 1%; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat; }
+    .hero .hero-item h3 {
+      font: 700 40px/48px "Open Sans"; }
+    .hero .hero-item p {
+      font: 400 18px/24px "Open Sans"; } }

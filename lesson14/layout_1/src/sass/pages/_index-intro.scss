@@ -1,0 +1,93 @@
+.intro {
+  padding: 40px 0 50px 0;
+  color: $sec-text-color;
+  article {
+    margin: auto;
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    .section-caption h2 {
+      font: 400 30px/40px 'Open Sans';
+    }
+    p {
+      font: 300 14px/24px 'Open Sans';
+      text-align: justify;
+      max-width: 768px;
+      padding: 30px 3% 30px 3%;
+    }
+    &:nth-child(even) {
+      background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat;
+      p {
+        color: $main-text-color;
+      }
+    }
+  }
+}
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+  .intro {
+    article {
+      .section-caption h2 {
+        font: 400 34px/46px 'Open Sans';
+      }
+      p {
+        font: 300 16px/28px 'Open Sans';
+      }
+      &:nth-child(even) {
+        background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat;
+      }
+    }
+  }
+}
+
+@media screen and ($sm) {
+  .intro {
+    article {
+      .section-caption h2 {
+        font: 400 36px/50px 'Open Sans';
+      }
+      p {
+        font: 300 18px/32px 'Open Sans';
+      }
+      &:nth-child(even) {
+        background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat;
+      }
+    }
+  }
+}
+
+@media screen and ($md) {
+  .intro {
+    article {
+      .section-caption h2 {
+        font: 400 38px/55px 'Open Sans';
+      }
+      p {
+        font: 300 19px/34px 'Open Sans';
+      }
+      &:nth-child(even) {
+        background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat;
+      }
+    }
+  }
+}
+
+@media screen and ($lg) {
+  .intro {
+    article {
+      .section-caption h2 {
+        font: 400 40px/60px 'Open Sans';
+      }
+      p {
+        font: 300 20px/36px 'Open Sans';
+      }
+      &:nth-child(even) {
+        background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
+      }
+    }
+  }
+}
+

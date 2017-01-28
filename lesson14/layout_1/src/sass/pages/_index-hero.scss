@@ -1,22 +1,21 @@
 .hero {
-  padding: 110px 1% 50px 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  padding: 1%;
   background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
-  .row div {
-    margin: auto;
+  text-align: center;
+  .hero-item {
+    max-width: 625px;
     padding: 15px;
     h3 {
-      font: 400 24px/32px 'Quicksand';
+      font: 700 22px/32px "Open Sans";
+      text-transform: uppercase;
     }
-    div {
-      font: 400 13px/18px 'Quicksand';
-    }
-    a {
-      display: inline-block;
-      &:hover {
-        color: #fff;
-        background-color: $main-color;
-      }
+    p {
+      font: 400 14px/18px "Open Sans";
     }
   }
 }
@@ -24,25 +23,55 @@
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {
-    padding: 150px 1% 100px 1%;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    .hero-item {
+      h3 {
+        font: 700 24px/38px "Open Sans";
+      }
+      p {
+        font: 400 15px/19px "Open Sans";
+      }
+    }
   }
 }
 
 @media screen and ($sm) {
   .hero {
-    padding: 250px 1% 150px 1%;
+    .hero-item {
+      h3 {
+        font: 700 34px/40px "Open Sans";
+      }
+      p {
+        font: 400 16px/20px "Open Sans";
+      }
+    }
   }
 }
 
 @media screen and ($md) {
   .hero {
-    padding: 350px 1% 250px 1%;
+    .hero-item {
+      h3 {
+        font: 700 36px/44px "Open Sans";
+      }
+      p {
+        font: 400 17px/22px "Open Sans";
+      }
+    }
   }
 }
 
 @media screen and ($lg) {
   .hero {
-    padding: 350px 1% 250px 1%;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    .hero-item {
+      h3 {
+        font: 700 40px/48px "Open Sans";
+      }
+      p {
+        font: 400 18px/24px "Open Sans";
+      }
+    }
   }
 }
 
