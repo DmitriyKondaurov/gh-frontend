@@ -1,0 +1,93 @@
+.about-us {
+  padding: 50px 0;
+  color: $sec-text-color;
+}
+.team-photo {
+  margin-top: 30px;
+  li {
+    position: relative;
+    text-align: center;
+    &:hover {
+      img {
+        opacity: 0.5;
+      }
+      .wrapper {
+        background-color: rgba(34, 34, 34, 0.5);
+      }
+      .empty-photo a {
+        color: $main-color;
+        border-color: $main-color;
+      }
+      .team-member-name {
+        display: block;
+      }
+    }
+  }
+  .bg-img {
+    width: 263px;
+    margin: auto;
+    background-color: $sec-color;
+  }
+  .wrapper {
+    height: 351px;
+    width: 263px;
+    margin: auto;
+    border: 1px solid $sec-color;
+  }
+  .empty-photo {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    font: 400 23px/35px "Open Sans";
+    a {
+      display: block;
+      width: 70%;
+      margin: 50px auto 0 auto;
+      border: 3px solid $sec-color;
+      font: 700 23px/59px "Open Sans";
+      color: $sec-text-color;
+    }
+  }
+  .team-member-name {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: $main-text-color;
+    font: 400 23px/35px "Open Sans";
+    span {
+      display: block;
+      font: 400 18px/35px "Open Sans";
+    }
+  }
+}
+
+
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+  .about-us {
+    padding: 60px 0;
+  }
+}
+
+@media screen and ($sm) {
+  .about-us {
+    padding: 70px 0;
+  }
+}
+
+@media screen and ($md) {
+  .about-us {
+    padding: 80px 0;
+  }
+}
+
+@media screen and ($lg) {
+  .about-us {
+    padding: 100px 0;
+  }
+}
+
