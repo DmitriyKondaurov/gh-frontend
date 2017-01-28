@@ -6997,6 +6997,37 @@ footer {
     background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
     background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat; } }
 
+.services {
+  padding: 50px 0;
+  color: #fff;
+  background: #d11f2d; }
+  .services .fa-stack {
+    font-size: 21px; }
+    .services .fa-stack i:nth-child(2) {
+      color: #222222; }
+    .services .fa-stack img {
+      left: 9px;
+      top: 9px;
+      max-width: 24px; }
+  .services .container {
+    margin-top: 30px; }
+
+@media screen and (min-width: 568px) {
+  .services {
+    padding: 60px 0; } }
+
+@media screen and (min-width: 768px) {
+  .services {
+    padding: 70px 0; } }
+
+@media screen and (min-width: 992px) {
+  .services {
+    padding: 80px 0; } }
+
+@media screen and (min-width: 1200px) {
+  .services {
+    padding: 100px 0; } }
+
 .hero {
   display: -webkit-box;
   display: -webkit-flex;
