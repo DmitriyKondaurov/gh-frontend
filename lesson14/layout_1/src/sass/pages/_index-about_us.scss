@@ -15,8 +15,10 @@
         background-color: rgba(34, 34, 34, 0.5);
       }
       .empty-photo a {
-        color: $main-color;
+        color: $main-text-color;
         border-color: $main-color;
+        background-color: #00b3ee;
+        text-decoration: none;
       }
       .team-member-name {
         display: block;
@@ -42,7 +44,7 @@
     font: 400 23px/35px "Open Sans";
     a {
       display: block;
-      width: 70%;
+      width: 180px;
       margin: 50px auto 0 auto;
       border: 3px solid $sec-color;
       font: 700 23px/59px "Open Sans";

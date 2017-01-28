@@ -6773,28 +6773,60 @@ ul.topnav {
       padding-right: 5px; } }
 
 footer {
-  background-color: #d11f2d; }
+  background-color: #222222; }
+  footer .wrapper {
+    max-width: 1170px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
   footer div {
     padding: 10px 5px;
-    color: #e8e8e8;
+    color: #fff;
     text-align: center;
-    font: 400 13px/18px 'Quicksand'; }
+    font: 400 14px/20px "Open Sans"; }
+  footer .social-icons {
+    text-align: center; }
+    footer .social-icons li {
+      display: inline-block;
+      font-size: 18px; }
+      footer .social-icons li:nth-child(1) a {
+        color: #018ada; }
+      footer .social-icons li:nth-child(2) a {
+        color: #3c5a98; }
+      footer .social-icons li:nth-child(3) a {
+        color: #d13f3f; }
+      footer .social-icons li:nth-child(4) a {
+        color: #e95c93; }
 
 @media screen and (min-width: 568px) {
-  footer div {
-    padding: 20px 5px; } }
+  footer .wrapper {
+    padding: 20px; } }
 
 @media screen and (min-width: 768px) {
-  footer div {
-    padding: 30px 5px; } }
+  footer .wrapper {
+    padding: 30px; } }
 
 @media screen and (min-width: 992px) {
-  footer div {
-    padding: 40px 5px; } }
+  footer .wrapper {
+    padding: 40px; } }
 
 @media screen and (min-width: 1200px) {
-  footer div {
-    padding: 50px 5px; } }
+  footer .wrapper {
+    padding: 50px; } }
 
 .hero {
   position: relative; }
@@ -6825,33 +6857,61 @@ footer {
   text-align: center;
   border: 3px solid #fff; }
   .button-intro:hover {
-    text-decoration: none;
     color: #fff;
-    border-color: #d11f2d; }
+    border-color: #d11f2d;
+    background-color: #00b3ee;
+    text-decoration: none; }
+
+.button-contact {
+  display: block;
+  width: 180px;
+  margin: auto;
+  background-color: white;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font: 700 16px/40px "Open Sans";
+  text-align: center;
+  color: #222222; }
+  .button-contact:hover {
+    background-color: #00b3ee;
+    color: white;
+    text-decoration: none; }
 
 @media screen and (min-width: 568px) {
   .button-intro {
     width: 230px;
     padding: 20px auto;
-    font: 400 20px/40px "Open Sans"; } }
+    font: 400 20px/40px "Open Sans"; }
+  .button-contact {
+    width: 210px;
+    font: 700 18px/44px "Open Sans"; } }
 
 @media screen and (min-width: 768px) {
   .button-intro {
     width: 260px;
     padding: 24px auto;
-    font: 400 24px/48px "Open Sans"; } }
+    font: 400 24px/48px "Open Sans"; }
+  .button-contact {
+    width: 220px;
+    font: 700 20px/48px "Open Sans"; } }
 
 @media screen and (min-width: 992px) {
   .button-intro {
     width: 320px;
     padding: 26px auto;
-    font: 400 26px/52px "Open Sans"; } }
+    font: 400 26px/52px "Open Sans"; }
+  .button-contact {
+    width: 230px;
+    font: 700 22px/52px "Open Sans"; } }
 
 @media screen and (min-width: 1200px) {
   .button-intro {
     width: 390px;
     padding: 30px auto;
-    font: 400 30px/60px "Open Sans"; } }
+    font: 400 30px/60px "Open Sans"; }
+  .button-contact {
+    width: 240px;
+    font: 700 24px/56px "Open Sans"; } }
 
 .about {
   padding: 50px 0;
@@ -7037,7 +7097,7 @@ footer {
     .featured-work .button-group .button {
       width: 140px;
       height: 40px;
-      margin: 25px 10px;
+      margin: 5px 10px;
       border: 2px solid #d11f2d;
       background-color: transparent;
       color: #fff;
@@ -7098,7 +7158,9 @@ footer {
   .featured-work {
     padding-top: 60px; }
     .featured-work .isotope-item {
-      width: 47%; } }
+      width: 47%; }
+    .featured-work .button-group .button {
+      margin: 25px 10px; } }
 
 @media screen and (min-width: 768px) {
   .featured-work {
@@ -7132,8 +7194,10 @@ footer {
     .team-photo li:hover .wrapper {
       background-color: rgba(34, 34, 34, 0.5); }
     .team-photo li:hover .empty-photo a {
-      color: #d11f2d;
-      border-color: #d11f2d; }
+      color: #fff;
+      border-color: #d11f2d;
+      background-color: #00b3ee;
+      text-decoration: none; }
     .team-photo li:hover .team-member-name {
       display: block; }
   .team-photo .bg-img {
@@ -7153,7 +7217,7 @@ footer {
     font: 400 23px/35px "Open Sans"; }
     .team-photo .empty-photo a {
       display: block;
-      width: 70%;
+      width: 180px;
       margin: 50px auto 0 auto;
       border: 3px solid #222222;
       font: 700 23px/59px "Open Sans";
@@ -7184,6 +7248,38 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .about-us {
+    padding: 100px 0; } }
+
+.clients {
+  padding: 50px 0;
+  color: #222222;
+  background-color: #f4f4f4; }
+
+.clients-list {
+  padding-top: 30px;
+  text-align: center; }
+  .clients-list li {
+    margin: auto;
+    height: 100px; }
+
+.contacts {
+  background-color: #d11f2d;
+  padding: 50px 0; }
+
+@media screen and (min-width: 568px) {
+  .clients, .contacts {
+    padding: 60px 0; } }
+
+@media screen and (min-width: 768px) {
+  .clients, .contacts {
+    padding: 70px 0; } }
+
+@media screen and (min-width: 992px) {
+  .clients, .contacts {
+    padding: 80px 0; } }
+
+@media screen and (min-width: 1200px) {
+  .clients, .contacts {
     padding: 100px 0; } }
 
 .hero {

@@ -1,32 +1,58 @@
 footer {
-  background-color: $main-color;
+  background-color: $sec-color;
+  .wrapper {
+    max-width: $wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
   div {
     padding: 10px 5px;
-    color: #e8e8e8;
+    color: $main-text-color;
     text-align: center;
-    font: 400 13px/18px 'Quicksand';
+    font: 400 14px/20px "Open Sans";
+  }
+  .social-icons {
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 18px;
+      &:nth-child(1) a {
+        color: #018ada;
+      }
+      &:nth-child(2) a {
+        color: #3c5a98;
+      }
+      &:nth-child(3) a {
+        color: #d13f3f;
+      }
+      &:nth-child(4) a {
+        color: #e95c93;
+      }
+    }
   }
 }
 
 @media screen and ($xs) {
   footer {
-    div {
-      padding: 20px 5px;
+    .wrapper {
+      padding: 20px;
     }
   }
 }
 @media screen and ($sm) {
   footer {
-    div {
-      padding: 30px 5px;
+    .wrapper {
+      padding: 30px;
     }
   }
 }
 
 @media screen and ($md) {
   footer {
-    div {
-      padding: 40px 5px;
+    .wrapper {
+      padding: 40px;
     }
   }
 }
@@ -34,8 +60,8 @@ footer {
 
 @media screen and ($lg) {
   footer {
-    div {
-      padding: 50px 5px;
+    .wrapper {
+      padding: 50px;
     }
   }
 }

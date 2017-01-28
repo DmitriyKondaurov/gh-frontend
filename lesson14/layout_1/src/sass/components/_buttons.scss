@@ -31,36 +31,38 @@
   text-align: center;
   border: 3px solid $main-text-color;
   &:hover {
-    text-decoration: none;
     color: $main-text-color;
     border-color: $main-color;
+    background-color: #00b3ee;
+    text-decoration: none;
 
   }
 }
-//.button {
-//  width: 170px;
-//  display: block;
-//  padding: 5px;
-//  margin: 15px;
-//  border: 2px solid $main-color;
-//  border-radius: 10px;
-//  background: transparent;
-//  color: $main-color;
-//  text-align: center;
-//  font: 700 14px/18px "Droid Sans";
-//  text-transform: uppercase;
-//  &:hover {
-//    background-color: $main-color;
-//    text-decoration: none;
-//    color: white;
-//  }
-//}
+.button-contact {
+  display: block;
+  width: 180px;
+  margin: auto;
+  background-color: white;
+  border-radius: 4px;
+  font: 700 16px/40px "Open Sans";
+  text-align: center;
+  color: $sec-text-color;
+  &:hover {
+    background-color: #00b3ee;
+    color: white;
+    text-decoration: none;
+  }
+}
 
 @media screen and ($xs) {
   .button-intro {
     width: 230px;
     padding: 20px auto;
     font: 400 20px/40px "Open Sans";
+  }
+  .button-contact {
+    width: 210px;
+    font: 700 18px/44px "Open Sans";
   }
 }
 
@@ -70,6 +72,10 @@
     padding: 24px auto;
     font: 400 24px/48px "Open Sans";
   }
+  .button-contact {
+    width: 220px;
+    font: 700 20px/48px "Open Sans";
+  }
 }
 
 @media screen and ($md) {
@@ -78,6 +84,10 @@
     padding: 26px auto;
     font: 400 26px/52px "Open Sans";
   }
+  .button-contact {
+    width: 230px;
+    font: 700 22px/52px "Open Sans";
+  }
 }
 
 @media screen and ($lg) {
@@ -85,5 +95,9 @@
     width: 390px;
     padding: 30px auto;
     font: 400 30px/60px "Open Sans";
+  }
+  .button-contact {
+    width: 240px;
+    font: 700 24px/56px "Open Sans";
   }
 }
