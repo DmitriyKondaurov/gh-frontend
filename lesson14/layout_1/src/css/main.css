@@ -6611,7 +6611,6 @@ img {
   font-style: normal; }
 
 nav {
-  padding: 1%;
   float: right;
   overflow: hidden; }
 
@@ -6630,7 +6629,7 @@ ul.topnav {
       display: inline-block;
       color: #fff;
       text-align: center;
-      padding: 5% 16px;
+      padding: 10px 16px;
       text-decoration: none;
       -webkit-transition: 0.3s;
       transition: 0.3s;
@@ -6750,17 +6749,13 @@ ul.topnav {
     .header nav {
       padding-right: 1%; } }
 
-@media screen and (min-width: 768px) {
-  .header nav {
-    padding: 20px 1% 0 0; } }
-
 @media screen and (min-width: 992px) {
   .header .wrapper {
     padding: 0;
     max-width: 1170px;
     margin: auto; }
     .header .wrapper nav {
-      padding-right: 5px; } }
+      padding-right: 15px; } }
 
 footer {
   background-color: #d11f2d; }
@@ -6846,7 +6841,7 @@ footer {
 .about {
   padding: 50px 0;
   color: #fff;
-  background: #222222 url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
+  background: #222222 url(../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
   .about .wrapper {
     max-width: 1170px;
     padding: 15px;
@@ -6889,7 +6884,7 @@ footer {
 @media screen and (min-width: 568px) {
   .about {
     padding: 60px 0;
-    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
+    background: #222222 url(../img/isometric-ipad-air.png) right 100%/40% no-repeat; }
     .about .wrapper > p {
       font: 400 14px/26px 'Open Sans'; }
     .about .about-list-item div h4 {
@@ -6900,7 +6895,7 @@ footer {
 @media screen and (min-width: 768px) {
   .about {
     padding: 70px 0;
-    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/50% no-repeat; }
+    background: #222222 url(../img/isometric-ipad-air.png) right 100%/50% no-repeat; }
     .about .wrapper > p {
       font: 400 15px/26px 'Open Sans'; }
     .about .about-list-item div h4 {
@@ -6911,7 +6906,7 @@ footer {
 @media screen and (min-width: 992px) {
   .about {
     padding: 80px 0;
-    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
+    background: #222222 url(../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
     .about .wrapper > p {
       font: 400 16px/26px 'Open Sans'; }
     .about .about-list-item div h4 {
@@ -6922,7 +6917,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .about {
     padding: 100px 0;
-    background: #222222 url(../../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
+    background: #222222 url(../img/isometric-ipad-air.png) right 100%/55% no-repeat; }
     .about .wrapper > p {
       font: 400 16px/26px 'Open Sans'; }
     .about .about-list-item div h4 {
@@ -6959,9 +6954,9 @@ footer {
       max-width: 768px;
       padding: 30px 3% 30px 3%; }
     .intro article:nth-child(even) {
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat;
-      background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat;
-      background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/400% no-repeat; }
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../img/shutterstock-25760206.png) center 0%/400% no-repeat;
+      background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/400% no-repeat;
+      background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/400% no-repeat; }
       .intro article:nth-child(even) p {
         color: #fff; }
 
@@ -6969,33 +6964,33 @@ footer {
   .intro article p {
     font: 300 16px/28px 'Open Sans'; }
   .intro article:nth-child(even) {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/250% no-repeat; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../img/shutterstock-25760206.png) center 0%/250% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/250% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/250% no-repeat; } }
 
 @media screen and (min-width: 768px) {
   .intro article p {
     font: 300 18px/32px 'Open Sans'; }
   .intro article:nth-child(even) {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/200% no-repeat; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../img/shutterstock-25760206.png) center 0%/200% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/200% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/200% no-repeat; } }
 
 @media screen and (min-width: 992px) {
   .intro article p {
     font: 300 19px/34px 'Open Sans'; }
   .intro article:nth-child(even) {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/150% no-repeat; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../img/shutterstock-25760206.png) center 0%/150% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/150% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/150% no-repeat; } }
 
 @media screen and (min-width: 1200px) {
   .intro article p {
     font: 300 20px/36px 'Open Sans'; }
   .intro article:nth-child(even) {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../../img/shutterstock-25760206.png) center 0%/120% no-repeat; } }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.5)), to(rgba(34, 34, 34, 0.5))), url(../img/shutterstock-25760206.png) center 0%/120% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/120% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../img/shutterstock-25760206.png) center 0%/120% no-repeat; } }
 
 .services {
   padding: 50px 0;
@@ -7028,6 +7023,94 @@ footer {
   .services {
     padding: 100px 0; } }
 
+.featured-work {
+  padding: 50px 0;
+  color: #fff;
+  background: #222222;
+  /* ---- button ---- */
+  /* ---- button-group ---- */
+  /* ---- isotope ---- */
+  /* clear fix */
+  /* ---- .item ---- */ }
+  .featured-work .button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    background: #EEE;
+    border: none;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.2)));
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+    color: #222;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px white;
+    cursor: pointer; }
+  .featured-work .button:hover {
+    background-color: #8CF;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    color: #222; }
+  .featured-work .button:active,
+  .featured-work .button.is-checked {
+    background-color: #28F; }
+  .featured-work .button.is-checked {
+    color: white;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
+  .featured-work .button:active {
+    -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8); }
+  .featured-work .button-group:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .featured-work .button-group .button {
+    float: left;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    margin-left: 0;
+    margin-right: 1px; }
+  .featured-work .button-group .button:first-child {
+    -webkit-border-radius: 0.5em 0 0 0.5em;
+            border-radius: 0.5em 0 0 0.5em; }
+  .featured-work .button-group .button:last-child {
+    -webkit-border-radius: 0 0.5em 0.5em 0;
+            border-radius: 0 0.5em 0.5em 0; }
+  .featured-work .isotope {
+    border: 1px solid #333; }
+  .featured-work .isotope:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .featured-work .isotope-item {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    background: #888;
+    color: #262524; }
+  .featured-work .isotope-item > * {
+    margin: 0;
+    padding: 0; }
+
+@media screen and (min-width: 568px) {
+  .featured-work {
+    padding: 60px 0; } }
+
+@media screen and (min-width: 768px) {
+  .featured-work {
+    padding: 70px 0; } }
+
+@media screen and (min-width: 992px) {
+  .featured-work {
+    padding: 80px 0; } }
+
+@media screen and (min-width: 1200px) {
+  .featured-work {
+    padding: 100px 0; } }
+
 .hero {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7048,9 +7131,9 @@ footer {
           align-items: center;
   height: 100vh;
   padding: 1%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
-  background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
-  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/255% no-repeat;
   text-align: center; }
   .hero .hero-item {
     max-width: 625px;
@@ -7063,9 +7146,9 @@ footer {
 
 @media screen and (min-width: 568px) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/150% no-repeat; }
     .hero .hero-item h3 {
       font: 700 24px/38px "Open Sans"; }
     .hero .hero-item p {
@@ -7085,9 +7168,9 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
-    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
-    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat; }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.95)), to(rgba(34, 34, 34, 0.95))), url(../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    background: -webkit-linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/100% no-repeat; }
     .hero .hero-item h3 {
       font: 700 40px/48px "Open Sans"; }
     .hero .hero-item p {

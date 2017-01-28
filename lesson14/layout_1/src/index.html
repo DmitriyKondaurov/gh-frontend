@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700,800|Raleway:800"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/libs.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,11 +16,11 @@
         <nav>
             <ul class="topnav" id="myTopnav">
                 <li class="active"><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#into">Introduction</a></li>
+                <li><a href="index.html#intro">Introduction</a></li>
                 <li><a href="index.html#about">About Singular</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#work">Featured Work</a></li>
-                <li><a href="index.html#about-as">About Us</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
                 <li><a href="index.html#clients">Our Clients</a></li>
                 <li><a href="index.html#contacts">Contact us</a></li>
                 <li class="icon">
@@ -205,58 +204,60 @@
     <div class="section-caption">
         <h2>Featured Work</h2>
     </div>
-    <ul class="filter">
-        <li><a>View all</a></li>
-        <li><a>Web sites</a></li>
-        <li><a>Freebies</a></li>
-    </ul>
-    <ul class="work-gallery">
-        <li>
+    <div id="options">
+        <div id="filters" class="button-group filters-button-group">
+            <button class="button is-checked" data-filter="*">View all</button>
+            <button class="button" data-filter=".web">Web sites</button>
+            <button class="button" data-filter=".freebies">Freebies</button>
+        </div>
+    </div>
+    <ul class="isotope">
+        <li class="isotope-item freebies">
             <img src="img/rasta.png" alt="#">
             <div>
                 A Beautiful Heading <span>Freebies</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item web">
             <img src="img/secretlaura.png" alt="#">
             <div>
-                A Beautiful Heading <span>Freebies</span>
+                A Beautiful Heading <span>Web sites</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item freebies">
             <img src="img/app-splash-screen-tilt.png" alt="#">
             <div>
                 A Beautiful Heading <span>Freebies</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item web">
             <img src="img/pie-chart.png" alt="#">
             <div>
-                A Beautiful Heading <span>Freebies</span>
+                A Beautiful Heading <span>Web sites</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item freebies">
             <img src="img/poison-drib.png" alt="#">
             <div>
                 A Beautiful Heading <span>Freebies</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item web">
             <img src="img/g-spot.png" alt="#">
             <div>
-                A Beautiful Heading <span>Freebies</span>
+                A Beautiful Heading <span>Web sites</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item freebies">
             <img src="img/pemberly-print.png" alt="#">
             <div>
                 A Beautiful Heading <span>Freebies</span>
             </div>
         </li>
-        <li>
+        <li class="isotope-item web">
             <img src="img/unbenannt-4.png" alt="#">
             <div>
-                A Beautiful Heading <span>Freebies</span>
+                A Beautiful Heading <span>Web sites</span>
             </div>
         </li>
     </ul>
@@ -320,28 +321,28 @@
         <ul class="social-icons">
             <li>
                 <a href="https://www.behance.net/" target="_blank">
-                            <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa  fa fa-behance fa-stack-1x fa-inverse"></i></span>
                 </a>
             </li>
             <li>
                 <a href="https://www.facebook.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa  fa-facebook fa-stack-1x fa-inverse"></i></span>
                 </a>
             </li>
             <li>
                 <a href="https://www.pinterest.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa  fa-pinterest-p fa-stack-1x fa-inverse"></i></span>
                 </a>
             </li>
             <li>
                 <a href="https://dribbble.com/" target="_blank">
-                            <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa  fa fa-dribbble fa-stack-1x fa-inverse"></i></span>
                 </a>
@@ -350,11 +351,9 @@
 
     </div>
 </footer>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="js/libs.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 <script src="js/Smooth_Scroll.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

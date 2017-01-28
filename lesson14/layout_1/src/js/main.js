@@ -14,6 +14,7 @@ $(window).on("scroll", function() {
         $(".header").removeClass("active");
     }
 });
+
 $(document).ready(function(){
     $('#carousel-1').owlCarousel({
         loop:true,
@@ -34,3 +35,26 @@ $(document).ready(function(){
     })
 });
 
+$( document ).ready(function() {
+    // $('.isotope').isotope({
+    //     itemSelector : '.isotope-item',
+    //     layoutMode: 'masonry',
+    //     masonry: {
+    //         columnWidth: 110,
+    //         gutter: 10
+    //     }
+    // });
+    var $container = $('.isotope');
+    // filter buttons
+    $('#filters button').click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( !$this.hasClass('is-checked') ) {
+            $this.parents('#options').find('.is-checked').removeClass('is-checked');
+            $this.addClass('is-checked');
+        }
+        var selector = $this.attr('data-filter');
+        $container.isotope({  itemSelector: '.isotope-item', filter: selector });
+        return false;
+    });
+});

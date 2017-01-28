@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   padding: 1%;
-  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/255% no-repeat;
+  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/255% no-repeat;
   text-align: center;
   .hero-item {
     max-width: 625px;
@@ -23,7 +23,7 @@
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {
-    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/150% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/150% no-repeat;
     .hero-item {
       h3 {
         font: 700 24px/38px "Open Sans";
@@ -63,7 +63,7 @@
 
 @media screen and ($lg) {
   .hero {
-    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../../img/shutterstock-51034543.png) center 0%/100% no-repeat;
+    background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.95)), url(../img/shutterstock-51034543.png) center 0%/100% no-repeat;
     .hero-item {
       h3 {
         font: 700 40px/48px "Open Sans";
