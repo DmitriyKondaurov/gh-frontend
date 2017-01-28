@@ -13,6 +13,9 @@
   width: 100%;
   padding: 1%;
   transition: 0.5s;
+  nav {
+    padding-right: 1%;
+  }
   .logo {
     margin: 0 auto;
     float: left;
@@ -41,9 +44,7 @@
 @media screen and ($xs) {
   .header {
     padding: 1% 0;
-    nav {
-      padding-right: 1%;
-    }
+
   }
 }
 @media screen and ($sm) {
@@ -59,7 +60,7 @@
     max-width: 1170px;
     margin: auto;
     nav {
-      padding-right: 15px;
+      padding-right: 5px;
     }
   }
 }
