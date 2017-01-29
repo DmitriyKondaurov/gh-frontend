@@ -6625,106 +6625,44 @@ img {
   font-weight: 700;
   font-style: normal; }
 
-nav {
-  float: right;
-  overflow: hidden; }
-
-ul.topnav {
-  z-index: 2;
-  list-style-type: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent; }
-  ul.topnav li {
-    float: left;
-    z-index: 3; }
-    ul.topnav li a {
-      display: inline-block;
-      color: #fff;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-      font-size: 14px;
-      font-weight: 700; }
-      ul.topnav li a:hover {
-        color: #fff; }
-    ul.topnav li.icon {
-      display: none; }
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width: 568px) {
-  ul.topnav li {
-    display: none; }
-  ul.topnav {
+.navbar {
+  background: none;
+  border: none; }
+  .navbar .navbar-btn {
+    background: none;
+    font-size: 28px;
     margin: 0;
-    padding: 0; }
-    ul.topnav li.icon {
-      float: right;
-      display: inline-block;
-      width: 30%; }
-      ul.topnav li.icon:hover {
-        background-color: transparent; }
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {
-    position: relative; }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent; }
-    ul.topnav.responsive li.icon:hover {
-      background-color: transparent;
-      color: #fff; }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline; }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
-    ul.topnav.responsive li a:hover {
-      background-color: #d11f2d;
-      color: black; } }
+    border: none;
+    outline: none; }
 
-@media screen and (max-width: 1199px) {
-  ul.topnav li {
-    display: none; }
-  ul.topnav {
-    margin: 0;
-    padding: 0; }
-    ul.topnav li.icon {
-      float: right;
-      display: inline-block; }
-      ul.topnav li.icon:hover {
-        background-color: transparent;
-        color: #222222; }
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {
-    position: relative; }
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-    ul.topnav.responsive li.icon a:hover {
-      background-color: transparent;
-      color: #222222; }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline; }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
-    ul.topnav.responsive li a:hover {
-      background-color: #d11f2d;
-      color: black;
-      text-shadow: none; } }
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:focus {
+  background: none;
+  border: none;
+  outline: none;
+  color: #337ab7; }
+
+.panel {
+  background-color: rgba(24, 0, 0, 0.9);
+  height: 89vh;
+  margin: 1px;
+  -webkit-border-radius: 0 0 20px 20px;
+          border-radius: 0 0 20px 20px; }
+
+.nav-pills > li.active > a {
+  color: #787878;
+  text-transform: uppercase;
+  font-size: 32px;
+  background: none; }
+
+.nav > li > a {
+  font: 700 32px/44px 'Open Sans';
+  text-transform: uppercase;
+  color: #787878;
+  text-align: center; }
+  .nav > li > a:hover, .nav > li > a .nav > li > a:focus, .nav > li > a .nav-pills > li.active > a:hover, .nav > li > a .nav-pills > li.active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7; }
 
 .header {
   background-color: transparent;
@@ -6741,7 +6679,7 @@ ul.topnav {
   transition: 0.5s; }
   .header.active {
     background-color: rgba(34, 34, 34, 0.6); }
-  .header nav {
+  .header .navbar {
     padding-right: 1%; }
   .header .logo {
     margin: 0 auto;

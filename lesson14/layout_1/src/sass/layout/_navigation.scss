@@ -1,125 +1,61 @@
-nav {
-  float: right;
-  overflow: hidden;
-}
-ul.topnav {
-  z-index: 2;
-  list-style-type: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  // Float the list items side by side
-  li {
-    float: left;
-    z-index: 3;
-    // Style the links inside the list items
-    a {
-      display: inline-block;
-      color: #fff;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 14px;
-      font-weight: 700;
-      // Change background color of links on hover
-      &:hover {
-        color: $main-text-color;
-      }
-    }
-    // Hide the list item that contains the link that should open and close the topnav on small screens
-    &.icon {
-      display: none;
-    }
+.navbar {
+  background: none;
+  border: none;
+  .container {
   }
-}
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:568px) {
-  ul.topnav li {
-    display: none;
-  }
-  ul.topnav {
+  .navbar-btn {
+    background: none;
+    font-size: 28px;
     margin: 0;
-    padding: 0;
-    li.icon {
-      float: right;
-      display: inline-block;
-      width: 30%;
-      &:hover {
-        background-color: transparent;
-      }
-    }
+    border: none;
+    outline: none;
   }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    &:hover {
-      background-color: transparent;
-      color: $main-text-color;
-    }
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    &:hover {
-      background-color: $main-color;
-      color: black;
-    }
+}
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:focus {
+  background: none;
+  border: none;
+  outline: none;
+  color: #337ab7;
+}
+.panel {
+  background-color: rgba(24, 0, 0, 0.9);
+  height: 89vh;
+  margin: 1px;
+  border-radius: 0 0 20px 20px;
+}
+.nav-pills > li.active > a{
+  color: #787878;
+  text-transform: uppercase;
+  font-size: 32px;
+  background: none;
+}
+.nav > li > a {
+  font: 700 32px/44px 'Open Sans';
+  text-transform: uppercase;
+  color: #787878;
+  text-align: center;
+
+  &:hover, .nav > li > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus  {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
   }
 }
 
-@media screen and (max-width:1199px) {
-  ul.topnav li {
-    display: none;
-  }
-  ul.topnav {
-    margin: 0;
-    padding: 0;
-    li.icon {
-      float: right;
-      display: inline-block;
-      &:hover {
-        background-color: transparent;
-        color: $sec-text-color;
-      }
-    }
-  }
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    a:hover {
-      background-color: transparent;
-      color: $sec-text-color;
-    }
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    &:hover {
-      background-color: $main-color;
-      color: black;
-      text-shadow: none;
-    }
-  }
+
+
+
+@media screen and ($xs) {
+
+}
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
 }
