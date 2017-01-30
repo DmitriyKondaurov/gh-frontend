@@ -6957,6 +6957,12 @@ footer {
   .hero {
     padding: 170px 1%; } }
 
+.approch {
+  padding: 10px 1% 50px 1%;
+  background-color: #f3f3f3; }
+  .approch .container {
+    text-align: center; }
+
 .about-us {
   padding: 10px 1% 50px 1%; }
   .about-us .container {
