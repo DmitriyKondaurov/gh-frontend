@@ -2,8 +2,11 @@ function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
+        $(".menu").removeClass("original");
+        $('.cloned').hide();
     } else {
         x.className = "topnav";
+        $(".menu").addClass("original");
     }
 }
 $(window).on("scroll", function() {

@@ -1,26 +1,20 @@
 .hero {
+  padding: 110px 1% 50px 1%;
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hero-bg.png) center no-repeat;
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  .row div {
+    margin: auto;
+    padding: 15px;
+    h3 {
+      font: 400 24px/32px 'Quicksand';
+    }
     div {
-      padding: 15px;
-      text-align: center;
-      color: $sec-text-color;
-      h2 {
-        font: 700 48px/50px $main-font;
-      }
-      span {
-        font: 300 30px/36px $main-font;
-      }
-      a {
-        display: inline-block;
-        &:hover {
-          color: #fff;
-          background-color: $main-color;
-        }
+      font: 400 13px/18px 'Quicksand';
+    }
+    a {
+      display: inline-block;
+      &:hover {
+        color: #fff;
+        background-color: $main-color;
       }
     }
   }
