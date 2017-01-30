@@ -6567,7 +6567,7 @@ body {
   color: #424242;
   font: 300 13px/20px "Helvetica"; }
 
-a:hover {
+a:hover, :active {
   text-decoration: none; }
 
 ul {
@@ -6593,25 +6593,33 @@ p {
     height: 5px; }
   .section-caption h2 {
     margin: auto;
-    font: 700 36px/36px "Helvetica"; }
+    font: 700 28px/28px "Helvetica"; }
   .section-caption span {
-    font: 300 20px/30px "Helvetica"; }
+    font: 300 16px/22px "Helvetica"; }
 
 @media screen and (min-width: 568px) {
-  body {
-    line-height: 22px; } }
+  .section-caption h2 {
+    font: 700 30px/30px "Helvetica"; }
+  .section-caption span {
+    font: 300 17px/24px "Helvetica"; } }
 
 @media screen and (min-width: 768px) {
-  body {
-    line-height: 21px; } }
+  .section-caption h2 {
+    font: 700 32px/32px "Helvetica"; }
+  .section-caption span {
+    font: 300 18px/26px "Helvetica"; } }
 
 @media screen and (min-width: 992px) {
-  body {
-    line-height: 20px; } }
+  .section-caption h2 {
+    font: 700 34px/34px "Helvetica"; }
+  .section-caption span {
+    font: 300 19px/28px "Helvetica"; } }
 
 @media screen and (min-width: 1200px) {
-  body {
-    line-height: 20px; } }
+  .section-caption h2 {
+    font: 700 36px/36px "Helvetica"; }
+  .section-caption span {
+    font: 300 20px/30px "Helvetica"; } }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -6650,7 +6658,7 @@ p {
   font-style: normal; }
 
 nav {
-  padding: 1%;
+  padding: 5px;
   float: right;
   overflow: hidden; }
 
@@ -6667,57 +6675,37 @@ ul.topnav {
     z-index: 3; }
     ul.topnav li a {
       display: inline-block;
-      color: #fff;
+      color: #424242;
       text-align: center;
-      padding: 5% 16px;
+      padding: 10px;
       text-decoration: none;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-      font-size: 14px;
-      font-weight: 700; }
+      font: 700 15px/15px "Helvetica"; }
       ul.topnav li a:hover {
-        color: #424242; }
+        color: #ffffff;
+        background-color: #de2b24;
+        -webkit-border-radius: 4px;
+                border-radius: 4px; }
     ul.topnav li.icon {
       display: none; }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width: 568px) {
-  ul.topnav li:not(:first-child) {
+  ul.topnav li {
     display: none; }
-  ul.topnav {
-    margin: 0;
-    padding: 0; }
-    ul.topnav li.icon {
-      float: right;
-      display: inline-block;
-      width: 30%; }
-      ul.topnav li.icon:hover {
-        background-color: transparent; }
+  ul.topnav li.icon a {
+    display: block;
+    width: 30%; }
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
   ul.topnav.responsive {
     position: relative; }
   ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #424242; }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline; }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; }
-    ul.topnav.responsive li a:hover {
-      background-color: #de2b24;
-      color: black; } }
+      color: #424242; } }
 
-@media screen and (max-width: 768px) {
-  ul.topnav li:not(:first-child) {
+@media screen and (max-width: 992px) {
+  ul.topnav li {
     display: none; }
   ul.topnav {
     margin: 0;
@@ -6753,54 +6741,109 @@ ul.topnav {
 
 .header {
   max-height: 110px;
+  padding: 0;
+  color: #424242;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  padding: 1% 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  width: 100%; }
   .header.active {
-    background-color: rgba(255, 89, 89, 0.9); }
-  .header .logo {
-    margin: 0 auto;
+    background-color: rgba(243, 243, 243, 0.9); }
+    .header.active .top-nav-contacts {
+      display: none;
+      opacity: 0; }
+
+.top-nav-contacts {
+  background-color: #f3f3f3; }
+  .top-nav-contacts .container div {
+    float: right;
+    height: 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .top-nav-contacts .container .fa-stack {
+    font-size: 16px; }
+  .top-nav-contacts .container .email {
+    font: 400 15px/15px "Helvetica";
+    padding: 0 20px 0 15px; }
+  .top-nav-contacts .container .fa-envelope {
+    font-size: 19px;
+    padding: 0 0 0 20px;
+    color: #424242; }
+  .top-nav-contacts .container .fa-mobile {
+    font-size: 24px;
+    padding: 0 10px;
+    color: #424242; }
+  .top-nav-contacts .container .mobile-phone {
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font: 400 15px/26px "Helvetica";
+    border-right: 1px solid #e2e2e2; }
+
+.logo {
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  padding: 1% 0 0 1%;
+  color: #424242; }
+  .logo .fa {
+    display: block;
     float: left;
-    overflow: hidden;
-    padding: 1% 0 0 1%;
-    color: #e8e8e8; }
-    .header .logo h1 {
-      margin: 0 auto;
-      display: inline-block;
-      font: 300 34px/34px "Quicksand"; }
-      .header .logo h1 span {
-        font: 400 34px/34px "Quicksand"; }
-    .header .logo .slogan {
-      font: 700 14px/24px "Quicksand"; }
-    .header .logo:before {
-      content: url(../img/logo-icon.png);
-      display: inline-block; }
+    padding-right: 10px;
+    font-size: 42px;
+    color: #de2b24; }
+  .logo h1 {
+    margin: 0 auto;
+    display: inline-block;
+    font: 700 26px/26px "Helvetica"; }
+  .logo .slogan {
+    font: 400 15px/17px "Helvetica"; }
 
 @media screen and (min-width: 568px) {
-  .header {
-    padding: 1% 0; }
-    .header nav {
-      padding-right: 1%; } }
+  .logo .fa {
+    font-size: 48px; }
+  .logo h1 {
+    font: 700 31px/31px "Helvetica"; } }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 1% 0; }
-    .header nav {
-      padding: 20px 1% 0 0; } }
+  .logo .fa {
+    font-size: 51px; }
+  .logo h1 {
+    font: 700 33px/33px "Helvetica"; } }
 
 @media screen and (min-width: 992px) {
-  .header .wrapper {
-    padding: 0;
-    max-width: 1170px;
-    margin: auto; }
-    .header .wrapper nav {
-      padding-right: 5px; } }
+  .logo .fa {
+    font-size: 54px; }
+  .logo h1 {
+    font: 700 35px/35px "Helvetica"; } }
+
+@media screen and (min-width: 1200px) {
+  .logo .fa {
+    font-size: 57px; }
+  .logo h1 {
+    font: 700 37px/37px "Helvetica"; } }
 
 footer {
   background-color: #de2b24; }

@@ -2,7 +2,7 @@ body {
   color: $main-text-color;
   font: 300 13px/20px $main-font;
 }
-a:hover {
+a:hover, :active {
   text-decoration: none;
 }
 ul {
@@ -29,32 +29,54 @@ p {
   }
   h2 {
     margin: auto;
-    font: 700 36px/36px $main-font;
+    font: 700 28px/28px $main-font;
   }
   span {
-    font: 300 20px/30px $main-font;
+    font: 300 16px/22px $main-font;
 
   }
 }
 
 @media screen and ($xs) {
-  body {
-    line-height: 22px;
+  .section-caption {
+    h2 {
+      font: 700 30px/30px $main-font;
+    }
+    span {
+      font: 300 17px/24px $main-font;
+    }
   }
 }
+
 @media screen and ($sm) {
-  body {
-    line-height: 21px;
+  .section-caption {
+    h2 {
+      font: 700 32px/32px $main-font;
+    }
+    span {
+      font: 300 18px/26px $main-font;
+    }
   }
 }
+
 @media screen and ($md) {
-  body {
-    line-height: 20px;
+  .section-caption {
+    h2 {
+      font: 700 34px/34px $main-font;
+    }
+    span {
+      font: 300 19px/28px $main-font;
+    }
   }
 }
 
 @media screen and ($lg) {
-  body {
-    line-height: 20px;
+  .section-caption {
+    h2 {
+      font: 700 36px/36px $main-font;
+    }
+    span {
+      font: 300 20px/30px $main-font;
+    }
   }
 }
