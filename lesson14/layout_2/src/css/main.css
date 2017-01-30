@@ -6976,36 +6976,49 @@ footer {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin: 15px;
+    margin: 20px;
     background-color: white; }
-    .approch .container li:after {
-      content: ' ';
-      display: block;
-      clear: both; }
     .approch .container li:nth-child(odd) {
       text-align: left;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
+      .approch .container li:nth-child(odd) .sticker {
+        left: 300px; }
     .approch .container li:nth-child(even) {
       text-align: right;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
       -webkit-flex-direction: row-reverse;
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; }
+      .approch .container li:nth-child(even) .sticker {
+        right: 300px; }
     .approch .container li p {
       max-width: 520px; }
+  .approch .sticker {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #de2b24;
+    border: 2px solid white;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font: 700 60px/64px 'Georgia'; }
+    .approch .sticker span {
+      display: block;
+      font: 600 20px/22px 'Helvetica'; }
+  .approch .approch-text {
+    padding: 0 100px; }
+    .approch .approch-text h4 {
+      font: 400 18px/26px "Helvetica Bold";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px; }
 
 .about-us {
   padding: 10px 1% 50px 1%; }

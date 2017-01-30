@@ -8,27 +8,49 @@
       position: relative;
       align-items: center;
       flex-flow: row wrap;
-      margin: 15px;
+      margin: 20px;
       background-color: white;
-      &:after {
-        content: ' ';
-        display: block;
-        clear: both;
-      }
-
       &:nth-child(odd) {
         text-align: left;
-        justify-content: flex-start;
         flex-direction: row;
+        .sticker {
+          left: 300px;
+        }
       }
       &:nth-child(even) {
         text-align: right;
-        justify-content: flex-end;
         flex-direction: row-reverse;
+        .sticker {
+          right: 300px;
+        }
       }
       p {
         max-width: 520px;
       }
+    }
+  }
+  .sticker {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: $main-color;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font: 700 60px/64px 'Georgia';
+    span {
+      display: block;
+      font: 600 20px/22px 'Helvetica';
+    }
+  }
+  .approch-text {
+    padding: 0 100px;
+    h4 {
+      font: 400 18px/26px "Helvetica Bold";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
     }
   }
 }
