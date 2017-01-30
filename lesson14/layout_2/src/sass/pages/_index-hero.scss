@@ -1,5 +1,7 @@
 .hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hero-bg.png) center no-repeat;
+  padding: 50px 1%;
+  margin-top: 100px;
+  background: linear-gradient(rgba(18, 135, 191, 0.2), rgba(18, 135, 191, 0.2)), url(../img/hero-bg.png) center no-repeat;
   .row {
     display: flex;
     justify-content: center;
@@ -15,13 +17,6 @@
       span {
         font: 300 30px/36px $main-font;
       }
-      a {
-        display: inline-block;
-        &:hover {
-          color: #fff;
-          background-color: $main-color;
-        }
-      }
     }
   }
 }
@@ -29,25 +24,27 @@
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {
-    padding: 150px 1% 100px 1%;
+    padding: 150px 1%;
+    margin-top: 120px;
+
   }
 }
 
 @media screen and ($sm) {
   .hero {
-    padding: 250px 1% 150px 1%;
+    padding: 160px 1%;
   }
 }
 
 @media screen and ($md) {
   .hero {
-    padding: 350px 1% 250px 1%;
+    padding: 155px 1%;
   }
 }
 
 @media screen and ($lg) {
   .hero {
-    padding: 350px 1% 250px 1%;
+    padding: 170px 1%;
   }
 }
 

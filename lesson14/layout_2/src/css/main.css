@@ -6677,7 +6677,7 @@ ul.topnav {
       display: inline-block;
       color: #424242;
       text-align: center;
-      padding: 10px;
+      padding: 10px 25px 10px 10px;
       text-decoration: none;
       font: 700 15px/15px "Helvetica"; }
       ul.topnav li a:hover {
@@ -6772,20 +6772,21 @@ ul.topnav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .top-nav-contacts .container .fa-stack {
+  .top-nav-contacts .fa-stack {
     font-size: 16px; }
-  .top-nav-contacts .container .email {
+  .top-nav-contacts .email {
+    display: none;
     font: 400 15px/15px "Helvetica";
     padding: 0 20px 0 15px; }
-  .top-nav-contacts .container .fa-envelope {
+  .top-nav-contacts .fa-envelope {
     font-size: 19px;
     padding: 0 0 0 20px;
     color: #424242; }
-  .top-nav-contacts .container .fa-mobile {
+  .top-nav-contacts .fa-mobile {
     font-size: 24px;
     padding: 0 10px;
     color: #424242; }
-  .top-nav-contacts .container .mobile-phone {
+  .top-nav-contacts .mobile-phone {
     padding-right: 20px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -6819,13 +6820,15 @@ ul.topnav {
     display: inline-block;
     font: 700 26px/26px "Helvetica"; }
   .logo .slogan {
-    font: 400 15px/17px "Helvetica"; }
+    font: 400 15px/27px "Helvetica"; }
 
 @media screen and (min-width: 568px) {
   .logo .fa {
     font-size: 48px; }
   .logo h1 {
-    font: 700 31px/31px "Helvetica"; } }
+    font: 700 31px/31px "Helvetica"; }
+  .top-nav-contacts .email {
+    display: inline; } }
 
 @media screen and (min-width: 768px) {
   .logo .fa {
@@ -6870,47 +6873,51 @@ footer {
     padding: 50px 5px; } }
 
 .button {
-  width: 170px;
+  width: 200px;
   display: block;
-  padding: 5px;
-  margin: 15px;
-  border: 2px solid #de2b24;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  background: transparent;
-  color: #de2b24;
+  padding: 8px;
+  margin: 15px auto;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background: #f8cd53;
+  color: #ffffff;
   text-align: center;
-  font: 700 14px/18px "Droid Sans";
+  font: 700 16px/18px "Helvetica Bold";
   text-transform: uppercase; }
   .button:hover {
     background-color: #de2b24;
-    text-decoration: none;
-    color: white; }
+    text-decoration: none; }
 
 @media screen and (min-width: 568px) {
   .button {
-    padding: 8px;
-    font: 700 15px/18px "Droid Sans"; } }
+    width: 225px;
+    padding: 10px;
+    font: 700 18px/20px "Helvetica Bold"; } }
 
 @media screen and (min-width: 768px) {
   .button {
-    padding: 10px;
-    font: 700 16px/18px "Droid Sans"; } }
+    width: 250px;
+    padding: 15px;
+    font: 700 19px/22px "Helvetica Bold"; } }
 
 @media screen and (min-width: 992px) {
   .button {
-    padding: 15px;
-    font: 700 17px/18px "Droid Sans"; } }
+    width: 290px;
+    padding: 20px;
+    font: 700 21px/24px "Helvetica Bold"; } }
 
 @media screen and (min-width: 1200px) {
   .button {
-    padding: 15px;
-    font: 700 18px/18px "Droid Sans"; } }
+    width: 330px;
+    padding: 25px;
+    font: 700 23px/26px "Helvetica Bold"; } }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url(../img/hero-bg.png) center no-repeat;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hero-bg.png) center no-repeat;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/hero-bg.png) center no-repeat; }
+  padding: 50px 1%;
+  margin-top: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 135, 191, 0.2)), to(rgba(18, 135, 191, 0.2))), url(../img/hero-bg.png) center no-repeat;
+  background: -webkit-linear-gradient(rgba(18, 135, 191, 0.2), rgba(18, 135, 191, 0.2)), url(../img/hero-bg.png) center no-repeat;
+  background: linear-gradient(rgba(18, 135, 191, 0.2), rgba(18, 135, 191, 0.2)), url(../img/hero-bg.png) center no-repeat; }
   .hero .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6932,24 +6939,20 @@ footer {
         font: 700 48px/50px "Helvetica"; }
       .hero .row div span {
         font: 300 30px/36px "Helvetica"; }
-      .hero .row div a {
-        display: inline-block; }
-        .hero .row div a:hover {
-          color: #fff;
-          background-color: #de2b24; }
 
 @media screen and (min-width: 568px) {
   .hero {
-    padding: 150px 1% 100px 1%; } }
+    padding: 150px 1%;
+    margin-top: 120px; } }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 250px 1% 150px 1%; } }
+    padding: 160px 1%; } }
 
 @media screen and (min-width: 992px) {
   .hero {
-    padding: 350px 1% 250px 1%; } }
+    padding: 155px 1%; } }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 350px 1% 250px 1%; } }
+    padding: 170px 1%; } }
