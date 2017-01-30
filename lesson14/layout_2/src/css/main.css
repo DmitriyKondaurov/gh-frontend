@@ -6956,3 +6956,8 @@ footer {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 170px 1%; } }
+
+.about-us {
+  padding: 10px 1% 50px 1%; }
+  .about-us .container {
+    text-align: center; }
