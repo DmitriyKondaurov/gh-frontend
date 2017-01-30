@@ -2,7 +2,34 @@
   padding: 10px 1% 50px 1%;
   background-color: $sec-color;
   .container {
-    text-align: center;
+
+    li {
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 15px;
+      background-color: white;
+      &:after {
+        content: ' ';
+        display: block;
+        clear: both;
+      }
+
+      &:nth-child(odd) {
+        text-align: left;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+      &:nth-child(even) {
+        text-align: right;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
+      p {
+        max-width: 520px;
+      }
+    }
   }
 }
 

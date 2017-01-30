@@ -1,6 +1,7 @@
 .hero {
+  max-width: 1200px;
   padding: 50px 1%;
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
   background: linear-gradient(rgba(18, 135, 191, 0.2), rgba(18, 135, 191, 0.2)), url(../img/hero-bg.png) center no-repeat;
   .row {
     display: flex;
