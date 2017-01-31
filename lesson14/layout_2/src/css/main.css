@@ -6971,11 +6971,11 @@ footer {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     margin: 20px;
     background-color: white; }
     .approch .container li:nth-child(odd) {
@@ -6985,8 +6985,6 @@ footer {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
-      .approch .container li:nth-child(odd) .sticker {
-        left: 300px; }
     .approch .container li:nth-child(even) {
       text-align: right;
       -webkit-box-orient: horizontal;
@@ -6994,12 +6992,12 @@ footer {
       -webkit-flex-direction: row-reverse;
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; }
-      .approch .container li:nth-child(even) .sticker {
-        right: 300px; }
     .approch .container li p {
       max-width: 520px; }
   .approch .sticker {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
     background: #de2b24;
@@ -7012,13 +7010,96 @@ footer {
     .approch .sticker span {
       display: block;
       font: 600 20px/22px 'Helvetica'; }
-  .approch .approch-text {
-    padding: 0 100px; }
-    .approch .approch-text h4 {
-      font: 400 18px/26px "Helvetica Bold";
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 26px; }
+  .approch .approch-text h4 {
+    font: 400 18px/26px "Helvetica Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; }
+
+@media screen and (min-width: 768px) {
+  .approch .container li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .approch .container li:nth-child(odd) .sticker {
+      left: 300px;
+      right: auto;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+    .approch .container li:nth-child(even) .sticker {
+      right: 300px;
+      left: auto;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+  .approch-text {
+    padding: 0 100px; } }
+
+.our-work {
+  padding: 10px 1% 50px 1%;
+  background-color: #de2b24;
+  color: #ffffff; }
+  .our-work .container {
+    text-align: center; }
+  .our-work .section-caption:after {
+    background-color: #f3f3f3; }
+  .our-work li {
+    position: relative;
+    padding: 0; }
+    .our-work li img {
+      width: 285px;
+      height: 283px; }
+    .our-work li div {
+      display: none;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #f35e59;
+      color: #ffffff; }
+      .our-work li div .fa {
+        display: block;
+        padding: 20px;
+        opacity: 0.5;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px; }
+      .our-work li div h4 {
+        font: 700 26px/32px 'Helvetica'; }
+      .our-work li div a {
+        font: 700 16px/18px 'Helvetica';
+        color: white; }
+        .our-work li div a:hover {
+          color: #00b3ee; }
+    .our-work li:hover div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+
+@media screen and (min-width: 568px) {
+  .col-xs-12 {
+    max-width: 50%; } }
 
 .about-us {
   padding: 10px 1% 50px 1%; }

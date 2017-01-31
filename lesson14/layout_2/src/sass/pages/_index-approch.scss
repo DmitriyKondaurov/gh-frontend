@@ -7,22 +7,18 @@
       display: flex;
       position: relative;
       align-items: center;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       margin: 20px;
       background-color: white;
       &:nth-child(odd) {
         text-align: left;
         flex-direction: row;
-        .sticker {
-          left: 300px;
-        }
+
       }
       &:nth-child(even) {
         text-align: right;
         flex-direction: row-reverse;
-        .sticker {
-          right: 300px;
-        }
+
       }
       p {
         max-width: 520px;
@@ -31,6 +27,8 @@
   }
   .sticker {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100px;
     background: $main-color;
@@ -45,7 +43,6 @@
     }
   }
   .approch-text {
-    padding: 0 100px;
     h4 {
       font: 400 18px/26px "Helvetica Bold";
       font-size: 18px;
@@ -57,22 +54,38 @@
 
 //________________________________________________________________________________
 @media screen and ($xs) {
-  .about-us {
+  .approch {
   }
 }
 
 @media screen and ($sm) {
-  .about-us {
+  .approch .container li {
+    flex-flow: row wrap;
+    &:nth-child(odd) .sticker {
+      left: 300px;
+      right: auto;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &:nth-child(even) .sticker {
+      right: 300px;
+      left: auto;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  .approch-text {
+    padding: 0 100px;
   }
 }
 
 @media screen and ($md) {
-  .about-us {
+  .approch {
   }
 }
 
 @media screen and ($lg) {
-  .about-us {
+  .approch {
   }
 }
 
