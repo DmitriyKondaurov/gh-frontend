@@ -6849,28 +6849,12 @@ ul.topnav {
     font: 700 37px/37px "Helvetica"; } }
 
 footer {
-  background-color: #de2b24; }
+  background-color: #515151; }
   footer div {
-    padding: 10px 5px;
-    color: #e8e8e8;
+    padding: 20px 5px;
     text-align: center;
-    font: 400 13px/18px 'Quicksand'; }
-
-@media screen and (min-width: 568px) {
-  footer div {
-    padding: 20px 5px; } }
-
-@media screen and (min-width: 768px) {
-  footer div {
-    padding: 30px 5px; } }
-
-@media screen and (min-width: 992px) {
-  footer div {
-    padding: 40px 5px; } }
-
-@media screen and (min-width: 1200px) {
-  footer div {
-    padding: 50px 5px; } }
+    font: 400 14px/27px "Open Sans";
+    color: #cecece; }
 
 .button {
   width: 200px;
@@ -7177,6 +7161,13 @@ footer {
 @media screen and (min-width: 568px) {
   .analysis .analysis-form input {
     width: 80%; } }
+
+.subscribe {
+  padding: 10px 1% 50px 1%;
+  background-color: #2a2a2a;
+  color: #ffffff; }
+  .subscribe .section-caption:after {
+    display: none; }
 
 .about-us {
   padding: 10px 1% 50px 1%; }

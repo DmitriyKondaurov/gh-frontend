@@ -1,0 +1,32 @@
+.subscribe {
+  padding: 10px 1% 50px 1%;
+  background-color: #2a2a2a;
+  color: $sec-text-color;
+  .section-caption:after {
+    display: none;
+  }
+}
+
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+  .subscribe {
+
+  }
+}
+
+@media screen and ($sm) {
+  .subscribe {
+  }
+}
+
+@media screen and ($md) {
+  .subscribe {
+  }
+}
+
+@media screen and ($lg) {
+  .subscribe {
+  }
+}
+

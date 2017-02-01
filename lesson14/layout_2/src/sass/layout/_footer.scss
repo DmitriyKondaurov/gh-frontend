@@ -1,41 +1,32 @@
 footer {
-  background-color: $main-color;
+  background-color: #515151;
   div {
-    padding: 10px 5px;
-    color: #e8e8e8;
+    padding: 20px 5px;
     text-align: center;
-    font: 400 13px/18px 'Quicksand';
+    font: 400 14px/27px "Open Sans";
+    color: #cecece;
   }
 }
 
 @media screen and ($xs) {
   footer {
-    div {
-      padding: 20px 5px;
-    }
+
   }
 }
 @media screen and ($sm) {
   footer {
-    div {
-      padding: 30px 5px;
-    }
+
   }
 }
 
 @media screen and ($md) {
   footer {
-    div {
-      padding: 40px 5px;
-    }
+
   }
 }
 
 
 @media screen and ($lg) {
   footer {
-    div {
-      padding: 50px 5px;
-    }
   }
 }
