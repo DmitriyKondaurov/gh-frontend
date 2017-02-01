@@ -37,10 +37,10 @@
         line-height: 26px;
       }
       h4 {
-        font: 700 26px/32px 'Helvetica';
+        font: 700 26px/32px $main-font;
       }
       a {
-        font: 700 16px/18px 'Helvetica';
+        font: 700 16px/18px $main-font;
         color: white;
         &:hover {
           color: #00b3ee;
