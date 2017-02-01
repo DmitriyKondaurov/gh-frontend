@@ -7128,6 +7128,7 @@ footer {
     color: #424242;
     font: 400 15px/22px "Helvetica"; }
   .analysis .analysis-form {
+    display: none;
     background-color: #fff;
     position: relative;
     margin: 50px auto;
@@ -7152,7 +7153,8 @@ footer {
       -webkit-border-radius: 3px;
               border-radius: 3px;
       font: 400 18px/22px "Helvetica";
-      padding: 20px; }
+      padding: 20px;
+      color: #424242; }
       .analysis .analysis-form input:nth-child(5) {
         width: inherit;
         margin: 35px;
@@ -7166,7 +7168,7 @@ footer {
           -webkit-box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
                   box-shadow: 0 0 5px rgba(18, 135, 191, 0.66); }
       .analysis .analysis-form input:hover, .analysis .analysis-form input:focus {
-        color: #ffffff;
+        color: #424242;
         -webkit-box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
                 box-shadow: 0 0 5px rgba(18, 135, 191, 0.66); }
 
@@ -7186,8 +7188,8 @@ footer {
     height: 50px;
     padding-top: 10px;
     border: 2px solid #515151;
-    -webkit-border-radius: 1px;
-            border-radius: 1px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     font-size: 23px; }
   .subscribe .social-icons {
     text-align: center; }

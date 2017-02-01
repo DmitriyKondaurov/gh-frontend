@@ -9,6 +9,7 @@ function myFunction() {
         $(".menu").addClass("original");
     }
 }
+
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 50) {
         $(".header").addClass("active");
@@ -17,6 +18,20 @@ $(window).on("scroll", function() {
         $(".header").removeClass("active");
     }
 });
+
+$( "#slide-down" ).click(function () {
+    if ( $( "#analysis-form" ).is( ":hidden" ) ) {
+        $( "#analysis-form" ).slideDown( "slow" );
+    } else {
+        $( "#analysis-form" ).hide( "slow" );
+    }
+});
+
+$( "#close-icon" ).click(function () {
+        $( "#analysis-form" ).hide( "slow" );
+});
+
+
 
 $(document).ready(function(){
     $('#carousel-1').owlCarousel({

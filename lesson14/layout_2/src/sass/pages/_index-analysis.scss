@@ -42,6 +42,7 @@
     font: 400 15px/22px $main-font;
   }
   .analysis-form {
+    display: none;
     background-color: #fff;
     position: relative;
     margin: 50px auto;
@@ -64,6 +65,7 @@
       border-radius: 3px;
       font: 400 18px/22px $main-font;
       padding: 20px;
+      color: $main-text-color;
       &:nth-child(5) {
         width: inherit;
         margin: 35px;
@@ -78,7 +80,7 @@
         }
       }
       &:hover, &:focus {
-        color: $sec-text-color;
+        color: $main-text-color;
         box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
       }
     }
