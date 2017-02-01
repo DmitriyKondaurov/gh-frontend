@@ -6870,6 +6870,7 @@ footer {
   text-transform: uppercase; }
   .button:hover {
     background-color: #de2b24;
+    color: #ffffff;
     text-decoration: none; }
 
 @media screen and (min-width: 568px) {
@@ -7106,6 +7107,8 @@ footer {
     -webkit-transform: translate(-70%, 0);
         -ms-transform: translate(-70%, 0);
             transform: translate(-70%, 0); }
+    .analysis .angle-down:hover i {
+      border: 4px solid #de2b24; }
   .analysis .close-icon {
     position: absolute;
     right: -35px;
@@ -7153,8 +7156,17 @@ footer {
       .analysis .analysis-form input:nth-child(5) {
         width: inherit;
         margin: 35px;
-        background-color: #de2b24; }
+        background: none;
+        border: 2px solid #de2b24;
+        color: #424242;
+        font: 400 18px/15px "Helvetica"; }
+        .analysis .analysis-form input:nth-child(5):hover, .analysis .analysis-form input:nth-child(5):focus {
+          background-color: #de2b24;
+          color: #ffffff;
+          -webkit-box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
+                  box-shadow: 0 0 5px rgba(18, 135, 191, 0.66); }
       .analysis .analysis-form input:hover, .analysis .analysis-form input:focus {
+        color: #ffffff;
         -webkit-box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
                 box-shadow: 0 0 5px rgba(18, 135, 191, 0.66); }
 
@@ -7168,6 +7180,61 @@ footer {
   color: #ffffff; }
   .subscribe .section-caption:after {
     display: none; }
+  .subscribe .fa {
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border: 2px solid #515151;
+    -webkit-border-radius: 1px;
+            border-radius: 1px;
+    font-size: 23px; }
+  .subscribe .social-icons {
+    text-align: center; }
+    .subscribe .social-icons li {
+      display: inline-block;
+      margin: 10px; }
+      .subscribe .social-icons li:hover .fa {
+        border: 2px solid #de2b24; }
+  .subscribe p {
+    text-align: center;
+    color: #cecece; }
+  .subscribe form {
+    text-align: center; }
+    .subscribe form input {
+      margin: 10px;
+      width: 100%;
+      padding: 15px 30px;
+      background-color: #515151;
+      border: none; }
+      .subscribe form input:last-child {
+        width: inherit;
+        margin: 35px;
+        padding: 10px 30px;
+        border: 2px solid #515151;
+        background-color: transparent;
+        font: 400 17px/22px "Helvetica"; }
+        .subscribe form input:last-child:hover, .subscribe form input:last-child:focus {
+          border: 2px solid #de2b24; }
+      .subscribe form input:hover, .subscribe form input:focus {
+        -webkit-box-shadow: 0 0 5px rgba(18, 135, 191, 0.66);
+                box-shadow: 0 0 5px rgba(18, 135, 191, 0.66); }
+
+@media screen and (min-width: 568px) {
+  .subscribe form input {
+    width: 90%; } }
+
+@media screen and (min-width: 768px) {
+  .subscribe form input {
+    width: 75%; } }
+
+@media screen and (min-width: 992px) {
+  .subscribe form input {
+    width: 50%; } }
+
+@media screen and (min-width: 1200px) {
+  .subscribe form input {
+    max-width: 685px; } }
 
 .about-us {
   padding: 10px 1% 50px 1%; }
