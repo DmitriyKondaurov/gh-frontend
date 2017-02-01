@@ -1,0 +1,103 @@
+nav {
+  padding: 15px 0;
+  float: right;
+  overflow: hidden;
+}
+ul.topnav {
+  z-index: 2;
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  // Float the list items side by side
+  li {
+    float: left;
+    z-index: 3;
+    // Style the links inside the list items
+    a {
+      display: inline-block;
+      color: $main-text-color;
+      text-align: center;
+      padding: 10px 25px 10px 10px;
+      text-decoration: none;
+      font: 700 15px/15px $main-font;
+      // Change background color of links on hover
+      &:hover {
+        color: $sec-text-color;
+        background-color: $main-color;
+        border-radius: 4px;
+      }
+    }
+    // Hide the list item that contains the link that should open and close the topnav on small screens
+    &.icon {
+      display: none;
+    }
+  }
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:568px) {
+  ul.topnav li {
+    display: none;
+  }
+  ul.topnav {
+    li.icon a {
+      display: block;
+      width: 30%;
+    }
+  }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+      color: $main-text-color;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  ul.topnav li {
+    display: none;
+  }
+  ul.topnav {
+    margin: 0;
+    padding: 0;
+    li.icon {
+      float: right;
+      display: inline-block;
+      &:hover {
+        background-color: transparent;
+        color: $sec-text-color;
+      }
+    }
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    a:hover {
+      background-color: transparent;
+      color: $sec-text-color;
+    }
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    &:hover {
+      background-color: $main-color;
+      color: black;
+      text-shadow: none;
+    }
+  }
+}

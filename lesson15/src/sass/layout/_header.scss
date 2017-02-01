@@ -1,0 +1,133 @@
+.header {
+  max-height: 110px;
+  padding: 0;
+  color: $main-text-color;
+  &.active {
+    background-color: rgba(243, 243, 243, 0.9);
+    .top-nav-contacts {
+      display: none;
+      opacity: 0;
+    }
+  }
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.top-nav-contacts {
+  background-color: $sec-color;
+  .container {
+    div {
+      float: right;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .fa-stack {
+    font-size: 16px;
+  }
+  .email {
+    display: none;
+    font: 400 15px/15px $main-font;
+    padding: 0 20px 0 15px;
+  }
+  .fa-envelope {
+    font-size:  19px;
+    padding: 0 0 0 20px;
+    color: $main-text-color;
+  }
+  .fa-mobile {
+    font-size:  24px;
+    padding: 0 10px;
+    color: $main-text-color;
+  }
+  .mobile-phone {
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 15px/26px $main-font;
+    border-right: 1px solid #e2e2e2;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  padding: 1% 0 0 1%;
+  color: $main-text-color;
+  .fa {
+    display: block;
+    float: left;
+    padding-right: 10px;
+    font-size: 42px;
+    color: $main-color;
+  }
+  h1 {
+    margin: 0 auto;
+    display: inline-block;
+    font: 700 26px/26px $main-font;
+  }
+  .slogan {
+    font: 400 15px/27px $main-font;
+  }
+}
+
+
+
+
+@media screen and ($xs) {
+    .logo {
+      .fa {
+        font-size: 48px;
+      }
+      h1 {
+        font: 700 31px/31px $main-font;
+      }
+    }
+  .top-nav-contacts {
+
+    .email {
+      display: inline;
+    }
+  }
+}
+@media screen and ($sm) {
+    .logo {
+      .fa {
+        font-size: 51px;
+      }
+      h1 {
+        font: 700 33px/33px $main-font;
+      }
+    }
+  }
+
+@media screen and ($md) {
+  .logo {
+    .fa {
+      font-size: 54px;
+    }
+    h1 {
+      font: 700 35px/35px $main-font;
+    }
+  }
+}
+
+
+@media screen and ($lg) {
+  .logo {
+    .fa {
+      font-size: 57px;
+    }
+    h1 {
+      font: 700 37px/37px $main-font;
+    }
+  }
+}

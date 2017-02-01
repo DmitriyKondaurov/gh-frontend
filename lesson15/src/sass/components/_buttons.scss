@@ -1,0 +1,48 @@
+.button {
+  width: 200px;
+  display: block;
+  padding: 8px;
+  margin: 15px auto;
+  border-radius: 6px;
+  background: #f8cd53;
+  color: $sec-text-color;
+  text-align: center;
+  font: 700 16px/18px "Helvetica Bold";
+  text-transform: uppercase;
+  &:hover {
+    background-color: $main-color;
+    color: $sec-text-color;
+    text-decoration: none;
+  }
+}
+
+@media screen and ($xs) {
+  .button {
+    width: 225px;
+    padding: 10px;
+    font: 700 18px/20px "Helvetica Bold";
+  }
+}
+@media screen and ($sm) {
+  .button {
+    width: 250px;
+    padding: 15px;
+    font: 700 19px/22px "Helvetica Bold";
+  }
+}
+
+@media screen and ($md) {
+  .button {
+    width: 290px;
+    padding: 20px;
+    font: 700 21px/24px "Helvetica Bold";
+  }
+}
+
+@media screen and ($lg) {
+  .button {
+    width: 330px;
+    padding: 25px;
+    font: 700 23px/26px "Helvetica Bold";
+  }
+}

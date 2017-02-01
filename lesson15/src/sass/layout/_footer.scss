@@ -1,0 +1,32 @@
+footer {
+  background-color: #515151;
+  div {
+    padding: 20px 5px;
+    text-align: center;
+    font: 400 14px/27px "Open Sans";
+    color: #cecece;
+  }
+}
+
+@media screen and ($xs) {
+  footer {
+
+  }
+}
+@media screen and ($sm) {
+  footer {
+
+  }
+}
+
+@media screen and ($md) {
+  footer {
+
+  }
+}
+
+
+@media screen and ($lg) {
+  footer {
+  }
+}
