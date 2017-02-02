@@ -10,8 +10,8 @@ function myFunction() {
     }
 }
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
+$(window).on("scroll", function () {
+    if ($(window).scrollTop() > 50) {
         $(".header").addClass("active");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
@@ -19,41 +19,40 @@ $(window).on("scroll", function() {
     }
 });
 
-$( "#slide-down" ).click(function () {
-    if ( $( "#analysis-form" ).is( ":hidden" ) ) {
-        $( "#analysis-form" ).slideDown( "slow" );
+$("#slide-down").click(function () {
+    if ($("#analysis-form").is(":hidden")) {
+        $("#analysis-form").slideDown("slow");
     } else {
-        $( "#analysis-form" ).hide( "slow" );
+        $("#analysis-form").hide("slow");
     }
 });
 
-$( "#close-icon" ).click(function () {
-        $( "#analysis-form" ).hide( "slow" );
+$("#close-icon").click(function () {
+    $("#analysis-form").hide("slow");
 });
 
 
-
-$(document).ready(function(){
+$(document).ready(function () {
     $('#carousel-1').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        items:1,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 10,
+        nav: false,
+        items: 1,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:1
+            600: {
+                items: 1
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
     })
 });
 // Create a clone of the menu, right next to original.
-$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt, 10);
 
@@ -71,11 +70,11 @@ function stickIt() {
         coordsOrgElement = orgElement.offset();
         leftOrgElement = coordsOrgElement.left;
         widthOrgElement = orgElement.css('width');
-        $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-        $('.original').css('visibility','hidden');
+        $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement).show();
+        $('.original').css('visibility', 'hidden');
     } else {
         // not scrolled past the menu; only show the original menu.
         $('.cloned').hide();
-        $('.original').css('visibility','visible');
+        $('.original').css('visibility', 'visible');
     }
 }
