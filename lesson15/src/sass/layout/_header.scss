@@ -1,9 +1,9 @@
 .header {
-  max-height: 110px;
+  max-height: 80px;
   padding: 0;
   color: $main-text-color;
   &.active {
-    background-color: rgba(243, 243, 243, 0.9);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   position: fixed;
   z-index: 2;
@@ -11,6 +11,9 @@
   left: 0;
   right: 0;
   width: 100%;
+  .container {
+    padding: 0;
+  }
 }
 
 @media screen and ($xs) {
