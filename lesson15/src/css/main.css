@@ -6564,8 +6564,8 @@ button.close {
       background: #869791; }
 
 body {
-  color: #424242;
-  font: 300 13px/20px "Helvetica"; }
+  color: dimgrey;
+  font: 400 14px/28px "Lato"; }
 
 a:hover, :active {
   text-decoration: none; }
@@ -6578,7 +6578,8 @@ img {
   max-width: 100%; }
 
 p {
-  font: 400 14px/22px "Open Sans"; }
+  font: 400 16px/28px "Lato";
+  color: dimgrey; }
 
 .section-caption {
   text-align: center;
@@ -6588,38 +6589,54 @@ p {
     content: ' ';
     display: block;
     margin: 10px auto;
-    background-color: #424242;
-    width: 50px;
-    height: 5px; }
+    background-color: #d1d1d1;
+    width: 100px;
+    height: 2px; }
   .section-caption h2 {
     margin: auto;
-    font: 700 28px/28px "Helvetica"; }
-  .section-caption span {
-    font: 300 16px/22px "Helvetica"; }
+    color: black;
+    font: 600 20px/62px "Lato";
+    text-transform: uppercase; }
+
+h3 {
+  font: 700 16px/20px "Raleway";
+  text-transform: uppercase;
+  color: #333; }
+
+.logo {
+  max-width: 150px; }
 
 @media screen and (min-width: 568px) {
   .section-caption h2 {
-    font: 700 30px/30px "Helvetica"; }
-  .section-caption span {
-    font: 300 17px/24px "Helvetica"; } }
+    font: 600 24px/66px "Lato"; }
+  h3 {
+    font: 700 17px/22px "Raleway"; }
+  .logo {
+    max-width: 160px; } }
 
 @media screen and (min-width: 768px) {
   .section-caption h2 {
-    font: 700 32px/32px "Helvetica"; }
-  .section-caption span {
-    font: 300 18px/26px "Helvetica"; } }
+    font: 600 26px/68px "Lato"; }
+  h3 {
+    font: 700 18px/24px "Raleway"; }
+  .logo {
+    max-width: 170px; } }
 
 @media screen and (min-width: 992px) {
   .section-caption h2 {
-    font: 700 34px/34px "Helvetica"; }
-  .section-caption span {
-    font: 300 19px/28px "Helvetica"; } }
+    font: 600 28px/70px "Lato"; }
+  h3 {
+    font: 700 19px/26px "Raleway"; }
+  .logo {
+    max-width: 175px; } }
 
 @media screen and (min-width: 1200px) {
   .section-caption h2 {
-    font: 700 36px/36px "Helvetica"; }
-  .section-caption span {
-    font: 300 20px/30px "Helvetica"; } }
+    font: 600 30px/72px "Lato"; }
+  h3 {
+    font: 700 20px/28px "Raleway"; }
+  .logo {
+    width: 179px; } }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -6706,14 +6723,14 @@ ul.topnav {
     z-index: 3; }
     ul.topnav li a {
       display: inline-block;
-      color: #424242;
+      color: dimgrey;
       text-align: center;
       padding: 10px 25px 10px 10px;
       text-decoration: none;
-      font: 700 15px/15px "Helvetica"; }
+      font: 700 15px/15px "Lato"; }
       ul.topnav li a:hover {
-        color: #ffffff;
-        background-color: #de2b24;
+        color: #fff;
+        background-color: #fff;
         -webkit-border-radius: 4px;
                 border-radius: 4px; }
     ul.topnav li.icon {
@@ -6733,7 +6750,7 @@ ul.topnav {
     background-color: transparent; }
     ul.topnav.responsive li.icon:hover {
       background-color: transparent;
-      color: #424242; } }
+      color: dimgrey; } }
 
 @media screen and (max-width: 992px) {
   ul.topnav li {
@@ -6746,7 +6763,7 @@ ul.topnav {
       display: inline-block; }
       ul.topnav li.icon:hover {
         background-color: transparent;
-        color: #ffffff; }
+        color: #fff; }
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
   ul.topnav.responsive {
     position: relative; }
@@ -6756,7 +6773,7 @@ ul.topnav {
     top: 0; }
     ul.topnav.responsive li.icon a:hover {
       background-color: transparent;
-      color: #ffffff; }
+      color: #fff; }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -6766,14 +6783,14 @@ ul.topnav {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
     ul.topnav.responsive li a:hover {
-      background-color: #de2b24;
+      background-color: #fff;
       color: black;
       text-shadow: none; } }
 
 .header {
   max-height: 110px;
   padding: 0;
-  color: #424242;
+  color: dimgrey;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -6782,110 +6799,144 @@ ul.topnav {
   width: 100%; }
   .header.active {
     background-color: rgba(243, 243, 243, 0.9); }
-    .header.active .top-nav-contacts {
-      display: none;
-      opacity: 0; }
-
-.top-nav-contacts {
-  background-color: #f3f3f3; }
-  .top-nav-contacts .container div {
-    float: right;
-    height: 35px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .top-nav-contacts .fa-stack {
-    font-size: 16px; }
-  .top-nav-contacts .email {
-    display: none;
-    font: 400 15px/15px "Helvetica";
-    padding: 0 20px 0 15px; }
-  .top-nav-contacts .fa-envelope {
-    font-size: 19px;
-    padding: 0 0 0 20px;
-    color: #424242; }
-  .top-nav-contacts .fa-mobile {
-    font-size: 24px;
-    padding: 0 10px;
-    color: #424242; }
-  .top-nav-contacts .mobile-phone {
-    padding-right: 20px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font: 400 15px/26px "Helvetica";
-    border-right: 1px solid #e2e2e2; }
-
-.logo {
-  margin: 0 auto;
-  float: left;
-  overflow: hidden;
-  padding: 1% 0 0 1%;
-  color: #424242; }
-  .logo .fa {
-    display: block;
-    float: left;
-    padding-right: 10px;
-    font-size: 42px;
-    color: #de2b24; }
-  .logo h1 {
-    margin: 0 auto;
-    display: inline-block;
-    font: 700 26px/26px "Helvetica"; }
-  .logo .slogan {
-    font: 400 15px/27px "Helvetica"; }
-
-@media screen and (min-width: 568px) {
-  .logo .fa {
-    font-size: 48px; }
-  .logo h1 {
-    font: 700 31px/31px "Helvetica"; }
-  .top-nav-contacts .email {
-    display: inline; } }
-
-@media screen and (min-width: 768px) {
-  .logo .fa {
-    font-size: 51px; }
-  .logo h1 {
-    font: 700 33px/33px "Helvetica"; } }
-
-@media screen and (min-width: 992px) {
-  .logo .fa {
-    font-size: 54px; }
-  .logo h1 {
-    font: 700 35px/35px "Helvetica"; } }
-
-@media screen and (min-width: 1200px) {
-  .logo .fa {
-    font-size: 57px; }
-  .logo h1 {
-    font: 700 37px/37px "Helvetica"; } }
 
 footer {
-  background-color: #515151; }
-  footer div {
+  background-color: #204359; }
+  footer .footer-more {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding: 20px 5px;
+    text-align: left;
+    font: 400 14px/27px "Raleway";
+    color: #9ab3cc; }
+  footer p {
+    padding: 10px 0;
+    color: #748ca5; }
+  footer h4 {
+    display: inline-block;
+    padding-top: 10px;
+    border-bottom: 1px solid #9ab3cc;
+    font: 400 13px/24px "Lato";
+    color: #fff;
+    text-transform: uppercase; }
+  footer .social-icons {
+    padding-top: 30px; }
+    footer .social-icons li {
+      display: inline-block;
+      padding-right: 15px; }
+    footer .social-icons .fa {
+      color: #9ab3cc;
+      font-size: 16px; }
+  footer .contacts p {
+    color: #9ab3cc;
+    font: 400 14px/26px "Lato"; }
+  footer .contacts .address, footer .contacts .phone, footer .contacts .email {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding-bottom: 15px; }
+  footer .contacts .fa {
+    display: block;
+    line-height: 27px; }
+  footer .contacts span {
+    padding-left: 10px;
+    display: block; }
+
+.subscribe form {
+  position: relative;
+  width: 270px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+  .subscribe form:after {
+    content: "\f1d8";
+    font: 400 17px/40px 'FontAwesome';
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 220px;
+    width: 50px;
+    height: 40px;
     text-align: center;
-    font: 400 14px/27px "Open Sans";
-    color: #cecece; }
+    background-color: #009bff;
+    color: white; }
+  .subscribe form input {
+    display: inline-block;
+    border: none;
+    width: 220px;
+    height: 40px;
+    padding: 10px;
+    font-style: italic; }
+    .subscribe form input:last-child {
+      position: relative;
+      z-index: 2;
+      width: 50px;
+      background-color: transparent; }
+
+.footer-nav li, .footer-more-about-quora li {
+  padding-top: 10px; }
+
+.footer-arrow-more {
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 45px;
+  background-color: #ffcc00;
+  text-align: center;
+  color: #fff;
+  font: 400 21px/52px "Lato";
+  cursor: pointer; }
+
+.copyrights {
+  border-top: 1px solid #4a627c; }
+  .copyrights div:last-child {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0 0 25px 0;
+    color: #748ca5; }
+
+@media screen and (min-width: 568px) {
+  footer .contacts {
+    max-width: 31.62393%; } }
 
 .button {
   width: 200px;
@@ -6895,13 +6946,13 @@ footer {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   background: #f8cd53;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font: 700 16px/18px "Helvetica Bold";
   text-transform: uppercase; }
   .button:hover {
-    background-color: #de2b24;
-    color: #ffffff;
+    background-color: #fff;
+    color: #fff;
     text-decoration: none; }
 
 @media screen and (min-width: 568px) {

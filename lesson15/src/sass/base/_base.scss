@@ -1,6 +1,6 @@
 body {
   color: $main-text-color;
-  font: 300 13px/20px $main-font;
+  font: 400 14px/28px $main-font;
 }
 a:hover, :active {
   text-decoration: none;
@@ -13,7 +13,8 @@ img {
   max-width: 100%;
 }
 p {
-  font: 400 14px/22px $sec-font;
+  font: 400 16px/28px $main-font;
+  color: $main-text-color;
 }
 .section-caption {
   text-align: center;
@@ -23,60 +24,79 @@ p {
     content: ' ';
     display: block;
     margin: 10px auto;
-    background-color: $main-text-color;
-    width: 50px;
-    height: 5px;
+    background-color: #d1d1d1;
+    width: 100px;
+    height: 2px;
   }
   h2 {
     margin: auto;
-    font: 700 28px/28px $main-font;
-  }
-  span {
-    font: 300 16px/22px $main-font;
-
+    color: black;
+    font: 600 20px/62px $main-font;
+    text-transform: uppercase;
   }
 }
+h3 {
+  font: 700 16px/20px $sec-font;
+  text-transform: uppercase;
+  color: #333;
+}
+.logo {
+  max-width: 150px;
+}
+
 
 @media screen and ($xs) {
   .section-caption {
     h2 {
-      font: 700 30px/30px $main-font;
+      font: 600 24px/66px $main-font;
     }
-    span {
-      font: 300 17px/24px $main-font;
-    }
+  }
+  h3 {
+    font: 700 17px/22px $sec-font;
+  }
+  .logo {
+    max-width: 160px;
   }
 }
 
 @media screen and ($sm) {
   .section-caption {
     h2 {
-      font: 700 32px/32px $main-font;
+      font: 600 26px/68px $main-font;
     }
-    span {
-      font: 300 18px/26px $main-font;
-    }
+  }
+  h3 {
+    font: 700 18px/24px $sec-font;
+  }
+  .logo {
+    max-width: 170px;
   }
 }
 
 @media screen and ($md) {
   .section-caption {
     h2 {
-      font: 700 34px/34px $main-font;
+      font: 600 28px/70px $main-font;
     }
-    span {
-      font: 300 19px/28px $main-font;
-    }
+  }
+  h3 {
+    font: 700 19px/26px $sec-font;
+  }
+  .logo {
+    max-width: 175px;
   }
 }
 
 @media screen and ($lg) {
   .section-caption {
     h2 {
-      font: 700 36px/36px $main-font;
+      font: 600 30px/72px $main-font;
     }
-    span {
-      font: 300 20px/30px $main-font;
-    }
+  }
+  h3 {
+    font: 700 20px/28px $sec-font;
+  }
+  .logo {
+    width: 179px;
   }
 }
