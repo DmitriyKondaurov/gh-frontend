@@ -6603,7 +6603,7 @@ h3 {
   text-transform: uppercase;
   color: #333; }
 
-.logo {
+footer .logo {
   max-width: 150px; }
 
 @media screen and (min-width: 568px) {
@@ -6611,7 +6611,7 @@ h3 {
     font: 600 24px/66px "Lato"; }
   h3 {
     font: 700 17px/22px "Raleway"; }
-  .logo {
+  footer .logo {
     max-width: 160px; } }
 
 @media screen and (min-width: 768px) {
@@ -6619,7 +6619,7 @@ h3 {
     font: 600 26px/68px "Lato"; }
   h3 {
     font: 700 18px/24px "Raleway"; }
-  .logo {
+  footer .logo {
     max-width: 170px; } }
 
 @media screen and (min-width: 992px) {
@@ -6627,7 +6627,7 @@ h3 {
     font: 600 28px/70px "Lato"; }
   h3 {
     font: 700 19px/26px "Raleway"; }
-  .logo {
+  footer .logo {
     max-width: 175px; } }
 
 @media screen and (min-width: 1200px) {
@@ -6635,7 +6635,7 @@ h3 {
     font: 600 30px/72px "Lato"; }
   h3 {
     font: 700 20px/28px "Raleway"; }
-  .logo {
+  footer .logo {
     width: 179px; } }
 
 @font-face {
@@ -6707,27 +6707,28 @@ h3 {
 
 nav {
   padding: 15px 0;
-  float: right;
+  margin: auto;
+  max-width: 700px;
   overflow: hidden; }
 
 ul.topnav {
   z-index: 2;
   list-style-type: none;
-  float: right;
+  text-align: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: transparent; }
   ul.topnav li {
-    float: left;
+    display: inline-block;
     z-index: 3; }
     ul.topnav li a {
       display: inline-block;
-      color: dimgrey;
+      color: white;
       text-align: center;
       padding: 10px 25px 10px 10px;
       text-decoration: none;
-      font: 700 15px/15px "Lato"; }
+      font: 400 18px/24px "Lato"; }
       ul.topnav li a:hover {
         color: #fff;
         background-color: #fff;
@@ -6737,22 +6738,7 @@ ul.topnav {
       display: none; }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width: 568px) {
-  ul.topnav li {
-    display: none; }
-  ul.topnav li.icon a {
-    display: block;
-    width: 30%; }
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-  ul.topnav.responsive {
-    position: relative; }
-  ul.topnav.responsive li.icon {
-    background-color: transparent; }
-    ul.topnav.responsive li.icon:hover {
-      background-color: transparent;
-      color: dimgrey; } }
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   ul.topnav li {
     display: none; }
   ul.topnav {
@@ -6978,3 +6964,71 @@ footer {
     width: 330px;
     padding: 25px;
     font: 700 23px/26px "Helvetica Bold"; } }
+
+.hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  background: url("../img/1-layers.png") no-repeat; }
+
+.hero-banner {
+  text-align: center; }
+  .hero-banner .logo {
+    width: 150px;
+    margin: auto; }
+  .hero-banner div {
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 28px;
+    font-style: italic;
+    line-height: 44px;
+    text-transform: uppercase; }
+
+@media screen and (min-width: 568px) {
+  .hero {
+    padding: 100px 0; }
+  .hero-banner div {
+    line-height: 48px;
+    font-size: 32px; }
+  .hero-banner .logo {
+    width: 170px; } }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 150px 0; }
+  .hero-banner div {
+    line-height: 52px;
+    font-size: 36px; }
+  .hero-banner .logo {
+    width: 200px; } }
+
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 170px 0; }
+  .hero-banner div {
+    line-height: 56px;
+    font-size: 40px; }
+  .hero-banner .logo {
+    width: 230px; } }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 265px 0; }
+  .hero-banner div {
+    line-height: 60px;
+    font-size: 44px; }
+  .hero-banner .logo {
+    width: 260px; } }
+
+.about {
+  background-color: #ececec; }

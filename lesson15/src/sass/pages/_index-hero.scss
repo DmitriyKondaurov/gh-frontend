@@ -1,19 +1,83 @@
-
-
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: url("../img/1-layers.png") no-repeat;
+}
+.hero-banner {
+  text-align: center;
+  .logo {
+    width: 150px;
+    margin: auto;
+  }
+  div {
+    color: #ffffff;
+    font-family: $main-font;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+}
 //________________________________________________________________________________
 @media screen and ($xs) {
-
+  .hero {
+    padding: 100px 0;
+  }
+  .hero-banner {
+    div {
+      line-height: 48px;
+      font-size: 32px;
+    }
+    .logo {
+      width: 170px;
+    }
+  }
 }
 
 @media screen and ($sm) {
-
+  .hero {
+    padding: 150px 0;
+  }
+  .hero-banner {
+    div {
+      line-height: 52px;
+      font-size: 36px;
+    }
+    .logo {
+      width: 200px;
+    }
+  }
 }
 
 @media screen and ($md) {
-
+  .hero {
+    padding: 170px 0;
+  }
+  .hero-banner {
+    div {
+      line-height: 56px;
+      font-size: 40px;
+    }
+    .logo {
+      width: 230px;
+    }
+  }
 }
 
 @media screen and ($lg) {
-
+  .hero {
+    padding: 265px 0;
+  }
+  .hero-banner {
+    div {
+      line-height: 60px;
+      font-size: 44px;
+    }
+    .logo {
+      width: 260px;
+    }
+  }
 }
 
