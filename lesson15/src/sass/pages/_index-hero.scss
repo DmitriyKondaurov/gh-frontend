@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  background: url("../img/1-layers.png") no-repeat;
+  background: url("../img/1-layers.png") center no-repeat;
 }
 .hero-banner {
   text-align: center;
@@ -38,7 +38,7 @@
 
 @media screen and ($sm) {
   .hero {
-    padding: 150px 0;
+    padding: 140px 0;
   }
   .hero-banner {
     div {
@@ -53,7 +53,7 @@
 
 @media screen and ($md) {
   .hero {
-    padding: 170px 0;
+    padding: 268px 0;
   }
   .hero-banner {
     div {
@@ -68,7 +68,7 @@
 
 @media screen and ($lg) {
   .hero {
-    padding: 265px 0;
+    padding: 260px 0;
   }
   .hero-banner {
     div {

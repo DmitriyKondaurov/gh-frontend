@@ -1,3 +1,14 @@
+.projects {
+  h3 {
+    padding-top: 40px;
+  }
+  p {
+    padding: 15px 30px 15px 0;
+  }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #009aff;
+}
 @media screen and ($xs) {
 
 }
