@@ -6584,7 +6584,7 @@ p {
 .section-caption {
   text-align: center;
   max-width: 100%;
-  padding: 100px 0 30px 0; }
+  padding: 50px 0 30px 0; }
   .section-caption::after {
     content: ' ';
     display: block;
@@ -6623,8 +6623,10 @@ footer .logo {
     max-width: 170px; } }
 
 @media screen and (min-width: 992px) {
-  .section-caption h2 {
-    font: 600 28px/70px "Lato"; }
+  .section-caption {
+    padding-top: 100px; }
+    .section-caption h2 {
+      font: 600 28px/70px "Lato"; }
   h3 {
     font: 700 19px/26px "Raleway"; }
   footer .logo {
@@ -7049,3 +7051,45 @@ footer {
 
 .about {
   background-color: #ececec; }
+  .about .container {
+    padding-bottom: 30px; }
+  .about li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center; }
+    .about li p {
+      font-size: 14px; }
+
+@media screen and (min-width: 768px) {
+  .about .container {
+    padding: 30px 15px 100px 15px; } }
+
+@media screen and (min-width: 992px) {
+  .about li:nth-child(1)::after {
+    display: block;
+    background: url(../img/polygon-1.png) center no-repeat;
+    content: '\e904';
+    font: 300 52px/160px 'icomoon';
+    text-align: center;
+    color: #fff; }
+  .about li:nth-child(2)::before {
+    display: block;
+    background: url(../img/polygon-1.png) center no-repeat;
+    content: '\e900';
+    font: 300 52px/160px 'icomoon';
+    text-align: center;
+    color: #fff; }
+  .about li:nth-child(3)::after {
+    display: block;
+    background: url(../img/polygon-1.png) center no-repeat;
+    content: '\e907';
+    font: 300 52px/160px 'icomoon';
+    text-align: center;
+    color: #fff; } }

@@ -23,7 +23,7 @@ $("#slide-down").click(function () {
     if ($(".footer-more").is(":hidden")) {
         $(".footer-more").show("slow");
         $('html, body').animate({
-            scrollTop: 6000
+            scrollTop: 16000
         }, 1000);
     } else {
         $(".footer-more").hide("slow");
