@@ -9,7 +9,7 @@
   align-items: baseline;
   flex-flow: row wrap;
   li {
-    flex-basis: 21%;
+    flex-basis: 95%;
     background-color: #fff;
     margin: 15px;
     border-radius: 10px;
@@ -47,17 +47,45 @@
 
 
 @media screen and ($xs) {
-
+  .blog-list li {
+    flex-basis: 40%;
+    &:hover {
+      flex-basis: 45%;
+    }
+  }
 }
 
 @media screen and ($sm) {
-
+  .blog-list li {
+    flex-basis: 28%;
+    &:hover {
+      flex-basis: 30%;
+    }
+  }
 }
 
 @media screen and ($md) {
-
+  .blog-list li {
+    flex-basis: 21%;
+    &:hover {
+      flex-basis: 23%;
+    }
+  }
 }
 
 @media screen and ($lg) {
-
+  .blog {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -149px;
+      left: 0px;
+      width: 1170px;
+      height: 0;
+      border-left: 600px solid transparent;
+      border-right: 600px solid transparent;
+      border-top: 150px solid #ececec;
+    }
+  }
 }

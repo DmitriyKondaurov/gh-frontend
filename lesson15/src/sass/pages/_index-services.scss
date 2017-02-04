@@ -1,6 +1,6 @@
 .services {
   padding: 50px 0;
-  background: url("../img/background.png") center 100%/750% no-repeat;
+  background: #ececec url("../img/background.png") center 100%/800% no-repeat;
   .section-caption {
     padding-bottom: 0;
     h2 {
@@ -36,21 +36,21 @@
 @media screen and ($xs) {
   .services {
     padding: 70px 0;
-    background: url("../img/background.png") center 100%/400% no-repeat;
+    background: #ececec url("../img/background.png") center 100%/500% no-repeat;
   }
 }
 
 @media screen and ($sm) {
   .services {
     padding: 50px 0;
-    background: url("../img/background.png") center 100%/170% no-repeat;
+    background: #ececec url("../img/background.png") center 100%/250% no-repeat;
   }
 }
 
 @media screen and ($md) {
   .services {
     padding: 60px 0;
-    background: url("../img/background.png") center 70%/100% no-repeat;
+    background: #ececec url("../img/background.png") center 100%/180% no-repeat;
     .container li {
       &:nth-child(2) {
         padding-top: 70px;
@@ -64,6 +64,7 @@
 
 @media screen and ($lg) {
   .services {
-    padding: 50px 0;
+    padding: 60px 0 120px 0;
+    background: #ececec url("../img/background.png") center 100%/140% no-repeat;
   }
 }

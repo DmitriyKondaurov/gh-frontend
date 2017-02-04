@@ -77,6 +77,20 @@ padding-bottom: 50px;
 }
 
 @media screen and ($lg) {
-
+  .pricing {
+    padding-top: 100px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -149px;
+      left: 0px;
+      width: 1170px;
+      height: 0;
+      border-left: 600px solid transparent;
+      border-right: 600px solid transparent;
+      border-top: 150px solid #fff;
+    }
+  }
 }
 

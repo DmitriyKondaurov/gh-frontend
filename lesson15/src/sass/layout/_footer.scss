@@ -142,5 +142,8 @@ footer {
 
 @media screen and ($lg) {
   footer {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 200px;
   }
 }
