@@ -18,7 +18,13 @@ $(window).on("scroll", function () {
         $(".header").removeClass("active");
     }
 });
-
+// hide footer
+$(function hide() {
+    if ($(".footer-more").is(":visible")) {
+        $(".footer-more").hide("slow");
+    }
+})
+//show footer
 $("#slide-down").click(function () {
     if ($(".footer-more").is(":hidden")) {
         $(".footer-more").show("slow");

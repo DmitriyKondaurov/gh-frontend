@@ -6955,7 +6955,7 @@ footer {
   font: 400 12px/18px "Lato"; }
   .button-more:hover {
     background-color: #fc0;
-    color: #fff;
+    color: dimgrey;
     text-decoration: none; }
     .button-more:hover:after {
       background: #fc0; }
@@ -6972,6 +6972,20 @@ footer {
     border-bottom: 1px solid #009aff;
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
+
+.signup {
+  display: block;
+  width: 170px;
+  margin: 20px auto;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font: 700 16px/45px "Lato";
+  text-transform: uppercase; }
+  .signup:hover {
+    background-color: #fff;
+    color: black;
+    text-decoration: none; }
 
 .hero {
   display: -webkit-box;
@@ -7047,17 +7061,23 @@ footer {
       color: #fff; }
     .services .section-caption:after {
       background-color: #708da0; }
-  .services .container li {
-    display: inline-block;
+  .services .container {
     text-align: center; }
-    .services .container li span {
-      display: block;
-      color: #fff;
-      font: 500 18px/28px "Raleway"; }
-      .services .container li span:first-child {
-        background: url(../img/polygon-1.png) center 0%/100px no-repeat;
-        font-size: 40px;
-        line-height: 120px; }
+    .services .container li {
+      display: inline-block;
+      text-align: center; }
+      .services .container li span {
+        display: block;
+        color: #fff;
+        font: 500 18px/28px "Raleway"; }
+        .services .container li span:first-child {
+          background: url(../img/polygon-1.png) center 0%/100px no-repeat;
+          font-size: 40px;
+          line-height: 120px; }
+      .services .container li:hover span:first-child {
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        font: 500 54px/120px "Raleway"; }
 
 @media screen and (min-width: 568px) {
   .services {
@@ -7095,6 +7115,8 @@ footer {
   background-color: #ececec; }
 
 .blog-list {
+  max-width: 1170px;
+  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7152,8 +7174,78 @@ footer {
     .blog-list li img {
       width: 100%; }
 
+.pricing {
+  padding-bottom: 50px; }
+
+.price-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .price-list > li {
+    -webkit-flex-basis: 300px;
+        -ms-flex-preferred-size: 300px;
+            flex-basis: 300px;
+    padding: 15px 0;
+    background-color: #fc0;
+    text-align: center;
+    color: #000; }
+    .price-list > li:hover {
+      background-color: #009bff; }
+      .price-list > li:hover:before {
+        display: block;
+        content: '\e902';
+        font: 400 26px/54px 'icomoon';
+        color: #fff;
+        padding-top: 10px; }
+      .price-list > li:hover li {
+        background-color: #009bff; }
+    .price-list > li li {
+      padding: 5px 0;
+      font: 400 18px/72px "Lato"; }
+    .price-list > li h3 {
+      margin: 0;
+      color: #fff;
+      font: 700 26px/72px "Lato";
+      text-transform: uppercase; }
+    .price-list > li div {
+      font-family: Lato;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 72px; }
+      .price-list > li div span:first-child {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 72px;
+        text-transform: uppercase;
+        vertical-align: super; }
+      .price-list > li div span:last-child {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 72px;
+        vertical-align: sub; }
+  .price-list ul {
+    border-top: 1px solid white; }
+
 .about {
-  background-color: #ececec; }
+  background-color: #ececec;
+  width: 100%;
+  height: 100%; }
   .about .container {
     padding-bottom: 30px; }
   .about li {
@@ -7196,3 +7288,17 @@ footer {
     font: 300 52px/160px 'icomoon';
     text-align: center;
     color: #fff; } }
+
+@media screen and (min-width: 1200px) {
+  .about {
+    position: relative; }
+    .about:after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      width: 100%;
+      height: 0;
+      border-left: 600px solid transparent;
+      border-right: 600px solid transparent;
+      border-top: 100px solid #ececec; } }

@@ -12,6 +12,7 @@
   }
 
   .container {
+    text-align: center;
     li {
       display: inline-block;
       text-align: center;
@@ -24,6 +25,10 @@
           font-size: 40px;
           line-height: 120px;
         }
+      }
+      &:hover span:first-child {
+        transition: 0.5s;
+        font: 500 54px/120px $sec-font;
       }
     }
   }

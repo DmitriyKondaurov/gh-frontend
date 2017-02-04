@@ -1,4 +1,67 @@
+.pricing {
+padding-bottom: 50px;
+}
+.price-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  > li {
+    flex-basis: 300px;
+    padding: 15px 0;
+    background-color: $brand-color;
+    text-align: center;
+    color: #000;
+    &:hover {
+      background-color: #009bff;
+      &:before {
+        display: block;
+        content: '\e902';
+        font: 400 26px/54px 'icomoon';
+        color: $main-color;
+        padding-top: 10px;
+      }
+      li {
+        background-color: #009bff;
+      }
+    }
+    li {
+      padding: 5px 0;
+      font: 400 18px/72px $main-font;
+    }
+    h3 {
+      margin: 0;
+      color: $sec-text-color;
+      font: 700 26px/72px $main-font;
+      text-transform: uppercase;
+    }
+    div {
+      font-family: Lato;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 72px;
+      span:first-child {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 72px;
+        text-transform: uppercase;
+        vertical-align: super;
+      }
+      span:last-child {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 72px;
+        vertical-align: sub;
+      }
+    }
+  }
+  ul {
+    border-top: 1px solid white;
+  }
 
+}
 
 //________________________________________________________________________________
 @media screen and ($xs) {
