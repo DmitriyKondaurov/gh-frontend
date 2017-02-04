@@ -35,10 +35,13 @@ $("#slide-down").click(function () {
         $(".footer-more").hide("slow");
     }
 });
-//
-// $("#close-icon").click(function () {
-//     $("#analysis-form").hide("slow");
-// });
+
+$("#open-icon").click(function () {
+    $(".footer-more").show("slow");
+    $('html, body').animate({
+        scrollTop: 16000
+    }, 1000);
+});
 
 
 $(document).ready(function () {
