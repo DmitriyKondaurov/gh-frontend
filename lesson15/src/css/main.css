@@ -7038,6 +7038,50 @@ footer {
   .hero-banner .logo {
     width: 260px; } }
 
+.services {
+  padding: 50px 0;
+  background: url("../img/background.png") center 100%/750% no-repeat; }
+  .services .section-caption {
+    padding-bottom: 0; }
+    .services .section-caption h2 {
+      color: #fff; }
+    .services .section-caption:after {
+      background-color: #708da0; }
+  .services .container li {
+    display: inline-block;
+    text-align: center; }
+    .services .container li span {
+      display: block;
+      color: #fff;
+      font: 500 18px/28px "Raleway"; }
+      .services .container li span:first-child {
+        background: url(../img/polygon-1.png) center 0%/100px no-repeat;
+        font-size: 40px;
+        line-height: 120px; }
+
+@media screen and (min-width: 568px) {
+  .services {
+    padding: 70px 0;
+    background: url("../img/background.png") center 100%/400% no-repeat; } }
+
+@media screen and (min-width: 768px) {
+  .services {
+    padding: 50px 0;
+    background: url("../img/background.png") center 100%/170% no-repeat; } }
+
+@media screen and (min-width: 992px) {
+  .services {
+    padding: 60px 0;
+    background: url("../img/background.png") center 70%/100% no-repeat; }
+    .services .container li:nth-child(2) {
+      padding-top: 70px; }
+    .services .container li:nth-child(3) {
+      padding-top: 70px; } }
+
+@media screen and (min-width: 1200px) {
+  .services {
+    padding: 50px 0; } }
+
 .projects h3 {
   padding-top: 40px; }
 
