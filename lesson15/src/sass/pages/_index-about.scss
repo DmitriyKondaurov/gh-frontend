@@ -1,9 +1,8 @@
 .about {
   background-color: #ececec;
-  width: 100%;
-  height: 100%;
+  position: relative;
   .container {
-    padding-bottom: 30px;
+    padding: 30px 15px 100px 15px;
   }
   li {
     display: flex;
@@ -15,7 +14,6 @@
   }
 }
 
-
 @media screen and ($xs) {
 
 }
@@ -23,7 +21,6 @@
 @media screen and ($sm) {
   .about {
     .container {
-      padding: 30px 15px 100px 15px;
     }
   }
 }
@@ -67,17 +64,5 @@
 
 @media screen and ($lg) {
   .about {
-    position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -100px;
-      left: 0;
-      width: 100%;
-      height: 0;
-      border-left: 600px solid transparent;
-      border-right: 600px solid transparent;
-      border-top: 100px solid #ececec;
-    }
   }
 }

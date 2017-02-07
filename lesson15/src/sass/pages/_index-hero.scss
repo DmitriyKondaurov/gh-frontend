@@ -1,8 +1,10 @@
 .hero {
+  position: relative;
   display: flex;
+  z-index: 1;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 100px 0 250px 0;
   background: #ececec url("../img/1-layers.png") center no-repeat;
 }
 .hero-banner {
@@ -20,10 +22,11 @@
     text-transform: uppercase;
   }
 }
+
+
 //________________________________________________________________________________
 @media screen and ($xs) {
   .hero {
-    padding: 100px 0;
   }
   .hero-banner {
     div {
@@ -38,7 +41,6 @@
 
 @media screen and ($sm) {
   .hero {
-    padding: 140px 0;
   }
   .hero-banner {
     div {
@@ -53,7 +55,6 @@
 
 @media screen and ($md) {
   .hero {
-    padding: 268px 0;
   }
   .hero-banner {
     div {
@@ -68,8 +69,6 @@
 
 @media screen and ($lg) {
   .hero {
-    padding: 260px 0;
-
   }
   .hero-banner {
     div {

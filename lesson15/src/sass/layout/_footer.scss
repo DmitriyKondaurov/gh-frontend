@@ -1,5 +1,6 @@
 footer {
   background-color: #204359;
+  padding-top: 200px;
   .footer-more {
     display: flex;
     max-width: $wrapper;
@@ -96,11 +97,15 @@ footer {
 .footer-nav, .footer-more-about-quora {
   li {
     padding-top: 10px;
+    a {
+      color: #9ab3cc;
+    }
   }
 }
 .footer-arrow-more {
   position: relative;
   top: 0;
+  z-index: 2;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 45px;
@@ -130,6 +135,7 @@ footer {
 @media screen and ($sm) {
   footer {
 
+
   }
 }
 
@@ -142,8 +148,6 @@ footer {
 
 @media screen and ($lg) {
   footer {
-    max-width: 1200px;
     margin: auto;
-    padding-top: 200px;
   }
 }

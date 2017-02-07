@@ -1,5 +1,19 @@
 .pricing {
-padding-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  position: relative;
+  .section_footer_triangle {
+    bottom: -107px;
+    z-index: 1;
+  }
+  svg.triangle {
+    background-color: transparent;
+    &.bg_white path {
+      fill: #fff;
+      stroke: #fff;
+      stroke-width: 1;
+    }
+  }
 }
 .price-list {
   display: flex;
@@ -12,8 +26,10 @@ padding-bottom: 50px;
     background-color: $brand-color;
     text-align: center;
     color: #000;
+    transition: 0.5s;
     &:hover {
       background-color: #009bff;
+      transition: 0.5s;
       &:before {
         display: block;
         content: '\e902';
@@ -78,19 +94,7 @@ padding-bottom: 50px;
 
 @media screen and ($lg) {
   .pricing {
-    padding-top: 100px;
     position: relative;
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -149px;
-      left: 0px;
-      width: 1170px;
-      height: 0;
-      border-left: 600px solid transparent;
-      border-right: 600px solid transparent;
-      border-top: 150px solid #fff;
-    }
   }
 }
 

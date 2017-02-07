@@ -43,6 +43,12 @@ $("#open-icon").click(function () {
     }, 1000);
 });
 
+$('.isotope').isotope({
+    itemSelector: '.isotope-item',
+    masonry: {
+        columnWidth: 100
+    }
+});
 
 $(document).ready(function () {
     $('#carousel-1').owlCarousel({
