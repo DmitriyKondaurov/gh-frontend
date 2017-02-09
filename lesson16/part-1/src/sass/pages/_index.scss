@@ -1,83 +1,44 @@
-.hero {
-  position: relative;
-  display: flex;
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0 250px 0;
-  background: #ececec url("../img/1-layers.png") center no-repeat;
+body {
+  padding: 20px;
 }
-.hero-banner {
+h1 {
   text-align: center;
-  .logo {
-    width: 150px;
-    margin: auto;
+  text-decoration: underline;
+}
+table {
+  border: 1px solid gray;
+}
+button, td {
+  padding: 5px 20px;
+}
+td {
+  border-right: 1px dotted gray;
+  border-bottom: 1px solid gray;
+  &:first-child {
+    width: 200px;
+    padding-right: 10px;
+    text-align: right;
   }
+}
+th {
+  padding: 20px;
+  border: 1px solid gray;
+  font: 700 18px/56px 'Arial';
+  &:first-child {
+    text-align: center;
+  }
+  &:nth-child(2) {
+    text-align: center;
+  }
+}
+footer {
   div {
-    color: #ffffff;
-    font-family: $main-font;
-    font-size: 28px;
-    font-style: italic;
-    line-height: 44px;
-    text-transform: uppercase;
-  }
-}
-
-
-//________________________________________________________________________________
-@media screen and ($xs) {
-  .hero {
-  }
-  .hero-banner {
-    div {
-      line-height: 48px;
-      font-size: 32px;
-    }
-    .logo {
-      width: 170px;
-    }
-  }
-}
-
-@media screen and ($sm) {
-  .hero {
-  }
-  .hero-banner {
-    div {
-      line-height: 52px;
-      font-size: 36px;
-    }
-    .logo {
-      width: 200px;
-    }
-  }
-}
-
-@media screen and ($md) {
-  .hero {
-  }
-  .hero-banner {
-    div {
-      line-height: 56px;
-      font-size: 40px;
-    }
-    .logo {
-      width: 230px;
-    }
-  }
-}
-
-@media screen and ($lg) {
-  .hero {
-  }
-  .hero-banner {
-    div {
-      line-height: 60px;
-      font-size: 44px;
-    }
-    .logo {
-      width: 260px;
-    }
+    width: 300px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 12px;
   }
 }
 
