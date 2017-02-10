@@ -6589,9 +6589,17 @@ th {
   border: 1px solid gray;
   font: 700 18px/56px 'Arial'; }
   th:first-child {
-    text-align: center; }
+    text-align: center;
+    border-right: 1px dotted gray; }
   th:nth-child(2) {
-    text-align: center; }
+    text-align: center;
+    border-left: 1px dotted gray; }
+
+div {
+  color: red; }
+
+.hide_text {
+  display: none; }
 
 footer div {
   width: 300px;

@@ -18,70 +18,70 @@
             <th>DESCRIPTION</th>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-addClass">addClass</button></td>
+            <td><button id="l16-addClass">addClass</button></td>
             <td> добавление класса по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-removeClass">removeClass</button></td>
+            <td><button class="for-remove" id="l16-removeClass">removeClass</button></td>
             <td> удаление класса по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-toggleClass">toggleClass</button></td>
+            <td><button id="l16-toggleClass">toggleClass</button></td>
             <td> переключение класса по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-getAttr">getAttr</button></td>
+            <td><button id="l16-getAttr">getAttr</button></td>
             <td> получение какого-то атрибута кнопки по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-setAttr">setAttr</button></td>
+            <td><button id="l16-setAttr">setAttr</button></td>
             <td> присвоение какого-то атрибута кнопке по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-alertOnClick">alertOnClick</button></td>
+            <td><button id="l16-alertOnClick">alertOnClick</button></td>
             <td> вызов всплывающего окна по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-triggerAlert">triggerAlert</button></td>
+            <td><button id="l16-triggerAlert">triggerAlert</button></td>
             <td> тригер alertOnClick кнопки по клику</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-cloneThis">cloneThis</button></td>
+            <td><button id="l16-cloneThis">cloneThis</button></td>
             <td> по клику склонировать кнопку, дописать текст "(cloned)" и вставить её сразу после этой кнопки</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-closestElement">closestElement</button></td>
+            <td><button id="l16-closestElement">closestElement</button></td>
             <td> по клику вывести в консоль ближайшего родителя.</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-eachBtnText">eachBtnText</button></td>
+            <td><button id="l16-eachBtnText">eachBtnText</button></td>
             <td> по клику циклом пройтись по всем кнопкам и собрать массив текста этих кнопок. То есть, в итоге,
                 вывести в консоль массив текста кнопок. Будет это выглядеть примерно так - ["addClass",
                 "removeClass", "toggleClass", ... ]
             </td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-findMe">findMe</button></td>
+            <td><button id="l16-findMe">findMe</button></td>
             <td> по клику найти эту кнопку в теге body и вывести в консоль результат поиска</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-fadeInText">fadeInText</button></td>
+            <td><button id="l16-fadeInText">fadeInText</button><div class="hide_text">Hello world!!!</div></td>
             <td> расположить скрытый текст рядом с кнопкой, по клику на кнопку показать этот текст через fadeIn.</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-fadeOutText">fadeOutText</button></td>
+            <td><button id="l16-fadeOutText">fadeOutText</button><div class="visible_text">Hello world!!!</div></td>
             <td> расположить текст рядом с кнопкой, по клику на кнопку скрыть этот текст через fadeOut.</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-hideText">hideText</button></td>
+            <td><button id="l16-hideText">hideText</button><div class="visible_text">Hello world!!!</div></td>
             <td> расположить текст рядом с кнопкой, по клику на кнопку скрыть этот текст через hide.</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-showText">showText</button></td>
+            <td><button id="l16-showText">showText</button><div class="hide_text">Hello world!!!</div></td>
             <td> расположить скрытый текст рядом с кнопкой, по клику на кнопку показать этот текст через show.</td>
         </tr>
         <tr>
-            <td><button onclick="" id="l16-dataAboutMe">dataAboutMe</button></td>
+            <td><button id="l16-dataAboutMe" class="about_me_array">dataAboutMe</button></td>
             <td> по клику вывести следующие данные через запятые в консоль: высота кнопки, ширина кнопки, абсолютную
                 позиция по обеим осям, значение всех атрибутов, родительский элемент, соседние кнопки
                 сверху и снизу, текст кнопки.
@@ -90,7 +90,7 @@
     </table>
 </main>
 <footer>
-    <div>lesson16/part-1 by Kondaurov D.V.</div>
+    <p>lesson16/part-1 by Kondaurov D.V.</p>
 </footer>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>

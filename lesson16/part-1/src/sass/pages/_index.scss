@@ -26,10 +26,18 @@ th {
   font: 700 18px/56px 'Arial';
   &:first-child {
     text-align: center;
+    border-right: 1px dotted gray;
   }
   &:nth-child(2) {
     text-align: center;
+    border-left: 1px dotted gray;
   }
+}
+div {
+  color: red;
+}
+.hide_text {
+  display: none;
 }
 footer {
   div {
