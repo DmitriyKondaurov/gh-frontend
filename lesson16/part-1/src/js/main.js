@@ -91,4 +91,13 @@ $(document).ready(function () {
     ($('input, textarea, select').change(function(e){
         console.log($(this).attr('name')+':'+$(this).val());
     }));
+    //при изменении одного поля - дублируем значение в другое поле
+    ($('#name, #surname, #father_name').change(function(e){
+        var userName, fatherName, surName;
+        userName = $('#name').val();
+        fatherName = $('#father_name').val();
+        surName = $('#surname').val();
+        console.log(userName+' '+fatherName+' '+surName);
+        $('#full_name').val(surName+' '+userName+' '+fatherName);
+    }));
 })

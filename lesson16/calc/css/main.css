@@ -19,6 +19,7 @@ body {
     font: 100 82px/155px "Calibri Light";
     display: table;
     width: 462px;
+    height: 160px;
     max-width: 462px;
     background: linear-gradient(to bottom right,  #50262b, #7a453a, #703229);
     text-align: right;

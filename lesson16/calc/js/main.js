@@ -12,12 +12,6 @@ $(document).ready(function() {
         if (buttonPressed === "C") {
             result = 0;
             currentEntry = '0';
-        } else if (buttonPressed === "CE") {
-            currentEntry = '0';
-        } else if (buttonPressed === "back") {
-            //currentEntry = currentEntry.substring(0, currentEntry.length-1);
-        } else if (buttonPressed === "+/-") {
-            currentEntry *= -1;
         } else if (buttonPressed === '.') {
             currentEntry += '.';
         } else if (isNumber(buttonPressed)) {
@@ -27,19 +21,10 @@ $(document).ready(function() {
             prevEntry = parseFloat(currentEntry);
             operation = buttonPressed;
             currentEntry = '';
-        } else if(buttonPressed === '%') {
-            currentEntry = currentEntry / 100;
-        } else if (buttonPressed === 'sqrt') {
-            currentEntry = Math.sqrt(currentEntry);
-        } else if (buttonPressed === '1/x') {
-            currentEntry = 1 / currentEntry;
-        } else if (buttonPressed === 'pi') {
-            currentEntry = Math.PI;
         } else if (buttonPressed === '=') {
             currentEntry = operate(prevEntry, currentEntry, operation);
             operation = null;
         }
-
         updateScreen(currentEntry);
     });
 });
