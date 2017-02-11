@@ -88,8 +88,14 @@ $(document).ready(function () {
             console.log($form_data);
         });
     }));
-    ($('input, textarea, select').change(function(e){
+    ($('input, textarea, select').change(function(){
         console.log($(this).attr('name')+':'+$(this).val());
+    }));
+    ($('input, textarea, select').keydown(function(){
+        $(this).css({"border-color":"green"});
+    }));
+    ($('input, textarea, select').keyup(function(){
+        $(this).css({"border-color":"inherit"});
     }));
     //при изменении одного поля - дублируем значение в другое поле
     ($('#name, #surname, #father_name').change(function(e){
@@ -97,7 +103,8 @@ $(document).ready(function () {
         userName = $('#name').val();
         fatherName = $('#father_name').val();
         surName = $('#surname').val();
-        console.log(userName+' '+fatherName+' '+surName);
+        // console.log(userName+' '+fatherName+' '+surName);
         $('#full_name').val(surName+' '+userName+' '+fatherName);
     }));
+
 })
