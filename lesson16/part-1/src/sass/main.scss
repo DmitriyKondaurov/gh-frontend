@@ -1,21 +1,25 @@
-@import 'utils/_variables',
-'utils/_mixins';
+@import
+  'utils/_variables',
+  'utils/_mixins';
 
 @import 'base/_normalize',
   '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap',
   '../../bower_components/owl.carousel/src/scss/owl.carousel',
   '../../bower_components/owl.carousel/src/scss/theme.default',
-'base/_base';
+  'base/_base';
 
 @import 'fonts/_fonts';
 
-@import 'layout/_navigation',
-'layout/_header',
-'layout/_footer',
-'layout/_forms';
+@import
+  'layout/_navigation',
+  'layout/_header',
+  'layout/_footer',
+  'layout/_forms';
 
 @import 'components/_buttons';
 
-@import 'pages/_index';
+@import
+  'pages/_index2',
+  'pages/_index';
 
 

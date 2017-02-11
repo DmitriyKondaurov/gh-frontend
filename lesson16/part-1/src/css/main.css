@@ -6563,6 +6563,28 @@ button.close {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
+.annex-2 ol {
+  list-style-type: none;
+  margin: 0px; }
+
+.annex-2 .tooltip {
+  margin: 20px; }
+
+.annex-2 fieldset, .annex-2 h1, .annex-2 h2 {
+  margin: 20px; }
+
+.annex-2 li {
+  padding: 0px 0px 20px 0px;
+  margin: 0px; }
+
+.annex-2 li.sml {
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px; }
+
+.annex-2 .submit {
+  margin-left: 60px; }
+
 body {
   padding: 20px; }
 
@@ -6570,38 +6592,34 @@ h1 {
   text-align: center;
   text-decoration: underline; }
 
-table {
+.annex-1 {
   border: 1px solid gray; }
-
-button, td {
-  padding: 5px 20px; }
-
-td {
-  border-right: 1px dotted gray;
-  border-bottom: 1px solid gray; }
-  td:first-child {
-    width: 200px;
-    padding-right: 10px;
-    text-align: right; }
-
-th {
-  padding: 20px;
-  border: 1px solid gray;
-  font: 700 18px/56px 'Arial'; }
-  th:first-child {
-    text-align: center;
-    border-right: 1px dotted gray; }
-  th:nth-child(2) {
-    text-align: center;
-    border-left: 1px dotted gray; }
-
-div {
-  color: red; }
+  .annex-1 button, .annex-1 td {
+    padding: 5px 20px; }
+  .annex-1 td {
+    border-right: 1px dotted gray;
+    border-bottom: 1px solid gray; }
+    .annex-1 td:first-child {
+      width: 200px;
+      padding-right: 10px;
+      text-align: right; }
+  .annex-1 th {
+    padding: 20px;
+    border: 1px solid gray;
+    font: 700 18px/56px 'Arial'; }
+    .annex-1 th:first-child {
+      text-align: center;
+      border-right: 1px dotted gray; }
+    .annex-1 th:nth-child(2) {
+      text-align: center;
+      border-left: 1px dotted gray; }
+  .annex-1 div {
+    color: red; }
 
 .hide_text {
   display: none; }
 
-footer div {
+footer p {
   width: 300px;
   margin: auto;
   padding-top: 50px;

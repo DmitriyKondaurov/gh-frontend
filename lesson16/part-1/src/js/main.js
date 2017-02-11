@@ -77,5 +77,18 @@ $(document).ready(function () {
         info.push($(this).text());
         console.log(info);
     });
+    $('form').submit(function (){
+        return false;
+    });
+    ($('#submitLog').click(function () {
+        var $form_data = {name:"", value:""};
+        $('input').each(function() {
+            $form_data.name = $(this).attr('name');
+            $form_data.value = $(this).val();
+            console.log($form_data);
+        });
+    }));
+    ($('input, textarea, select').change(function(e){
+        console.log($(this).attr('name')+':'+$(this).val());
+    }));
 })
-
