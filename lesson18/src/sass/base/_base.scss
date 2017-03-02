@@ -1,0 +1,59 @@
+body {
+  color: $main-text-color;
+  font: 400 14px/18px $main-font;
+}
+a {
+  color: $main-text-color;
+  &:hover, :active {
+    text-decoration: none;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-caption {
+  text-align: center;
+  max-width: 100%;
+  padding: 50px 0 30px 0;
+  &::after {
+    content: ' ';
+    display: block;
+    margin: 10px auto;
+    background-color: #d1d1d1;
+    width: 100px;
+    height: 2px;
+  }
+  h2 {
+    margin: auto;
+    color: black;
+    font: 600 20px/62px $main-font;
+    text-transform: uppercase;
+  }
+}
+
+
+@media screen and ($xs) {
+  .section-caption {
+
+  }
+}
+
+@media screen and ($sm) {
+  .section-caption {
+
+  }
+}
+
+@media screen and ($md) {
+  .section-caption {
+
+  }
+}
+
+@media screen and ($lg) {
+  .section-caption {
+
+  }
+}
