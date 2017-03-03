@@ -6691,6 +6691,17 @@ section, .main_head {
   background-repeat: no-repeat;
   padding-top: 20px; }
 
+.logo_container {
+  flaot: left; }
+
+svg {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  z-index: 5; }
+  svg path {
+    fill: #fff; }
+
 .button {
   display: block;
   width: 80px;
