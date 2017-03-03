@@ -1,5 +1,9 @@
 .main_head {
   min-height: 620px;
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 20px;
 }
 
 @media screen and ($xs) {

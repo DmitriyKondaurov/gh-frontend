@@ -1,3 +1,4 @@
+//responsive height
 $(document).ready(function() {
     function heightDetect() {
         $(".main_head").css("height", $(window).height());
@@ -6,7 +7,10 @@ $(document).ready(function() {
     $(window).resize(function() {
         heightDetect();
     });
+    //parallax image
+    $('.main_head').parallax({imageSrc: '../img/bg.jpg'});
 });
+//preloader
 $(window).on('load',function() {
 
     $(".loader_inner").fadeOut();
