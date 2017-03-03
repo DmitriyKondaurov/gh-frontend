@@ -17,12 +17,13 @@
   'layout/footer';
 
 @import 'components/buttons';
+@import 'bourbon/bourbon';
 
 @import
-    'pages/_index-hero',
-    'pages/_index-services',
-    'pages/_index-projects',
-    'pages/_index-portfolio',
-    'pages/_index-about';
+    'pages/index-hero',
+    'pages/index-services',
+    'pages/index-projects',
+    'pages/index-portfolio',
+    'pages/index-about';
 
 

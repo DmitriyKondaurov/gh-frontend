@@ -6585,40 +6585,107 @@ ul {
   list-style: none;
   padding: 0; }
 
+section, .main_head {
+  position: relative; }
+
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader_inner {
+    background-image: url("../img/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
 .section-caption {
   text-align: center;
   max-width: 100%;
   padding: 50px 0 30px 0; }
-  .section-caption::after {
-    content: ' ';
-    display: block;
-    margin: 10px auto;
-    background-color: #d1d1d1;
-    width: 100px;
-    height: 2px; }
   .section-caption h2 {
     margin: auto;
     color: black;
     font: 600 20px/62px "Lato";
     text-transform: uppercase; }
 
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot");
-  /* IE9*/
-  src: local("Helvetica"), url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaNeue-BoldCond.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeue-BoldCond.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaNeue-BoldCond.svg") format("svg");
-  /* iOS 4.1- */
-  font-weight: 700;
-  font-style: normal; }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .personal_last_block {
+    margin-top: 35px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .resume_container .left,
+  .section_content .resume_container h3,
+  .resume_container .resume_icon {
+    text-align: left;
+    margin-bottom: 10px; }
+  .resume_container .left h3 {
+    margin-top: 0; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .top_wrapper .top_text h1 {
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .main_footer {
+    text-align: left; }
+  .main_footer .social_wrap {
+    float: left;
+    margin-top: 20px;
+    width: 100%; }
+  .main_footer .social_wrap ul {
+    padding-left: 0; } }
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fonts/Helvetica/HelveticaNeue-Light.eot");
+  font-family: "Raleway";
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot");
   /* IE9*/
-  src: local("Helvetica"), url("../fonts/Helvetica/HelveticaNeue-Light.eot") format("embedded-opentype"), url("../fonts/Helvetica/HelveticaNeue-Light.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeue-Light.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaNeue-Light.svg") format("svg");
-  /* iOS 4.1- */
-  font-weight: 300;
-  font-style: normal; }
+  src: local("Raleway"), url("../fonts/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewayBold/RalewayBold.eot");
+  /* IE9*/
+  src: local("Raleway"), url("../fonts/RalewayBold/RalewayBold.eot") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewayLight/RalewayLight.eot");
+  /* IE9*/
+  src: local("Raleway"), url("../fonts/RalewayLight/RalewayLight.eot") format("embedded-opentype"), url("../fonts/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
+  /* IE9*/
+  src: local("Raleway"), url("../fonts/RalewaySemiBold/RalewaySemiBold.eot") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 600; }
+
+.main_head {
+  min-height: 620px; }
 
 .button {
   display: block;

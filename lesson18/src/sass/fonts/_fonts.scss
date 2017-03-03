@@ -1,25 +1,38 @@
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot"); /* IE9*/
-  src: local('Helvetica'),
-  url("../fonts/Helvetica/HelveticaNeue-BoldCond.eot") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/Helvetica/HelveticaNeue-BoldCond.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/Helvetica/HelveticaNeue-BoldCond.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/Helvetica/HelveticaNeue-BoldCond.svg") format("svg"); /* iOS 4.1- */
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Raleway";
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot"); /* IE9*/
+  src: local('Raleway'),
+  url("../fonts/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 400;
 }
-
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("../fonts/Helvetica/HelveticaNeue-Light.eot"); /* IE9*/
-  src: local('Helvetica'),
-  url("../fonts/Helvetica/HelveticaNeue-Light.eot") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/Helvetica/HelveticaNeue-Light.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/Helvetica/HelveticaNeue-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/Helvetica/HelveticaNeue-Light.svg") format("svg"); /* iOS 4.1- */
+  font-family: "Raleway";
+  src: url("../fonts/RalewayBold/RalewayBold.eot"); /* IE9*/
+  src: local('Raleway'),
+  url("../fonts/RalewayBold/RalewayBold.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewayLight/RalewayLight.eot"); /* IE9*/
+  src: local('Raleway'),
+  url("../fonts/RalewayLight/RalewayLight.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/RalewayLight/RalewayLight.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   font-weight: 300;
-  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot"); /* IE9*/
+  src: local('Raleway'),
+  url("../fonts/RalewaySemiBold/RalewaySemiBold.eot") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 600;
 }
 
 //ICONS---------------------------------------------------------------
