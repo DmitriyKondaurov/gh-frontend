@@ -9,6 +9,10 @@ $(document).ready(function() {
     });
     //parallax image
     $('.main_head').parallax({imageSrc: '../img/bg.jpg'});
+    //sandwich icon
+    $("#sandwich").click(function() {
+        $("#sandwich").toggleClass("active");
+    });
 });
 //preloader
 $(window).on('load',function() {
