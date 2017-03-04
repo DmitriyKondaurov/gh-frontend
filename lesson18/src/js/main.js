@@ -10,8 +10,13 @@ $(document).ready(function() {
     //parallax image
     $('.main_head').parallax({imageSrc: '../img/bg.jpg'});
     //sandwich icon
-    $("#sandwich").click(function() {
+    $(".toggle_mnu").click(function() {
         $("#sandwich").toggleClass("active");
+    });
+    $(".toggle_mnu").click(function () {
+        if($("#sandwich").hasClass("active"))
+            $(".top_mnu").fadeIn(600);
+        else $(".top_mnu").fadeOut(600);
     });
 });
 //preloader

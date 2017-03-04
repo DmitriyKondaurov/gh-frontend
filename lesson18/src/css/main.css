@@ -6651,10 +6651,8 @@ section, .main_head {
   float: right;
   overflow: hidden;
   border: none;
-  background-color: #000; }
-
-body {
-  background-color: #333; }
+  background-color: transparent;
+  outline: none; }
 
 #sandwich {
   width: 60px;
@@ -6733,12 +6731,28 @@ body {
 
 .top_mnu {
   position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 50;
   right: 0;
   top: 0; }
+  .top_mnu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+    .top_mnu ul a {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font: 18px/56px "Open Sans"; }
+      .top_mnu ul a:hover {
+        color: #00b3ee; }
 
 .main_head {
   min-height: 620px;
