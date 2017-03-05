@@ -6612,11 +6612,11 @@ ul {
 
 .section_caption {
   position: static;
-  padding: 50px 0;
+  padding: 70px 0;
   text-transform: uppercase;
   font-weight: 700; }
   .section_caption p {
-    padding: 20px 0 0 0;
+    padding: 0 0 20px  0;
     font-weight: 400; }
   .section_caption:after {
     content: '';
@@ -6783,7 +6783,8 @@ ul {
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 20px; }
+  padding-top: 20px;
+  z-index: 5; }
 
 #top_header {
   position: fixed;
@@ -6807,6 +6808,12 @@ svg {
   z-index: 5; }
   svg path {
     fill: #fc0; }
+
+footer {
+  background-color: dimgrey;
+  color: #fff; }
+  footer p {
+    color: #fff; }
 
 .button {
   display: block;
@@ -6854,6 +6861,20 @@ svg {
 @media screen and (min-width: 568px) {
   .full_name {
     width: 450px; } }
+
+.contacts {
+  background-color: #fff; }
+
+.resume {
+  background-color: #ececec; }
+
+.portfolio {
+  background-color: dimgrey;
+  color: #fff; }
+  .portfolio p {
+    color: #fff; }
+  .portfolio .section_caption:after {
+    background-color: #fff; }
 
 .about {
   background-color: #fff; }

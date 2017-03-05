@@ -1,4 +1,13 @@
-
+.portfolio  {
+  background-color: dimgrey;
+  color: $text-sec-color;
+  p {
+    color: $text-sec-color;
+  }
+  .section_caption:after {
+    background-color: $text-sec-color;
+  }
+}
 @media screen and ($xs) {
 
 }
