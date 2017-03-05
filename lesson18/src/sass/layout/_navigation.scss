@@ -5,17 +5,26 @@
   float: right;
   overflow: hidden;
   border: none;
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.4);
   outline: none;
+  cursor: pointer;
+  span {
+    display: block;
+    &:hover {
+      span {
+        background-color: #00b3ee;
+      }
+    }
+  }
 }
 //responsive menu
-$w: 60px;
+$w: 90%;
 $h: 6px;
 #sandwich {
   width: $w;
   height: $w;
   position: absolute;
-  top: 15px;
+  top: 12px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -26,6 +35,7 @@ $h: 6px;
 .sw-topper {
   position: relative;
   top: 0;
+  margin: auto;
   width: $w;
   height: $h;
   background: rgb(255, 255, 255);
@@ -36,6 +46,7 @@ $h: 6px;
 /* transition-delay: 0.2s, 0s; */
 .sw-bottom {
   position: relative;
+  margin: auto;
   width: $w;
   height: $h;
   top: $h * 2;
@@ -43,11 +54,12 @@ $h: 6px;
   border: none;
   border-radius: 4px 4px 4px 4px;
   transition: transform 0.5s, top 0.2s;
-  transition-delay: 0.2s, 0s;
+  //transition-delay: 0.2s, 0s;
 }
 
 .sw-footer {
   position: relative;
+  margin: auto;
   width: $w;
   height: $h;
   top: $h * 4;
@@ -55,7 +67,7 @@ $h: 6px;
   border: none;
   border-radius: 4px 4px 4px 4px;
   transition: all 0.5s;
-  transition-delay: 0.1s;
+  //transition-delay: 0.1s;
 }
 
 
@@ -80,23 +92,27 @@ $h: 6px;
   display: none;
   width:100%;
   height:100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.9);
   z-index: 50;
   right: 0;
   top: 0;
   ul {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
     text-align: center;
     a {
+      display: block;
       color: #fff;
       text-transform: uppercase;
       letter-spacing: 7px;
-      font: 18px/56px $main-font;
+      font: 18px/56px $font-main;
+      transition: all 1s;
       &:hover {
         color: #00b3ee;
+        background-color: rgba(255,255,255,0.05);
       }
     }
   }

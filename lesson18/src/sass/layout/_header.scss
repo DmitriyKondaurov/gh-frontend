@@ -1,10 +1,23 @@
 .main_head {
+  position: relative;
   min-height: 620px;
-  background: transparent;
+  background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 20px;
 }
+#top_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  transition: all 0.8s;
+  &.active {
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
 .logo_container {
   float: left;
   overflow: hidden;
@@ -16,7 +29,7 @@ svg {
   position: relative;
   z-index: 5;
   path {
-    fill: $main-color;
+    fill: $brand-color;
   }
 }
 

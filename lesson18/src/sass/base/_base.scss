@@ -1,9 +1,10 @@
 body {
-  color: $main-text-color;
-  font: 400 14px/18px $main-font;
+  color: $text-main-color;
+  font: 400 14px/18px $font-main;
+  text-align: center;
 }
 a {
-  color: $main-text-color;
+  color: $text-main-color;
   &:hover, :active {
     text-decoration: none;
   }
@@ -11,9 +12,6 @@ a {
 ul {
   list-style: none;
   padding: 0;
-}
-section, .main_head {
-  position: relative;
 }
 .loader {
   background: none repeat scroll 0 0 #ffffff;
@@ -41,29 +39,46 @@ section, .main_head {
   }
 }
 
-
+.section_caption {
+  position: static;
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  p {
+    padding: 20px 0 0 0;
+    font-weight: 400;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: $text-main-color;
+    margin: auto;
+  }
+}
 
 
 @media screen and ($xs) {
-  .section-caption {
+  .section_caption {
 
   }
 }
 
 @media screen and ($sm) {
-  .section-caption {
+  .section_caption {
 
   }
 }
 
 @media screen and ($md) {
-  .section-caption {
+  .section_caption {
 
   }
 }
 
 @media screen and ($lg) {
-  .section-caption {
+  .section_caption {
 
   }
 }

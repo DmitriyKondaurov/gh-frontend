@@ -1,8 +1,38 @@
+.hero {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: -1;
+}
 
+.full_name {
+  width: 250px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.name, .profession {
+  padding: 20px;
+  text-align: center;
+  color: #fff;;
+  font: 20px/28px $font-main;
+}
+
+.name {
+  border: 2px solid white;
+  font: 40px/48px $font-main;
+}
 
 //________________________________________________________________________________
 @media screen and ($xs) {
-
+  .full_name {
+    width: 450px;
+  }
 }
 
 @media screen and ($sm) {
