@@ -38,15 +38,23 @@ ul {
     position: absolute;
   }
 }
-
+section {
+  padding: 50px 0;
+  img {
+    max-width: 100%;
+    //trouble with parallax
+  }
+}
 .section_caption {
   position: static;
-  padding: 70px 0;
+  visibility: hidden;
+  padding: 50px 0;
   text-transform: uppercase;
   font-weight: 700;
+  animation-delay: 0.1s;
   p {
     padding: 0 0 20px  0;
-    font-weight: 400;
+    font-weight: 700;
   }
   &:after {
     content: '';
@@ -82,3 +90,4 @@ ul {
 
   }
 }
+

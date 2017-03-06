@@ -103,6 +103,11 @@ $h: 6px;
     right: 0;
     transform: translate(0, -50%);
     text-align: center;
+    li:nth-child(1) a {animation-delay: 0.1s}
+    li:nth-child(2) a {animation-delay: 0.2s}
+    li:nth-child(3) a {animation-delay: 0.3s}
+    li:nth-child(4) a {animation-delay: 0.4s}
+    li:nth-child(5) a {animation-delay: 0.5s}
     a {
       display: block;
       color: #fff;

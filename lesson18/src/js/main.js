@@ -1,15 +1,8 @@
 //responsive height
 $(document).ready(function() {
-    function heightDetect() {
-        $(".main_head").css("height", $(window).height());
-    };
-    heightDetect();
-    $(window).resize(function() {
-        heightDetect();
-    });
-    //parallax image
-    $(".hero").parallax({imageSrc: '../img/bg.jpg'});
-    //scroll background
+    // parallax image
+    $(".main_head").parallax({imageSrc: '../img/bg.jpg'});
+    // header dark background  on scroll
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
             $("#top_header").addClass("active");
@@ -18,6 +11,8 @@ $(document).ready(function() {
             $("#top_header").removeClass("active");
         }
     });
+
+
     //sandwich icon
     $(".toggle_mnu").click(function() {
         $("#sandwich").toggleClass("active");
@@ -25,6 +20,7 @@ $(document).ready(function() {
             $("#top_header").removeClass("active");
         }
     });
+    //fade out/in menu list
     $(".toggle_mnu").click(function () {
         if($("#sandwich").hasClass("active")) {
             $(".top_mnu").fadeIn(600);
@@ -35,12 +31,13 @@ $(document).ready(function() {
             $(".top_mnu").fadeOut(600);
             $(".top_mnu li a").addClass("fadeOutUp animated");
         }
-
     });
+    //close menu on click
     $(".top_mnu li a").click(function () {
         $(".top_mnu").fadeOut(600);
         $("#sandwich").toggleClass("active");
-    })
+    });
+
 });
 //preloader
 $(window).on('load',function() {
@@ -48,7 +45,24 @@ $(window).on('load',function() {
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
 
-    $(".top_text h1").animated("fadeInDown", "fadeOutUp");
-    $(".top_text p").animated("fadeInUp", "fadeOutDown");
-
+    //animation on scroll
+    // $(window).scroll(function() {
+    //     $('.name').each(function(){
+    //         var imagePos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //
+    //         if (imagePos < topOfWindow+400) {
+    //             $(this).addClass("slideUp");
+    //         }
+    //     });
+    //     $('.profession').each(function(){
+    //         var imagePos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //
+    //         if (imagePos < topOfWindow+400) {
+    //             $(this).addClass("slideDown");
+    //         }
+    //     });
+    //
+    // });
 });

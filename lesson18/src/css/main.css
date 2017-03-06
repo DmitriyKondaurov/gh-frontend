@@ -6610,14 +6610,22 @@ ul {
     top: 50%;
     position: absolute; }
 
+section {
+  padding: 50px 0; }
+  section img {
+    max-width: 100%; }
+
 .section_caption {
   position: static;
-  padding: 70px 0;
+  visibility: hidden;
+  padding: 50px 0;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
   .section_caption p {
     padding: 0 0 20px  0;
-    font-weight: 400; }
+    font-weight: 700; }
   .section_caption:after {
     content: '';
     display: block;
@@ -6765,6 +6773,21 @@ ul {
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
     text-align: center; }
+    .top_mnu ul li:nth-child(1) a {
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s; }
+    .top_mnu ul li:nth-child(2) a {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
+    .top_mnu ul li:nth-child(3) a {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    .top_mnu ul li:nth-child(4) a {
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s; }
+    .top_mnu ul li:nth-child(5) a {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
     .top_mnu ul a {
       display: block;
       color: #fff;
@@ -6779,10 +6802,9 @@ ul {
 
 .main_head {
   position: relative;
-  min-height: 620px;
+  min-height: 568px;
+  height: 100vh;
   background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
   padding-top: 20px;
   z-index: 5; }
 
@@ -6809,11 +6831,27 @@ svg {
   svg path {
     fill: #fc0; }
 
-footer {
-  background-color: dimgrey;
-  color: #fff; }
-  footer p {
-    color: #fff; }
+.main_footer {
+  color: #fff;
+  font: 12px/12px "Raleway";
+  height: 50px; }
+  .main_footer .row {
+    position: relative; }
+
+.copyright {
+  float: left;
+  overflow: hidden; }
+
+.social_wrap {
+  float: right;
+  overflow: hidden; }
+  .social_wrap li {
+    display: inline-block; }
+
+.footer_content {
+  position: absolute;
+  top: 20px;
+  left: 0; }
 
 .button {
   display: block;
@@ -6852,6 +6890,8 @@ footer {
   padding: 20px;
   text-align: center;
   color: #fff;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   font: 20px/28px "Raleway"; }
 
 .name {
