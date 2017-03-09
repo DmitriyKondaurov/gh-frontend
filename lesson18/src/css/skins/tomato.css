@@ -6,7 +6,7 @@ a {
 
 p,
 body .main_footer,
-.s_about li {
+.about li {
   color: #888; }
 
 .color_element {
@@ -51,7 +51,7 @@ section h3 {
   letter-spacing: 3px;
   color: #888; }
 
-.s_about p:nth-child(even) {
+.about p:nth-child(even) {
   color: #FF6347; }
 
 .resume_container h3 {
@@ -67,11 +67,11 @@ section h3 {
 .resume_item .resume_description {
   letter-spacing: 1px; }
 
-.s_portfolio li {
+.portfolio li {
   color: #888;
   letter-spacing: 2px; }
 
-.s_portfolio li.active {
+.portfolio li.active {
   color: #fff;
   border-bottom: 1px solid #FF6347; }
 

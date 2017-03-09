@@ -9,7 +9,31 @@ $(document).ready(function() {
         } else {
             //remove the background property so it comes transparent again (defined in your css)
             $("#top_header").removeClass("active");
+
         }
+    });
+
+    //loop add id and href attributes
+    $(".portfolio_item").each(function (i) {
+        $(this).find("a").attr("href", "#work_" + i);
+        $(this).find(".podrt_descr").attr("id", "work_" + i);
+    });
+
+    //popup
+    $(".popup").magnificPopup({
+        type:"image",
+        closeOnContentClick:"true",
+    });
+    $(".popup_content").magnificPopup({
+        type:"inline",
+        midClick: true
+    });
+
+    // filter
+    $("#portfolio_grid").mixItUp();
+    $(".filter").click(function() {
+        $(".filter").removeClass("active");
+        $(this).addClass("active");
     });
 
     //sandwich icon
