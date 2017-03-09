@@ -6617,7 +6617,6 @@ section {
 
 .section_caption {
   position: static;
-  visibility: hidden;
   padding: 50px 0;
   text-transform: uppercase;
   font-weight: 700;
@@ -6908,6 +6907,21 @@ svg {
 .resume {
   background-color: #ececec; }
 
+.resume_icon {
+  font-size: 40px;
+  margin-bottom: 35px; }
+
+.year {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 0 10px; }
+
+.resume_container > div:first-child {
+  text-align: right; }
+
+.resume_container > div:last-child {
+  text-align: left; }
+
 .portfolio {
   background-color: dimgrey;
   color: #fff; }
@@ -6918,3 +6932,12 @@ svg {
 
 .about {
   background-color: #fff; }
+
+.section_content .popup img {
+  height: 50%;
+  width: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.personal_last_block .social_wrap {
+  float: none; }

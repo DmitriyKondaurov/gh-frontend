@@ -1,8 +1,18 @@
-.about  {
+.about {
   background-color: $bg-main-color;
 }
-
-
+.section_content {
+  .popup img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+  }
+}
+.personal_last_block {
+  .social_wrap {
+    float: none;
+  }
+}
 @media screen and ($xs) {
 
 }

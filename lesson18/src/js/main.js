@@ -12,7 +12,6 @@ $(document).ready(function() {
         }
     });
 
-
     //sandwich icon
     $(".toggle_mnu").click(function() {
         $("#sandwich").toggleClass("active");
@@ -45,24 +44,5 @@ $(window).on('load',function() {
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
 
-    //animation on scroll
-    // $(window).scroll(function() {
-    //     $('.name').each(function(){
-    //         var imagePos = $(this).offset().top;
-    //         var topOfWindow = $(window).scrollTop();
-    //
-    //         if (imagePos < topOfWindow+400) {
-    //             $(this).addClass("slideUp");
-    //         }
-    //     });
-    //     $('.profession').each(function(){
-    //         var imagePos = $(this).offset().top;
-    //         var topOfWindow = $(window).scrollTop();
-    //
-    //         if (imagePos < topOfWindow+400) {
-    //             $(this).addClass("slideDown");
-    //         }
-    //     });
-    //
-    // });
+
 });
