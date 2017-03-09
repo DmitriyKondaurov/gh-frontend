@@ -60,6 +60,8 @@ $(document).ready(function() {
         $(".top_mnu").fadeOut(600);
         $("#sandwich").toggleClass("active");
     });
+    //validator
+    $("input, select, textarea").jqBootstrapValidation();
 
 });
 //preloader

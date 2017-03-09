@@ -22,6 +22,10 @@
     border-bottom: 1px solid $brand-color;
   }
 }
+.modal-box-content {
+  position: relative;
+}
+
 .portfolio_item {
   display: none;
   padding: 0;
