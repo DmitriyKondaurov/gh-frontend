@@ -7007,7 +7007,7 @@ svg {
 
 .portfolio_item {
   display: none;
-  padding: 0; }
+  padding: 10px; }
   .portfolio_item .port_item_cont {
     position: absolute;
     opacity: 0;
