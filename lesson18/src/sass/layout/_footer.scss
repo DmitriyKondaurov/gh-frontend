@@ -1,0 +1,49 @@
+.main_footer {
+  color: $text-sec-color;
+  font:12px/12px $font-main;
+  height:50px;
+  & .row {
+    position: relative;
+  }
+}
+.copyright {
+  float: left;
+  overflow: hidden;
+}
+.social_wrap {
+  float: right;
+  overflow: hidden;
+  li {
+    display: inline-block;
+    font-size: 20px;
+  }
+}
+.footer_content {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+@media screen and ($xs) {
+  footer {
+
+  }
+}
+@media screen and ($sm) {
+  footer {
+
+
+  }
+}
+
+@media screen and ($md) {
+  footer {
+
+  }
+}
+
+
+@media screen and ($lg) {
+  footer {
+
+  }
+}
