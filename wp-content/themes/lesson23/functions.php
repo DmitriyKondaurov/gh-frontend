@@ -101,6 +101,36 @@ function lesson23_widgets_init() {
 }
 add_action( 'widgets_init', 'lesson23_widgets_init' );
 
+//custom widgetized area
+
+function logo_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'header-logo',
+		'id'            => 'logo',
+		'before_widget' => '<h1 class="logo">',
+		'after_widget'  => '</h1>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+}
+add_action( 'widgets_init', 'logo_widgets_init' );
+
+function search_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'top_header_search',
+		'id'            => 'top_search',
+		'before_widget' => '<div class="top_search">',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+}
+add_action( 'widgets_init', 'search_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */

@@ -17,19 +17,36 @@ get_header(); ?>
             <div class="row">
                 <?php
                 // the query
-                $the_query = new WP_Query( array( 'category_name' => 'home_banner' ) ); ?>
-                <?php if ( $the_query->have_posts() ) : ?>
-                    <!-- pagination here -->
-                    <!-- the loop -->
-                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php the_content(); ?></div>
-			        <?php endwhile; ?>
-                    <!-- end of the loop -->
-                    <!-- pagination here -->
-    			    <?php wp_reset_postdata(); ?>
-                <?php else : ?>
+                query_posts('category_id=10&posts_per_page=1');
+                if ( have_posts() ) :
+                // pagination here
+                the_posts_pagination( array( 'mid_size'  => 4, 'prev_text' => __( 'Back', 'textdomain' ),
+                                             'next_text' => __( '' ), ) );
+	            // main loop
+                while (have_posts()) : the_post(); ?>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php the_content(); ?></div>
+	            <?php endwhile;
+	                wp_reset_postdata();
+                    else : ?>
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-		        <?php endif; ?>
+                <?php endif; ?>
+                <h3>Latest Blog Post</h3>
+	            <?php
+	            // the query
+	            query_posts('category_id=4&posts_per_page=4');
+	            if ( have_posts() ) :
+		            // main loop
+		            while (have_posts()) : the_post(); ?>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php the_content(); ?></div>
+		            <?php endwhile;
+		            // pagination
+		            the_posts_pagination( array( 'mid_size'  => 5, 'prev_text' => __( 'Back', 'textdomain' ),
+		                                                         'next_text' => __( '' ), ) );
+		            wp_reset_postdata();
+	            else : ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	            <?php endif; ?>
+
              </div>
         </div>
 	</main><!-- #main -->
