@@ -30,7 +30,6 @@
 				<?php dynamic_sidebar( 'top_search' ); ?>
 		<?php endif; ?>
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lesson21' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->

@@ -15,6 +15,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="container">
             <div class="row">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/banner-home.png" alt="home banner">
                 <?php
                 // the query
                 query_posts('category_id=10&posts_per_page=1');
@@ -24,7 +25,8 @@ get_header(); ?>
                                              'next_text' => __( '' ), ) );
 	            // main loop
                 while (have_posts()) : the_post(); ?>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php the_content(); ?></div>
+                    <h2> <?php  the_title() ?> </h2>
+                    <div><?php the_content(); ?></div>
 	            <?php endwhile;
 	                wp_reset_postdata();
                     else : ?>
@@ -37,7 +39,15 @@ get_header(); ?>
 	            if ( have_posts() ) :
 		            // main loop
 		            while (have_posts()) : the_post(); ?>
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"><?php the_content(); ?></div>
+                        <div class="lates_glog_date"><?php echo get_the_date( 'j F') ?></div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                            <h2> <?php  the_title() ?> </h2>
+                            <div><i class="fa fa-comment" aria-hidden="true"></i><span><?php echo
+			                        get_comments_number()?></span> <span>Comments</span></div>
+                            <div><i class="fa fa-folder-open" aria-hidden="true"></i> <span><?php echo get_cat_name(4) ?></span></div>
+<!--                            <p>--><?php //the_content('CONTINUE READING...'); ?><!--</p>-->
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
 		            <?php endwhile;
 		            // pagination
 		            the_posts_pagination( array( 'mid_size'  => 5, 'prev_text' => __( 'Back', 'textdomain' ),
