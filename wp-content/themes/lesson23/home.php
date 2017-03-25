@@ -35,17 +35,16 @@ get_header(); ?>
                 <h3>Latest Blog Post</h3>
 	            <?php
 	            // the query
-	            query_posts('category_id=4&posts_per_page=4');
+	            query_posts('cat=4&posts_per_page=4');
 	            if ( have_posts() ) :
 		            // main loop
 		            while (have_posts()) : the_post(); ?>
-                        <div class="lates_glog_date"><?php echo get_the_date( 'j F') ?></div>
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <div class="latest_blog_date"><?php echo get_the_date( 'j F') ?></div>
+                        <div class="latest_blog_content">
                             <h2> <?php  the_title() ?> </h2>
                             <div><i class="fa fa-comment" aria-hidden="true"></i><span><?php echo
 			                        get_comments_number()?></span> <span>Comments</span></div>
                             <div><i class="fa fa-folder-open" aria-hidden="true"></i> <span><?php echo get_cat_name(4) ?></span></div>
-<!--                            <p>--><?php //the_content('CONTINUE READING...'); ?><!--</p>-->
                             <p><?php the_excerpt(); ?></p>
                         </div>
 		            <?php endwhile;

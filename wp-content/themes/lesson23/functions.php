@@ -134,7 +134,7 @@ add_action( 'widgets_init', 'search_widgets_init' );
 // Replaces the excerpt "Read More" text by a link
 function new_excerpt_more($more) {
 	global $post;
-	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> CONTINUE READING...</a>';
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> CONTINUE READING  <span>&rsaquo;</span></a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
