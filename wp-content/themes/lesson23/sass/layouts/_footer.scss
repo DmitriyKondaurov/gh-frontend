@@ -1,0 +1,40 @@
+footer {
+  background-color: #1b1b1a;
+  padding-top: 200px;
+  margin: auto;
+
+  .social-icons {
+    padding-top: 30px;
+    li {
+      display: inline-block;
+      padding-right: 15px;
+    }
+    .fa {
+      color: #c1c1c1;
+      font-size: 30px;
+    }
+  }
+}
+@media screen and ($xs) {
+  footer {
+
+  }
+}
+@media screen and ($sm) {
+  footer {
+
+  }
+}
+
+@media screen and ($md) {
+  footer {
+
+  }
+}
+
+
+@media screen and ($lg) {
+  footer {
+
+  }
+}

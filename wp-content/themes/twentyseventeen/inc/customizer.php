@@ -77,7 +77,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 		'label'       => __( 'Page Layout', 'twentyseventeen' ),
 		'section'     => 'theme_options',
 		'type'        => 'radio',
-		'description' => __( 'When the two column layout is assigned, the page title is in one column and content is in the other.', 'twentyseventeen' ),
+		'description' => __( 'When the two column layouts is assigned, the page title is in one column and content is in the other.', 'twentyseventeen' ),
 		'choices'     => array(
 			'one-column' => __( 'One Column', 'twentyseventeen' ),
 			'two-column' => __( 'Two Column', 'twentyseventeen' ),
@@ -122,7 +122,7 @@ function twentyseventeen_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'twentyseventeen_customize_register' );
 
 /**
- * Sanitize the page layout options.
+ * Sanitize the page layouts options.
  */
 function twentyseventeen_sanitize_page_layout( $input ) {
 	$valid = array(
@@ -182,7 +182,7 @@ function twentyseventeen_is_static_front_page() {
 }
 
 /**
- * Return whether we're on a view that supports a one or two column layout.
+ * Return whether we're on a view that supports a one or two column layouts.
  */
 function twentyseventeen_is_view_with_layout_option() {
 	// This option is available on all pages. It's also available on archives when there isn't a sidebar.

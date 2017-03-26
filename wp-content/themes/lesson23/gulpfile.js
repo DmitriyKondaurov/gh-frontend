@@ -25,10 +25,10 @@ gulp.task('css-libs', function() {
     return gulp.src([
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
-        './libs/font-awesome-4.7.0/css/font-awesome.min.css',
-        './layouts/animate.min.css',
+        './fonts/font-awesome-4.7.0/css/font-awesome.css',
+
     ])
-        .pipe(concat('home-landing-page-style.css'))
+        .pipe(concat('libs-style.css'))
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./'));
@@ -47,10 +47,7 @@ gulp.task('scripts', function() {
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         './bower_components/owl.carousel/dist/owl.carousel.min.js',
-        './js/animate-css.js',
-        './libs/parallax.js-1.4.2/parallax.min.js',
         './js/smooth_scroll.js',
-        './js/waypoints.min.js',
         './js/main.js',
     ])
         .pipe(concat('libs.min.js'))

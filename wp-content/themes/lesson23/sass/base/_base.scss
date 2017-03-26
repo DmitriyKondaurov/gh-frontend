@@ -1,0 +1,29 @@
+body {
+  color: $main-text-color;
+  font: 400 14px/24px $main-font;
+}
+img {
+  max-width: 100%;
+}
+
+
+.screen-reader-text {
+  display: none;
+}
+
+
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
