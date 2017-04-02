@@ -44,7 +44,8 @@ get_header(); ?>
                             <h2> <?php  the_title() ?> </h2>
                             <div><i class="fa fa-comment" aria-hidden="true"></i><span><?php echo
 			                        get_comments_number()?></span> <span>Comments</span></div>
-                            <div><i class="fa fa-folder-open" aria-hidden="true"></i> <span><?php echo get_cat_name(4) ?></span></div>
+                            <div><i class="fa fa-folder-open" aria-hidden="true"></i> <span><?php echo get_cat_name
+                                    (4) ?></span></div>
                             <p><?php the_excerpt(); ?></p>
                         </div>
 		            <?php endwhile;
