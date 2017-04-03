@@ -1,0 +1,54 @@
+.site-main {
+  background-color: #fff8d8;
+  .container {
+    background-color: #fff;
+    border: 2px solid grey;
+
+  }
+  h1 {
+    text-align: center;
+  }
+  fieldset {
+    margin: 30px;
+  }
+  .order_item {
+    display: inline-block;
+    padding: 0;
+  }
+  .order {
+    padding: 10px;
+    border: none;
+  }
+  .order_list {
+    display: block;
+    width: 300px;
+    margin: auto;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    text-align: center;
+  }
+  .text_align_center {
+    text-align: center;
+  }
+  .author {
+    text-align: center;
+    color: red;
+  }
+}
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
+

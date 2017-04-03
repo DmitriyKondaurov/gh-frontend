@@ -138,6 +138,8 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+//add a faqs toggle shortcode
+
 /**
  * Filter the except length to 20 words.
  *
@@ -164,14 +166,14 @@ function lesson23_scripts() {
 	wp_enqueue_script( 'lesson23-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 
-//_______________________________________ CUSTOM  JS PLUGINS libs__________________________________________________
-	wp_enqueue_script( 'lesson23-libs-plugins-js', get_template_directory_uri() . '/js/libs.min.js', array(), '1.0',
-		true );
 //___________________________________________    FONT AWESOME    ____________________________________________
 	wp_enqueue_script( 'lesson23-fontawesome', 'https://use.fontawesome.com/b41b6eacb2.js', array(), '1.0',
 		false );
 //-----------------------------------------------------------------------------------------------------------------
 
+//_______________________________________ CUSTOM  JS PLUGINS libs__________________________________________________
+	wp_enqueue_script( 'lesson23-libs-plugins-js', get_template_directory_uri() . '/js/libs.min.js', array(), '1.0',
+		false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

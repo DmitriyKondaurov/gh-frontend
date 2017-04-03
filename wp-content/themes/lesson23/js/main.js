@@ -7,33 +7,12 @@ $(document).ready(function() {
     //     $(this).find(".podrt_descr").attr("id", "work_" + i);
     // });
 
-    //sandwich icon
-    $(".toggle_mnu").click(function() {
-        $("#sandwich").toggleClass("active");
-        if($("#top_header").hasClass("active")) {
-            $("#top_header").removeClass("active");
+    $(".toggle-class").click(function() {
+        $(this).addClass("active");
+        if($(".toggle-class").hasClass("active")) {
+            $(".toggle-class").removeClass("active");
         }
     });
-
-    //fade out/in menu list
-    $(".toggle_mnu").click(function () {
-        if($("#sandwich").hasClass("active")) {
-            $(".top_mnu").fadeIn(600);
-            $(".top_mnu li a").removeClass("fadeOutUp animated");
-            $(".top_mnu li a").addClass("fadeInUp animated");
-        }
-        else {
-            $(".top_mnu").fadeOut(600);
-            $(".top_mnu li a").addClass("fadeOutUp animated");
-        }
-    });
-
-    //close menu on click
-    $(".top_mnu li a").click(function () {
-        $(".top_mnu").fadeOut(600);
-        $("#sandwich").toggleClass("active");
-    });
-
 });
 //preloader
 $(window).on('load',function() {

@@ -20,7 +20,6 @@ gulp.task('sass',  function() {
         .pipe(gulp.dest('./'))
         .pipe(browserSync.reload({stream: true}))
 });
-
 gulp.task('css-libs', function() {
     return gulp.src([
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',

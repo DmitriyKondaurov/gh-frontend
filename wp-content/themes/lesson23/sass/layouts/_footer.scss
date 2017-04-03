@@ -1,19 +1,10 @@
 footer {
-  background-color: #1b1b1a;
+  background-color: #fff8d8;
   padding-top: 200px;
   margin: auto;
-
-  .social-icons {
-    padding-top: 30px;
-    li {
-      display: inline-block;
-      padding-right: 15px;
-    }
-    .fa {
-      color: #c1c1c1;
-      font-size: 30px;
-    }
-  }
+.site-info {
+  text-align: center;
+}
 }
 @media screen and ($xs) {
   footer {

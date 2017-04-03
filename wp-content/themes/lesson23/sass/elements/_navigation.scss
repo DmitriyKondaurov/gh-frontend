@@ -4,7 +4,27 @@
     display: inline-block;
   }
 }
-
+.menu {
+  margin: 0;
+}
+.menu-item-type-custom {
+  a {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 5px 4px;
+    border: 2px solid grey;
+    margin: 0;
+    background-color: lightgrey;
+    &:hover, &:focus {
+      position: relative;
+      z-index: 1;
+      background-color: white;
+      color: #000;
+      text-decoration: none;
+      border-bottom-color: white;
+    }
+  }
+}
 
 @media screen and ($xs) {
 

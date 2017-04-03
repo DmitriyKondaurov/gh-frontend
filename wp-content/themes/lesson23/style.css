@@ -6388,7 +6388,8 @@ template {
 
 body {
   color: #222222;
-  font: 400 14px/24px "Arial"; }
+  font: 400 14px/24px "Arial";
+  background-color: #fff8d8; }
 
 img {
   max-width: 100%; }
@@ -6425,6 +6426,24 @@ img {
   .main-navigation .menu-item {
     display: inline-block; }
 
+.menu {
+  margin: 0; }
+
+.menu-item-type-custom a {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 5px 4px;
+  border: 2px solid grey;
+  margin: 0;
+  background-color: lightgrey; }
+  .menu-item-type-custom a:hover, .menu-item-type-custom a:focus {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    border-bottom-color: white; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -6449,10 +6468,7 @@ table {
   width: 100%; }
 
 .site-header {
-  background-color: rgba(255, 255, 255, 0);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#010101), to(#2c2c2b));
-  background-image: -webkit-linear-gradient(bottom, #010101 0%, #2c2c2b 100%);
-  background-image: linear-gradient(to top, #010101 0%, #2c2c2b 100%); }
+  background-color: #fff8d8; }
   .site-header .wrapper {
     max-width: 1170px;
     margin: auto; }
@@ -6517,27 +6533,36 @@ table {
       height: 40px; } }
 
 footer {
-  background-color: #1b1b1a;
+  background-color: #fff8d8;
   padding-top: 200px;
   margin: auto; }
-  footer .social-icons {
-    padding-top: 30px; }
-    footer .social-icons li {
-      display: inline-block;
-      padding-right: 15px; }
-    footer .social-icons .fa {
-      color: #c1c1c1;
-      font-size: 30px; }
+  footer .site-info {
+    text-align: center; }
 
-footer {
-  background-color: #1b1b1a;
-  padding-top: 200px;
-  margin: auto; }
-  footer .social-icons {
-    padding-top: 30px; }
-    footer .social-icons li {
-      display: inline-block;
-      padding-right: 15px; }
-    footer .social-icons .fa {
-      color: #c1c1c1;
-      font-size: 30px; }
+.site-main {
+  background-color: #fff8d8; }
+  .site-main .container {
+    background-color: #fff;
+    border: 2px solid grey; }
+  .site-main h1 {
+    text-align: center; }
+  .site-main fieldset {
+    margin: 30px; }
+  .site-main .order_item {
+    display: inline-block;
+    padding: 0; }
+  .site-main .order {
+    padding: 10px;
+    border: none; }
+  .site-main .order_list {
+    display: block;
+    width: 300px;
+    margin: auto;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    text-align: center; }
+  .site-main .text_align_center {
+    text-align: center; }
+  .site-main .author {
+    text-align: center;
+    color: red; }
