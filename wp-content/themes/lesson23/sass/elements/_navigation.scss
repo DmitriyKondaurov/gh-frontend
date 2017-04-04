@@ -15,7 +15,7 @@
     border: 2px solid grey;
     margin: 0;
     background-color: lightgrey;
-    &:hover, &:focus {
+    &:hover, &.active {
       position: relative;
       z-index: 1;
       background-color: white;
@@ -23,6 +23,14 @@
       text-decoration: none;
       border-bottom-color: white;
     }
+  }
+  &:nth-child(1) a {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    border-bottom-color: white;
   }
 }
 

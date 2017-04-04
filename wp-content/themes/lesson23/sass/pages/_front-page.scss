@@ -1,16 +1,14 @@
-.site-main {
+.site-content {
   background-color: #fff8d8;
-  .container {
+  .container:not(.site-info) {
     background-color: #fff;
+    padding: 30px;
     border: 2px solid grey;
+    h1 {
+      text-align: center;
+    }
+  }
 
-  }
-  h1 {
-    text-align: center;
-  }
-  fieldset {
-    margin: 30px;
-  }
   .order_item {
     display: inline-block;
     padding: 0;
@@ -20,12 +18,19 @@
     border: none;
   }
   .order_list {
-    display: block;
     width: 300px;
     margin: auto;
-    border: 1px solid grey;
-    background-color: lightgrey;
-    text-align: center;
+    a {
+      display: block;
+      border: 1px solid grey;
+      background-color: lightgrey;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        outline: 1px solid green;
+        color: green;
+      }
+    }
   }
   .text_align_center {
     text-align: center;

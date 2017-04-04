@@ -119,15 +119,18 @@ get_header(); ?>
 									mysqli_close($link); //закроем соединение с БД
 									?>
 								</select>
-                                <p>
-
-                                </p>
 							</div>
 						</div>
                         <input type="submit" value="Сохранить">
                     </fieldset>
 				</form>
-				<a href="list.php" class="order_list">Посмотреть список всех заказов</a>
+                <div class="order_list">
+	                <?php
+	                while ( have_posts() ) : the_post();
+		                the_content(); /*entry-content*/
+	                endwhile; // End of the loop.
+	                ?>
+                </div>
 			</div>
 		</div>
 	</main><!-- #main -->

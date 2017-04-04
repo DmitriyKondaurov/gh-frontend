@@ -6436,13 +6436,21 @@ img {
   border: 2px solid grey;
   margin: 0;
   background-color: lightgrey; }
-  .menu-item-type-custom a:hover, .menu-item-type-custom a:focus {
+  .menu-item-type-custom a:hover, .menu-item-type-custom a.active {
     position: relative;
     z-index: 1;
     background-color: white;
     color: #000;
     text-decoration: none;
     border-bottom-color: white; }
+
+.menu-item-type-custom:nth-child(1) a {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  border-bottom-color: white; }
 
 ul {
   list-style: none;
@@ -6485,7 +6493,7 @@ table {
       color: #ffd500;
       font-weight: 300; }
     .logo .textwidget span:last-child {
-      color: #ffffff;
+      color: grey;
       font-weight: 700; }
 
 .top_search {
@@ -6539,30 +6547,41 @@ footer {
   footer .site-info {
     text-align: center; }
 
-.site-main {
+.site-content {
   background-color: #fff8d8; }
-  .site-main .container {
+  .site-content .container:not(.site-info) {
     background-color: #fff;
+    padding: 30px;
     border: 2px solid grey; }
-  .site-main h1 {
-    text-align: center; }
-  .site-main fieldset {
-    margin: 30px; }
-  .site-main .order_item {
+    .site-content .container:not(.site-info) h1 {
+      text-align: center; }
+  .site-content .order_item {
     display: inline-block;
     padding: 0; }
-  .site-main .order {
+  .site-content .order {
     padding: 10px;
     border: none; }
-  .site-main .order_list {
-    display: block;
+  .site-content .order_list {
     width: 300px;
-    margin: auto;
-    border: 1px solid grey;
-    background-color: lightgrey;
+    margin: auto; }
+    .site-content .order_list a {
+      display: block;
+      border: 1px solid grey;
+      background-color: lightgrey;
+      text-align: center;
+      text-decoration: none; }
+      .site-content .order_list a:hover {
+        outline: 1px solid green;
+        color: green; }
+  .site-content .text_align_center {
     text-align: center; }
-  .site-main .text_align_center {
-    text-align: center; }
-  .site-main .author {
+  .site-content .author {
     text-align: center;
     color: red; }
+
+table {
+  width: 100%;
+  text-align: center; }
+
+th {
+  text-align: center; }
