@@ -1,5 +1,6 @@
 .main-navigation {
   clear: both;
+  padding: 0;
   .menu-item {
     display: inline-block;
   }
@@ -8,29 +9,25 @@
   margin: 0;
 }
 .menu-item-type-custom {
-  a {
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px 5px 4px;
-    border: 2px solid grey;
-    margin: 0;
-    background-color: lightgrey;
-    &:hover, &.active {
-      position: relative;
-      z-index: 1;
-      background-color: white;
-      color: #000;
-      text-decoration: none;
-      border-bottom-color: white;
-    }
-  }
-  &:nth-child(1) a {
-    position: relative;
+  position: relative;
+  bottom: -2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 5px 4px;
+  border: 2px solid grey;
+  margin: 0;
+  background-color: lightgrey;
+  &:hover, &.active {
     z-index: 1;
     background-color: white;
     color: #000;
     text-decoration: none;
     border-bottom-color: white;
+    cursor: pointer;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
   }
 }
 

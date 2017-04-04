@@ -31,7 +31,7 @@
 	        <?php if ( is_active_sidebar( 'top_search' ) ) : ?>
 		        <?php dynamic_sidebar( 'top_search' ); ?>
 	        <?php endif; ?>
-            <nav id="site-navigation" class="main-navigation" role="navigation">
+            <nav id="site-navigation" class="main-navigation container" role="navigation">
 		        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
             </nav><!-- #site-navigation -->
         </div>

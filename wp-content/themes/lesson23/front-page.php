@@ -17,7 +17,7 @@
  */
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
-		<div class="container">
+		<div class="tabs__content container active">
 			<div class="row">
 				<h1>Склад №1</h1>
 				<p class="text_align_center">Авторизация: <span class="author"><?php echo get_current_user()
@@ -25,7 +25,7 @@ get_header(); ?>
                 <?php
                     $host="localhost";
                     $user="root";
-                    $pass="root"; //установленный вами пароль
+                    $pass="root";
                     $db_name="kr";
                     $link= mysqli_connect("localhost", "root", "root", $db_name);
                     $link->set_charset("utf8")
@@ -49,18 +49,18 @@ get_header(); ?>
                 </div>
 				<form method="post" action="submit.php">
 					<fieldset>
-						<legend class="order">Введите данные по заказу</legend>
+						<legend class="order">Ввод нового заказа</legend>
 						<div class="order_item">
 							<div><label for="cargo">Тип груза</label></div>
 							<div>
 								<select name="cargo" required>
 									<option selected value="">груз</option>
 									<?php
-									$sql = mysqli_query( $link,"SELECT `type` FROM `cargo`");
+									$sql = mysqli_query( $link,"SELECT `cargo_type` FROM `cargo`");
 									$i=0;
 									while ($result = mysqli_fetch_array($sql)) {
 										$i++;
-										echo "<option value=\"$i\">".$result['type']."</option>";
+										echo "<option value=\"$i\">".$result['cargo_type']."</option>";
 									}
 									?>
 								</select>
@@ -78,11 +78,11 @@ get_header(); ?>
 								<select name="client" required>
 									<option selected value="">клиент</option>
 									<?php
-									$sql = mysqli_query( $link,"SELECT `name`, `surname` FROM `clients`");
+									$sql = mysqli_query( $link,"SELECT `clients_name`, `surname` FROM `clients`");
 									$i=0;
 									while ($result = mysqli_fetch_array($sql)) {
 										$i++;
-										echo "<option value=\"$i\">".$result['name']." ".$result['surname']."</option>";
+										echo "<option value=\"$i\">".$result['clients_name']." ".$result['surname']."</option>";
 									}
 									?>
 								</select>
@@ -110,11 +110,11 @@ get_header(); ?>
 								<select name="driver" required>
 									<option selected value="">водитель</option>
 									<?php
-									$sql = mysqli_query( $link,"SELECT `name`, `surname` FROM `drivers`");
+									$sql = mysqli_query( $link,"SELECT `name_driver`, `surname_driver` FROM `drivers`");
 									$i=0;
 									while ($result = mysqli_fetch_array($sql)) {
 										$i++;
-										echo "<option value=\"$i\">".$result['name']." ".$result['surname']."</option>";
+										echo "<option value=\"$i\">".$result['name_driver']." ".$result['surname_driver']."</option>";
 									}
 									mysqli_close($link); //закроем соединение с БД
 									?>
@@ -133,7 +133,56 @@ get_header(); ?>
                 </div>
 			</div>
 		</div>
-	</main><!-- #main -->
+        <div class="tabs__content container">
+            <div class="row">
+                <h1>Заказы по складу №1</h1>
+                <table border="2">
+                    <thead>
+                    <tr>
+                        <th>Номер заказа</th>
+                        <th>Груз</th>
+                        <th>Масса груза (т.)</th>
+                        <th>Клиент</th>
+                        <th>Транспорт</th>
+                        <th>Водитель</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+					<?php
+					$link = mysqli_connect( "localhost", "root", "root", "kr" );
+					$link->set_charset("utf8");
+					$orders = "SELECT order_id, cargo_type, order_value, clients_name, surname, brend, gov_number, name_driver, 
+                        surname_driver FROM orders NATURAL JOIN cargo NATURAL JOIN clients NATURAL JOIN cars 
+                        NATURAL JOIN drivers ORDER BY order_id;";
+
+					$res = $link->query( $orders );
+					if ( $res ) {
+						while ( $row = $res->fetch_assoc() ) {
+							?><tr><?php
+							echo "<td>"
+							     . $row['order_id'] . "</td><td>"
+							     . $row['cargo_type'] . "</td><td>"
+							     . $row['order_value'] . "</td><td>"
+							     . $row['clients_name'] . " "
+							     . $row['surname'] . "</td><td>"
+							     . $row['brend'] . " "
+							     . $row['gov_number'] . "</td><td>"
+							     . $row['name_driver'] . " "
+							     . $row['surname_driver'] . "</td>";
+							?></tr><?php
+						}
+					}
+					?>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="tabs__content"></div>
+        <div class="tabs__content"></div>
+        <div class="tabs__content"></div>
+        <div class="tabs__content"></div>
+    </main><!-- #main -->
 
 <?php
 get_sidebar();

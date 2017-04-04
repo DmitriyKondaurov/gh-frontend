@@ -2,23 +2,25 @@
 get_header(); ?>
     <div class="container">
     <div class="row">
-        <h1>Заказы склада №1</h1>
+        <h1>Заказы по складу №1</h1>
         <table border="2">
             <thead>
             <tr>
-                <th>order id</th>
-                <th>cargo</th>
-                <th>value</th>
-                <th>clients</th>
-                <th>cars</th>
-                <th>drivers</th>
+                <th>Номер заказа</th>
+                <th>Груз</th>
+                <th>Масса груза (т.)</th>
+                <th>Клиент</th>
+                <th>Транспорт</th>
+                <th>Водитель</th>
             </tr>
             </thead>
             <tbody>
 			<?php
 			$link = mysqli_connect( "localhost", "root", "root", "kr" );
 			$link->set_charset("utf8");
-			$orders = "SELECT order_id, cargo_type, order_value, clients_name, surname, brend, gov_number, name_driver, surname_driver FROM orders NATURAL JOIN cargo NATURAL JOIN clients NATURAL JOIN cars NATURAL JOIN drivers ORDER BY order_id;";
+			$orders = "SELECT order_id, cargo_type, order_value, clients_name, surname, brend, gov_number, name_driver, 
+                        surname_driver FROM orders NATURAL JOIN cargo NATURAL JOIN clients NATURAL JOIN cars 
+                        NATURAL JOIN drivers ORDER BY order_id;";
 
 			$res = $link->query( $orders );
 			if ( $res ) {
