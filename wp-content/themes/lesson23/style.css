@@ -6479,6 +6479,13 @@ table {
     max-width: 1170px;
     margin: auto; }
 
+.connect_message, .authorization {
+  text-align: right; }
+
+.author {
+  text-align: center;
+  color: red; }
+
 .logo {
   text-align: center;
   margin: 0;
@@ -6575,11 +6582,6 @@ footer {
       .site-content .order_list a:hover {
         outline: 1px solid green;
         color: green; }
-  .site-content .text_align_center {
-    text-align: center; }
-  .site-content .author {
-    text-align: center;
-    color: red; }
 
 table {
   width: 100%;

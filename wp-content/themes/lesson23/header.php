@@ -31,10 +31,38 @@
 	        <?php if ( is_active_sidebar( 'top_search' ) ) : ?>
 		        <?php dynamic_sidebar( 'top_search' ); ?>
 	        <?php endif; ?>
+	        <?php
+	        $host="localhost";
+	        $user="root";
+	        $pass="root";
+	        $db_name="kr";
+	        $link= mysqli_connect("localhost", "root", "root", $db_name);
+	        $link->set_charset("utf8")
+	        ?>
+            <div class="connect_message">
+		        <?php
+		        if (!$link) {
+			        echo "Ошибка: Невозможно установить соединение с MySQL." . PHP_EOL;
+			        echo "Код ошибки errno: " . mysqli_connect_errno() . PHP_EOL;
+			        echo "Текст ошибки error: " . mysqli_connect_error() . PHP_EOL;
+			        exit;
+		        }
+		        echo "Соединение с MySQL установлено!" . PHP_EOL;
+
+		        $db_connect = mysqli_select_db($link, $db_name);
+		        if (!$db_connect) {
+			        echo "Ошибка соединения с базой данных!";
+			        exit;
+		        }
+		        ?>
+                <p class="authorization">Авторизация: <span class="author"><?php echo get_current_user()
+			            ?></span></p>
+            </div>
             <nav id="site-navigation" class="main-navigation container" role="navigation">
 		        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
             </nav><!-- #site-navigation -->
         </div>
+
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

@@ -1,8 +1,6 @@
-<?php /* Template Name: CustomPage_orders_list */
-get_header(); ?>
-    <div class="container">
+<div class="tabs__content container active">
     <div class="row">
-        <h1>Заказы по складу №1</h1>
+        <h1>Заказы по складу</h1>
         <table border="2">
             <thead>
             <tr>
@@ -21,7 +19,6 @@ get_header(); ?>
 			$orders = "SELECT order_id, cargo_type, order_value, clients_name, surname, brend, gov_number, name_driver, 
                         surname_driver FROM orders NATURAL JOIN cargo NATURAL JOIN clients NATURAL JOIN cars 
                         NATURAL JOIN drivers ORDER BY order_id;";
-
 			$res = $link->query( $orders );
 			if ( $res ) {
 				while ( $row = $res->fetch_assoc() ) {
@@ -42,16 +39,6 @@ get_header(); ?>
 			?>
             </tbody>
         </table>
-        <div class="order_list">
-			<?php
-			while ( have_posts() ) : the_post();
-				the_content(); /*entry-content*/
-			endwhile; // End of the loop.
-			?>
-        </div>
-        </main><!-- #main -->
-    </div><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+    </div>
+</div>

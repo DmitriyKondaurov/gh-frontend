@@ -5,7 +5,13 @@
     margin: auto;
   }
 }
-
+.connect_message, .authorization {
+  text-align: right;
+}
+.author {
+  text-align: center;
+  color: red;
+}
 .logo {
   text-align: center;
   margin: 0;
