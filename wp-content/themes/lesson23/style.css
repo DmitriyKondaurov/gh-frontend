@@ -6389,10 +6389,24 @@ template {
 body {
   color: #222222;
   font: 400 14px/24px "Arial";
-  background-color: #fff8d8; }
+  background-color: lightyellow; }
 
 img {
   max-width: 100%; }
+
+select, input:not([type=submit]) {
+  width: 90%;
+  height: 25px;
+  text-align: center; }
+
+table {
+  background-color: lightyellow; }
+
+th {
+  background-color: lightgrey; }
+
+tr {
+  height: 40px; }
 
 .screen-reader-text {
   display: none; }
@@ -6437,8 +6451,10 @@ img {
   font-weight: 700;
   padding: 10px 5px 4px;
   border: 2px solid grey;
+  -webkit-border-radius: 10px 10px 0 0;
+          border-radius: 10px 10px 0 0;
   margin: 0;
-  background-color: lightgrey; }
+  background-color: powderblue; }
   .menu-item-type-custom:hover, .menu-item-type-custom.active {
     z-index: 1;
     background-color: white;
@@ -6473,11 +6489,9 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-.site-header {
-  background-color: #fff8d8; }
-  .site-header .wrapper {
-    max-width: 1170px;
-    margin: auto; }
+.site-header .wrapper {
+  max-width: 1170px;
+  margin: auto; }
 
 .connect_message, .authorization {
   text-align: right; }
@@ -6546,42 +6560,43 @@ table {
       height: 40px; } }
 
 footer {
-  background-color: #fff8d8;
   padding-top: 200px;
   margin: auto; }
   footer .site-info {
     text-align: center; }
 
-.site-content {
-  background-color: #fff8d8; }
-  .site-content .tabs__content {
-    display: none; }
-    .site-content .tabs__content.active {
-      display: block; }
-  .site-content .container:not(.site-info) {
-    background-color: #fff;
-    padding: 30px;
-    border: 2px solid grey; }
-    .site-content .container:not(.site-info) h1 {
-      text-align: center; }
-  .site-content .order_item {
-    display: inline-block;
-    padding: 0; }
-  .site-content .order {
-    padding: 10px;
-    border: none; }
-  .site-content .order_list {
-    width: 150px;
-    margin: auto; }
-    .site-content .order_list a {
-      display: block;
-      border: 1px solid grey;
-      background-color: lightgrey;
-      text-align: center;
-      text-decoration: none; }
-      .site-content .order_list a:hover {
-        outline: 1px solid green;
-        color: green; }
+.site-content .tabs__content {
+  display: none; }
+  .site-content .tabs__content.active {
+    display: block; }
+
+.site-content .container:not(.site-info) {
+  background-color: #fff;
+  padding: 30px;
+  border: 2px solid grey; }
+  .site-content .container:not(.site-info) h1 {
+    text-align: center; }
+
+.site-content .order_item {
+  display: inline-block;
+  padding: 0; }
+
+.site-content .order {
+  padding: 10px;
+  border: none; }
+
+.site-content .order_list {
+  width: 150px;
+  margin: auto; }
+  .site-content .order_list a {
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: none; }
+    .site-content .order_list a:hover {
+      outline: 1px solid green;
+      color: green; }
 
 table {
   width: 100%;

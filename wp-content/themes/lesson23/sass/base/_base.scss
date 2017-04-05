@@ -1,12 +1,25 @@
 body {
   color: $main-text-color;
   font: 400 14px/24px $main-font;
-  background-color: #fff8d8;
+  background-color: lightyellow;
 }
 img {
   max-width: 100%;
 }
-
+select, input:not([type=submit]) {
+  width: 90%;
+  height: 25px;
+  text-align: center;
+}
+table {
+  background-color: lightyellow;
+}
+th {
+  background-color: lightgrey;
+}
+tr {
+  height: 40px;
+}
 
 .screen-reader-text {
   display: none;
