@@ -1,7 +1,7 @@
 <div class="tabs__content container">
     <div class="row">
         <h1>Ввод нового заказа</h1>
-        <form method="post" action="submit.php">
+        <form method="post" action="update_db.php">
             <fieldset>
                 <legend class="order">Введите данные по заказу</legend>
                 <table border="2">
