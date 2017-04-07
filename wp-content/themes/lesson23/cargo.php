@@ -34,5 +34,26 @@
         </table>
         </form>
         <input type="submit" form="cargo_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
+<!--        Add new cargo-->
+        <form method="post" action="<?php echo get_page_link();?>add_new_cargo_db/">
+            <fieldset>
+                <legend class="order">Введите новый груз</legend>
+                <table border="2">
+                    <tr>
+                        <th><label>Тип груза</label></th>
+                        <th><label>вес груза (т.)</label></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="cargo_type" type="text" placeholder="тип груза..." required>
+                        </td>
+                        <td>
+                            <input name="cargo_value" type="number" step="0.1" placeholder="вес груза..." required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="ДОБАВИТЬ НОВЫЙ ГРУЗ">
+        </form>
     </div>
 </div>

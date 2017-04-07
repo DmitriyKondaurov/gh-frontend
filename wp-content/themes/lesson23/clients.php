@@ -41,5 +41,36 @@
         </table>
         </form>
         <input type="submit" form="clients_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
+        <form method="post" action="<?php echo get_page_link();?>add_new_client_db/">
+            <fieldset>
+                <legend class="order">Введите нового клиента</legend>
+                <table border="2">
+                    <tr>
+                        <th><label>Имя</label></th>
+                        <th><label>Фамилия</label></th>
+                        <th><label>Адрес</label></th>
+                        <th><label>VIP статус</label></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="clients_name" type="text" placeholder="Имя..." required>
+                        </td>
+                        <td>
+                            <input name="surname" type="text" placeholder="Фамилия..." required>
+                        </td>
+                        <td>
+                            <input name="address" type="text" placeholder="Адрес..." required>
+                        </td>
+                        <td>
+                            <select name="vip_status" required>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="ДОБАВИТЬ НОВОГО КЛИЕНТА">
+        </form>
     </div>
 </div>

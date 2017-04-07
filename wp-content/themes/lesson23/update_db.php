@@ -16,11 +16,16 @@
  *
  * @package lesson23
  */
-get_header();
+get_header();?>
+<div class="container">
+    <div class="row">
+        <h1>Результат корректировки</h1>
+        <div>
+<?php
 $link = mysqli_connect( "localhost", "root", "root", "kr" );
 $link->set_charset("utf8");
 foreach ($_POST as $key => $value ) {
-	$sql_update = "UPDATE orders_copy SET ";
+	$sql_update = "UPDATE orders SET ";
 	switch(true)
     {
         case strpos($key, 'order_id' ) !== false:
@@ -37,10 +42,10 @@ foreach ($_POST as $key => $value ) {
 	        $sql_update .= $sql_condition;
 	        $res = mysqli_query($link, $sql_update);
 	        if ($res) {
-                echo "<p>Дані успішно додано в БД</p>";
+		        echo "<p class='report_message'>Данные успешно откорректированны!</p>";
                 } else {
-                echo "<p>Виникла помилка:".$link->error."</p>";//Maybe need fix value use - mysqli_real_escape_string
-		        //($link, $value);
+                echo "<p class='report_message alert-danger'>Ошибка записи в БД!:".$link->error."</p>";
+                //Maybe need fix value use - mysqli_real_escape_string ($link, $sql_update);
                 }
 	        break;
         case strpos($key, 'order_value' ) !== false:
@@ -53,10 +58,10 @@ foreach ($_POST as $key => $value ) {
 	        $sql_update .= $sql_condition;
 	        $res = mysqli_query( $link, $sql_update );
 	        if ($res) {
-		        echo "<p>Дані успішно додано в БД</p>";
+		        echo "<p class='report_message'>Данные успешно откорректированны!</p>";
 	        } else {
-		        echo "<p>Виникла помилка:".$link->error."</p>";//Maybe need fix value use - mysqli_real_escape_string
-		        //($link, $value);
+		        echo "<p class='report_message alert-danger'>Ошибка записи в БД!:".$link->error."</p>";
+		        //Maybe need fix value use - mysqli_real_escape_string ($link, $sql_update);
 	        }
             break;
         case strpos($key, 'clients_surname' ) !== false:
@@ -69,10 +74,10 @@ foreach ($_POST as $key => $value ) {
 	        $sql_update .= $sql_condition;
 	        $res = mysqli_query( $link, $sql_update );
 	        if ($res) {
-		        echo "<p>Дані успішно додано в БД</p>";
+		        echo "<p class='report_message'>Данные успешно откорректированны!</p>";
 	        } else {
-		        echo "<p>Виникла помилка:".$link->error."</p>";//Maybe need fix value use - mysqli_real_escape_string
-		        //($link, $value);
+		        echo "<p class='report_message alert-danger'>Ошибка записи в БД!:".$link->error."</p>";
+		        //Maybe need fix value use - mysqli_real_escape_string ($link, $sql_update);
 	        }
             break;
         case strpos($key, 'car' ) !== false:
@@ -85,10 +90,10 @@ foreach ($_POST as $key => $value ) {
 	        $sql_update .= $sql_condition;
 	        $res = mysqli_query( $link, $sql_update );
 	        if ($res) {
-		        echo "<p>Дані успішно додано в БД</p>";
+		        echo "<p class='report_message'>Данные успешно откорректированны!</p>";
 	        } else {
-		        echo "<p>Виникла помилка:".$link->error."</p>";//Maybe need fix value use - mysqli_real_escape_string
-		        //($link, $value);
+		        echo "<p class='report_message alert-danger'>Ошибка записи в БД!:".$link->error."</p>";
+		        //Maybe need fix value use - mysqli_real_escape_string ($link, $sql_update);
 	        }
             break;
         case strpos($key, 'surname_driver' ) !== false:
@@ -101,45 +106,26 @@ foreach ($_POST as $key => $value ) {
 	        $sql_update .= $sql_condition;
 	        $res = mysqli_query( $link, $sql_update );
 	        if ($res) {
-		        echo "<p>Дані успішно відкориговані в БД</p>";
+		        echo "<p class='report_message'>Данные успешно откорректированны!</p>";
 	        } else {
-		        echo "<p>Виникла помилка:".$link->error."</p>"; //Maybe need fix value use - mysqli_real_escape_string
-                //($link, $value);
+		        echo "<p class='report_message alert-danger'>Ошибка записи в БД!:".$link->error."</p>";
+		        //Maybe need fix value use -  mysqli_real_escape_string ($link, $sql_update);
 	        }
             break;
         default:
             return 'Key wrong !!!';
-	        echo "<p>Key wrong !!!</p>";
+	        echo "<p class='report_message alert-danger'>Key wrong !!!</p>";
     }
 }
 
-
-//$spamAsString = '';
-//if (array_key_exists('spam', $_REQUEST)) {
-//    $spam = $_REQUEST['spam']; // array!!!
-//	// Добавити код, щоб масив опцій відображався як рядок символів
-//	foreach ($_REQUEST['spam'] as $key => $value ) {
-//	    $spam[] = $value;
-//    }
-//}
-//$c = mysqli_connect("localhost", "myuser", "111", "mydatabase");
-//$firstName = mysqli_real_escape_string($c, $firstName);
-//
-//$sql = "INSERT INTO anketa (firstname, secondname, gender, age, birthday, familystatus, socialstatus, address, activities, frequency, bookshaveread, multipleselect, comments, spam, complexity)".
-//    " VALUES ('$firstName', '$secondName', '$genderWord', '$age', '$birthday', '$familyStatusWord',".
-//    "'$statusSocial', '$address', '$activitiesAsString', '$frequency', '$booksHaveRead', '$multipleselAsString', '$comments', '$spamAsString', '$complexity');";
-//echo $sql;
-//$res = $c->query($sql);
-//if ($res) {
-//    echo "<p>Дані успішно додано в БД";
-//} else {
-//    echo "Виникла помилка:".$c->error;
-//}
 ?>
-<div class="update_db">
-			<?php
-			while ( have_posts() ) : the_post();
-				the_content(); /*entry-content*/
-			endwhile; // End of the loop.
-			?>
+            <div class="update_db">
+		        <?php
+		        while ( have_posts() ) : the_post();
+			        the_content(); /*entry-content*/
+		        endwhile; // End of the loop.
+		        ?>
+            </div>
+        </div>
+    </div>
 </div>

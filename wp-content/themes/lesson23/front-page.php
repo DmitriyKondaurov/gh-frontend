@@ -20,6 +20,7 @@ get_header(); ?>
 
         <?php
         include 'orders.php';
+        include 'edit_orders.php';
         include 'new_order.php';
         include 'cargo.php';
         include 'clients.php';

@@ -5,6 +5,23 @@ table {
 th {
   text-align: center;
 }
+.report_message {
+  float: left;
+}
+.update_db a {
+  display: block;
+  clear: both;
+  width: 100px;
+  padding: 10px;
+  background: linear-gradient(white, darkgrey);
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
 @media screen and ($xs) {
 
 }

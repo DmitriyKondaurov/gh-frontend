@@ -36,5 +36,25 @@
         </table>
         </form>
         <input type="submit" form="drivers_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
+        <form method="post" action="<?php echo get_page_link();?>add_new_driver_db/">
+            <fieldset>
+                <legend class="order">Введите нового водителя</legend>
+                <table border="2">
+                    <tr>
+                        <th><label>Имя</label></th>
+                        <th><label>Фамилия</label></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="name_driver" type="text" placeholder="Имя..." required>
+                        </td>
+                        <td>
+                            <input name="surname_driver" type="text" placeholder="Фамилия..." required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="ДОБАВИТЬ НОВОГО ВОДИТЕЛЯ">
+        </form>
     </div>
 </div>

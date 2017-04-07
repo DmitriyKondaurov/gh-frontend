@@ -49,5 +49,37 @@
         </table>
         </form>
         <input type="submit" form="cars_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
+        <form method="post" action="<?php echo get_page_link();?>add_new_car_db/">
+            <fieldset>
+                <legend class="order">Введите новую мащну</legend>
+                <table border="2">
+                    <tr>
+                        <th><label>Марка</label></th>
+                        <th><label>Гос. номер</label></th>
+                        <th><label>Грузоподъёмность</label></th>
+                        <th><label>Тех. состояние</label></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="brend" type="text" placeholder="Марка" required>
+                        </td>
+                        <td>
+                            <input name="gov_number" type="text" placeholder="Гос. номер " required>
+                        </td>
+                        <td>
+                            <input name="load_capacity" type="number" step="0.1" placeholder="Грузоподъёмность"
+                                   required>
+                        </td>
+                        <td>
+                            <select name="condition" required>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="ДОБАВИТЬ НОВУЮ МАШИНУ">
+        </form>
     </div>
 </div>

@@ -1,6 +1,8 @@
-<div class="tabs__content container active">
+<div class="tabs__content container">
     <div class="row">
         <h1>Заказы по складу</h1>
+        <form id="orders_form" action="<?php echo get_page_link();
+        ?>update_db/" method="post">
         <table border="2">
             <thead>
             <tr>
@@ -10,7 +12,6 @@
                 <th>Фамилия клиента</th>
                 <th>Гос. № машины</th>
                 <th>Фамилия водителя</th>
-                <th>Удалить</th>
             </tr>
             </thead>
             <tbody>
@@ -25,7 +26,6 @@
 				while ( $row = $res->fetch_assoc() ) {
 				    ?>
                     <tr>
-                    <form action="<?php echo get_page_link();?>del_order/" method="post">
                         <td>
                             <input type="number" name="order_id_<?php echo $n ?>" value="<?php echo $row['order_id'] ?>" readonly>
                         </td>
@@ -81,10 +81,6 @@
                                 ?>
                             </select>
                         </td>
-                        <td>
-                            <input type="submit" value="УДАЛИТЬ">
-                        </td>
-                    </form>
                     </tr><?php
                     $n++;
 				}
@@ -92,5 +88,7 @@
 			?>
             </tbody>
         </table>
+        </form>
+        <input type="submit" form="orders_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
     </div>
 </div>
