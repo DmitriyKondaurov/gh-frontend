@@ -51,7 +51,7 @@
         <input type="submit" form="cars_form" value="СОХРАНИТЬ ИЗМЕНЕНИЯ">
         <form method="post" action="<?php echo get_page_link();?>add_new_car_db/">
             <fieldset>
-                <legend class="order">Введите новую мащну</legend>
+                <legend class="order">Введите новую машину</legend>
                 <table border="2">
                     <tr>
                         <th><label>Марка</label></th>

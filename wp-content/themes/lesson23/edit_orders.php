@@ -1,6 +1,6 @@
 <div class="tabs__content container">
     <div class="row">
-        <h1>Заказы по складу</h1>
+        <h1>Корректировка заказов по складу</h1>
         <form id="orders_form" action="<?php echo get_page_link();
         ?>update_db/" method="post">
         <table border="2">
